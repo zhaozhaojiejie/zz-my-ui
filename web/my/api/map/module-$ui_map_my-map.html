@@ -1,0 +1,2910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>$ui/map/my-map - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ol.interaction.areaSelect.html">areaSelect</a></li><li><a href="ol.interaction.drag.html">drag</a></li><li><a href="ol.source.TileSuperMapRest.html">TileSuperMapRest</a><ul class='methods'><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.createTileGrid">createTileGrid</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.optionsFromMapJSON">optionsFromMapJSON</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#changeTilesVersion">changeTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#createLayerUrl">createLayerUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getAllRequestParams">getAllRequestParams</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getFullRequestUrl">getFullRequestUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getRequestParamString">getRequestParamString</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#lastTilesVersion">lastTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#mergeTileVersionParam">mergeTileVersionParam</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#nextTilesVersion">nextTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#setTileSetsInfo">setTileSetsInfo</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#updateCurrentTileSetsIndex">updateCurrentTileSetsIndex</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_map_mixins_feature.html">$ui/map/mixins/feature</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~setStyle">setStyle</a></li></ul></li><li><a href="module-$ui_map_mixins_image.html">$ui/map/mixins/image</a></li><li><a href="module-$ui_map_mixins_stroke.html">$ui/map/mixins/stroke</a></li><li><a href="module-$ui_map_my-map.html">$ui/map/my-map</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~clickTrigger">clickTrigger</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~dispose">dispose</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureAtPixel">getFeatureAtPixel</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureVM">getFeatureVM</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getLayer">getLayer</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getMetersPerUnit">getMetersPerUnit</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~mapReady">mapReady</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~moveTo">moveTo</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~removeFeature">removeFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~resize">resize</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setActive">setActive</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setCursor">setCursor</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomIn">zoomIn</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomOut">zoomOut</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomTo">zoomTo</a></li></ul></li><li><a href="module-$ui_map_my-map-circle.html">$ui/map/my-map-circle</a></li><li><a href="module-$ui_map_my-map-cluster.html">$ui/map/my-map-cluster</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~draw">draw</a></li></ul></li><li><a href="module-$ui_map_my-map-draw.html">$ui/map/my-map-draw</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~finish">finish</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~getFeatures">getFeatures</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~removeFeature">removeFeature</a></li></ul></li><li><a href="module-$ui_map_my-map-flight.html">$ui/map/my-map-flight</a></li><li><a href="module-$ui_map_my-map-geo.html">$ui/map/my-map-geo</a></li><li><a href="module-$ui_map_my-map-heat.html">$ui/map/my-map-heat</a></li><li><a href="module-$ui_map_my-map-html.html">$ui/map/my-map-html</a></li><li><a href="module-$ui_map_my-map-icon.html">$ui/map/my-map-icon</a></li><li><a href="module-$ui_map_my-map-image.html">$ui/map/my-map-image</a></li><li><a href="module-$ui_map_my-map-layers.html">$ui/map/my-map-layers</a></li><li><a href="module-$ui_map_my-map-line.html">$ui/map/my-map-line</a></li><li><a href="module-$ui_map_my-map-link.html">$ui/map/my-map-link</a></li><li><a href="module-$ui_map_my-map-marker.html">$ui/map/my-map-marker</a></li><li><a href="module-$ui_map_my-map-measure.html">$ui/map/my-map-measure</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-measure.html#~clear">clear</a></li></ul></li><li><a href="module-$ui_map_my-map-overview.html">$ui/map/my-map-overview</a></li><li><a href="module-$ui_map_my-map-palette.html">$ui/map/my-map-palette</a></li><li><a href="module-$ui_map_my-map-panel.html">$ui/map/my-map-panel</a></li><li><a href="module-$ui_map_my-map-placement.html">$ui/map/my-map-placement</a></li><li><a href="module-$ui_map_my-map-pointer.html">$ui/map/my-map-pointer</a></li><li><a href="module-$ui_map_my-map-polygon.html">$ui/map/my-map-polygon</a></li><li><a href="module-$ui_map_my-map-popup.html">$ui/map/my-map-popup</a></li><li><a href="module-$ui_map_my-map-rectangle.html">$ui/map/my-map-rectangle</a></li><li><a href="module-$ui_map_my-map-scale.html">$ui/map/my-map-scale</a></li><li><a href="module-$ui_map_my-map-scatter.html">$ui/map/my-map-scatter</a></li><li><a href="module-$ui_map_my-map-text.html">$ui/map/my-map-text</a></li><li><a href="module-$ui_map_my-map-track.html">$ui/map/my-map-track</a></li><li><a href="module-$ui_map_my-map-zoom.html">$ui/map/my-map-zoom</a></li><li><a href="module-$ui_map_utils_style.html">$ui/map/utils/style</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_style.html#~parse">parse</a></li></ul></li><li><a href="module-$ui_map_utils_util.html">$ui/map/utils/util</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_util.html#.coordinateEqual">coordinateEqual</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createBezierCurvePoints">createBezierCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createCurvePoints">createCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createLinePathPoints">createLinePathPoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.factorial">factorial</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.fromLonLat">fromLonLat</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.geoJsonDecode">geoJsonDecode</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.getDistance">getDistance</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.mergeProps">mergeProps</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.parseDecimal">parseDecimal</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.svgToImg">svgToImg</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.toLonLat">toLonLat</a></li></ul></li></ul><h3>Events</h3><ul><li><a href="module-$ui_map_my-map-cluster.html#~event:change">change</a></li><li><a href="module-$ui_map_my-map-panel.html#~event:close">close</a></li><li><a href="module-$ui_map_my-map-pointer.html#~event:copy">copy</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawend">drawend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawstart">drawstart</a></li><li><a href="module-$ui_map_my-map-measure.html#~event:end">end</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifyend">modifyend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifystart">modifystart</a></li><li><a href="global.html#event:on-boxEnd">on-boxEnd</a></li><li><a href="global.html#event:on-boxStart">on-boxStart</a></li><li><a href="global.html#event:on-dragDown">on-dragDown</a></li><li><a href="global.html#event:on-dragMove">on-dragMove</a></li><li><a href="global.html#event:on-dragUp">on-dragUp</a></li><li><a href="module-$ui_map_my-map-geo.html#~event:ready">ready</a></li><li></li></ul><h3>Interfaces</h3><ul><li><a href="module-$ui_map_mixins_feature.methods.drawHandler.html">drawHandler</a></li><li><a href="module-$ui_map_mixins_feature.methods.modifyHandler.html">modifyHandler</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createEzMapLayer">createEzMapLayer</a></li><li><a href="global.html#createFcMapLayer">createFcMapLayer</a></li><li><a href="global.html#createFounderLayer">createFounderLayer</a></li><li><a href="global.html#createLayer">createLayer</a></li><li><a href="global.html#createSuperLayer">createSuperLayer</a></li><li><a href="global.html#createTdtLayer">createTdtLayer</a></li><li><a href="global.html#createTdtLayerGroup">createTdtLayerGroup</a></li><li><a href="global.html#createWMTSLayer">createWMTSLayer</a></li><li><a href="global.html#props">props</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">$ui/map/my-map</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description"><p>地图基础图层组件</p></div>
+            
+
+            
+                
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="~props"><span class="type-signature">(inner) </span>props<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line23">line 23</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>zoom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>10</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>地图初始化层级</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minZoom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>1</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>最小支持的层级</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxZoom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>20</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>最大支持的层级</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>center</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>地图初始化中心经纬度</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>adapter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>OSM</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>图层适配器，类型：OSM|XYZ|Amap|Baidu|TDT|Founder|Ez|Super|Fc 对象时 {id, type, url, layers(天地图专用)}</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>projection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>EPSG:4326</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>投影坐标系，支持 EPSG:4326 (WGS84) 或 EPSG:3857 (Pseudo-Mercator)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>100%</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>宽度，支持百分比</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>400px</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>高度，支持百分比</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dragPan</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>可拖拽移动图层</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>mouseWheelZoom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>鼠标滚轮可缩放图层</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>mapOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>ol/Map 实例化参数选项</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>viewOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>ol/View 实例化参数选项</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    <p>属性参数</p>
+</div>
+
+
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="~addFeature"><span class="type-signature">(inner) </span>addFeature<span class="signature">(feature)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line412">line 412</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>在地图上添加图形, 图形加入到矢量图层</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>feature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Feature></span>
+|
+
+<span class="param-type">feature</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~clickTrigger"><span class="type-signature">(inner) </span>clickTrigger<span class="signature">(feature, e)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line236">line 236</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>触发图形点击事件</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>feature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ol/Feature</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~dispose"><span class="type-signature">(inner) </span>dispose<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line206">line 206</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>销毁Map</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~getFeatureAtPixel"><span class="type-signature">(inner) </span>getFeatureAtPixel<span class="signature">(pixel)</span><span class="type-signature"> &rarr; {Feature}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line217">line 217</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>根据地图上的像素位置获取图形对象</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pixel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>位置像素 [x,y]</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Feature</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~getFeatureVM"><span class="type-signature">(inner) </span>getFeatureVM<span class="signature">(feature)</span><span class="type-signature"> &rarr; {*}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line259">line 259</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>获取图形挂载的 Vue实例</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>feature</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">*</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~getLayer"><span class="type-signature">(inner) </span>getLayer<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line250">line 250</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>获取瓦片图层实例</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~getMetersPerUnit"><span class="type-signature">(inner) </span>getMetersPerUnit<span class="signature">()</span><span class="type-signature"> &rarr; {*|number|number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line437">line 437</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>获取每个投影单位代表的距离米</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">*</span>
+|
+
+<span class="param-type">number</span>
+|
+
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~mapReady"><span class="type-signature">(inner) </span>mapReady<span class="signature">(callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line387">line 387</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>地图初始化完成回调</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~moveTo"><span class="type-signature">(inner) </span>moveTo<span class="signature">(loc)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line337">line 337</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>移动到指定经纬度居中</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>loc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>经纬度数组</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~removeFeature"><span class="type-signature">(inner) </span>removeFeature<span class="signature">(feature)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line426">line 426</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>删除图形</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>feature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Feature></span>
+|
+
+<span class="param-type">feature</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~resize"><span class="type-signature">(inner) </span>resize<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line329">line 329</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>重置地图尺寸，当容器的尺寸变化后需要执行resize</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~setActive"><span class="type-signature">(inner) </span>setActive<span class="signature">(name, active)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line148">line 148</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>设置是否激活交互工具</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>工具类</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>active</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>是否激活</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~setCursor"><span class="type-signature">(inner) </span>setCursor<span class="signature">(feature)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line227">line 227</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>当图形可点击时，设置图形鼠标 cursor pointer</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>feature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ol/Feature</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~zoomIn"><span class="type-signature">(inner) </span>zoomIn<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line367">line 367</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>逐步放大</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~zoomOut"><span class="type-signature">(inner) </span>zoomOut<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line377">line 377</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>逐步缩小</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~zoomTo"><span class="type-signature">(inner) </span>zoomTo<span class="signature">(level)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line352">line 352</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>设置地图缩放等级</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>level</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>等级数值</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+        <h3 class="subsection-title">Events</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="~event:ready">ready</h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_my-map_Map.js.html">packages/my-map/Map.js</a>, <a href="packages_my-map_Map.js.html#line196">line 196</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>地图初始化完成时触发</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>map</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Map</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>ol/Map实例</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>vm</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">VueComponent</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Vue实例</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+</article>
+
+</section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:46 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

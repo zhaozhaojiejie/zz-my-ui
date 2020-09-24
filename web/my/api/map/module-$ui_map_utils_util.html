@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>$ui/map/utils/util - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ol.interaction.areaSelect.html">areaSelect</a></li><li><a href="ol.interaction.drag.html">drag</a></li><li><a href="ol.source.TileSuperMapRest.html">TileSuperMapRest</a><ul class='methods'><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.createTileGrid">createTileGrid</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.optionsFromMapJSON">optionsFromMapJSON</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#changeTilesVersion">changeTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#createLayerUrl">createLayerUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getAllRequestParams">getAllRequestParams</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getFullRequestUrl">getFullRequestUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getRequestParamString">getRequestParamString</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#lastTilesVersion">lastTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#mergeTileVersionParam">mergeTileVersionParam</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#nextTilesVersion">nextTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#setTileSetsInfo">setTileSetsInfo</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#updateCurrentTileSetsIndex">updateCurrentTileSetsIndex</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_map_mixins_feature.html">$ui/map/mixins/feature</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~setStyle">setStyle</a></li></ul></li><li><a href="module-$ui_map_mixins_image.html">$ui/map/mixins/image</a></li><li><a href="module-$ui_map_mixins_stroke.html">$ui/map/mixins/stroke</a></li><li><a href="module-$ui_map_my-map.html">$ui/map/my-map</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~clickTrigger">clickTrigger</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~dispose">dispose</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureAtPixel">getFeatureAtPixel</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureVM">getFeatureVM</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getLayer">getLayer</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getMetersPerUnit">getMetersPerUnit</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~mapReady">mapReady</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~moveTo">moveTo</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~removeFeature">removeFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~resize">resize</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setActive">setActive</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setCursor">setCursor</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomIn">zoomIn</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomOut">zoomOut</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomTo">zoomTo</a></li></ul></li><li><a href="module-$ui_map_my-map-circle.html">$ui/map/my-map-circle</a></li><li><a href="module-$ui_map_my-map-cluster.html">$ui/map/my-map-cluster</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~draw">draw</a></li></ul></li><li><a href="module-$ui_map_my-map-draw.html">$ui/map/my-map-draw</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~finish">finish</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~getFeatures">getFeatures</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~removeFeature">removeFeature</a></li></ul></li><li><a href="module-$ui_map_my-map-flight.html">$ui/map/my-map-flight</a></li><li><a href="module-$ui_map_my-map-geo.html">$ui/map/my-map-geo</a></li><li><a href="module-$ui_map_my-map-heat.html">$ui/map/my-map-heat</a></li><li><a href="module-$ui_map_my-map-html.html">$ui/map/my-map-html</a></li><li><a href="module-$ui_map_my-map-icon.html">$ui/map/my-map-icon</a></li><li><a href="module-$ui_map_my-map-image.html">$ui/map/my-map-image</a></li><li><a href="module-$ui_map_my-map-layers.html">$ui/map/my-map-layers</a></li><li><a href="module-$ui_map_my-map-line.html">$ui/map/my-map-line</a></li><li><a href="module-$ui_map_my-map-link.html">$ui/map/my-map-link</a></li><li><a href="module-$ui_map_my-map-marker.html">$ui/map/my-map-marker</a></li><li><a href="module-$ui_map_my-map-measure.html">$ui/map/my-map-measure</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-measure.html#~clear">clear</a></li></ul></li><li><a href="module-$ui_map_my-map-overview.html">$ui/map/my-map-overview</a></li><li><a href="module-$ui_map_my-map-palette.html">$ui/map/my-map-palette</a></li><li><a href="module-$ui_map_my-map-panel.html">$ui/map/my-map-panel</a></li><li><a href="module-$ui_map_my-map-placement.html">$ui/map/my-map-placement</a></li><li><a href="module-$ui_map_my-map-pointer.html">$ui/map/my-map-pointer</a></li><li><a href="module-$ui_map_my-map-polygon.html">$ui/map/my-map-polygon</a></li><li><a href="module-$ui_map_my-map-popup.html">$ui/map/my-map-popup</a></li><li><a href="module-$ui_map_my-map-rectangle.html">$ui/map/my-map-rectangle</a></li><li><a href="module-$ui_map_my-map-scale.html">$ui/map/my-map-scale</a></li><li><a href="module-$ui_map_my-map-scatter.html">$ui/map/my-map-scatter</a></li><li><a href="module-$ui_map_my-map-text.html">$ui/map/my-map-text</a></li><li><a href="module-$ui_map_my-map-track.html">$ui/map/my-map-track</a></li><li><a href="module-$ui_map_my-map-zoom.html">$ui/map/my-map-zoom</a></li><li><a href="module-$ui_map_utils_style.html">$ui/map/utils/style</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_style.html#~parse">parse</a></li></ul></li><li><a href="module-$ui_map_utils_util.html">$ui/map/utils/util</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_util.html#.coordinateEqual">coordinateEqual</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createBezierCurvePoints">createBezierCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createCurvePoints">createCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createLinePathPoints">createLinePathPoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.factorial">factorial</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.fromLonLat">fromLonLat</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.geoJsonDecode">geoJsonDecode</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.getDistance">getDistance</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.mergeProps">mergeProps</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.parseDecimal">parseDecimal</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.svgToImg">svgToImg</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.toLonLat">toLonLat</a></li></ul></li></ul><h3>Events</h3><ul><li><a href="module-$ui_map_my-map-cluster.html#~event:change">change</a></li><li><a href="module-$ui_map_my-map-panel.html#~event:close">close</a></li><li><a href="module-$ui_map_my-map-pointer.html#~event:copy">copy</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawend">drawend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawstart">drawstart</a></li><li><a href="module-$ui_map_my-map-measure.html#~event:end">end</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifyend">modifyend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifystart">modifystart</a></li><li><a href="global.html#event:on-boxEnd">on-boxEnd</a></li><li><a href="global.html#event:on-boxStart">on-boxStart</a></li><li><a href="global.html#event:on-dragDown">on-dragDown</a></li><li><a href="global.html#event:on-dragMove">on-dragMove</a></li><li><a href="global.html#event:on-dragUp">on-dragUp</a></li><li><a href="module-$ui_map_my-map-geo.html#~event:ready">ready</a></li><li></li></ul><h3>Interfaces</h3><ul><li><a href="module-$ui_map_mixins_feature.methods.drawHandler.html">drawHandler</a></li><li><a href="module-$ui_map_mixins_feature.methods.modifyHandler.html">modifyHandler</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createEzMapLayer">createEzMapLayer</a></li><li><a href="global.html#createFcMapLayer">createFcMapLayer</a></li><li><a href="global.html#createFounderLayer">createFounderLayer</a></li><li><a href="global.html#createLayer">createLayer</a></li><li><a href="global.html#createSuperLayer">createSuperLayer</a></li><li><a href="global.html#createTdtLayer">createTdtLayer</a></li><li><a href="global.html#createTdtLayerGroup">createTdtLayerGroup</a></li><li><a href="global.html#createWMTSLayer">createWMTSLayer</a></li><li><a href="global.html#props">props</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">$ui/map/utils/util</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description"><p>工具函数</p></div>
+            
+
+            
+                
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".coordinateEqual"><span class="type-signature">(static) </span>coordinateEqual<span class="signature">(coordinate1, coordinate2)</span><span class="type-signature"> &rarr; {boolean|boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line149">line 149</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>检测两个经纬度是否相同</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>coordinate1</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>coordinate2</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createBezierCurvePoints"><span class="type-signature">(static) </span>createBezierCurvePoints<span class="signature">(points, space)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line42">line 42</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>生成贝塞尔曲线</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>space</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>必须要大于0</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createCurvePoints"><span class="type-signature">(static) </span>createCurvePoints<span class="signature">(from, to, radius, angle, space)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>创建曲线的点</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>from</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>起点</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>to</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>终点</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radius</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>半径</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>angle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>角度</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>space</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createLinePathPoints"><span class="type-signature">(static) </span>createLinePathPoints<span class="signature">(coordinates, space)</span><span class="type-signature"> &rarr; {Array.&lt;Array>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line100">line 100</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>对线条增加间隔点</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>coordinates</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Array></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>线条坐标数组，支持曲线</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>space</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>点的间隔距离，经纬度单位，值越小，增加的点越多</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;Array></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".factorial"><span class="type-signature">(static) </span>factorial<span class="signature">(num)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line28">line 28</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>阶乘</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>num</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".fromLonLat"><span class="type-signature">(static) </span>fromLonLat<span class="signature">(coordinate)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line276">line 276</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>墨卡托坐标转换成WGS84坐标，即 EPSG:4326 转换成  EPSG:3857</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>coordinate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+|
+
+<span class="param-type">Array.&lt;Array></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".geoJsonDecode"><span class="type-signature">(static) </span>geoJsonDecode<span class="signature">(json)</span><span class="type-signature"> &rarr; {Object|*}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line161">line 161</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>针对ECharts提供的GeoJSON进行解码</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>json</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">*</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getDistance"><span class="type-signature">(static) </span>getDistance<span class="signature">(coordinate1, coordinate2)</span><span class="type-signature"> &rarr; {Number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line190">line 190</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>计算两经纬度坐标点距离，</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>coordinate1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>标准经纬度坐标数组,如：[113.38585096783513, 22.96213834599851]；</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>coordinate2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>标准经纬度坐标数组,如：[113.38585096783513, 22.96213834599851]；</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>返回距离，单位为米；</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".mergeProps"><span class="type-signature">(static) </span>mergeProps<span class="signature">(vm, keys)</span><span class="type-signature"> &rarr; {null}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>从Vue实例提取参数构造参数集合</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>vm</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>keys</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">null</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".parseDecimal"><span class="type-signature">(static) </span>parseDecimal<span class="signature">(number)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line139">line 139</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>格式化数字，修复精度问题</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".svgToImg"><span class="type-signature">(static) </span>svgToImg<span class="signature">(fontClass, size, color, fontFamily)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line215">line 215</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Icon 字体转 图片 方法（用于大批量icon在地图中实现）</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>fontClass</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>icon 的名称</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>icon 大小</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>icon 颜色</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fontFamily</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>icon 字体的类型 （IconFont / 'element-icons'）</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Promise(img)</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toLonLat"><span class="type-signature">(static) </span>toLonLat<span class="signature">(coordinate)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_util.js.html">utils/util.js</a>, <a href="utils_util.js.html#line289">line 289</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>WGS84坐标转换成墨卡托坐标，即 EPSG:3857 转换成  EPSG:4326</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>coordinate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+|
+
+<span class="param-type">Array.&lt;Array></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:46 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

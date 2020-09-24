@@ -1,0 +1,34 @@
+@import "common/var";
+
+@include b(edit-tags){
+  display: inline-block;
+  .el-tag {
+    margin-bottom: 10px; 
+  }
+  
+  @include e(warp) {
+    .input-new-tag.el-input--mini {
+      margin-bottom: 10px;
+      vertical-align: bottom; 
+      
+      @include when(large) {
+        height: 32px;
+      }
+      @include when(medium){
+        height: 28px;
+      }
+      @include when(small){
+        height: 24px;
+      }
+      @include when(mini){
+        height: 21px;
+      }
+
+      /deep/ .el-input__inner {
+        height: 100%;
+        line-height: 1;
+      }
+    }
+  }
+  
+}

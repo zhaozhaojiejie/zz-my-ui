@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>utils/util.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ol.interaction.areaSelect.html">areaSelect</a></li><li><a href="ol.interaction.drag.html">drag</a></li><li><a href="ol.source.TileSuperMapRest.html">TileSuperMapRest</a><ul class='methods'><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.createTileGrid">createTileGrid</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.optionsFromMapJSON">optionsFromMapJSON</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#changeTilesVersion">changeTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#createLayerUrl">createLayerUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getAllRequestParams">getAllRequestParams</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getFullRequestUrl">getFullRequestUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getRequestParamString">getRequestParamString</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#lastTilesVersion">lastTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#mergeTileVersionParam">mergeTileVersionParam</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#nextTilesVersion">nextTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#setTileSetsInfo">setTileSetsInfo</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#updateCurrentTileSetsIndex">updateCurrentTileSetsIndex</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_map_mixins_feature.html">$ui/map/mixins/feature</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~setStyle">setStyle</a></li></ul></li><li><a href="module-$ui_map_mixins_image.html">$ui/map/mixins/image</a></li><li><a href="module-$ui_map_mixins_stroke.html">$ui/map/mixins/stroke</a></li><li><a href="module-$ui_map_my-map.html">$ui/map/my-map</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~clickTrigger">clickTrigger</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~dispose">dispose</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureAtPixel">getFeatureAtPixel</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureVM">getFeatureVM</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getLayer">getLayer</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getMetersPerUnit">getMetersPerUnit</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~mapReady">mapReady</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~moveTo">moveTo</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~removeFeature">removeFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~resize">resize</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setActive">setActive</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setCursor">setCursor</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomIn">zoomIn</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomOut">zoomOut</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomTo">zoomTo</a></li></ul></li><li><a href="module-$ui_map_my-map-circle.html">$ui/map/my-map-circle</a></li><li><a href="module-$ui_map_my-map-cluster.html">$ui/map/my-map-cluster</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~draw">draw</a></li></ul></li><li><a href="module-$ui_map_my-map-draw.html">$ui/map/my-map-draw</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~finish">finish</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~getFeatures">getFeatures</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~removeFeature">removeFeature</a></li></ul></li><li><a href="module-$ui_map_my-map-flight.html">$ui/map/my-map-flight</a></li><li><a href="module-$ui_map_my-map-geo.html">$ui/map/my-map-geo</a></li><li><a href="module-$ui_map_my-map-heat.html">$ui/map/my-map-heat</a></li><li><a href="module-$ui_map_my-map-html.html">$ui/map/my-map-html</a></li><li><a href="module-$ui_map_my-map-icon.html">$ui/map/my-map-icon</a></li><li><a href="module-$ui_map_my-map-image.html">$ui/map/my-map-image</a></li><li><a href="module-$ui_map_my-map-layers.html">$ui/map/my-map-layers</a></li><li><a href="module-$ui_map_my-map-line.html">$ui/map/my-map-line</a></li><li><a href="module-$ui_map_my-map-link.html">$ui/map/my-map-link</a></li><li><a href="module-$ui_map_my-map-marker.html">$ui/map/my-map-marker</a></li><li><a href="module-$ui_map_my-map-measure.html">$ui/map/my-map-measure</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-measure.html#~clear">clear</a></li></ul></li><li><a href="module-$ui_map_my-map-overview.html">$ui/map/my-map-overview</a></li><li><a href="module-$ui_map_my-map-palette.html">$ui/map/my-map-palette</a></li><li><a href="module-$ui_map_my-map-panel.html">$ui/map/my-map-panel</a></li><li><a href="module-$ui_map_my-map-placement.html">$ui/map/my-map-placement</a></li><li><a href="module-$ui_map_my-map-pointer.html">$ui/map/my-map-pointer</a></li><li><a href="module-$ui_map_my-map-polygon.html">$ui/map/my-map-polygon</a></li><li><a href="module-$ui_map_my-map-popup.html">$ui/map/my-map-popup</a></li><li><a href="module-$ui_map_my-map-rectangle.html">$ui/map/my-map-rectangle</a></li><li><a href="module-$ui_map_my-map-scale.html">$ui/map/my-map-scale</a></li><li><a href="module-$ui_map_my-map-scatter.html">$ui/map/my-map-scatter</a></li><li><a href="module-$ui_map_my-map-text.html">$ui/map/my-map-text</a></li><li><a href="module-$ui_map_my-map-track.html">$ui/map/my-map-track</a></li><li><a href="module-$ui_map_my-map-zoom.html">$ui/map/my-map-zoom</a></li><li><a href="module-$ui_map_utils_style.html">$ui/map/utils/style</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_style.html#~parse">parse</a></li></ul></li><li><a href="module-$ui_map_utils_util.html">$ui/map/utils/util</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_util.html#.coordinateEqual">coordinateEqual</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createBezierCurvePoints">createBezierCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createCurvePoints">createCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createLinePathPoints">createLinePathPoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.factorial">factorial</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.fromLonLat">fromLonLat</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.geoJsonDecode">geoJsonDecode</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.getDistance">getDistance</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.mergeProps">mergeProps</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.parseDecimal">parseDecimal</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.svgToImg">svgToImg</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.toLonLat">toLonLat</a></li></ul></li></ul><h3>Events</h3><ul><li><a href="module-$ui_map_my-map-cluster.html#~event:change">change</a></li><li><a href="module-$ui_map_my-map-panel.html#~event:close">close</a></li><li><a href="module-$ui_map_my-map-pointer.html#~event:copy">copy</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawend">drawend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawstart">drawstart</a></li><li><a href="module-$ui_map_my-map-measure.html#~event:end">end</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifyend">modifyend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifystart">modifystart</a></li><li><a href="global.html#event:on-boxEnd">on-boxEnd</a></li><li><a href="global.html#event:on-boxStart">on-boxStart</a></li><li><a href="global.html#event:on-dragDown">on-dragDown</a></li><li><a href="global.html#event:on-dragMove">on-dragMove</a></li><li><a href="global.html#event:on-dragUp">on-dragUp</a></li><li><a href="module-$ui_map_my-map-geo.html#~event:ready">ready</a></li><li></li></ul><h3>Interfaces</h3><ul><li><a href="module-$ui_map_mixins_feature.methods.drawHandler.html">drawHandler</a></li><li><a href="module-$ui_map_mixins_feature.methods.modifyHandler.html">modifyHandler</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createEzMapLayer">createEzMapLayer</a></li><li><a href="global.html#createFcMapLayer">createFcMapLayer</a></li><li><a href="global.html#createFounderLayer">createFounderLayer</a></li><li><a href="global.html#createLayer">createLayer</a></li><li><a href="global.html#createSuperLayer">createSuperLayer</a></li><li><a href="global.html#createTdtLayer">createTdtLayer</a></li><li><a href="global.html#createTdtLayerGroup">createTdtLayerGroup</a></li><li><a href="global.html#createWMTSLayer">createWMTSLayer</a></li><li><a href="global.html#props">props</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">utils/util.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * 工具函数
+ * @module $ui/map/utils/util
+ */
+import * as Sphere from 'ol/sphere'
+import * as Extent from 'ol/extent'
+import {fromLonLat as toWGS84, toLonLat as toMercator} from 'ol/proj'
+
+/**
+ * 从Vue实例提取参数构造参数集合
+ * @param vm
+ * @param keys
+ * @return {null}
+ */
+export function mergeProps(vm, keys = []) {
+  const props = Object.create(null)
+  keys.forEach(key => {
+    props[key] = vm[key]
+  })
+  return props
+}
+
+/**
+ * 阶乘
+ * @param num
+ * @return {number}
+ */
+export function factorial(num) {
+  if (num &lt;= 1) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
+  }
+}
+
+/**
+ * 生成贝塞尔曲线
+ * @param points
+ * @param space 必须要大于0
+ * @return {Array}
+ */
+export function createBezierCurvePoints(points = [], space = 0.01) {
+  // 大于2个点才能有曲线
+  if (points.length &lt;= 2 || space &lt;= 0) return points
+
+  let x = 0
+  let y = 0
+  // 控制点个数
+  const n = points.length - 1
+  const line = [];
+  for (let t = 0; t &lt; 1; t = t + space) {
+    x = 0;
+    y = 0;
+    for (let i = 0; i &lt;= n; i++) {
+      const [x1, y1] = points[i]
+      x += (factorial(n) / (factorial(i) * factorial(n - i))) * Math.pow((1 - t), n - i) * Math.pow(t, i) * x1;
+      y += (factorial(n) / (factorial(i) * factorial(n - i))) * Math.pow((1 - t), n - i) * Math.pow(t, i) * y1;
+    }
+    line.push([x, y]);
+  }
+  line.push(points[points.length - 1])
+  return line;
+}
+
+/**
+ * 创建曲线的点
+ * @param {number[]} from 起点
+ * @param {number[]} to 终点
+ * @param {number} radius 半径
+ * @param {number} angle 角度
+ * @param {number} space
+ * @return {Array}
+ */
+export function createCurvePoints(from, to, radius = 0, angle = 90, space = 0.01) {
+  const [fx, fy] = from
+  const [tx, ty] = to
+  // 获取圆心坐标
+  const ox = (fx + tx) / 2
+  const oy = (fy + ty) / 2
+  // 线与x轴的夹角
+  const dx = (fy - ty) / (fx - tx)
+  // 参照直线的夹角
+  const r = (angle * Math.PI / 180) + Math.atan(dx)
+  console.log('r', r)
+  // 计算得出曲线拐点的坐标
+  const x = ox + radius * Math.cos(r)
+  const y = oy + radius * Math.sin(r)
+  // 得到了线的曲度控制点
+  const line = [from, [x, y], to]
+  // 生成曲线的路径坐标集合
+  return createBezierCurvePoints(line, space)
+}
+
+/**
+ * 对线条增加间隔点
+ * @param {Array[]} coordinates 线条坐标数组，支持曲线
+ * @param {number} space 点的间隔距离，经纬度单位，值越小，增加的点越多
+ * @return {Array[]}
+ */
+export function createLinePathPoints(coordinates = [], space = 0.01) {
+  const points = []
+  for (let i = 0; i &lt; coordinates.length; i++) {
+    if (i >= coordinates.length - 1) break
+    const [x1, y1] = coordinates[i]
+    const [x2, y2] = coordinates[i + 1]
+    // 计算线与x轴的角度
+    const k = Math.atan2(Math.abs(y1 - y2), Math.abs(x1 - x2))
+    // 0 ~ 90 度之间
+    const angle = k * (180 / Math.PI)
+    points.push([x1, y1])
+    // 大于45度用维度计算，小于45度用经度计算
+    if (angle > 45) {
+      const diff = space * Math.sign(y2 - y1)
+      let y = y1 + diff
+      while (diff > 0 ? y &lt; y2 : y > y2) {
+        const x = (y - y1) * (x2 - x1) / (y2 - y1) + x1
+        points.push([x, y])
+        y += diff
+      }
+    } else {
+      const diff = space * Math.sign(x2 - x1)
+      let x = x1 + diff
+      while (diff > 0 ? x &lt; x2 : x > x2) {
+        const y = (y2 - y1) / (x2 - x1) * (x - x1) + y1
+        points.push([x, y])
+        x += diff
+      }
+    }
+    points.push([x2, y2])
+  }
+  return [...new Set(points)]
+}
+
+/**
+ * 格式化数字，修复精度问题
+ * @param number
+ * @return {number}
+ */
+export function parseDecimal(number) {
+  return parseFloat(number.toFixed(12))
+}
+
+/**
+ * 检测两个经纬度是否相同
+ * @param coordinate1
+ * @param coordinate2
+ * @return {boolean|boolean}
+ */
+export function coordinateEqual(coordinate1, coordinate2) {
+  if (coordinate1 === coordinate2) return true
+  const [x1, y1] = coordinate1
+  const [x2, y2] = coordinate2
+  return parseDecimal(x1) === parseDecimal(x2) &amp;&amp; parseDecimal(y1) === parseDecimal(y2)
+}
+
+/**
+ * 针对ECharts提供的GeoJSON进行解码
+ * @param json
+ * @return {{features}|*}
+ */
+export function geoJsonDecode(json) {
+  const features = json.features || []
+  features.forEach(feature => {
+    const geometry = feature.geometry || {}
+    const {coordinates, encodeOffsets} = geometry
+    // 如果不存在encodeOffsets，不需要进行解码
+    if (!encodeOffsets) return
+    geometry.coordinates = coordinates.map((coordinate, i) => {
+      if (Array.isArray(coordinate)) {
+        return coordinate.map((item, j) => {
+          return decodePolygon(item, encodeOffsets[i][j])
+        })
+      } else {
+        return decodePolygon(coordinate, encodeOffsets[i])
+      }
+    })
+    // 和已经解码后清除标识
+    geometry.encodeOffsets = null
+  })
+  return json
+}
+
+
+/**
+ * 计算两经纬度坐标点距离，
+ * @param {Array} coordinate1 标准经纬度坐标数组,如：[113.38585096783513, 22.96213834599851]；
+ * @param {Array} coordinate2 标准经纬度坐标数组,如：[113.38585096783513, 22.96213834599851]；
+ * @return {Number} 返回距离，单位为米；
+ */
+export function getDistance(coordinate1, coordinate2) {
+  return Sphere.getDistance(coordinate1, coordinate2)
+}
+
+/*
+ * 计算当前地图 1px 相当于 多少 m 距离
+ */
+export function getScale(map, mapComp) {
+  const mapWidth = mapComp.$el.offsetWidth
+  const view = map.getView()
+  const extent = view.calculateExtent()
+  const bottomLeft = Extent.getBottomLeft(extent)
+  const bottomRight = Extent.getBottomRight(extent)
+  const distance = Sphere.getDistance(bottomLeft, bottomRight)
+  return distance / mapWidth
+}
+
+/**
+ * Icon 字体转 图片 方法（用于大批量icon在地图中实现）
+ * @param {String} fontClass icon 的名称
+ * @param {Number} size icon 大小
+ * @param {String} color icon 颜色
+ * @param {String} fontFamily icon 字体的类型 （IconFont / 'element-icons'）
+ * @return {Promise} Promise(img)
+ */
+export function svgToImg(fontClass, size, color, fontFamily = 'IconFont') {
+  return new Promise((resolve, reject) => {
+    const canvas = document.createElement('CANVAS')
+    canvas.width = size
+    canvas.height = size
+    const ctx = canvas.getContext('2d')
+
+    const span = document.createElement('SPAN')
+    span.className = fontClass
+    document.body.appendChild(span)
+    const content = window.getComputedStyle(span, '::before').content
+    setTimeout(() => {
+      ctx.fillStyle = color;
+      ctx.font = `${size - 2}px ${fontFamily}`;
+
+      ctx.textAlign = 'center'
+      ctx.fillText(content, size / 2, size - 4);
+      const img = canvas.toDataURL('base64')
+      document.body.removeChild(span)
+      if (img) {
+        resolve(img)
+      } else {
+        reject(new Error('img fail'))
+      }
+    }, 200)
+  })
+}
+
+
+// 从Echarts提取的编码解码方法
+export const decodePolygon = function (coordinate, encodeOffsets) {
+  const result = [];
+  let prevX = encodeOffsets[0];
+  let prevY = encodeOffsets[1];
+  for (let i = 0; i &lt; coordinate.length; i += 2) {
+    let x = coordinate.charCodeAt(i) - 64;
+    let y = coordinate.charCodeAt(i + 1) - 64;
+    // ZigZag decoding
+    x = (x >> 1) ^ (-(x &amp; 1));
+    y = (y >> 1) ^ (-(y &amp; 1));
+    // Delta deocding
+    x += prevX;
+    y += prevY;
+
+    prevX = x;
+    prevY = y;
+    // Dequantize
+    result.push([x / 1024, y / 1024]);
+  }
+
+  return result;
+}
+
+
+//
+
+/**
+ * 墨卡托坐标转换成WGS84坐标，即 EPSG:4326 转换成  EPSG:3857
+ * @param {number[]|Array[]} coordinate
+ * @returns {Array}
+ */
+export function fromLonLat(coordinate) {
+  if (!Array.isArray(coordinate)) return null
+  if (coordinate.length === 0) return []
+  return Array.isArray(coordinate[0])
+    ? coordinate.map(n => toWGS84(n))
+    : toWGS84(coordinate)
+}
+
+/**
+ * WGS84坐标转换成墨卡托坐标，即 EPSG:3857 转换成  EPSG:4326
+ * @param {number[]|Array[]} coordinate
+ * @returns {Array}
+ */
+export function toLonLat(coordinate) {
+  if (!Array.isArray(coordinate)) return null
+  if (coordinate.length === 0) return []
+  return Array.isArray(coordinate[0])
+    ? coordinate.map(n => toMercator(n))
+    : toMercator(coordinate)
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:46 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

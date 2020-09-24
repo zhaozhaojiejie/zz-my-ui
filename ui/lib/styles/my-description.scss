@@ -1,0 +1,67 @@
+@import "common/var";
+
+@include b(description) {
+  margin-bottom: 8px;
+  clear: both;
+
+  @include e(title) {
+    display: inline-block;
+    float: left;
+    color: $--color-secondary-text;
+    @include when(right) {
+      text-align: right;
+    }
+    @include when(center) {
+      text-align: center;
+    }
+    @include when(left) {
+      text-align: left;
+    }
+  }
+
+  @include e(content) {
+    display: block;
+    color: $--color-primary-text;
+    text-align: left;
+    > .my-description {
+      clear: initial;
+      margin-bottom: 8px;
+    }
+    .el-tag {
+      &:first-child {
+        margin-left: 0;
+      }
+
+      margin: 0 5px 5px 0;
+    }
+  }
+
+  @include when(top) {
+    & > {
+      @include e(title) {
+        float: initial;
+        display: block;
+      }
+
+      @include e(content) {
+
+        @include when(right) {
+          text-align: right;
+        }
+
+        @include when(center) {
+          text-align: center;
+        }
+
+        @include when(left) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  @include when(inline) {
+    display: inline-block;
+    margin-right: 30px;
+  }
+}

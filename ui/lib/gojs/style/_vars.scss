@@ -1,0 +1,14 @@
+@import "../../styles/common/var";
+
+$--go-background-light: $white !default;
+$--go-background-dark: $blue-1 !default;
+
+$--go-color-light: $neutral-black-3 !default;
+$--go-color-dark: $neutral-white-3 !default;
+
+$--go-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+$--go-shadow-dark: 0 2px 12px 0 rgba(255, 255, 255, 0.1) !default;
+
+$--go-overview-background-light: rgba(255, 255, 255, 0.9) !default;
+$--go-overview-background-dark: rgba(0, 39, 102, 0.9) !default;
+

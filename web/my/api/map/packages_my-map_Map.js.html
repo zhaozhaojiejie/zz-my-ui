@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>packages/my-map/Map.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ol.interaction.areaSelect.html">areaSelect</a></li><li><a href="ol.interaction.drag.html">drag</a></li><li><a href="ol.source.TileSuperMapRest.html">TileSuperMapRest</a><ul class='methods'><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.createTileGrid">createTileGrid</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.optionsFromMapJSON">optionsFromMapJSON</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#changeTilesVersion">changeTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#createLayerUrl">createLayerUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getAllRequestParams">getAllRequestParams</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getFullRequestUrl">getFullRequestUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getRequestParamString">getRequestParamString</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#lastTilesVersion">lastTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#mergeTileVersionParam">mergeTileVersionParam</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#nextTilesVersion">nextTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#setTileSetsInfo">setTileSetsInfo</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#updateCurrentTileSetsIndex">updateCurrentTileSetsIndex</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_map_mixins_feature.html">$ui/map/mixins/feature</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~setStyle">setStyle</a></li></ul></li><li><a href="module-$ui_map_mixins_image.html">$ui/map/mixins/image</a></li><li><a href="module-$ui_map_mixins_stroke.html">$ui/map/mixins/stroke</a></li><li><a href="module-$ui_map_my-map.html">$ui/map/my-map</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~clickTrigger">clickTrigger</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~dispose">dispose</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureAtPixel">getFeatureAtPixel</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getFeatureVM">getFeatureVM</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getLayer">getLayer</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~getMetersPerUnit">getMetersPerUnit</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~mapReady">mapReady</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~moveTo">moveTo</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~removeFeature">removeFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~resize">resize</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setActive">setActive</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~setCursor">setCursor</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomIn">zoomIn</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomOut">zoomOut</a></li><li data-type='method'><a href="module-$ui_map_my-map.html#~zoomTo">zoomTo</a></li></ul></li><li><a href="module-$ui_map_my-map-circle.html">$ui/map/my-map-circle</a></li><li><a href="module-$ui_map_my-map-cluster.html">$ui/map/my-map-cluster</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-cluster.html#~draw">draw</a></li></ul></li><li><a href="module-$ui_map_my-map-draw.html">$ui/map/my-map-draw</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~finish">finish</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~getFeatures">getFeatures</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_my-map-draw.html#~removeFeature">removeFeature</a></li></ul></li><li><a href="module-$ui_map_my-map-flight.html">$ui/map/my-map-flight</a></li><li><a href="module-$ui_map_my-map-geo.html">$ui/map/my-map-geo</a></li><li><a href="module-$ui_map_my-map-heat.html">$ui/map/my-map-heat</a></li><li><a href="module-$ui_map_my-map-html.html">$ui/map/my-map-html</a></li><li><a href="module-$ui_map_my-map-icon.html">$ui/map/my-map-icon</a></li><li><a href="module-$ui_map_my-map-image.html">$ui/map/my-map-image</a></li><li><a href="module-$ui_map_my-map-layers.html">$ui/map/my-map-layers</a></li><li><a href="module-$ui_map_my-map-line.html">$ui/map/my-map-line</a></li><li><a href="module-$ui_map_my-map-link.html">$ui/map/my-map-link</a></li><li><a href="module-$ui_map_my-map-marker.html">$ui/map/my-map-marker</a></li><li><a href="module-$ui_map_my-map-measure.html">$ui/map/my-map-measure</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_my-map-measure.html#~clear">clear</a></li></ul></li><li><a href="module-$ui_map_my-map-overview.html">$ui/map/my-map-overview</a></li><li><a href="module-$ui_map_my-map-palette.html">$ui/map/my-map-palette</a></li><li><a href="module-$ui_map_my-map-panel.html">$ui/map/my-map-panel</a></li><li><a href="module-$ui_map_my-map-placement.html">$ui/map/my-map-placement</a></li><li><a href="module-$ui_map_my-map-pointer.html">$ui/map/my-map-pointer</a></li><li><a href="module-$ui_map_my-map-polygon.html">$ui/map/my-map-polygon</a></li><li><a href="module-$ui_map_my-map-popup.html">$ui/map/my-map-popup</a></li><li><a href="module-$ui_map_my-map-rectangle.html">$ui/map/my-map-rectangle</a></li><li><a href="module-$ui_map_my-map-scale.html">$ui/map/my-map-scale</a></li><li><a href="module-$ui_map_my-map-scatter.html">$ui/map/my-map-scatter</a></li><li><a href="module-$ui_map_my-map-text.html">$ui/map/my-map-text</a></li><li><a href="module-$ui_map_my-map-track.html">$ui/map/my-map-track</a></li><li><a href="module-$ui_map_my-map-zoom.html">$ui/map/my-map-zoom</a></li><li><a href="module-$ui_map_utils_style.html">$ui/map/utils/style</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_style.html#~parse">parse</a></li></ul></li><li><a href="module-$ui_map_utils_util.html">$ui/map/utils/util</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_util.html#.coordinateEqual">coordinateEqual</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createBezierCurvePoints">createBezierCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createCurvePoints">createCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createLinePathPoints">createLinePathPoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.factorial">factorial</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.fromLonLat">fromLonLat</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.geoJsonDecode">geoJsonDecode</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.getDistance">getDistance</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.mergeProps">mergeProps</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.parseDecimal">parseDecimal</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.svgToImg">svgToImg</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.toLonLat">toLonLat</a></li></ul></li></ul><h3>Events</h3><ul><li><a href="module-$ui_map_my-map-cluster.html#~event:change">change</a></li><li><a href="module-$ui_map_my-map-panel.html#~event:close">close</a></li><li><a href="module-$ui_map_my-map-pointer.html#~event:copy">copy</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawend">drawend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:drawstart">drawstart</a></li><li><a href="module-$ui_map_my-map-measure.html#~event:end">end</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifyend">modifyend</a></li><li><a href="module-$ui_map_my-map-draw.html#~event:modifystart">modifystart</a></li><li><a href="global.html#event:on-boxEnd">on-boxEnd</a></li><li><a href="global.html#event:on-boxStart">on-boxStart</a></li><li><a href="global.html#event:on-dragDown">on-dragDown</a></li><li><a href="global.html#event:on-dragMove">on-dragMove</a></li><li><a href="global.html#event:on-dragUp">on-dragUp</a></li><li><a href="module-$ui_map_my-map-geo.html#~event:ready">ready</a></li><li></li></ul><h3>Interfaces</h3><ul><li><a href="module-$ui_map_mixins_feature.methods.drawHandler.html">drawHandler</a></li><li><a href="module-$ui_map_mixins_feature.methods.modifyHandler.html">modifyHandler</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createEzMapLayer">createEzMapLayer</a></li><li><a href="global.html#createFcMapLayer">createFcMapLayer</a></li><li><a href="global.html#createFounderLayer">createFounderLayer</a></li><li><a href="global.html#createLayer">createLayer</a></li><li><a href="global.html#createSuperLayer">createSuperLayer</a></li><li><a href="global.html#createTdtLayer">createTdtLayer</a></li><li><a href="global.html#createTdtLayerGroup">createTdtLayerGroup</a></li><li><a href="global.html#createWMTSLayer">createWMTSLayer</a></li><li><a href="global.html#props">props</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">packages/my-map/Map.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * 地图基础图层组件
+ * @module $ui/map/my-map
+ *
+ */
+import Map from 'ol/Map'
+import View from 'ol/View'
+import DragPan from 'ol/interaction/DragPan'
+import MouseWheelZoom from 'ol/interaction/MouseWheelZoom'
+import PointerInteraction from 'ol/interaction/Pointer';
+import VectorLayer from 'ol/layer/Vector'
+import VectorSource from 'ol/source/Vector'
+import {createLayer} from '../../utils/layer'
+import {addResizeListener, removeResizeListener} from 'element-ui/lib/utils/resize-event'
+
+export default {
+  name: 'MyMap',
+  provide() {
+    return {
+      myMap: this
+    }
+  },
+  /**
+   * 属性参数
+   * @member props
+   * @property {number} [zoom=10] 地图初始化层级
+   * @property {number} [minZoom=1] 最小支持的层级
+   * @property {number} [maxZoom=20] 最大支持的层级
+   * @property {number[]} [center] 地图初始化中心经纬度
+   * @property {String|Object|Function} [adapter=OSM] 图层适配器，类型：OSM|XYZ|Amap|Baidu|TDT|Founder|Ez|Super|Fc 对象时 {id, type, url, layers(天地图专用)}
+   * @property {String} [projection=EPSG:4326] 投影坐标系，支持 EPSG:4326 (WGS84) 或 EPSG:3857 (Pseudo-Mercator)
+   * @property {String} [width=100%] 宽度，支持百分比
+   * @property {String} [height=400px] 高度，支持百分比
+   * @property {Boolean} [dragPan=true] 可拖拽移动图层
+   * @property {Boolean} [mouseWheelZoom=true] 鼠标滚轮可缩放图层
+   * @property {Object} [mapOptions] ol/Map 实例化参数选项
+   * @property {Object} [viewOptions] ol/View 实例化参数选项
+   */
+  props: {
+    // 初始化缩放层级
+    zoom: {
+      type: Number,
+      default: 10
+    },
+    minZoom: {
+      type: Number,
+      default: 1
+    },
+    maxZoom: {
+      type: Number,
+      default: 20
+    },
+    // 初始化中心经纬度
+    center: {
+      type: Array,
+      default() {
+        return [113.261999, 23.130592]
+      }
+    },
+    // 图层适配器, {id,type, url, layers(天地图专用)}
+    adapter: {
+      type: [String, Object, Function],
+      default: 'Baidu'
+    },
+    // 投影标准
+    projection: {
+      type: String,
+      default: 'EPSG:4326'
+    },
+    width: {
+      type: String,
+      default: '100%'
+    },
+    height: {
+      type: String,
+      default: '400px'
+    },
+    // 可拖拽移动图层
+    dragPan: {
+      type: Boolean,
+      default: true
+    },
+    // 鼠标滚轮可缩放图层
+    mouseWheelZoom: {
+      type: Boolean,
+      default: true
+    },
+    // ol/Map 实例化参数选项
+    mapOptions: Object,
+    // ol/View 实例化参数选项
+    viewOptions: Object,
+    // 颜色反相
+    invert: Boolean,
+    // 滤镜
+    filter: Object
+  },
+  render() {
+    return (
+      &lt;div class={this.classes} style={this.styles}>
+        {this.$slots.default}
+      &lt;/div>
+    )
+  },
+  data() {
+    return {
+      cursor: null,
+      viewWidth: 0,
+      viewHeight: 0
+    }
+  },
+  computed: {
+    classes() {
+      return {
+        'my-map': true,
+        'my-map--invert': this.invert
+      }
+    },
+    styles() {
+      return {
+        width: this.width,
+        height: this.height,
+        cursor: this.cursor ? 'pointer' : ''
+      }
+    },
+    filterStyle() {
+      if (!this.filter) return null
+      const filters = Object.entries(this.filter).map(([name, value]) => {
+        if (name === 'hue-rotate') {
+          return `${name}(${value}deg)`
+        }
+        return `${name}(${value})`
+      })
+      return filters.join(' ')
+    }
+  },
+  watch: {
+    dragPan(val) {
+      this.setActive(DragPan, val)
+    },
+    mouseWheelZoom(val) {
+      this.setActive(MouseWheelZoom, val)
+    },
+    filterStyle() {
+      this.setCanvasFilter()
+    }
+  },
+  methods: {
+    /**
+     * 设置是否激活交互工具
+     * @method setActive
+     * @param {Object} name 工具类
+     * @param {Boolean} active 是否激活
+     */
+    setActive(name, active) {
+      if (!this.map) return
+      const interactions = this.map.getInteractions().getArray()
+      const instance = interactions.find(n => n instanceof name)
+      if (instance) {
+        instance.setActive(active)
+      }
+    },
+    /**
+     * 实例化Map
+     */
+    init() {
+      const {center, projection, zoom, minZoom, maxZoom} = this.$props
+      const layer = createLayer(this.adapter)
+      // 标识图层
+      layer.__MY_LAYER__ = true
+      const view = new View({
+        ...(this.viewOptions || {}),
+        projection,
+        center,
+        zoom,
+        minZoom,
+        maxZoom
+      })
+      this.map = new Map({
+        ...(this.mapOptions || {}),
+        layers: [].concat(layer),
+        view: view,
+        target: this.$el,
+        // 删除默认的控件
+        controls: [],
+        interactions: [
+          new DragPan(),
+          new MouseWheelZoom(),
+          new PointerInteraction({
+            handleEvent: this.handleEvent
+          })
+        ]
+      })
+      this.setActive(DragPan, this.dragPan)
+      this.setActive(MouseWheelZoom, this.mouseWheelZoom)
+      this.bindMapEvents()
+      /**
+       * 地图初始化完成时触发
+       * @event ready
+       * @param {Map} map ol/Map实例
+       * @param {VueComponent} vm Vue实例
+       */
+      this.$emit('ready', this.map, this)
+      addResizeListener(this.$el, this.setViewSize)
+      this.setCanvasFilter()
+    },
+    /**
+     * 销毁Map
+     * @method dispose
+     */
+    dispose() {
+      if (!this.map) return
+
+      this.map.disposeInternal()
+      this.unbindMapEvents()
+      removeResizeListener(this.$el, this.setViewSize)
+    },
+    /**
+     * 根据地图上的像素位置获取图形对象
+     * @method getFeatureAtPixel
+     * @param  {Number[]} pixel 位置像素 [x,y]
+     * @return {Feature}
+     */
+    getFeatureAtPixel(pixel) {
+      if (!this.map) return null
+      return this.map.forEachFeatureAtPixel(pixel, feature => feature)
+    },
+    /**
+     * 当图形可点击时，设置图形鼠标 cursor pointer
+     * @method setCursor
+     * @param {ol/Feature} feature
+     */
+    setCursor(feature) {
+      const vm = this.getFeatureVM(feature)
+      this.cursor = vm &amp;&amp; (vm.cursor || vm.$listeners.click)
+    },
+    /**
+     * 触发图形点击事件
+     * @method clickTrigger
+     * @param {ol/Feature} feature
+     * @param {Object} e
+     */
+    clickTrigger(feature, e) {
+      if (feature) {
+        const vm = this.getFeatureVM(feature)
+        if (vm) {
+          vm.$emit('click', e, feature)
+        }
+      }
+    },
+    /**
+     * 获取瓦片图层实例
+     * @method getLayer
+     * @returns {Array}
+     */
+    getLayer() {
+      if (!this.map) return null
+      return this.map.getLayers().getArray().find(n => n.__MY_LAYER__)
+    },
+    /**
+     * 获取图形挂载的 Vue实例
+     * @method getFeatureVM
+     * @param feature
+     * @returns {*}
+     */
+    getFeatureVM(feature) {
+      if (!feature) return
+      const features = feature.get('features') || []
+      const matchFeature = features[0] || feature
+      return matchFeature.__vm__ || matchFeature.get('__vm__')
+    },
+    enterAndLeaveTrigger(feature, e) {
+      // 无>有：鼠标移入
+      if (!this.featureAtPixel &amp;&amp; feature) {
+        this.$emit('mouseenter', e, feature)
+        const vm = this.getFeatureVM(feature)
+        vm &amp;&amp; vm.$emit('mouseenter', e, feature)
+      }
+
+      // 有>无： 鼠标移出
+      if (this.featureAtPixel &amp;&amp; !feature) {
+        this.$emit('mouseleave', e, this.featureAtPixel)
+        const vm = this.getFeatureVM(this.featureAtPixel)
+        vm &amp;&amp; vm.$emit('mouseleave', e, this.featureAtPixel)
+      }
+      // 同有，但不等：一出一进
+      if (this.featureAtPixel &amp;&amp; feature &amp;&amp; this.featureAtPixel !== feature) {
+        this.$emit('mouseleave', e, this.featureAtPixel)
+        this.$emit('mouseenter', e, feature)
+        const vmAtPixel = this.getFeatureVM(this.featureAtPixel)
+        vmAtPixel &amp;&amp; vmAtPixel.$emit('mouseleave', e, this.featureAtPixel)
+
+        const vm = this.getFeatureVM(feature)
+        vm &amp;&amp; vm.$emit('mouseenter', e, feature)
+      }
+      // 更新
+      this.featureAtPixel = feature
+    },
+    handleEvent(e) {
+      const type = e.type
+      const feature = this.getFeatureAtPixel(e.pixel)
+      switch (type) {
+        case 'pointermove':
+          this.setCursor(feature)
+          this.enterAndLeaveTrigger(feature, e)
+          break
+        case 'click':
+          this.clickTrigger(feature, e)
+          break
+      }
+
+      return true
+    },
+    /**
+     * 透传Map事件
+     */
+    bindMapEvents() {
+      if (!this.map) return
+      Object.entries(this.$listeners)
+        .forEach(([key, handler]) => this.map.on(key, handler))
+    },
+    /**
+     * 销毁透传Map事件
+     */
+    unbindMapEvents() {
+      if (!this.map) return
+      Object.entries(this.$listeners)
+        .forEach(([key, handler]) => this.map.un(key, handler))
+    },
+    /**
+     * 重置地图尺寸，当容器的尺寸变化后需要执行resize
+     * @method resize
+     */
+    resize() {
+      this.map.updateSize()
+    },
+
+    /**
+     * 移动到指定经纬度居中
+     * @method moveTo
+     * @param {Number[]} loc 经纬度数组
+     */
+    moveTo(loc) {
+      if (!this.map) return
+      const view = this.map.getView()
+      view.animate(
+        {
+          center: loc,
+          duration: 200
+        })
+    },
+
+    /**
+     * 设置地图缩放等级
+     * @method zoomTo
+     * @param {Number|String} level 等级数值
+     */
+    zoomTo(level) {
+      if (!this.map) return
+      const view = this.map.getView()
+      view.animate(
+        {
+          zoom: Number.parseInt(level),
+          duration: 200
+        })
+    },
+
+    /**
+     * 逐步放大
+     * @method zoomIn
+     */
+    zoomIn() {
+      if (!this.map) return
+      const view = this.map.getView()
+      this.zoomTo(view.getZoom() + 1)
+    },
+
+    /**
+     * 逐步缩小
+     * @method zoomOut
+     */
+    zoomOut() {
+      if (!this.map) return
+      const view = this.map.getView()
+      this.zoomTo(view.getZoom() - 1)
+    },
+
+    /**
+     * 地图初始化完成回调
+     * @method mapReady
+     * @param callback
+     */
+    mapReady(callback) {
+      if (this.map) {
+        callback &amp;&amp; callback(this.map, this)
+        return
+      }
+      this.$once('ready', callback)
+    },
+    /**
+     * 创建矢量图层，只会创建一个图层，已创建即复用
+     */
+    createVectorLayer() {
+      if (!this.map || this.vectorLayer) return
+      const vectorSource = new VectorSource()
+      this.vectorLayer = new VectorLayer({
+        source: vectorSource,
+        zIndex: 1
+      })
+      this.map.addLayer(this.vectorLayer)
+      return this.vectorLayer
+    },
+    /**
+     * 在地图上添加图形, 图形加入到矢量图层
+     * @method addFeature
+     * @param {Feature[]|feature} feature
+     */
+    addFeature(feature) {
+      if (!this.map) return
+      if (!this.vectorLayer) {
+        this.createVectorLayer()
+      }
+      const source = this.vectorLayer.getSource()
+      const features = [].concat(feature)
+      source.addFeatures(features)
+    },
+    /**
+     * 删除图形
+     * @method removeFeature
+     * @param {Feature[]|feature} feature
+     */
+    removeFeature(feature) {
+      if (!this.vectorLayer) return
+      const source = this.vectorLayer.getSource()
+      const features = [].concat(feature)
+      features.forEach(feat => source.removeFeature(feat))
+    },
+    /**
+     * 获取每个投影单位代表的距离米
+     * @method getMetersPerUnit
+     * @return {*|number|number}
+     */
+    getMetersPerUnit() {
+      if (!this.map) return 0
+      const view = this.map.getView()
+      const projection = view.getProjection()
+      return projection.getMetersPerUnit()
+    },
+    /**
+     * 更新视图可视区尺寸
+     */
+    setViewSize() {
+      const rect = this.$el.getBoundingClientRect()
+      this.viewWidth = rect.width || 0
+      this.viewHeight = rect.height || 0
+      if (this.map) {
+        this.map.updateSize()
+      }
+      this.$emit('viewSizeChange', rect)
+    },
+    setCanvasFilter() {
+      if (!this.map) return
+      const viewport = this.map.getViewport()
+      if (viewport) {
+        viewport.style.filter = this.filterStyle
+      }
+    },
+    /**
+     * 清空所有覆盖物
+     */
+    clear() {
+      if (!this.map) return
+      const layers = this.map
+        .getLayers()
+        .getArray()
+        .filter(n => !n.__MY_LAYER__)
+
+      layers.forEach(n => {
+        n.getSource().clear()
+      })
+    }
+  },
+  mounted() {
+    this.init()
+  },
+  beforeDestroy() {
+    this.dispose()
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:46 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

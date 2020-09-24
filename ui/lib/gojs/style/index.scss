@@ -1,0 +1,248 @@
+@import "vars";
+
+@include b(go-diagram) {
+  position: relative;
+  background: $--go-background-light;
+  color: $--go-color-light;
+  font-size: 16px;
+  overflow: hidden;
+  canvas {
+    outline: none;
+  }
+
+  @include e(content) {
+    position: absolute;
+  }
+
+  @include e(loading) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  @include e(loading-inner) {
+    padding: 15px 20px;
+    box-shadow: $--go-shadow-light;
+    background: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include when(fit) {
+    height: 100%;
+    width: 100%;
+  }
+  @include when(dark) {
+    background: $--go-background-dark;
+    color: $--go-color-dark;
+    @include e(loading) {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    @include e(loading-inner) {
+      background: $neutral-white-9;
+      box-shadow: $--go-shadow-dark;
+    }
+  }
+}
+
+@include b(go-overview) {
+  position: absolute;
+  box-shadow: $--go-shadow-light;
+  background: $--go-overview-background-light;
+  z-index: 2;
+  border-radius: 2px;
+
+  @include when(dark) {
+    box-shadow: $--go-shadow-dark;
+    background: $--go-overview-background-dark;
+  }
+
+  @include when(left-top) {
+    left: 0;
+    top: 0
+  }
+
+  @include when(left-bottom) {
+    left: 0;
+    bottom: 0
+  }
+
+  @include when(right-top) {
+    right: 0;
+    top: 0;
+  }
+
+  @include when(right-bottom) {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@include b(go-palette) {
+  position: absolute;
+  border-right: 1px dotted $neutral-black-7;
+  canvas {
+    outline: none;
+  }
+  @include when(dark) {
+    border-right: 1px dotted $neutral-white-7;
+  }
+}
+
+@include b(go-toolbar) {
+  position: absolute;
+  padding: 0 10px;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: $neutral-white-2;
+  z-index: 1;
+  border-bottom: 1px solid $neutral-black-7;
+
+  @include e(item) {
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: $neutral-black-3;
+    .my-icon {
+      vertical-align: middle;
+      margin-top: 9px;
+    }
+
+    &:hover {
+      background: $blue-10;
+      border: 1px solid $blue-9;
+      color: $blue-5
+    }
+  }
+
+  @include e(divider) {
+    margin: 6px 10px 0 10px !important;
+    height: 20px;
+    background-color: $neutral-black-6;
+  }
+
+  @include when(dark) {
+    background: $neutral-white-8;
+    border-bottom: 1px solid $neutral-white-7;
+
+    @include e(item) {
+      color: $neutral-white-3;
+      &:hover {
+        background: $blue-5;
+        border: 1px solid $blue-6;
+        color: $blue-10
+      }
+    }
+    @include e(divider) {
+      background-color: $neutral-white-6;
+    }
+  }
+}
+
+
+@include b(go-status-bar) {
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 14px;
+  background: $--color-table-stripe;
+  border-top: 1px solid $neutral-black-8;
+  @include when(dark) {
+    background: $--color-table-header;
+    border-top: 1px solid $neutral-white-7;
+  }
+}
+
+@include b(go-status-item) {
+  display: inline-block;
+  margin-right: 20px;
+  @include e(title) {
+    font-size: 16px;
+    color: $--color-title;
+  }
+  @include e(item) {
+    font-size: 14px;
+    margin: 0 10px;
+    color: $--color-normal-text;
+  }
+
+  @include when(dark) {
+    @include e(title) {
+      color: $neutral-white-1;
+    }
+    @include e(item) {
+      color: $neutral-white-4;
+    }
+  }
+
+}
+
+
+@include b(go-sidebar) {
+  position: absolute;
+  right: 0;
+  border-left: 1px dotted $neutral-black-7;
+  transition: transform 0.2s;
+  background: $--go-background-light;
+  z-index: 2;
+
+  @include e(collapsible) {
+    width: 20px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2px 0 0 2px;
+    border: 1px dotted $neutral-black-7;
+    border-right-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    color: $--color-secondary-text;
+    background: $--go-background-light;
+    &:hover {
+      color: $--color-primary;
+      background: $--color-primary-light-10;
+    }
+  }
+
+  @include when(collapsed) {
+    transform: translateX(100%);
+  }
+
+  @include when(dark) {
+    border-left: 1px dotted $neutral-white-7;
+    background: $--go-background-dark;
+    @include e(collapsible) {
+      border: 1px dotted $neutral-white-7;
+      background: $--go-background-dark;
+      color: $neutral-white-3;
+      &:hover {
+        color: $neutral-white-1;
+        background: $--color-primary-light-2;
+      }
+    }
+  }
+
+}

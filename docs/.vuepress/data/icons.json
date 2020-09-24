@@ -1,0 +1,3690 @@
+{
+  "框架": {
+    "logo": [
+      {
+        "name": "icon-logo-colour",
+        "title": "logo",
+        "tags": "logo",
+        "svg": true
+      },
+      {
+        "name": "icon-logo-colour-v2",
+        "title": "logo",
+        "tags": "logo",
+        "svg": true
+      },
+      {
+        "name": "icon-logo",
+        "title": "logo",
+        "tags": "logo",
+        "svg": true
+      }
+    ]
+  },
+
+  "公安行业": {
+    "分析研判流程": [
+      {
+        "name": "el-icon-menu",
+        "title": "菜单",
+        "tags": "菜单"
+      },
+      {
+        "name": "icon-mind",
+        "title": "大脑",
+        "tags": "大脑-研判-智慧-思考-联想",
+        "svg": true
+      },
+      {
+        "name": "icon-synthetic-combat",
+        "title": "合成作战",
+        "tags": "合成作战-办公-合作-上课-观察",
+        "svg": true
+      },
+      {
+        "name": "icon-teamwork",
+        "title": "组织",
+        "tags": "组织-合作-协作-人员-分支-关联人员",
+        "svg": true
+      },
+      {
+        "name": "icon-cooperation",
+        "title": "握手",
+        "tags": "握手-合作-协作",
+        "svg": true
+      },
+      {
+        "name": "icon-collision",
+        "title": "比对碰撞",
+        "tags": "比对碰撞-交集",
+        "svg": true
+      },
+      {
+        "name": "icon-manage-circuit",
+        "title": "管理",
+        "tags": "管理-流转-协作-循环-环形",
+        "svg": true
+      },
+      {
+        "name": "icon-collaboration",
+        "title": "协同",
+        "tags": "协同-合作-连接",
+        "svg": true
+      },
+      {
+        "name": "icon-collaboration-system",
+        "title": "协同系统",
+        "tags": "协同系统-合作-交流",
+        "svg": true
+      },
+      {
+        "name": "icon-tandem",
+        "title": "串并",
+        "tags": "串并-比对-比较",
+        "svg": true
+      },
+      {
+        "name": "icon-circulation",
+        "title": "分析",
+        "tags": "分析-对比-协作-流转-循环",
+        "svg": true
+      },
+      {
+        "name": "icon-beehive",
+        "title": "网",
+        "tags": "网-蜂窝-数据结构-发散-聚合",
+        "svg": true
+      },
+      {
+        "name": "icon-bigdata",
+        "title": "大数据",
+        "tags": "大数据-科技-数据流转",
+        "svg": true
+      },
+      {
+        "name": "icon-relation",
+        "title": "关系",
+        "tags": "关系-分叉",
+        "svg": true
+      },
+      {
+        "name": "icon-split-screen-compare",
+        "title": "分屏",
+        "tags": "分屏-宫格",
+        "svg": true
+      },
+      {
+        "name": "icon-bulb",
+        "title": "电灯",
+        "tags": "电灯-电灯-发光-光",
+        "svg": true
+      },
+      {
+        "name": "icon-bullseye",
+        "title": "靶心",
+        "tags": "靶心-对准-准心-环形",
+        "svg": true
+      },
+      {
+        "name": "icon-target",
+        "title": "准星",
+        "tags": "准星-瞄准-精准",
+        "svg": true
+      },
+      {
+        "name": "icon-org",
+        "title": "站点地图",
+        "tags": "站点地图-分级-组织-层级",
+        "svg": true
+      },
+      {
+        "name": "icon-idea",
+        "title": "思考",
+        "tags": "思考-想法-联想-处理",
+        "svg": true
+      },
+      {
+        "name": "icon-relation",
+        "title": "大数据",
+        "tags": "大数据-数据结构-关系-关系分析-关系网-组织",
+        "svg": true
+      },
+      {
+        "name": "icon-people-network",
+        "title": "大数据",
+        "tags": "大数据-数据结构-关系-关系分析-共同联系人-组织",
+        "svg": true
+      },
+      {
+        "name": "icon-kinship",
+        "title": "大数据",
+        "tags": "大数据-数据结构-关系-关系分析-多人-亲属-组织",
+        "svg": true
+      },
+      {
+        "name": "icon-relation-analysis",
+        "title": "大数据",
+        "tags": "大数据-数据结构-关系-关系分析-关系网-组织",
+        "svg": true
+      },
+      {
+        "name": "icon-cycle",
+        "title": "流转",
+        "tags": "流转-协作-循环-环形-协同",
+        "svg": true
+      },
+      {
+        "name": "icon-Associate",
+        "title": "同伙",
+        "tags": "同伙-组织-关系-关系分析-关系网",
+        "svg": true
+      },
+
+      {
+        "name": "icon-process",
+        "title": "流转",
+        "tags": "流转-协作-循环-环形-协同-流程-节点",
+        "svg": true
+      },
+      {
+        "name": "icon-spin",
+        "title": "流转",
+        "tags": "流转-协作-循环-环形-协同-旋转",
+        "svg": true
+      },
+      {
+        "name": "icon-hit",
+        "title": "靶心",
+        "tags": "靶心-命中-精准分析",
+        "svg": true
+      },
+
+      {
+        "name": "icon-aims",
+        "title": "靶心",
+        "tags": "靶心-命中-精准分析-目标",
+        "svg": true
+      },
+      {
+        "name": "icon-statistics",
+        "title": "统计分析",
+        "tags": "统计分析-统计报表-研判-演示",
+        "svg": true
+      },
+      {
+        "name": "icon-judge",
+        "title": "统计分析",
+        "tags": "统计分析-统计报表-研判",
+        "svg": true
+      },
+      {
+        "name": "icon-explain",
+        "title": "讲解",
+        "tags": "讲解-演示-指导-书写",
+        "svg": true
+      }
+    ],
+    "物品安全": [
+      {
+        "name": "icon-alarm",
+        "title": "报警",
+        "tags": "报警-警报-报警灯-危险",
+        "svg": true
+      },
+      {
+        "name": "icon-cuff",
+        "title": "手铐",
+        "tags": "手铐-犯罪-抓获",
+        "svg": true
+      },
+      {
+        "name": "icon-firearms",
+        "title": "枪支",
+        "tags": "枪支-枪-犯罪-危险",
+        "svg": true
+      },
+      {
+        "name": "icon-shield",
+        "title": "盾牌",
+        "tags": "盾牌-安全-保护",
+        "svg": true
+      },
+      {
+        "name": "icon-security-shield",
+        "title": "公安盾牌",
+        "tags": "公安盾牌-安全-保护",
+        "svg": true
+      },
+      {
+        "name": "icon-badge",
+        "title": "认证",
+        "tags": "认证-徽章-表扬",
+        "svg": true
+      },
+      {
+        "name": "icon-sign-review",
+        "title": "签字审核",
+        "tags": "签字审核-审批-编辑-书写",
+        "svg": true
+      },
+      {
+        "name": "icon-judge",
+        "title": "研判",
+        "tags": "研判-成交-拍卖-锤子-法官",
+        "svg": true
+      },
+      {
+        "name": "icon-balance",
+        "title": "天平",
+        "tags": "天平-公平-天平秤",
+        "svg": true
+      },
+      {
+        "name": "icon-evaluation",
+        "title": "分析",
+        "tags": "分析-评比-数据面板",
+        "svg": true
+      },
+      {
+        "name": "icon-hammer",
+        "title": "槌子",
+        "tags": "槌子-锤子-敲打",
+        "svg": true
+      },
+      {
+        "name": "icon-danger",
+        "title": "毒品",
+        "tags": "毒品-危险-骨头-骷髅",
+        "svg": true
+      },
+      {
+        "name": "icon-safe",
+        "title": "保险箱",
+        "tags": "保险箱-保险柜-安全",
+        "svg": true
+      },
+      {
+        "name": "icon-key",
+        "title": "钥匙",
+        "tags": "钥匙-密码",
+        "svg": true
+      },
+      {
+        "name": "icon-lock",
+        "title": "锁",
+        "tags": "锁-密码-锁定",
+        "svg": true
+      },
+      {
+        "name": "icon-unlock",
+        "title": "锁",
+        "tags": "锁-密码-开锁-解锁",
+        "svg": true
+      },
+      {
+        "name": "icon-prison",
+        "title": "监狱",
+        "tags": "监狱-监仓-牢房",
+        "svg": true
+      },
+      {
+        "name": "icon-roadblock",
+        "title": "交通",
+        "tags": "交通-雪糕筒-停止-路障",
+        "svg": true
+      },
+      {
+        "name": "icon-microscope",
+        "title": "显微镜",
+        "tags": "显微镜-实验分析-实验室",
+        "svg": true
+      },
+      {
+        "name": "icon-chemistry",
+        "title": "实验分析",
+        "tags": "实验分析-试剂-实验-检验-DNA检验-化学",
+        "svg": true
+      },
+      {
+        "name": "icon-cup",
+        "title": "量杯",
+        "tags": "量杯-测验-化学",
+        "svg": true
+      },
+      {
+        "name": "icon-check",
+        "title": "听诊器",
+        "tags": "听诊器-医疗",
+        "svg": true
+      },
+      {
+        "name": "icon-flask",
+        "title": "烧瓶",
+        "tags": "烧瓶-实验-化学-科学",
+        "svg": true
+      },
+      {
+        "name": "icon-drug",
+        "title": "药品",
+        "tags": "药品-药物-违禁品-违禁药物",
+        "svg": true
+      },
+      {
+        "name": "icon-treatment",
+        "title": "针筒",
+        "tags": "针筒-针-治疗-医疗",
+        "svg": true
+      },
+      {
+        "name": "icon-dropper",
+        "title": "滴管",
+        "tags": "滴管-实验-化学",
+        "svg": true
+      },
+      {
+        "name": "icon-blood",
+        "title": "血液",
+        "tags": "血液-血浆-输血",
+        "svg": true
+      }
+    ],
+    "文件档案": [
+      {
+        "name": "icon-approval",
+        "title": "审批",
+        "tags": "审批-审核-通过-审查",
+        "svg": true
+      },
+      {
+        "name": "icon-archive",
+        "title": "档案",
+        "tags": "档案-文件袋",
+        "svg": true
+      },
+      {
+        "name": "icon-record",
+        "title": "档案",
+        "tags": "档案-档案袋",
+        "svg": true
+      },
+      {
+        "name": "icon-newspaper",
+        "title": "报纸",
+        "tags": "报纸-新闻-头条",
+        "svg": true
+      },
+      {
+        "name": "icon-news",
+        "title": "报纸",
+        "tags": "报纸-新闻-头条",
+        "svg": true
+      },
+      {
+        "name": "icon-bill",
+        "title": "账单",
+        "tags": "账单-流水",
+        "svg": true
+      },
+      {
+        "name": "icon-book",
+        "title": "书籍",
+        "tags": "书籍-知识-书",
+        "svg": true
+      },
+      {
+        "name": "icon-inbox",
+        "title": "收件箱",
+        "tags": "收件箱-空盒子",
+        "svg": true
+      },
+      {
+        "name": "icon-cbox",
+        "title": "收集箱",
+        "tags": "收集箱-箱子-文件箱-盒",
+        "svg": true
+      },
+      {
+        "name": "icon-ticket",
+        "title": "票",
+        "tags": "票-票据-小票",
+        "svg": true
+      },
+      {
+        "name": "icon-copy-comparison",
+        "title": "复制比对",
+        "tags": "复制比对-文件-文档",
+        "svg": true
+      },
+      {
+        "name": "icon-case-file",
+        "title": "案件",
+        "tags": "案件-档案-档案夹",
+        "svg": true
+      },
+      {
+        "name": "icon-knowledge",
+        "title": "文件",
+        "tags": "文件-文档-书籍-知识-知识库",
+        "svg": true
+      },
+      {
+        "name": "icon-read",
+        "title": "书籍",
+        "tags": "书籍-图书-阅读-知识",
+        "svg": true
+      },
+      {
+        "name": "icon-news",
+        "title": "新闻",
+        "tags": "新闻-文章-报纸-阅读",
+        "svg": true
+      },
+      {
+        "name": "icon-sms",
+        "title": "邮件",
+        "tags": "邮件-信封-信息-短信",
+        "svg": true
+      },
+      {
+        "name": "icon-send-sms",
+        "title": "收件箱",
+        "tags": "收件箱-收邮件-信封-信息-短信-查看邮件",
+        "svg": true
+      },
+      {
+        "name": "icon-stamp",
+        "title": "邮票",
+        "tags": "邮票-邮戳-相框",
+        "svg": true
+      }
+    ],
+    "证件": [
+      {
+        "name": "icon-work-card",
+        "title": "徽章",
+        "tags": "徽章-工牌-员工",
+        "svg": true
+      },
+      {
+        "name": "icon-address-book",
+        "title": "通讯录",
+        "tags": "通讯录-通讯本",
+        "svg": true
+      },
+      {
+        "name": "icon-name-card",
+        "title": "名片",
+        "tags": "名片-卡片",
+        "svg": true
+      },
+      {
+        "name": "icon-credentials",
+        "title": "驾照",
+        "tags": "驾照-驾驶证-行驶证",
+        "svg": true
+      },
+      {
+        "name": "icon-work-permit",
+        "title": "证件",
+        "tags": "证件-工作证-身份-员工-人员卡-工牌",
+        "svg": true
+      },
+      {
+        "name": "icon-id-card",
+        "title": "资料",
+        "tags": "资料-身份证-档案-个人信息",
+        "svg": true
+      }
+    ],
+    "应用": [
+      {
+        "name": "icon-search",
+        "title": "查询",
+        "tags": "查询-放大镜-查找",
+        "svg": true
+      },
+      {
+        "name": "icon-enlarge",
+        "title": "查询+-放大",
+        "tags": "查询+-放大-查找",
+        "svg": true
+      },
+      {
+        "name": "icon-narrow",
+        "title": "查询--缩小",
+        "tags": "查询--缩小-查找",
+        "svg": true
+      },
+      {
+        "name": "icon-accurate-search",
+        "title": "精确搜索",
+        "tags": "精确搜索-查询-准确查找",
+        "svg": true
+      },
+      {
+        "name": "icon-component",
+        "title": "立方体",
+        "tags": "立方体-正方形-应用",
+        "svg": true
+      },
+      {
+        "name": "icon-components",
+        "title": "立方体组",
+        "tags": "立方体组-正方形-应用",
+        "svg": true
+      },
+      {
+        "name": "icon-gift",
+        "title": "礼物",
+        "tags": "礼物-礼物盒",
+        "svg": true
+      },
+      {
+        "name": "icon-express-package",
+        "title": "快递包裹",
+        "tags": "快递包裹-箱子",
+        "svg": true
+      },
+      {
+        "name": "icon-briefcase",
+        "title": "公文包",
+        "tags": "公文包-工具箱",
+        "svg": true
+      },
+      {
+        "name": "icon-suitcase",
+        "title": "手提箱",
+        "tags": "手提箱-箱包",
+        "svg": true
+      },
+      {
+        "name": "icon-handbag",
+        "title": "手提包",
+        "tags": "手提包-购物袋-应用商店-购物商店",
+        "svg": true
+      },
+      {
+        "name": "icon-survival",
+        "title": "急救箱",
+        "tags": "急救箱-医护箱-医疗",
+        "svg": true
+      }
+    ],
+    "图表及资金": [
+      {
+        "name": "icon-e79b",
+        "title": "柱状图",
+        "tags": "柱状图",
+        "svg": true
+      },
+      {
+        "name": "icon-chart-line",
+        "title": "折线图",
+        "tags": "折线图",
+        "svg": true
+      },
+      {
+        "name": "icon-chart-trend",
+        "title": "线图",
+        "tags": "线图",
+        "svg": true
+      },
+      {
+        "name": "icon-pie-chart",
+        "title": "饼图",
+        "tags": "饼图",
+        "svg": true
+      },
+      {
+        "name": "icon-union-pay",
+        "title": "支付",
+        "tags": "支付-银联",
+        "svg": true
+      },
+      {
+        "name": "icon-card",
+        "title": "信用卡",
+        "tags": "信用卡-银行卡",
+        "svg": true
+      },
+      {
+        "name": "icon-rmb",
+        "title": "人民币",
+        "tags": "人民币",
+        "svg": true
+      },
+      {
+        "name": "icon-purse",
+        "title": "货币",
+        "tags": "货币-钱袋-资金-财产-财富",
+        "svg": true
+      }
+    ],
+    "衣食住行消乐": [
+      {
+        "name": "icon-tableware",
+        "title": "餐具",
+        "tags": "餐具-刀叉-外卖-美食",
+        "svg": true
+      },
+      {
+        "name": "icon-coffee",
+        "title": "咖啡",
+        "tags": "咖啡-休息-喝-茶杯-杯碟",
+        "svg": true
+      },
+      {
+        "name": "icon-meituan",
+        "title": "美团外卖",
+        "tags": "美团外卖",
+        "svg": true
+      },
+      {
+        "name": "icon-elment",
+        "title": "饿了么",
+        "tags": "饿了么",
+        "svg": true
+      },
+      {
+        "name": "icon-baidu",
+        "title": "百度外卖",
+        "tags": "百度外卖",
+        "svg": true
+      },
+      {
+        "name": "icon-freshhema",
+        "title": "盒马生鲜",
+        "tags": "盒马生鲜",
+        "svg": true
+      },
+      {
+        "name": "icon-missfresh",
+        "title": "每日优鲜",
+        "tags": "每日优鲜",
+        "svg": true
+      }
+    ],
+    "寄递": [
+      {
+        "name": "icon-sf",
+        "title": "顺丰速递",
+        "tags": "顺丰速递-顺丰快递",
+        "svg": true
+      },
+      {
+        "name": "icon-fcbox",
+        "title": "蜂巢",
+        "tags": "蜂巢",
+        "svg": true
+      },
+      {
+        "name": "icon-cainiao",
+        "title": "菜鸟裹裹",
+        "tags": "菜鸟裹裹",
+        "svg": true
+      },
+      {
+        "name": "icon-chinapost",
+        "title": "邮政",
+        "tags": "邮政",
+        "svg": true
+      },
+      {
+        "name": "icon-ems",
+        "title": "ems",
+        "tags": "ems",
+        "svg": true
+      }
+    ],
+    "支付及社交": [
+      {
+        "name": "icon-qq",
+        "title": "社交qq",
+        "tags": "社交qq",
+        "svg": true
+      },
+      {
+        "name": "icon-wechat",
+        "title": "社交微信",
+        "tags": "社交微信",
+        "svg": true
+      },
+      {
+        "name": "icon-dingtalk",
+        "title": "社交钉钉",
+        "tags": "社交钉钉",
+        "svg": true
+      },
+      {
+        "name": "icon-fly-letter",
+        "title": "社交飞信",
+        "tags": "社交飞信",
+        "svg": true
+      },
+      {
+        "name": "icon-mitalk",
+        "title": "社交米聊",
+        "tags": "社交米聊",
+        "svg": true
+      },
+      {
+        "name": "icon-momo",
+        "title": "社交陌陌",
+        "tags": "社交陌陌",
+        "svg": true
+      },
+      {
+        "name": "icon-microblog",
+        "title": "社交微博",
+        "tags": "社交微博",
+        "svg": true
+      },
+      {
+        "name": "icon-douyin",
+        "title": "抖音",
+        "tags": "抖音",
+        "svg": true
+      },
+      {
+        "name": "icon-kuaishou",
+        "title": "快手",
+        "tags": "快手",
+        "svg": true
+      },
+      {
+        "name": "icon-pay-jingdong",
+        "title": "支付",
+        "tags": "支付-京东",
+        "svg": true
+      },
+      {
+        "name": "icon-alipay",
+        "title": "支付",
+        "tags": "支付-支付宝",
+        "svg": true
+      },
+      {
+        "name": "icon-pay-taobao",
+        "title": "支付",
+        "tags": "支付-淘宝",
+        "svg": true
+      }
+    ]
+  },
+
+  "人物特征": {
+    "人物": [
+      {
+        "name": "icon-women",
+        "title": "女性",
+        "tags": "女性",
+        "svg": true
+      },
+      {
+        "name": "icon-man",
+        "title": "男性",
+        "tags": "男性",
+        "svg": true
+      },
+      {
+        "name": "icon-children",
+        "title": "儿童",
+        "tags": "儿童",
+        "svg": true
+      },
+      {
+        "name": "icon-corpse",
+        "title": "尸体",
+        "tags": "尸体-肢体-躺",
+        "svg": true
+      },
+      {
+        "name": "icon-where",
+        "title": "街景",
+        "tags": "街景-全息-人像",
+        "svg": true
+      },
+      {
+        "name": "icon-bed",
+        "title": "床",
+        "tags": "床-休息-睡觉-睡眠",
+        "svg": true
+      },
+      {
+        "name": "icon-baby-child",
+        "title": "婴儿",
+        "tags": "婴儿-儿童",
+        "svg": true
+      },
+      {
+        "name": "icon-user-man",
+        "title": "用户",
+        "tags": "用户-男-头像",
+        "svg": true
+      },
+      {
+        "name": "icon-user-women",
+        "title": "用户",
+        "tags": "用户-女-头像",
+        "svg": true
+      },
+      {
+        "name": "icon-organiz",
+        "title": "用户组",
+        "tags": "用户组-组织群体-聚集-多人-结伴-结伙-同行",
+        "svg": true
+      },
+      {
+        "name": "icon-user",
+        "title": "用户",
+        "tags": "用户-头像",
+        "svg": true
+      },
+      {
+        "name": "icon-group",
+        "title": "用户组",
+        "tags": "用户组-组织群体-聚集-多人-结伴-结伙-同行",
+        "svg": true
+      },
+      {
+        "name": "icon-anonymous",
+        "title": "匿名用户",
+        "tags": "匿名用户-嫌疑人-陌生人-黑客",
+        "svg": true
+      },
+      {
+        "name": "icon-doctor",
+        "title": "用户",
+        "tags": "用户-医生-医护-治疗",
+        "svg": true
+      },
+      {
+        "name": "icon-police",
+        "title": "警察",
+        "tags": "警察-公安",
+        "svg": true
+      },
+      {
+        "name": "icon-policeman",
+        "title": "警察半身",
+        "tags": "警察半身-公安",
+        "svg": true
+      },
+      {
+        "name": "icon-suspect",
+        "title": "侦探",
+        "tags": "侦探-侦察-嫌疑人-陌生人",
+        "svg": true
+      },
+      {
+        "name": "icon-stranger",
+        "title": "陌生人",
+        "tags": "陌生人-男人-男士",
+        "svg": true
+      },
+      {
+        "name": "icon-thief",
+        "title": "小偷",
+        "tags": "小偷-逃犯-服刑-在逃",
+        "svg": true
+      },
+      {
+        "name": "icon-team",
+        "title": "团队",
+        "tags": "团队-组织群体-聚集-多人-结伴-结伙-同行",
+        "svg": true
+      },
+      {
+        "name": "icon-organization",
+        "title": "团伙群体",
+        "tags": "团伙群体-组织群体-聚集-多人-结伴-结伙-同行",
+        "svg": true
+      },
+      {
+        "name": "icon-meeting",
+        "title": "会议",
+        "tags": "会议-研判",
+        "svg": true
+      },
+      {
+        "name": "icon-exchange",
+        "title": "聚餐",
+        "tags": "聚餐-会议-面对面-交流-讨论",
+        "svg": true
+      },
+      {
+        "name": "icon-discuss",
+        "title": "会议",
+        "tags": "会议-面对面-交流-讨论-想法-集思广益",
+        "svg": true
+      },
+      {
+        "name": "icon-search-people",
+        "title": "查找",
+        "tags": "查找-搜人-目标查找-人员分析",
+        "svg": true
+      },
+      {
+        "name": "icon-lecture",
+        "title": "演讲",
+        "tags": "演讲-讲台-报告-领导",
+        "svg": true
+      }
+    ],
+    "行为": [
+      {
+        "name": "icon-victim",
+        "title": "受害遇害",
+        "tags": "受害遇害-杀害",
+        "svg": true
+      },
+      {
+        "name": "icon-theft",
+        "title": "入室盗窃",
+        "tags": "入室盗窃-盗窃-小偷",
+        "svg": true
+      }
+    ],
+    "特征": [
+      {
+        "name": "icon-palm",
+        "title": "手掌",
+        "tags": "手掌-按-刷",
+        "svg": true
+      },
+      {
+        "name": "icon-fingerprint",
+        "title": "指纹",
+        "tags": "指纹-识别",
+        "svg": true
+      },
+      {
+        "name": "icon-dna",
+        "title": "DNA",
+        "tags": "DNA-生物",
+        "svg": true
+      },
+      {
+        "name": "icon-eye",
+        "title": "眼睛",
+        "tags": "眼睛-注视-睁开-显示-视觉-看",
+        "svg": true
+      },
+      {
+        "name": "icon-ear",
+        "title": "耳朵",
+        "tags": "耳朵-听力-听觉",
+        "svg": true
+      },
+      {
+        "name": "icon-nose",
+        "title": "鼻子",
+        "tags": "鼻子-嗅觉-闻",
+        "svg": true
+      },
+      {
+        "name": "icon-tongue",
+        "title": "舌头",
+        "tags": "舌头-味觉-吐舌-搞怪-舔",
+        "svg": true
+      },
+      {
+        "name": "icon-mouth",
+        "title": "嘴唇",
+        "tags": "嘴唇-嘴巴-口",
+        "svg": true
+      },
+      {
+        "name": "icon-moustache",
+        "title": "胡子",
+        "tags": "胡子-胡须",
+        "svg": true
+      },
+      {
+        "name": "icon-foot",
+        "title": "脚",
+        "tags": "脚-足-脚踝-脚",
+        "svg": true
+      },
+      {
+        "name": "icon-heart",
+        "title": "心脏",
+        "tags": "心脏-心跳",
+        "svg": true
+      },
+      {
+        "name": "icon-brain",
+        "title": "脑",
+        "tags": "脑-思考-大脑-思维",
+        "svg": true
+      },
+      {
+        "name": "icon-clever",
+        "title": "脑",
+        "tags": "脑-思考-大脑-思维-聪明",
+        "svg": true
+      },
+      {
+        "name": "icon-heart-rate",
+        "title": "心",
+        "tags": "心-心脏-心跳-心率",
+        "svg": true
+      },
+      {
+        "name": "icon-tooth",
+        "title": "牙齿",
+        "tags": "牙齿-牙科",
+        "svg": true
+      },
+      {
+        "name": "icon-breathe",
+        "title": "肺部",
+        "tags": "肺部-呼吸",
+        "svg": true
+      },
+      {
+        "name": "icon-kidney",
+        "title": "肾-肾脏",
+        "tags": "肾-肾脏",
+        "svg": true
+      },
+      {
+        "name": "icon-stomach",
+        "title": "胃部",
+        "tags": "胃部",
+        "svg": true
+      },
+      {
+        "name": "icon-drip",
+        "title": "填色",
+        "tags": "填色-水滴-水-油",
+        "svg": true
+      },
+      {
+        "name": "icon-blood",
+        "title": "血",
+        "tags": "血-血液-水-水滴",
+        "svg": true
+      },
+      {
+        "name": "icon-shoe-print",
+        "title": "脚",
+        "tags": "脚-鞋印-足迹-足印",
+        "svg": true
+      },
+      {
+        "name": "icon-ear",
+        "title": "耳朵",
+        "tags": "耳朵-耳-听-听力",
+        "svg": true
+      },
+      {
+        "name": "icon-hand",
+        "title": "手",
+        "tags": "手-手掌-巴掌",
+        "svg": true
+      },
+      {
+        "name": "icon-mouth",
+        "title": "嘴巴",
+        "tags": "嘴巴-嘴-口-说",
+        "svg": true
+      },
+      {
+        "name": "icon-footprint",
+        "title": "脚印",
+        "tags": "脚印-脚-足迹-足印",
+        "svg": true
+      },
+      {
+        "name": "icon-eye-open",
+        "title": "眼睛",
+        "tags": "眼睛",
+        "svg": true
+      },
+      {
+        "name": "icon-tooth",
+        "title": "牙齿",
+        "tags": "牙齿",
+        "svg": true
+      }
+    ],
+    "家庭关系":[
+      {
+        "name": "icon-dad",
+        "title": "男性",
+        "tags": "男性-男人-父亲-男生-男士",
+        "svg": true
+      },
+      {
+        "name": "icon-mom",
+        "title": "女性",
+        "tags": "女性-女人-母亲-妇女-女生-女士",
+        "svg": true
+      },
+      {
+        "name": "icon-father-son",
+        "title": "父子",
+        "tags": "父子-父女",
+        "svg": true
+      },
+      {
+        "name": "icon-mother-son",
+        "title": "母子",
+        "tags": "母子-母女",
+        "svg": true
+      },
+      {
+        "name": "icon-family",
+        "title": "家庭",
+        "tags": "家庭-同行-出游",
+        "svg": true
+      },
+      {
+        "name": "icon-disability",
+        "title": "残疾",
+        "tags": "残疾-轮椅",
+        "svg": true
+      },
+      {
+        "name": "icon-child",
+        "title": "儿童",
+        "tags": "儿童-小朋友-小孩子",
+        "svg": true
+      },
+      {
+        "name": "icon-baby",
+        "title": "婴儿",
+        "tags": "婴儿-小孩子",
+        "svg": true
+      },
+      {
+        "name": "icon-grandpa",
+        "title": "老人",
+        "tags": "老人-老年人-老爷爷",
+        "svg": true
+      },
+      {
+        "name": "icon-grandma",
+        "title": "老人",
+        "tags": "老人-老年人-老奶奶",
+        "svg": true
+      },
+      {
+        "name": "icon-pregnancy",
+        "title": "孕妇",
+        "tags": "孕妇",
+        "svg": true
+      }
+    ]
+  },
+
+  "设备与技术": {
+    "设备": [
+      {
+        "name": "icon-keyborad",
+        "title": "键盘",
+        "tags": "键盘-打字",
+        "svg": true
+      },
+      {
+        "name": "icon-fax",
+        "title": "传真",
+        "tags": "传真-电话",
+        "svg": true
+      },
+      {
+        "name": "icon-call",
+        "title": "电话",
+        "tags": "电话-听筒-话筒-联系方式",
+        "svg": true
+      },
+      {
+        "name": "icon-fixed-telephone",
+        "title": "电话",
+        "tags": "电话-固话-联系方式",
+        "svg": true
+      },
+      {
+        "name": "icon-phone",
+        "title": "手机",
+        "tags": "手机-电话-移动设备-联系方式-移动设备",
+        "svg": true
+      },
+      {
+        "name": "icon-pad",
+        "title": "平板电脑",
+        "tags": "平板电脑-移动设备",
+        "svg": true
+      },
+      {
+        "name": "icon-notebook",
+        "title": "笔记本电脑",
+        "tags": "笔记本电脑",
+        "svg": true
+      },
+      {
+        "name": "icon-supervision",
+        "title": "监控控制管理监",
+        "tags": "监控控制管理监",
+        "svg": true
+      },
+      {
+        "name": "icon-computer",
+        "title": "电脑",
+        "tags": "电脑-显示屏-显示器",
+        "svg": true
+      },
+      {
+        "name": "icon-tv",
+        "title": "电视",
+        "tags": "电视-显示器-显示屏",
+        "svg": true
+      },
+      {
+        "name": "icon-pc",
+        "title": "桌面",
+        "tags": "桌面-电脑-显示屏-显示器",
+        "svg": true
+      },
+      {
+        "name": "icon-desktop",
+        "title": "台式机",
+        "tags": "台式机-台式电脑",
+        "svg": true
+      },
+      {
+        "name": "icon-server-host",
+        "title": "服务器主机",
+        "tags": "服务器主机-电脑主机",
+        "svg": true
+      },
+      {
+        "name": "icon-flat",
+        "title": "平板电脑",
+        "tags": "平板电脑-移动设备",
+        "svg": true
+      },
+      {
+        "name": "icon-lcd",
+        "title": "电视",
+        "tags": "电视-显示器-显示屏-电视机-液晶显示器",
+        "svg": true
+      },
+      {
+        "name": "icon-tv-box",
+        "title": "播放器",
+        "tags": "播放器-机顶盒",
+        "svg": true
+      },
+      {
+        "name": "icon-",
+        "title": "耳机",
+        "tags": "耳机",
+        "svg": true
+      },
+      {
+        "name": "icon-",
+        "title": "头戴耳机",
+        "tags": "头戴耳机",
+        "svg": true
+      },
+      {
+        "name": "icon-",
+        "title": "音箱",
+        "tags": "音箱-音响-声音-喇叭",
+        "svg": true
+      },
+      {
+        "name": "icon-projector",
+        "title": "录像机",
+        "tags": "录像机-投影机-播放机",
+        "svg": true
+      },
+      {
+        "name": "icon-print",
+        "title": "打印机",
+        "tags": "打印机-打印-传真-复印机",
+        "svg": true
+      },
+      {
+        "name": "icon-fax",
+        "title": "打印机",
+        "tags": "打印机-打印-传真-复印机",
+        "svg": true
+      },
+      {
+        "name": "icon-destroy",
+        "title": "碎纸机",
+        "tags": "碎纸机-撕毁-销毁",
+        "svg": true
+      },
+      {
+        "name": "icon-copier",
+        "title": "打印机",
+        "tags": "打印机-打印-传真-复印机",
+        "svg": true
+      },
+      {
+        "name": "icon-board",
+        "title": "演示板",
+        "tags": "演示板-汇报",
+        "svg": true
+      },
+      {
+        "name": "icon-router",
+        "title": "路由器",
+        "tags": "路由器-wifi",
+        "svg": true
+      }
+    ],
+    "数据及后台": [
+      {
+        "name": "icon-chip",
+        "title": "微芯片",
+        "tags": "微芯片-智能",
+        "svg": true
+      },
+      {
+        "name": "icon-server",
+        "title": "服务器",
+        "tags": "服务器-任务管理器",
+        "svg": true
+      },
+      {
+        "name": "icon-servicer",
+        "title": "服务器",
+        "tags": "服务器",
+        "svg": true
+      },
+      {
+        "name": "icon-odbc",
+        "title": "数据库",
+        "tags": "数据库-数据",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud-server",
+        "title": "云服务器",
+        "tags": "云服务器-云上传",
+        "svg": true
+      },
+      {
+        "name": "icon-data-management",
+        "title": "服务设置",
+        "tags": "服务设置-数据库设置-数据管理",
+        "svg": true
+      },
+      {
+        "name": "icon-data-update",
+        "title": "数据更新",
+        "tags": "数据更新-数据上传",
+        "svg": true
+      },
+      {
+        "name": "icon-data-download",
+        "title": "服务下载",
+        "tags": "服务下载-数据下载",
+        "svg": true
+      },
+      {
+        "name": "icon-data-Inquire",
+        "title": "数据查询",
+        "tags": "数据查询-数据库查询",
+        "svg": true
+      },
+      {
+        "name": "icon-database",
+        "title": "数据库",
+        "tags": "数据库-数据",
+        "svg": true
+      },
+      {
+        "name": "icon-server",
+        "title": "服务器",
+        "tags": "服务器-服务端",
+        "svg": true
+      },
+      {
+        "name": "icon-data-abnormal",
+        "title": "数据异常",
+        "tags": "数据异常-数据库异常-数据错误",
+        "svg": true
+      },
+      {
+        "name": "icon-server-update",
+        "title": "数据更新",
+        "tags": "数据更新-数据库更新",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud-service",
+        "title": "云端",
+        "tags": "云端-云服务",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud-disk",
+        "title": "云服务器",
+        "tags": "云服务器-云端",
+        "svg": true
+      },
+      {
+        "name": "icon-backstage-data",
+        "title": "数据服务器",
+        "tags": "数据服务器-数据服务-数据管理",
+        "svg": true
+      }
+    ],
+    "通信及技术": [
+      {
+        "name": "icon-sim",
+        "title": "SIM卡",
+        "tags": "SIM卡-手机卡-电话卡",
+        "svg": true
+      },
+      {
+        "name": "icon-imei",
+        "title": "imei",
+        "tags": "imei",
+        "svg": true
+      },
+      {
+        "name": "icon-esm",
+        "title": "esm",
+        "tags": "esm",
+        "svg": true
+      },
+      {
+        "name": "icon-nfc",
+        "title": "nfc",
+        "tags": "nfc",
+        "svg": true
+      },
+      {
+        "name": "icon-usb",
+        "title": "usb",
+        "tags": "usb-数据-数据线",
+        "svg": true
+      },
+      {
+        "name": "icon-t-pc",
+        "title": "usb",
+        "tags": "usb-数据-数据线",
+        "svg": true
+      },
+      {
+        "name": "icon-base-station",
+        "title": "信号",
+        "tags": "信号-信号塔-基站",
+        "svg": true
+      },
+      {
+        "name": "icon-cpu",
+        "title": "cpu",
+        "tags": "cpu-处理器-中央处理器-芯片",
+        "svg": true
+      },
+      {
+        "name": "icon-signal",
+        "title": "路由器",
+        "tags": "路由器-信号路由-发射信号",
+        "svg": true
+      },
+      {
+        "name": "icon-qrcode",
+        "title": "二维码",
+        "tags": "二维码",
+        "svg": true
+      },
+      {
+        "name": "icon-bar-code",
+        "title": "条形码",
+        "tags": "条形码",
+        "svg": true
+      },
+      {
+        "name": "icon-voiceprint",
+        "title": "音频",
+        "tags": "音频-声音-声纹",
+        "svg": true
+      },
+      {
+        "name": "icon-bluetooth",
+        "title": "蓝牙",
+        "tags": "蓝牙-传输",
+        "svg": true
+      },
+      {
+        "name": "icon-sound",
+        "title": "音量控制",
+        "tags": "音量控制-声音控制",
+        "svg": true
+      },
+      {
+        "name": "icon-phone-signal",
+        "title": "信号",
+        "tags": "信号",
+        "svg": true
+      },
+      {
+        "name": "icon-wifi",
+        "title": "wifi",
+        "tags": "wifi",
+        "svg": true
+      },
+      {
+        "name": "icon-base-signal",
+        "title": "基站信号",
+        "tags": "基站信号-信号塔-发射信号",
+        "svg": true
+      },
+      {
+        "name": "icon-satellite-signal",
+        "title": "信号塔",
+        "tags": "信号塔-卫星信号",
+        "svg": true
+      },
+      {
+        "name": "icon-satellite",
+        "title": "卫星",
+        "tags": "卫星-航天-天文",
+        "svg": true
+      },
+      {
+        "name": "icon-location",
+        "title": "信号",
+        "tags": "信号-基站-信号塔-技术-定位服务-热点",
+        "svg": true
+      },
+      {
+        "name": "icon-gps",
+        "title": "信号",
+        "tags": "信号-基站-信号塔-技术-定位服务-gps",
+        "svg": true
+      },
+      {
+        "name": "icon-hot-spot-signal",
+        "title": "信号",
+        "tags": "信号-基站-信号塔-技术-定位服务-热点",
+        "svg": true
+      },
+      {
+        "name": "icon-astronomical",
+        "title": "卫星",
+        "tags": "卫星-航天-天文",
+        "svg": true
+      },
+      {
+        "name": "icon-network",
+        "title": "网络",
+        "tags": "网络-地球",
+        "svg": true
+      },
+      {
+        "name": "icon-hot-spot",
+        "title": "信号",
+        "tags": "信号-基站-信号塔-技术-定位服务-热点",
+        "svg": true
+      }
+    ],
+    "声音图形": [
+      {
+        "name": "icon-traffic-light",
+        "title": "红绿灯",
+        "tags": "红绿灯-违章-交通",
+        "svg": true
+      },
+      {
+        "name": "icon-video-camera",
+        "title": "卡口枪式摄像头",
+        "tags": "卡口枪式摄像头-监控",
+        "svg": true
+      },
+      {
+        "name": "icon-monitor-camera",
+        "title": "卡口球式摄像头",
+        "tags": "卡口球式摄像头-监控",
+        "svg": true
+      },
+      {
+        "name": "icon-bayonet-camera",
+        "title": "卡口视频摄像头-监控",
+        "tags": "卡口视频摄像头-监控",
+        "svg": true
+      },
+      {
+        "name": "icon-Ball-camera",
+        "title": "卡口视频摄像头",
+        "tags": "卡口视频摄像头-监控-桌面摄像头",
+        "svg": true
+      },
+      {
+        "name": "icon-camera-old",
+        "title": "旧式相机",
+        "tags": "旧式相机-相机",
+        "svg": true
+      },
+      {
+        "name": "icon-camera",
+        "title": "相机",
+        "tags": "相机",
+        "svg": true
+      },
+      {
+        "name": "icon-vcr",
+        "title": "摄像机",
+        "tags": "摄像机",
+        "svg": true
+      },
+      {
+        "name": "icon-record-video",
+        "title": "视频摄像机",
+        "tags": "视频摄像机",
+        "svg": true
+      },
+      {
+        "name": "icon-mic-on",
+        "title": "麦克风",
+        "tags": "麦克风-录音",
+        "svg": true
+      },
+      {
+        "name": "icon-mic-off",
+        "title": "麦克风",
+        "tags": "麦克风-静音",
+        "svg": true
+      },
+      {
+        "name": "icon-bell",
+        "title": "铃声",
+        "tags": "铃声-铃铛",
+        "svg": true
+      },
+      {
+        "name": "icon-e751",
+        "title": "铃声",
+        "tags": "铃声-静音-铃铛",
+        "svg": true
+      },
+      {
+        "name": "icon-speaker",
+        "title": "扩音器",
+        "tags": "扩音器-喇叭-大声公",
+        "svg": true
+      },
+      {
+        "name": "icon-microphone",
+        "title": "话筒",
+        "tags": "话筒-声音",
+        "svg": true
+      },
+      {
+        "name": "icon-mic",
+        "title": "麦克风",
+        "tags": "麦克风-声音-录音",
+        "svg": true
+      },
+      {
+        "name": "icon-record-sound",
+        "title": "麦克风",
+        "tags": "麦克风-声音-录音-录制声音",
+        "svg": true
+      },
+      {
+        "name": "icon-broadcast",
+        "title": "喇叭",
+        "tags": "喇叭-广播-公告-提醒",
+        "svg": true
+      }
+    ]
+  },
+
+  "Web互联网": {
+    "基础": [
+      {
+        "name": "icon-home",
+        "title": "首页",
+        "tags": "首页-屋子-主页-房子",
+        "svg": true
+      },
+      {
+        "name": "icon-compass",
+        "title": "指南针",
+        "tags": "指南针-浏览器-指针",
+        "svg": true
+      },
+      {
+        "name": "icon-internet",
+        "title": "站点",
+        "tags": "站点-网站-互联网-internet-ie",
+        "svg": true
+      },
+      {
+        "name": "icon-row",
+        "title": "功能",
+        "tags": "功能-汉堡键-横杠",
+        "svg": true
+      },
+      {
+        "name": "icon-gantt",
+        "title": "任务",
+        "tags": "任务",
+        "svg": true
+      },
+      {
+        "name": "icon-gearmore",
+        "title": "齿轮组",
+        "tags": "齿轮组-设置-设定",
+        "svg": true
+      },
+      {
+        "name": "icon-set",
+        "title": "齿轮",
+        "tags": "齿轮-设置-设定",
+        "svg": true
+      },
+      {
+        "name": "icon-pendant",
+        "title": "挂件",
+        "tags": "挂件-吊-开关-拉绳",
+        "svg": true
+      },
+      {
+        "name": "icon-service",
+        "title": "服务评价",
+        "tags": "服务评价-客服-反馈-报障",
+        "svg": true
+      },
+      {
+        "name": "icon-slider",
+        "title": "滑块",
+        "tags": "滑块-设置-控制",
+        "svg": true
+      },
+      {
+        "name": "icon-wrench",
+        "title": "扳手",
+        "tags": "扳手-设置-设定",
+        "svg": true
+      },
+      {
+        "name": "icon-login",
+        "title": "登录",
+        "tags": "登录-进入-进",
+        "svg": true
+      },
+      {
+        "name": "icon-exit",
+        "title": "退出",
+        "tags": "退出-出",
+        "svg": true
+      },
+      {
+        "name": "icon-power",
+        "title": "电源",
+        "tags": "电源-关",
+        "svg": true
+      },
+      {
+        "name": "icon-refresh",
+        "title": "刷新",
+        "tags": "刷新-双箭头",
+        "svg": true
+      },
+      {
+        "name": "icon-envelope",
+        "title": "信封",
+        "tags": "信封-信息-消息",
+        "svg": true
+      },
+      {
+        "name": "icon-envelope-open",
+        "title": "信封",
+        "tags": "信封-信息-消息",
+        "svg": true
+      },
+      {
+        "name": "icon-dashboard",
+        "title": "转速表",
+        "tags": "转速表-仪表盘-测速-速度",
+        "svg": true
+      },
+      {
+        "name": "icon-sketchpad-theme",
+        "title": "画板",
+        "tags": "画板-主题-颜色-色彩",
+        "svg": true
+      },
+      {
+        "name": "icon-load",
+        "title": "菊花加载",
+        "tags": "菊花加载",
+        "svg": true
+      },
+      {
+        "name": "icon-loading",
+        "title": "气泡加载",
+        "tags": "气泡加载",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud",
+        "title": "云端",
+        "tags": "云端-云-云服务",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud-upload",
+        "title": "云端",
+        "tags": "云端-上传",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud-download",
+        "title": "云端",
+        "tags": "云端-下载",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud-link",
+        "title": "云端",
+        "tags": "云端-链接",
+        "svg": true
+      },
+      {
+        "name": "icon-cloud-search",
+        "title": "云搜系统",
+        "tags": "云搜系统-云端搜索",
+        "svg": true
+      },
+      {
+        "name": "icon-music",
+        "title": "音乐",
+        "tags": "音乐-音频-音符",
+        "svg": true
+      },
+      {
+        "name": "icon-film",
+        "title": "电影",
+        "tags": "电影",
+        "svg": true
+      },
+      {
+        "name": "icon-image",
+        "title": "图片",
+        "tags": "图片",
+        "svg": true
+      },
+      {
+        "name": "icon-bedbug",
+        "title": "臭虫",
+        "tags": "臭虫-bug-瓢虫-昆虫",
+        "svg": true
+      },
+      {
+        "name": "icon-code-branch",
+        "title": "代码",
+        "tags": "代码-分支-分流-分叉",
+        "svg": true
+      }
+    ],
+    "移动端": [
+      {
+        "name": "icon-adjust",
+        "title": "调整",
+        "tags": "调整-半圆-亮度",
+        "svg": true
+      },
+      {
+        "name": "icon-lightning",
+        "title": "电",
+        "tags": "电-闪电-电力-电量",
+        "svg": true
+      },
+      {
+        "name": "icon-electricity",
+        "title": "电池电量",
+        "tags": "电池电量",
+        "svg": true
+      },
+      {
+        "name": "icon-dark",
+        "title": "夜间模式",
+        "tags": "夜间模式-月亮-星星-dark",
+        "svg": true
+      },
+      {
+        "name": "icon-light",
+        "title": "工作模式",
+        "tags": "工作模式-太阳-阳光-light",
+        "svg": true
+      },
+      {
+        "name": "icon-yidong",
+        "title": "移动",
+        "tags": "移动",
+        "svg": true
+      },
+      {
+        "name": "icon-liantong",
+        "title": "联通",
+        "tags": "联通",
+        "svg": true
+      },
+      {
+        "name": "icon-dianxin",
+        "title": "电信",
+        "tags": "电信",
+        "svg": true
+      }
+    ],
+    "评级及评分": [
+      {
+        "name": "icon-rank",
+        "title": "排名",
+        "tags": "排名-排位-名次-次序",
+        "svg": true
+      },
+      {
+        "name": "icon-trophy",
+        "title": "奖杯",
+        "tags": "奖杯-名次",
+        "svg": true
+      },
+      {
+        "name": "icon-in-touched",
+        "title": "心",
+        "tags": "心-心形-心脏-爱心-恋爱",
+        "svg": true
+      },
+      {
+        "name": "icon-heart-half",
+        "title": "心",
+        "tags": "心-心形-心脏-爱心-半心-半",
+        "svg": true
+      },
+      {
+        "name": "icon-heart-line",
+        "title": "心",
+        "tags": "心-心形-心脏-爱心-空心",
+        "svg": true
+      },
+      {
+        "name": "icon-star",
+        "title": "星",
+        "tags": "星-星星-星形",
+        "svg": true
+      },
+      {
+        "name": "icon-star-half",
+        "title": "星",
+        "tags": "星-星星-星形-半颗",
+        "svg": true
+      },
+      {
+        "name": "icon-star-line",
+        "title": "星",
+        "tags": "星-星星-星形-空星",
+        "svg": true
+      },
+      {
+        "name": "icon-like",
+        "title": "好评",
+        "tags": "好评-好-赞同",
+        "svg": true
+      },
+      {
+        "name": "icon-badreview",
+        "title": "差评",
+        "tags": "差评-差-踩",
+        "svg": true
+      },
+      {
+        "name": "icon-flower",
+        "title": "花",
+        "tags": "花-好评-好",
+        "svg": true
+      },
+      {
+        "name": "icon-disappointed",
+        "title": "花弯曲",
+        "tags": "花弯曲-差评-失望",
+        "svg": true
+      },
+      {
+        "name": "icon-smile",
+        "title": "开心",
+        "tags": "开心-高兴-笑脸-微笑-一般",
+        "svg": true
+      },
+      {
+        "name": "icon-sad",
+        "title": "不高兴",
+        "tags": "不高兴-伤心-失望",
+        "svg": true
+      },
+      {
+        "name": "icon-happy",
+        "title": "开心",
+        "tags": "开心-高兴-笑脸-微笑-喜欢",
+        "svg": true
+      }
+    ],
+    "控件下拉框": [
+      {
+        "name": "icon-calendar-v2",
+        "title": "日历",
+        "tags": "日历-日期",
+        "svg": true
+      },
+      {
+        "name": "icon-calendar",
+        "title": "日历",
+        "tags": "日历-日期",
+        "svg": true
+      },
+      {
+        "name": "icon-clock",
+        "title": "时钟",
+        "tags": "时钟-时间-记录",
+        "svg": true
+      },
+      {
+        "name": "icon-time",
+        "title": "时钟",
+        "tags": "时钟-时间-记录",
+        "svg": true
+      },
+      {
+        "name": "icon-visible",
+        "title": "眼睛",
+        "tags": "眼睛-查看-看-瞳",
+        "svg": true
+      },
+      {
+        "name": "icon-invisible",
+        "title": "眼睛",
+        "tags": "眼睛-斜线-隐藏-闭眼",
+        "svg": true
+      },
+      {
+        "name": "icon-lock",
+        "title": "锁定",
+        "tags": "锁定-锁头-门锁",
+        "svg": true
+      },
+      {
+        "name": "icon-lock-off-v2",
+        "title": "解锁",
+        "tags": "解锁",
+        "svg": true
+      },
+      {
+        "name": "icon-lock-off",
+        "title": "解锁",
+        "tags": "解锁",
+        "svg": true
+      }
+    ],
+    "消息窗口": [
+      {
+        "name": "icon-comment-v2",
+        "title": "评论",
+        "tags": "评论-说话-留言",
+        "svg": true
+      },
+      {
+        "name": "icon-chat",
+        "title": "评论组",
+        "tags": "评论组-说话-讨论-留言",
+        "svg": true
+      },
+      {
+        "name": "icon-chat-border",
+        "title": "评论组",
+        "tags": "评论组-说话-讨论-留言",
+        "svg": true
+      },
+      {
+        "name": "icon-comment",
+        "title": "评论",
+        "tags": "评论-说话-讨论-留言",
+        "svg": true
+      },
+      {
+        "name": "icon-news-success",
+        "title": "消息",
+        "tags": "消息-成功",
+        "svg": true
+      },
+      {
+        "name": "icon-news-warn",
+        "title": "消息",
+        "tags": "消息-警告",
+        "svg": true
+      },
+      {
+        "name": "icon-news-info",
+        "title": "消息",
+        "tags": "消息-信息",
+        "svg": true
+      },
+      {
+        "name": "icon-news-failure",
+        "title": "消息",
+        "tags": "消息-失败",
+        "svg": true
+      },
+      {
+        "name": "icon-fix",
+        "title": "固定",
+        "tags": "固定-图钉",
+        "svg": true
+      },
+      {
+        "name": "icon-relieve",
+        "title": "解除固定",
+        "tags": "解除固定-图钉",
+        "svg": true
+      },
+      {
+        "name": "icon-window-close",
+        "title": "关闭",
+        "tags": "关闭",
+        "svg": true
+      },
+      {
+        "name": "icon-window-normal",
+        "title": "最大化",
+        "tags": "最大化",
+        "svg": true
+      },
+      {
+        "name": "icon-window-min",
+        "title": "最小化",
+        "tags": "最小化",
+        "svg": true
+      },
+      {
+        "name": "icon-window-max",
+        "title": "窗口",
+        "tags": "窗口",
+        "svg": true
+      },
+      {
+        "name": "icon-window-down",
+        "title": "折叠",
+        "tags": "折叠",
+        "svg": true
+      },
+      {
+        "name": "icon-window-up",
+        "title": "展开",
+        "tags": "展开",
+        "svg": true
+      }
+    ]
+  },
+
+  "交通建筑": {
+    "交通工具": [
+      {
+        "name": "icon-car-collision",
+        "title": "车辆碰撞",
+        "tags": "车辆碰撞-交通事故-车辆",
+        "svg": true
+      },
+      {
+        "name": "icon-car",
+        "title": "小轿车",
+        "tags": "小轿车-小汽车-交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-car-v2",
+        "title": "小轿车",
+        "tags": "小轿车-小汽车-交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-taxi",
+        "title": "出租车",
+        "tags": "出租车-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-ambulance",
+        "title": "救护车",
+        "tags": "救护车",
+        "svg": true
+      },
+      {
+        "name": "icon-truck",
+        "title": "卡车",
+        "tags": "卡车-运输-货物",
+        "svg": true
+      },
+      {
+        "name": "icon-bus",
+        "title": "巴士",
+        "tags": "巴士-客运-公共交通",
+        "svg": true
+      },
+      {
+        "name": "icon-mbile",
+        "title": "电瓶车",
+        "tags": "电瓶车-电动车-交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-bike",
+        "title": "自行车",
+        "tags": "自行车-共享单车-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-motor",
+        "title": "摩托车",
+        "tags": "摩托车-交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-train",
+        "title": "火车-公共交通-出行",
+        "tags": "火车-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-subway",
+        "title": "地铁",
+        "tags": "地铁-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-ship",
+        "title": "轮船",
+        "tags": "轮船-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-airplane",
+        "title": "飞机",
+        "tags": "飞机-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-warplane",
+        "title": "战斗机",
+        "tags": "战斗机-作战",
+        "svg": true
+      },
+      {
+        "name": "icon-rocket",
+        "title": "火箭",
+        "tags": "火箭-快速-技术-升级",
+        "svg": true
+      },
+      {
+        "name": "icon-compact-car",
+        "title": "小轿车",
+        "tags": "小轿车-小汽车-交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-energy-car",
+        "title": "充电汽车",
+        "tags": "充电汽车-能源车",
+        "svg": true
+      },
+      {
+        "name": "icon-truck",
+        "title": "货车",
+        "tags": "货车",
+        "svg": true
+      },
+      {
+        "name": "icon-scooter",
+        "title": "摩托车",
+        "tags": "摩托车-交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-coach",
+        "title": "巴士",
+        "tags": "巴士-客运-公共交通-公交",
+        "svg": true
+      },
+      {
+        "name": "icon-tram",
+        "title": "有轨电车",
+        "tags": "有轨电车",
+        "svg": true
+      },
+      {
+        "name": "icon-train-g",
+        "title": "电动车",
+        "tags": "电动车-火车-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-helicopter",
+        "title": "直升机",
+        "tags": "直升机",
+        "svg": true
+      },
+      {
+        "name": "icon-plane",
+        "title": "飞机",
+        "tags": "飞机-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-transport-truck",
+        "title": "运输车",
+        "tags": "运输车",
+        "svg": true
+      },
+      {
+        "name": "icon-bulldozer",
+        "title": "压路机",
+        "tags": "压路机-推土车-推土机",
+        "svg": true
+      },
+      {
+        "name": "icon-cement",
+        "title": "水泥车",
+        "tags": "水泥车",
+        "svg": true
+      },
+      {
+        "name": "icon-excavator",
+        "title": "挖掘机",
+        "tags": "挖掘机",
+        "svg": true
+      },
+      {
+        "name": "icon-steamship",
+        "title": "轮船",
+        "tags": "轮船-邮轮-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-steamboat",
+        "title": "轮船",
+        "tags": "轮船-公共交通-出行",
+        "svg": true
+      },
+      {
+        "name": "icon-steam-car",
+        "title": "蒸汽车",
+        "tags": "蒸汽车",
+        "svg": true
+      }
+    ],
+    "建筑": [
+      {
+        "name": "icon-prison",
+        "title": "监狱",
+        "tags": "监狱-监所-门",
+        "svg": true
+      },
+      {
+        "name": "icon-university",
+        "title": "大学",
+        "tags": "大学",
+        "svg": true
+      },
+      {
+        "name": "icon-high-building",
+        "title": "大楼",
+        "tags": "大楼-学校",
+        "svg": true
+      },
+      {
+        "name": "icon-story-building",
+        "title": "大楼",
+        "tags": "大楼-旅店",
+        "svg": true
+      },
+      {
+        "name": "icon-building",
+        "title": "大楼",
+        "tags": "大楼-酒店",
+        "svg": true
+      },
+      {
+        "name": "icon-build",
+        "title": "大楼建筑",
+        "tags": "大楼建筑",
+        "svg": true
+      },
+      {
+        "name": "icon-floor-building",
+        "title": "大楼",
+        "tags": "大楼-企业单位",
+        "svg": true
+      },
+      {
+        "name": "icon-hospital",
+        "title": "医院",
+        "tags": "医院",
+        "svg": true
+      },
+      {
+        "name": "icon-city",
+        "title": "建筑",
+        "tags": "建筑-高楼-城市",
+        "svg": true
+      },
+      {
+        "name": "icon-factory",
+        "title": "工厂",
+        "tags": "工厂-工业-生产",
+        "svg": true
+      },
+      {
+        "name": "icon-shop",
+        "title": "商店",
+        "tags": "商店-商铺",
+        "svg": true
+      },
+      {
+        "name": "icon-house",
+        "title": "房子",
+        "tags": "房子-屋子-小屋",
+        "svg": true
+      }
+    ]
+  },
+
+  "地图地理": {
+    "标记及标点": [
+      {
+        "name": "icon-earth",
+        "title": "地球",
+        "tags": "地球-地理-全球",
+        "svg": true
+      },
+      {
+        "name": "icon-area-map",
+        "title": "区域地图",
+        "tags": "区域地图-中国",
+        "svg": true
+      },
+      {
+        "name": "icon-map",
+        "title": "地图",
+        "tags": "地图-地理",
+        "svg": true
+      },
+      {
+        "name": "icon-location",
+        "title": "标记",
+        "tags": "标记-定位-标点",
+        "svg": true
+      },
+      {
+        "name": "icon-map-thumbtack",
+        "title": "地图",
+        "tags": "地图-图钉-标记-标点",
+        "svg": true
+      },
+      {
+        "name": "icon-pin",
+        "title": "图钉",
+        "tags": "图钉",
+        "svg": true
+      },
+      {
+        "name": "icon-anchor",
+        "title": "地图锚",
+        "tags": "地图锚-勾-船锚",
+        "svg": true
+      },
+      {
+        "name": "icon-flag",
+        "title": "旗帜",
+        "tags": "旗帜-标记-标点",
+        "svg": true
+      },
+      {
+        "name": "icon-high-road",
+        "title": "公路",
+        "tags": "公路-快速-高速公路-马路",
+        "svg": true
+      },
+      {
+        "name": "icon-fence",
+        "title": "围栏",
+        "tags": "围栏-电子围栏-村庄",
+        "svg": true
+      },
+      {
+        "name": "icon-map-indicator",
+        "title": "地图",
+        "tags": "地图-指示牌-牌匾",
+        "svg": true
+      },
+      {
+        "name": "icon-map-oil",
+        "title": "地图石油",
+        "tags": "地图石油-汽油-油瓶",
+        "svg": true
+      },
+      {
+        "name": "icon-map-gas",
+        "title": "地图加油站",
+        "tags": "地图加油站",
+        "svg": true
+      }
+    ],
+    "工具": [
+      {
+        "name": "icon-circler-layout",
+        "title": "圆形布局",
+        "tags": "圆形布局",
+        "svg": true
+      },
+      {
+        "name": "icon-map-connect",
+        "title": "地图连线",
+        "tags": "地图连线-连线-连接",
+        "svg": true
+      },
+      {
+        "name": "icon-map-link",
+        "title": "地图连线竖",
+        "tags": "地图连线竖-连接-连线",
+        "svg": true
+      },
+      {
+        "name": "icon-map-direction",
+        "title": "地图连线",
+        "tags": "地图连线-转移-目的",
+        "svg": true
+      },
+      {
+        "name": "icon-map-finger",
+        "title": "地图",
+        "tags": "地图-手指-点击-触摸",
+        "svg": true
+      },
+      {
+        "name": "icon-map-site",
+        "title": "地图组织站点",
+        "tags": "地图组织站点-层级-下级",
+        "svg": true
+      },
+      {
+        "name": "icon-locus",
+        "title": "轨迹",
+        "tags": "轨迹",
+        "svg": true
+      },
+      {
+        "name": "icon-orbit",
+        "title": "轨迹",
+        "tags": "轨迹",
+        "svg": true
+      },
+      {
+        "name": "icon-map-ruler",
+        "title": "地图尺子",
+        "tags": "地图尺子-测量-测距-距离",
+        "svg": true
+      }
+    ]
+  },
+
+  "文件文本编辑": {
+    "基础及操作": [
+      {
+        "name": "icon-rise",
+        "title": "升级",
+        "tags": "升级-转弯",
+        "svg": true
+      },
+      {
+        "name": "icon-fall",
+        "title": "降级",
+        "tags": "降级-转弯",
+        "svg": true
+      },
+      {
+        "name": "icon-paper",
+        "title": "纸飞机",
+        "tags": "纸飞机-折纸-发送",
+        "svg": true
+      },
+      {
+        "name": "icon-direction",
+        "title": "方向",
+        "tags": "方向-位置",
+        "svg": true
+      },
+      {
+        "name": "icon-indicator",
+        "title": "鼠标指针",
+        "tags": "鼠标指针-移动",
+        "svg": true
+      },
+      {
+        "name": "icon-bookmark",
+        "title": "书签",
+        "tags": "书签-页签标签",
+        "svg": true
+      },
+      {
+        "name": "icon-history",
+        "title": "历史记录",
+        "tags": "历史记录",
+        "svg": true
+      },
+      {
+        "name": "icon-reset",
+        "title": "重做",
+        "tags": "重做-刷新",
+        "svg": true
+      },
+      {
+        "name": "icon-recall",
+        "title": "撤销",
+        "tags": "撤销-后退-撤退",
+        "svg": true
+      },
+      {
+        "name": "icon-edit",
+        "title": "编辑",
+        "tags": "编辑-笔",
+        "svg": true
+      },
+      {
+        "name": "icon-pencil",
+        "title": "铅笔",
+        "tags": "铅笔-编辑",
+        "svg": true
+      },
+      {
+        "name": "icon-rubber",
+        "title": "橡皮",
+        "tags": "橡皮-擦除-橡皮擦",
+        "svg": true
+      },
+      {
+        "name": "icon-ruler",
+        "title": "尺子",
+        "tags": "尺子-刻度-计算-测量",
+        "svg": true
+      },
+      {
+        "name": "icon-delete",
+        "title": "垃圾桶",
+        "tags": "垃圾桶-删除",
+        "svg": true
+      },
+      {
+        "name": "icon-undo",
+        "title": "回复",
+        "tags": "回复-转发",
+        "svg": true
+      },
+      {
+        "name": "icon-reply",
+        "title": "回复",
+        "tags": "回复-全部-转发",
+        "svg": true
+      },
+      {
+        "name": "icon-exchange",
+        "title": "交换",
+        "tags": "交换-双箭头-平行",
+        "svg": true
+      },
+      {
+        "name": "icon-redo",
+        "title": "分享",
+        "tags": "分享-转发",
+        "svg": true
+      },
+      {
+        "name": "icon-partake",
+        "title": "分享",
+        "tags": "分享-共享-转发",
+        "svg": true
+      },
+      {
+        "name": "icon-fenxiang",
+        "title": "分享",
+        "tags": "分享-共享-转发",
+        "svg": true
+      },
+      {
+        "name": "icon-share",
+        "title": "分享",
+        "tags": "分享-转发-共享",
+        "svg": true
+      },
+      {
+        "name": "icon-loop",
+        "title": "转发",
+        "tags": "转发-流转-旋转",
+        "svg": true
+      },
+      {
+        "name": "icon-rss",
+        "title": "订阅",
+        "tags": "订阅-rss-发射-信号",
+        "svg": true
+      },
+      {
+        "name": "icon-magic",
+        "title": "魔术棒",
+        "tags": "魔术棒-魔法-魔术-一键",
+        "svg": true
+      },
+      {
+        "name": "icon-filter",
+        "title": "过滤器",
+        "tags": "过滤器-漏斗-筛选",
+        "svg": true
+      },
+      {
+        "name": "icon-sort-asc",
+        "title": "排序",
+        "tags": "排序-数量升序",
+        "svg": true
+      },
+      {
+        "name": "icon-sort-desc",
+        "title": "排序",
+        "tags": "排序-数量降序",
+        "svg": true
+      },
+      {
+        "name": "icon-link",
+        "title": "链接",
+        "tags": "链接-链条",
+        "svg": true
+      },
+      {
+        "name": "icon-link-off",
+        "title": "链接",
+        "tags": "链接-断开",
+        "svg": true
+      },
+      {
+        "name": "icon-upload",
+        "title": "上传",
+        "tags": "上传",
+        "svg": true
+      },
+      {
+        "name": "icon-download",
+        "title": "下载",
+        "tags": "下载",
+        "svg": true
+      }
+    ],
+    "文件": [
+      {
+        "name": "icon-save",
+        "title": "保存",
+        "tags": "保存-软盘",
+        "svg": true
+      },
+      {
+        "name": "icon-print",
+        "title": "打印",
+        "tags": "打印-复印",
+        "svg": true
+      },
+      {
+        "name": "icon-folder",
+        "title": "文件夹",
+        "tags": "文件夹",
+        "svg": true
+      },
+      {
+        "name": "icon-folder-open",
+        "title": "文件夹",
+        "tags": "文件夹-打开",
+        "svg": true
+      },
+      {
+        "name": "icon-tag",
+        "title": "标签",
+        "tags": "标签-贴标",
+        "svg": true
+      },
+      {
+        "name": "icon-tags",
+        "title": "标签组",
+        "tags": "标签组",
+        "svg": true
+      },
+      {
+        "name": "icon-note",
+        "title": "便签",
+        "tags": "便签-贴纸",
+        "svg": true
+      },
+      {
+        "name": "icon-file",
+        "title": "文件",
+        "tags": "文件-纸张",
+        "svg": true
+      },
+      {
+        "name": "icon-copy-rect",
+        "title": "复制",
+        "tags": "复制-重复-重叠",
+        "svg": true
+      },
+      {
+        "name": "icon-paste",
+        "title": "粘贴",
+        "tags": "粘贴-移动-重叠",
+        "svg": true
+      },
+      {
+        "name": "icon-copy",
+        "title": "剪切板",
+        "tags": "剪切板-剪切",
+        "svg": true
+      },
+      {
+        "name": "icon-crop",
+        "title": "裁剪",
+        "tags": "裁剪-剪开",
+        "svg": true
+      },
+      {
+        "name": "icon-indent-remove",
+        "title": "缩进",
+        "tags": "缩进-减-向左",
+        "svg": true
+      },
+      {
+        "name": "icon-file-text",
+        "title": "文件",
+        "tags": "文件-文本-记录-书写",
+        "svg": true
+      },
+      {
+        "name": "icon-files",
+        "title": "文件组",
+        "tags": "文件组-复制-纸张",
+        "svg": true
+      },
+      {
+        "name": "icon-annex",
+        "title": "附件",
+        "tags": "附件-曲别针-回形针",
+        "svg": true
+      }
+    ],
+    "展示方式": [
+      {
+        "name": "icon-columns",
+        "title": "列",
+        "tags": "列-列表",
+        "svg": true
+      },
+      {
+        "name": "icon-list-v4",
+        "title": "列表",
+        "tags": "列表-栏目",
+        "svg": true
+      },
+      {
+        "name": "icon-list-v3",
+        "title": "列表",
+        "tags": "列表-栏目",
+        "svg": true
+      },
+      {
+        "name": "icon-num-list",
+        "title": "编号列表",
+        "tags": "编号列表-排名-牌序-名次",
+        "svg": true
+      },
+      {
+        "name": "icon-list-v2",
+        "title": "列表",
+        "tags": "列表",
+        "svg": true
+      },
+      {
+        "name": "icon-sheet",
+        "title": "表格",
+        "tags": "表格",
+        "svg": true
+      },
+      {
+        "name": "icon-all",
+        "title": "全部应用",
+        "tags": "全部应用-宫格--格子",
+        "svg": true
+      },
+      {
+        "name": "icon-four-squares",
+        "title": "表格",
+        "tags": "表格-4宫格",
+        "svg": true
+      },
+      {
+        "name": "icon-nine-squares",
+        "title": "表格",
+        "tags": "表格-9宫格",
+        "svg": true
+      },
+      {
+        "name": "icon-list",
+        "title": "项目列表",
+        "tags": "项目列表",
+        "svg": true
+      }
+    ],
+    "文件类型": [
+      {
+        "name": "icon-image",
+        "title": "文件",
+        "tags": "文件-image",
+        "svg": true
+      },
+      {
+        "name": "icon-pdf",
+        "title": "文件",
+        "tags": "文件-pdf",
+        "svg": true
+      },
+      {
+        "name": "icon-txt",
+        "title": "文件",
+        "tags": "文件-txt",
+        "svg": true
+      },
+      {
+        "name": "icon-excel",
+        "title": "文件",
+        "tags": "文件-excel",
+        "svg": true
+      },
+      {
+        "name": "icon-ppt",
+        "title": "文件",
+        "tags": "文件-ppt",
+        "svg": true
+      },
+      {
+        "name": "icon-word",
+        "title": "文件",
+        "tags": "文件-word",
+        "svg": true
+      },
+      {
+        "name": "icon-audio",
+        "title": "文件",
+        "tags": "文件-音频",
+        "svg": true
+      },
+      {
+        "name": "icon-avi",
+        "title": "文件",
+        "tags": "文件-视频",
+        "svg": true
+      },
+      {
+        "name": "icon-zip",
+        "title": "文件",
+        "tags": "文件-zip",
+        "svg": true
+      }
+    ]
+  },
+
+  "方向与箭头": {
+    "": [
+      {
+        "name": "icon-sort",
+        "title": "排序",
+        "tags": "排序",
+        "svg": true
+      },
+      {
+        "name": "icon-sort-up",
+        "title": "排序",
+        "tags": "排序-升序",
+        "svg": true
+      },
+      {
+        "name": "icon-sort-down",
+        "title": "排序",
+        "tags": "排序-降序",
+        "svg": true
+      },
+      {
+        "name": "icon-double-arrow-down",
+        "title": "双角符",
+        "tags": "双角符-下",
+        "svg": true
+      },
+      {
+        "name": "icon-double-arrow-left",
+        "title": "双角符",
+        "tags": "双角符-左",
+        "svg": true
+      },
+      {
+        "name": "icon-double-arrow-right",
+        "title": "双角符",
+        "tags": "双角符-右",
+        "svg": true
+      },
+      {
+        "name": "icon-double-arrow-up",
+        "title": "双角符",
+        "tags": "双角符-上",
+        "svg": true
+      },
+      {
+        "name": "icon-mono-bottom",
+        "title": "单角符",
+        "tags": "单角符-下",
+        "svg": true
+      },
+      {
+        "name": "icon-mono-left",
+        "title": "单角符",
+        "tags": "单角符-左",
+        "svg": true
+      },
+      {
+        "name": "icon-mono-right",
+        "title": "单角符",
+        "tags": "单角符-右",
+        "svg": true
+      },
+      {
+        "name": "icon-mono-top",
+        "title": "单角符",
+        "tags": "单角符-上",
+        "svg": true
+      },
+      {
+        "name": "icon-move",
+        "title": "箭头",
+        "tags": "箭头-拖动",
+        "svg": true
+      },
+      {
+        "name": "icon-link-arrow-h",
+        "title": "箭头",
+        "tags": "箭头-左右",
+        "svg": true
+      },
+      {
+        "name": "icon-link-arrow-v",
+        "title": "箭头",
+        "tags": "箭头-上下",
+        "svg": true
+      },
+      {
+        "name": "icon-insert-bottom",
+        "title": "插入符",
+        "tags": "插入符-下",
+        "svg": true
+      },
+      {
+        "name": "icon-insert-left",
+        "title": "插入符",
+        "tags": "插入符-左",
+        "svg": true
+      },
+      {
+        "name": "icon-insert-right",
+        "title": "插入符",
+        "tags": "插入符-右",
+        "svg": true
+      },
+      {
+        "name": "icon-insert-top",
+        "title": "插入符",
+        "tags": "插入符-上",
+        "svg": true
+      },
+      {
+        "name": "icon-bold-arrow-down",
+        "title": "人字形",
+        "tags": "人字形-下",
+        "svg": true
+      },
+      {
+        "name": "icon-bold-arrow-left",
+        "title": "人字形",
+        "tags": "人字形-左",
+        "svg": true
+      },
+      {
+        "name": "icon-bold-arrow-right",
+        "title": "人字形",
+        "tags": "人字形-右",
+        "svg": true
+      },
+      {
+        "name": "icon-bold-arrow-up",
+        "title": "人字形",
+        "tags": "人字形-上",
+        "svg": true
+      },
+      {
+        "name": "icon-arrow-down",
+        "title": "长箭头",
+        "tags": "长箭头-下",
+        "svg": true
+      },
+      {
+        "name": "icon-arrow-left",
+        "title": "长箭头",
+        "tags": "长箭头-左",
+        "svg": true
+      },
+      {
+        "name": "icon-arrow-right",
+        "title": "长箭头",
+        "tags": "长箭头-右",
+        "svg": true
+      },
+      {
+        "name": "icon-arrow-up",
+        "title": "长箭头",
+        "tags": "长箭头-上",
+        "svg": true
+      }
+    ]
+  },
+
+  "符号与表单": {
+    "": [
+      {
+        "name": "icon-checkbox-ok",
+        "title": "复选框",
+        "tags": "复选框",
+        "svg": true
+      },
+      {
+        "name": "icon-radio-on",
+        "title": "圆形",
+        "tags": "圆形",
+        "svg": true
+      },
+      {
+        "name": "icon-radio-off",
+        "title": "圆形",
+        "tags": "圆形",
+        "svg": true
+      },
+      {
+        "name": "icon-double-circle",
+        "title": "圆点",
+        "tags": "圆点",
+        "svg": true
+      },
+      {
+        "name": "icon-minus-fill",
+        "title": "减号",
+        "tags": "减号",
+        "svg": true
+      },
+      {
+        "name": "icon-plus-fill",
+        "title": "加号",
+        "tags": "加号",
+        "svg": true
+      },
+      {
+        "name": "icon-minus-border",
+        "title": "减号",
+        "tags": "减号",
+        "svg": true
+      },
+      {
+        "name": "icon-plus-border",
+        "title": "加号",
+        "tags": "加号",
+        "svg": true
+      },
+      {
+        "name": "icon-checkbox-off",
+        "title": "方形",
+        "tags": "方形",
+        "svg": true
+      },
+      {
+        "name": "icon-checkbox-on",
+        "title": "方形",
+        "tags": "方形",
+        "svg": true
+      },
+      {
+        "name": "icon-multiply",
+        "title": "乘号",
+        "tags": "乘号",
+        "svg": true
+      },
+      {
+        "name": "icon-ok",
+        "title": "对号",
+        "tags": "对号",
+        "svg": true
+      },
+      {
+        "name": "icon-plus",
+        "title": "加号",
+        "tags": "加号",
+        "svg": true
+      },
+      {
+        "name": "icon-minus",
+        "title": "减号",
+        "tags": "减号",
+        "svg": true
+      },
+      {
+        "name": "icon-question",
+        "title": "问号",
+        "tags": "问号",
+        "svg": true
+      },
+      {
+        "name": "icon-careful",
+        "title": "叹号",
+        "tags": "叹号",
+        "svg": true
+      },
+      {
+        "name": "icon-warning",
+        "title": "叹号",
+        "tags": "叹号",
+        "svg": true
+      },
+      {
+        "name": "icon-message",
+        "title": "信息",
+        "tags": "信息",
+        "svg": true
+      },
+      {
+        "name": "icon-no",
+        "title": "禁止",
+        "tags": "禁止",
+        "svg": true
+      },
+      {
+        "name": "icon-percentage",
+        "title": "百分号",
+        "tags": "百分号",
+        "svg": true
+      },
+      {
+        "name": "icon-number-sign",
+        "title": "井号",
+        "tags": "井号",
+        "svg": true
+      }
+    ]
+  },
+
+  "媒体播放": {
+    "": [
+      {
+        "name": "icon-random",
+        "title": "随机",
+        "tags": "随机",
+        "svg": true
+      },
+      {
+        "name": "icon-mute",
+        "title": "音量",
+        "tags": "音量-关",
+        "svg": true
+      },
+      {
+        "name": "icon-soound-min",
+        "title": "音量",
+        "tags": "音量-低",
+        "svg": true
+      },
+      {
+        "name": "icon-sound-max",
+        "title": "音量",
+        "tags": "音量-高",
+        "svg": true
+      },
+      {
+        "name": "icon-full",
+        "title": "全屏",
+        "tags": "全屏",
+        "svg": true
+      },
+      {
+        "name": "icon-mid",
+        "title": "收起",
+        "tags": "收起",
+        "svg": true
+      },
+      {
+        "name": "icon-pop",
+        "title": "弹出",
+        "tags": "弹出",
+        "svg": true
+      },
+      {
+        "name": "icon-expand",
+        "title": "展开",
+        "tags": "展开",
+        "svg": true
+      },
+      {
+        "name": "icon-prev-step",
+        "title": "快退",
+        "tags": "快退",
+        "svg": true
+      },
+      {
+        "name": "icon-backward",
+        "title": "后退",
+        "tags": "后退",
+        "svg": true
+      },
+      {
+        "name": "icon-prev",
+        "title": "后退",
+        "tags": "后退",
+        "svg": true
+      },
+      {
+        "name": "icon-next-step",
+        "title": "快进",
+        "tags": "快进",
+        "svg": true
+      },
+      {
+        "name": "icon-next",
+        "title": "前进",
+        "tags": "前进",
+        "svg": true
+      },
+      {
+        "name": "icon-go",
+        "title": "前进",
+        "tags": "前进",
+        "svg": true
+      },
+      {
+        "name": "icon-pause",
+        "title": "暂停",
+        "tags": "暂停",
+        "svg": true
+      },
+      {
+        "name": "icon-play",
+        "title": "播放",
+        "tags": "播放",
+        "svg": true
+      },
+      {
+        "name": "icon-stop",
+        "title": "停止",
+        "tags": "停止",
+        "svg": true
+      },
+      {
+        "name": "icon-pause",
+        "title": "播放",
+        "tags": "播放",
+        "svg": true
+      },
+      {
+        "name": "icon-pause-circle",
+        "title": "暂停",
+        "tags": "暂停",
+        "svg": true
+      },
+      {
+        "name": "icon-stop-circle",
+        "title": "停止",
+        "tags": "停止",
+        "svg": true
+      }
+    ]
+  },
+
+  "数字与字母": {
+    "": [
+      {
+        "name": "icon-a",
+        "title": "A",
+        "tags": "A",
+        "svg": true
+      },
+      {
+        "name": "icon-b",
+        "title": "B",
+        "tags": "B",
+        "svg": true
+      },
+      {
+        "name": "icon-c",
+        "title": "C",
+        "tags": "C",
+        "svg": true
+      },
+      {
+        "name": "icon-d",
+        "title": "D",
+        "tags": "D",
+        "svg": true
+      },
+      {
+        "name": "icon-e",
+        "title": "E",
+        "tags": "E",
+        "svg": true
+      },
+      {
+        "name": "icon-f",
+        "title": "F",
+        "tags": "F",
+        "svg": true
+      },
+      {
+        "name": "icon-g",
+        "title": "G",
+        "tags": "G",
+        "svg": true
+      },
+      {
+        "name": "icon-h",
+        "title": "H",
+        "tags": "H",
+        "svg": true
+      },
+      {
+        "name": "icon-i",
+        "title": "I",
+        "tags": "I",
+        "svg": true
+      },
+      {
+        "name": "icon-j",
+        "title": "J",
+        "tags": "J",
+        "svg": true
+      },
+      {
+        "name": "icon-k",
+        "title": "K",
+        "tags": "K",
+        "svg": true
+      },
+      {
+        "name": "icon-l",
+        "title": "L",
+        "tags": "L",
+        "svg": true
+      },
+      {
+        "name": "icon-m",
+        "title": "M",
+        "tags": "M",
+        "svg": true
+      },
+      {
+        "name": "icon-n",
+        "title": "N",
+        "tags": "N",
+        "svg": true
+      },
+      {
+        "name": "icon-o",
+        "title": "O",
+        "tags": "O",
+        "svg": true
+      },
+      {
+        "name": "icon-p",
+        "title": "P",
+        "tags": "P",
+        "svg": true
+      },
+      {
+        "name": "icon-q",
+        "title": "Q",
+        "tags": "Q",
+        "svg": true
+      },
+      {
+        "name": "icon-r",
+        "title": "R",
+        "tags": "R",
+        "svg": true
+      },
+      {
+        "name": "icon-s",
+        "title": "S",
+        "tags": "S",
+        "svg": true
+      },
+      {
+        "name": "icon-t",
+        "title": "T",
+        "tags": "T",
+        "svg": true
+      },
+      {
+        "name": "icon-u",
+        "title": "U",
+        "tags": "U",
+        "svg": true
+      },
+      {
+        "name": "icon-v",
+        "title": "V",
+        "tags": "V",
+        "svg": true
+      },
+      {
+        "name": "icon-w",
+        "title": "W",
+        "tags": "W",
+        "svg": true
+      },
+      {
+        "name": "icon-x",
+        "title": "X",
+        "tags": "X",
+        "svg": true
+      },
+      {
+        "name": "icon-y",
+        "title": "Y",
+        "tags": "Y",
+        "svg": true
+      },
+      {
+        "name": "icon-z",
+        "title": "Z",
+        "tags": "Z",
+        "svg": true
+      },
+      {
+        "name": "icon-zero",
+        "title": "0",
+        "tags": "0",
+        "svg": true
+      },
+      {
+        "name": "icon-one",
+        "title": "1",
+        "tags": "1",
+        "svg": true
+      },
+      {
+        "name": "icon-two",
+        "title": "2",
+        "tags": "2",
+        "svg": true
+      },
+      {
+        "name": "icon-three",
+        "title": "3",
+        "tags": "3",
+        "svg": true
+      },
+      {
+        "name": "icon-four",
+        "title": "4",
+        "tags": "4",
+        "svg": true
+      },
+      {
+        "name": "icon-five",
+        "title": "5",
+        "tags": "5",
+        "svg": true
+      },
+      {
+        "name": "icon-six",
+        "title": "6",
+        "tags": "6",
+        "svg": true
+      },
+      {
+        "name": "icon-seven",
+        "title": "7",
+        "tags": "7",
+        "svg": true
+      },
+      {
+        "name": "icon-eight",
+        "title": "8",
+        "tags": "8",
+        "svg": true
+      },
+      {
+        "name": "icon-nine",
+        "title": "9",
+        "tags": "9",
+        "svg": true
+      },
+      {
+        "name": "icon-colon",
+        "title": "冒号",
+        "tags": "冒号",
+        "svg": true
+      }
+    ]
+  }
+}
