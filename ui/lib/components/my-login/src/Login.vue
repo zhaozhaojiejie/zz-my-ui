@@ -81,7 +81,7 @@
       },
       title: {
         type: String,
-        default: '新德汇前端基础框架'
+        default: '薯片前端基础框架'
       },
       // 开启pki功能
       pki: Boolean,

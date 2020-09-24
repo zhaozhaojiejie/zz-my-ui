@@ -200,7 +200,7 @@ module.exports = {
   },
   brand() {
     this.log('-------------------------------------------', 'warning')
-    this.log(`【 MyWeb 】前端工程框架 v${packageJSON.version} \n ———— 新德汇前端团队出品 @ 2020`, 'success')
+    this.log(`【 MyWeb 】前端工程框架 v${packageJSON.version} \n ———— 薯片前端团队出品 @ 2020`, 'success')
     this.log('-------------------------------------------', 'warning')
   },
   /**

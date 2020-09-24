@@ -8,7 +8,7 @@ title: 工作台
         <my-description :width="72">
           <my-avatar slot="title" :size="72" theme="warning" icon="el-icon-user"></my-avatar>
           <my-title class="welcome" :level="2">早安 <span>Admin</span>，祝你开心每一天！</my-title>
-          <my-text type="secondary">交互专家 | 新德汇－某某某事业群－某某平台部－某某技术部－UED</my-text>
+          <my-text type="secondary">交互专家 | 薯片－某某某事业群－某某平台部－某某技术部－UED</my-text>
         </my-description>
       </my-float-item>
       <my-float-item float="right">
