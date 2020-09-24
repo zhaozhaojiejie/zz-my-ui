@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-09-24 13:37:02
+ * @LastEditTime: 2020-09-24 13:45:49
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \sp-ui\README.md
+-->
 # SP-UI
 
 
@@ -26,19 +34,6 @@ npm i @xdh/my --save
 
 ## 快速上手
 
-可通过以下两种方式使用 `SP-UI`
-
-### 一、采用项目工程模板创建项目【推荐】
-
-基于Vue项目的一站式解决方案。
-
-```sh 
-git clone https://gitee.com/newgateway/my-web.git
-```
-
-只需把工程模板项目获取下来就可以使用，包括全部功能，开箱即用。
-
-### 二、调用组件库功能
 
 如只需用到 `SP-UI` 其中的某些组件，可以在已有的项目工程中安装，并完成配置。步骤：
 
