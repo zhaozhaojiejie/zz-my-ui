@@ -1,6 +1,6 @@
 {
-  "name": "@xdh/my",
-  "version": "4.1.2",
+  "name": "@chipspc/ui",
+  "version": "1.0.0",
   "keywords": [
     "ElementUI",
     "UI组件",
@@ -9,7 +9,7 @@
     "地图应用",
     "数据可视化大屏"
   ],
-  "description": "MY前端基础框架核心组件库",
+  "description": "SP前端基础框架核心组件库",
   "main": "core/index.js",
   "sideEffects": [
     "*.scss",
@@ -59,7 +59,7 @@
     "url": "http://172.16.0.25/potato-chips/sp-ui.git"
   },
   "homepage": "http://newgateway.gitee.io/my/",
-  "author": "chenhuachun",
+  "author": "shupiankeji",
   "license": "MIT",
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^22.0.0",
