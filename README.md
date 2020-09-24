@@ -1,8 +1,7 @@
-# MyUI
+# SP-UI
 
-![cover](https://images.gitee.com/uploads/images/2020/0601/205813_f2bc7af2_1386281.jpeg)
 
-**MyUI是美亚柏科旗下新德汇出品的Web前端一站式项目工程框架。**
+**SP-UI是Web前端一站式项目工程框架。**
 
 基于 Vue + ElementUI 。专注于中台系统快速搭建，框架已在多个项目实战检验。
 
@@ -18,17 +17,6 @@
 - 支持静态配置。
 
 
-## 开发指南
-
-- [官网](http://newgateway.gitee.io/my/)
-- [开发指南](http://newgateway.gitee.io/my/guide/)
-- [基础组件库](http://newgateway.gitee.io/my/ui/components/)
-- [地图应用类库](http://newgateway.gitee.io/my/ui/map/)
-- [组件主题预览](http://newgateway.gitee.io/my-web/#/suit/)
-
-## 旧版本
-- [xdh-web v3.2](https://newgateway.gitee.io/xdh-web-doc/)
-
 ## 安装
 
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
@@ -38,11 +26,11 @@ npm i @xdh/my --save
 
 ## 快速上手
 
-可通过以下两种方式使用 `My`
+可通过以下两种方式使用 `SP-UI`
 
 ### 一、采用项目工程模板创建项目【推荐】
 
-官网提供的基于Vue项目的一站式解决方案。
+基于Vue项目的一站式解决方案。
 
 ```sh 
 git clone https://gitee.com/newgateway/my-web.git
@@ -52,7 +40,7 @@ git clone https://gitee.com/newgateway/my-web.git
 
 ### 二、调用组件库功能
 
-如只需用到 `My` 其中的某些组件，可以在已有的项目工程中安装，并完成配置。步骤：
+如只需用到 `SP-UI` 其中的某些组件，可以在已有的项目工程中安装，并完成配置。步骤：
 
 #### 1、安装组件库和相关插件
 
@@ -114,9 +102,3 @@ module.exports = {
   }
 </script>
 ```
-
-调用组件库功能示例工程 [https://gitee.com/newgateway/my-example](https://gitee.com/newgateway/my-example)
-
-## 反馈、交流钉钉群
-
-![info](http://newgateway.gitee.io/my/img/dingtalk.png)
