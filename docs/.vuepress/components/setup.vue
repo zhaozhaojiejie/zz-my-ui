@@ -12,8 +12,8 @@
         <div class="setup__buttons">
           <!--<el-button round type="primary" icon="el-icon-view" @click="go('http://newgateway.gitee.io/sp-web/')">演示预览
           </el-button>-->
-          <el-button round type="success" icon="el-icon-video-play" @click="go('/sp/guide/')">快速上手</el-button>
-          <el-button round icon="el-icon-s-promotion" @click="go('https://gitee.com/newgateway/sp',true)">源码仓库
+          <el-button round type="success" icon="el-icon-video-play" @click="go('/guide/')">快速上手</el-button>
+          <el-button round icon="el-icon-s-promotion" @click="go('http://172.16.0.25/potato-chips/sp-ui.git',true)">源码仓库
           </el-button>
           <sp-test></sp-test>
         </div>

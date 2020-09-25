@@ -81,12 +81,12 @@ let __config__ = {
   /**
    * 文档部署目录
    */
-  docsBaseUrl: '/sp/',
+  docsBaseUrl: '/',
 
   /**
    * 文档编译输出目录
    */
-  docsOutputDir: 'web',
+  docsOutputDir: 'docweb',
 
   /**
    * 自动生成路由表
