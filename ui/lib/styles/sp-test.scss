@@ -1,6 +1,5 @@
-@import "sp-typography";
-
-@include b(text) {
-  display: inline-block;
-
+@import "common/var";
+@include b(test) {
+  color: #597ef7;
+  font-size: 40px;
 }
