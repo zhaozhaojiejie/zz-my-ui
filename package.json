@@ -56,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/newgateway/my.git"
+    "url": "http://172.16.0.25/potato-chips/sp-ui.git"
   },
-  "homepage": "http://newgateway.gitee.io/my/",
+  "homepage": "http://192.168.254.233:86/",
   "author": "chenhuachun",
   "license": "MIT",
   "dependencies": {
