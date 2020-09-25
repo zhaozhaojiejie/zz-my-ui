@@ -29,11 +29,14 @@
 
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 ```sh 
-npm i @xdh/sp --save
+cnpm install @chipspc/pc  --save
 ```
 
 ## 快速上手
 
+可通过以下方式使用 `SP-UI`
+
+### 一、调用组件库功能
 
 如只需用到 `SP-UI` 其中的某些组件，可以在已有的项目工程中安装，并完成配置。步骤：
 
@@ -41,7 +44,7 @@ npm i @xdh/sp --save
 
 安装组件库
 ```sh 
-npm i element-ui @xdh/sp --save
+npm i element-ui @chipspc/pc --save
 ```
 
 安装项目依赖插件
@@ -58,7 +61,7 @@ module.exports = {
     '@vue/cli-plugin-babel/preset'
   ],
   plugins: [
-    ...require('@xdh/sp/core/babel.plugins')
+    ...require('@chipspc/pc/core/babel.plugins')
   ]
 }
 ```
@@ -69,9 +72,9 @@ module.exports = {
 
 ```js 
 module.exports = {
-  transpileDependencies: ['@xdh/sp'],
+  transpileDependencies: ['@chipspc/pc'],
   chainWebpack(chain) {
-    chain.resolve.alias.set('$ui', '@xdh/sp/ui/lib')
+    chain.resolve.alias.set('$ui', '@chipspc/pc/ui/lib')
   }
 }
 ```

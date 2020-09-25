@@ -1,6 +1,6 @@
 {
-  "name": "@xdh/sp",
-  "version": "1.0.0",
+  "name": "@chipspc/pc",
+  "version": "1.0.5",
   "keywords": [
     "ElementUI",
     "UI组件",
@@ -9,7 +9,7 @@
     "地图应用",
     "数据可视化大屏"
   ],
-  "description": "SP前端基础框架核心组件库",
+  "description": "薯片前端PC端基础框架核心组件库",
   "main": "core/index.js",
   "sideEffects": [
     "*.scss",

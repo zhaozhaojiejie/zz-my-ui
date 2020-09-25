@@ -14,7 +14,7 @@ module.exports = [
     {
       libraryName: '$ui',
       libDir: 'components',
-      styleLibraryName: '~node_modules/@xdh/sp/ui/lib/styles',
+      styleLibraryName: '~node_modules/@chipspc/pc/ui/lib/styles',
       ext: '.scss'
     },
     '$ui'
