@@ -1,7 +1,7 @@
 const utils = require('./utils')
 
 // 检查当前是否安装模式，false表示开发模式
-const IsInstalled = utils.urlFormat(__dirname).includes('node_modules/@xdh/my')
+const IsInstalled = utils.urlFormat(__dirname).includes('node_modules/@chipspc/pc')
 
 // My库所在的绝对路径位置
 const MyRootPath = utils.resolve('./')

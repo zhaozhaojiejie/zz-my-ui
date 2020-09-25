@@ -21,24 +21,14 @@
 
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 ```sh 
-npm i @xdh/my --save
+cnpm install @chipspc/pc  --save
 ```
 
 ## 快速上手
 
-可通过以下两种方式使用 `SP-UI`
+可通过以下方式使用 `SP-UI`
 
-### 一、采用项目工程模板创建项目【推荐】
-
-基于Vue项目的一站式解决方案。
-
-```sh 
-git clone https://gitee.com/newgateway/my-web.git
-```
-
-只需把工程模板项目获取下来就可以使用，包括全部功能，开箱即用。
-
-### 二、调用组件库功能
+### 一、调用组件库功能
 
 如只需用到 `SP-UI` 其中的某些组件，可以在已有的项目工程中安装，并完成配置。步骤：
 
@@ -46,7 +36,7 @@ git clone https://gitee.com/newgateway/my-web.git
 
 安装组件库
 ```sh 
-npm i element-ui @xdh/my --save
+npm i element-ui @chipspc/pc --save
 ```
 
 安装项目依赖插件
@@ -63,7 +53,7 @@ module.exports = {
     '@vue/cli-plugin-babel/preset'
   ],
   plugins: [
-    ...require('@xdh/my/core/babel.plugins')
+    ...require('@chipspc/pc/core/babel.plugins')
   ]
 }
 ```
@@ -74,9 +64,9 @@ module.exports = {
 
 ```js 
 module.exports = {
-  transpileDependencies: ['@xdh/my'],
+  transpileDependencies: ['@chipspc/pc'],
   chainWebpack(chain) {
-    chain.resolve.alias.set('$ui', '@xdh/my/ui/lib')
+    chain.resolve.alias.set('$ui', '@chipspc/pc/ui/lib')
   }
 }
 ```
