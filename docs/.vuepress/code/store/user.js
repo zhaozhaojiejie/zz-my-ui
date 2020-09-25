@@ -1,6 +1,6 @@
 /**
  *  user store module
- *  @module $my/code/store/user
+ *  @module $sp/code/store/user
  *  @author coder
  */
 import {

@@ -1,6 +1,6 @@
 /**
  * Line组件
- * @module $ui/map/my-map-line
+ * @module $ui/map/sp-map-line
  */
 import LineString from 'ol/geom/LineString'
 import featureMixin from '../../mixins/feature'
@@ -9,7 +9,7 @@ import {createBezierCurvePoints} from '../../utils/util'
 import createArrow from '../../utils/arrow'
 
 export default {
-  name: 'MyMapLine',
+  name: 'spMapLine',
   mixins: [strokeMixin, featureMixin],
   /**
    * 属性参数, 继承 [$ui/map/mixins/feature]{@link module:$ui/map/mixins/feature}

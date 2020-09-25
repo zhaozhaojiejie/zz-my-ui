@@ -1,6 +1,6 @@
 /**
  * GeoJSON 图层组件
- * @module $ui/map/my-map-geo
+ * @module $ui/map/sp-map-geo
  */
 import GeoJSON from 'ol/format/GeoJSON'
 import {Vector as VectorLayer} from 'ol/layer';
@@ -27,7 +27,7 @@ const defaultStyleCreator = vm => {
 }
 
 export default {
-  name: 'MyMapGeo',
+  name: 'spMapGeo',
   mixins: [styleMixin],
   inject: ['myMap'],
   render() {

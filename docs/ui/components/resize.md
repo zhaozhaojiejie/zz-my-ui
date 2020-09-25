@@ -3,7 +3,7 @@
 ## 何时使用
 
 通过鼠标拖拽右边或底边的边框到所需的宽度或高度。
-组件文档 <api-link href="components/my-resize">MyResize</api-link>
+组件文档 <api-link href="components/sp-resize">spResize</api-link>
 
 ## 代码示例
 
@@ -12,14 +12,14 @@
 :::demo
 ```html
 <template>
-  <my-resize class="box"></my-resize>
+  <sp-resize class="box"></sp-resize>
 </template>
 
 <script>
-import {MyResize} from '$ui'
+import {spResize} from '$ui'
 export default {
   components: {
-    MyResize
+    spResize
   }
 }
 </script>
@@ -42,20 +42,20 @@ export default {
 <template>
 <el-row>
   <el-col :span="12">
-    <my-resize class="box" axis="v">垂直方向</my-resize>
+    <sp-resize class="box" axis="v">垂直方向</sp-resize>
   </el-col>
   <el-col :span="12">
-     <my-resize class="box" axis="h">水平方向</my-resize>
+     <sp-resize class="box" axis="h">水平方向</sp-resize>
   </el-col>
 </el-row>
 
 </template>
 
 <script>
-import {MyResize} from '$ui'
+import {spResize} from '$ui'
 export default {
   components: {
-    MyResize
+    spResize
   }
 }
 </script>
@@ -76,14 +76,14 @@ export default {
 :::demo
 ```html
 <template>
-  <my-resize class="box" helper animate></my-resize>
+  <sp-resize class="box" helper animate></sp-resize>
 </template>
 
 <script>
-import {MyResize} from '$ui'
+import {spResize} from '$ui'
 export default {
   components: {
-    MyResize
+    spResize
   }
 }
 </script>
@@ -105,18 +105,18 @@ export default {
 :::demo
 ```html
 <template>
-  <my-resize class="box" helper animate 
+  <sp-resize class="box" helper animate 
              :min-width="100" 
              :max-width="300" 
              :min-height="100" 
-             :max-height="300"></my-resize>
+             :max-height="300"></sp-resize>
 </template>
 
 <script>
-import {MyResize} from '$ui'
+import {spResize} from '$ui'
 export default {
   components: {
-    MyResize
+    spResize
   }
 }
 </script>

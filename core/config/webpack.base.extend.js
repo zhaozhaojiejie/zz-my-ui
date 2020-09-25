@@ -33,8 +33,8 @@ module.exports = function (chain, theme, app) {
   // 增加 ui 别名
   chain.resolve.alias.set('$ui', core.LibPath)
 
-  // 增加 $my 别名
-  chain.resolve.alias.set('$my', core.TempPath)
+  // 增加 $sp 别名
+  chain.resolve.alias.set('$sp', core.TempPath)
 
   // 增加 $apps 别名
   chain.resolve.alias.set('$apps', core.AppsPath)

@@ -2,13 +2,13 @@ const _ = require('lodash')
 module.exports = _.template(`
 /**
  *  <%=cname%> store module
- *  @module $my/code/store/<%=name%>
+ *  @module $sp/code/store/<%=name%>
  *  @author coder
  */
 
 import {mapState, mapActions} from 'vuex'
-import { <%=importTypeArray.join(', ')%> } from '$my/code/types'
-import { <%=importApiArray.join(', ')%> } from '$my/code/api/<%=kebabCaseName%>'
+import { <%=importTypeArray.join(', ')%> } from '$sp/code/types'
+import { <%=importApiArray.join(', ')%> } from '$sp/code/api/<%=kebabCaseName%>'
 // store module
 export const <%=name%> = {
   /**

@@ -1,6 +1,6 @@
 # Affix 图钉
 
-将页面元素钉在可视范围。组件文档 <api-link href="components/my-affix">MyAffix</api-link>
+将页面元素钉在可视范围。组件文档 <api-link href="components/sp-affix">spAffix</api-link>
 
 ## 何时使用
 
@@ -17,15 +17,15 @@
 :::demo
 ```html
 <template>
-  <my-affix :offset-top="80">
+  <sp-affix :offset-top="80">
        <el-button type="primary">固定顶部 80px </el-button>
-  </my-affix>
+  </sp-affix>
 </template>
 <script>
-import {MyAffix} from '$ui'
+import {spAffix} from '$ui'
 export default {
   components: {
-    MyAffix
+    spAffix
   }
 }
 </script>
@@ -42,18 +42,18 @@ export default {
 <template>
   <div class="container" ref="container">
    <p v-for="n in 10" :key="`t-${n}`">占位文字</p>
-    <my-affix :offset-top="10" :offset-bottom="10" :target="getTarget">
+    <sp-affix :offset-top="10" :offset-bottom="10" :target="getTarget">
          <el-button type="primary">固定顶部 和 底部 </el-button>
-    </my-affix>
+    </sp-affix>
     <p v-for="n in 10" :key="`b-${n}`">占位文字</p>
   </div>
 </template>
 
 <script>
-import {MyAffix} from '$ui'
+import {spAffix} from '$ui'
 export default {
   components: {
-    MyAffix
+    spAffix
   },
   methods: {
     getTarget() {
@@ -79,7 +79,7 @@ export default {
 注意：Affix 内的元素不要使用绝对定位，如需要绝对定位的效果，可以直接设置 Affix 为绝对定位：
 
 ```html
-<my-affix :style="{ position: 'absolute', top: y, left: x}">
+<sp-affix :style="{ position: 'absolute', top: y, left: x}">
   ...
-</my-affix>
+</sp-affix>
 ```

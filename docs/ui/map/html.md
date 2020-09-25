@@ -1,6 +1,6 @@
 # Html 富文本
 
-HTML覆盖物。文档<api-link href="map/my-map-html"> MyMapHtml</api-link>
+HTML覆盖物。文档<api-link href="map/sp-map-html"> spMapHtml</api-link>
 
 ## 基础用法
 
@@ -8,11 +8,11 @@ HTML覆盖物。文档<api-link href="map/my-map-html"> MyMapHtml</api-link>
 
 ```html
 <template>
-  <my-map>  
-    <my-map-html :position="[113.261999, 23.130592]">
+  <sp-map>  
+    <sp-map-html :position="[113.261999, 23.130592]">
        <el-card>HTML覆盖物</el-card>
-    </my-map-html>
-  </my-map>
+    </sp-map-html>
+  </sp-map>
 </template>
 ```
 
@@ -30,13 +30,13 @@ HTML覆盖物。文档<api-link href="map/my-map-html"> MyMapHtml</api-link>
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-html :position="position" :auto-pan="true">
+  <sp-map>
+    <sp-map-html :position="position" :auto-pan="true">
       <el-card>
          <el-button @click="move">点击我</el-button>
       </el-card>
-    </my-map-html>
-  </my-map>
+    </sp-map-html>
+  </sp-map>
 </template>
 
 <script>
@@ -63,16 +63,16 @@ export default {
 
 ```html
 <template>
-  <my-map>
-    <my-map-html :positioning="positioning" :position="position">
+  <sp-map>
+    <sp-map-html :positioning="positioning" :position="position">
       <el-card style="width: 467px;">
         <el-radio-group v-model="positioning" size="small">
           <el-radio v-for="item in positionArray" :key="item" :label="item">{{item}}</el-radio>
         </el-radio-group>
       </el-card>
-    </my-map-html>
-    <my-map-circle :center="position" :radius="1000"></my-map-circle>
-  </my-map>
+    </sp-map-html>
+    <sp-map-circle :center="position" :radius="1000"></sp-map-circle>
+  </sp-map>
 </template>
 <script>
   export default {
@@ -96,11 +96,11 @@ export default {
 
 ```html
 <template>
-  <my-map>  
-    <my-map-html :position="[113.261999, 23.130592]" @click="htmlClick">
+  <sp-map>  
+    <sp-map-html :position="[113.261999, 23.130592]" @click="htmlClick">
        <el-card>HTML覆盖物</el-card>
-    </my-map-html>
-  </my-map>
+    </sp-map-html>
+  </sp-map>
 </template>
 <script>
 export default {

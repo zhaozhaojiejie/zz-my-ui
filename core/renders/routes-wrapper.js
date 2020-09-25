@@ -7,7 +7,7 @@ const _ = require('lodash')
  */
 module.exports = _.template(`
 /**
-* 该文件由 .my/core/build/routes-builder-plugin.js webpack插件自动生成
+* 该文件由 .sp/core/build/routes-builder-plugin.js webpack插件自动生成
 */
 export default function ({get}) {
   return <%= content %>

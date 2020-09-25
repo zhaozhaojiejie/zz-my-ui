@@ -1,6 +1,6 @@
 # 折线图
 
-`my-chart-line`
+`sp-chart-line`
 
 ## 基本用法
 
@@ -8,7 +8,7 @@
 :::demo(line-1)
 ```html
 <template>
-   <my-chart-line :data="data"></my-chart-line>
+   <sp-chart-line :data="data"></sp-chart-line>
 </template>
 
 <script>
@@ -48,7 +48,7 @@ export default {
 :::demo(line-2)
 ```html
 <template>
-   <my-chart-line :data="data" :settings="settings"></my-chart-line>
+   <sp-chart-line :data="data" :settings="settings"></sp-chart-line>
 </template>
 
 <script>
@@ -92,7 +92,7 @@ export default {
 :::demo(line-3)
 ```html
 <template>
-   <my-chart-line :data="data" :settings="settings"></my-chart-line>
+   <sp-chart-line :data="data" :settings="settings"></sp-chart-line>
 </template>
 
 <script>
@@ -134,7 +134,7 @@ export default {
 :::demo(line-4)
 ```html
 <template>
-   <my-chart-line :data="data"></my-chart-line>
+   <sp-chart-line :data="data"></sp-chart-line>
 </template>
 
 <script>
@@ -173,7 +173,7 @@ export default {
 :::demo(line-5)
 ```html
 <template>
-   <my-chart-line :data="data" :settings="settings"></my-chart-line>
+   <sp-chart-line :data="data" :settings="settings"></sp-chart-line>
 </template>
 
 <script>
@@ -217,7 +217,7 @@ export default {
 :::demo(line-6)
 ```html
 <template>
-   <my-chart-line :data="data" :settings="settings" :extend="extend"></my-chart-line>
+   <sp-chart-line :data="data" :settings="settings" :extend="extend"></sp-chart-line>
 </template>
 
 <script>
@@ -274,7 +274,7 @@ export default {
 :::demo(line-7)
 ```html
 <template>
-   <my-chart-line :data="data" :settings="settings" :extend="extend"></my-chart-line>
+   <sp-chart-line :data="data" :settings="settings" :extend="extend"></sp-chart-line>
 </template>
 
 <script>
@@ -321,7 +321,7 @@ export default {
 :::demo(line-8)
 ```html
 <template>
-   <my-chart-line :data="data" :settings="settings" :extend="extend"></my-chart-line>
+   <sp-chart-line :data="data" :settings="settings" :extend="extend"></sp-chart-line>
 </template>
 
 <script>

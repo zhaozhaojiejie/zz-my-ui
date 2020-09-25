@@ -1,5 +1,5 @@
 <template>
-  <div class="my-go-palette" :class="classes" :style="styles"></div>
+  <div class="sp-go-palette" :class="classes" :style="styles"></div>
 </template>
 
 <script>

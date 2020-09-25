@@ -27,7 +27,7 @@ const routesFactory = require(`$apps/${process.env.APP}/router/routes`).default
 /**
  * 按views目录下文件自动生成的路由
  */
-const autoRoutesFactory = require(`$my/routes/${process.env.APP}`).default
+const autoRoutesFactory = require(`$sp/routes/${process.env.APP}`).default
 
 /**
  * 项目Vuex实例参数选项

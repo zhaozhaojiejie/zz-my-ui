@@ -1,6 +1,6 @@
 
 /**
- * 该文件由 .my/core/build/svg.js 生成
+ * 该文件由 .sp/core/build/svg.js 生成
  */
  
 import Vue from 'vue'

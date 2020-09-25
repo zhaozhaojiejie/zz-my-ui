@@ -1,5 +1,5 @@
 <template>
-  <div class="my-go-status-bar" :class="classes">
+  <div class="sp-go-status-bar" :class="classes">
     <StatusItem v-if="nodeEnabled" title="实体" :items="nodes"></StatusItem>
     <StatusItem v-if="linkEnabled" title="链接" :items="links"></StatusItem>
     <slot :nodes="nodes" :links="links"></slot>

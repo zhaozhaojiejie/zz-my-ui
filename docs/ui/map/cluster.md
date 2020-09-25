@@ -1,14 +1,14 @@
 # Cluster 聚合
 
-聚合是指在相邻一定距离内的的覆盖物合并成一个。 文档<api-link href="map/my-map-cluster"> MyMapCluster </api-link>
+聚合是指在相邻一定距离内的的覆盖物合并成一个。 文档<api-link href="map/sp-map-cluster"> spMapCluster </api-link>
 
 ## 基础用法
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-cluster :data="data"></my-map-cluster>
-  </my-map>
+  <sp-map>
+    <sp-map-cluster :data="data"></sp-map-cluster>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -40,9 +40,9 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-cluster :data="data" :style-creator="styleCreator"></my-map-cluster>
-  </my-map>
+  <sp-map>
+    <sp-map-cluster :data="data" :style-creator="styleCreator"></sp-map-cluster>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -82,9 +82,9 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-cluster :data="data" :style-creator="styleCreator"></my-map-cluster>
-  </my-map>
+  <sp-map>
+    <sp-map-cluster :data="data" :style-creator="styleCreator"></sp-map-cluster>
+  </sp-map>
 </template>
 <script>
 import parseStyle from '$ui/map/utils/style'

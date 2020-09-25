@@ -1,7 +1,7 @@
 # Empty 空状态
 
 空状态时的展示占位图。
-组件文档 <api-link href="components/my-empty">MyEmpty</api-link>
+组件文档 <api-link href="components/sp-empty">spEmpty</api-link>
 
 ## 何时使用
 
@@ -15,14 +15,14 @@
 :::demo
 ```html
 <template>
- <my-empty></my-empty>
+ <sp-empty></sp-empty>
 </template>
 
 <script>
-import {MyEmpty} from '$ui'
+import {spEmpty} from '$ui'
 export default {
   components: {
-    MyEmpty
+    spEmpty
   }
 }
 </script>
@@ -32,23 +32,23 @@ export default {
 
 ### 选择图片
 
-可以通过设置 `image` 为 `MyEmpty.IMAGE_SIMPLE` 选择另一种风格的图片。也可设置为自定义图片地址
+可以通过设置 `image` 为 `spEmpty.IMAGE_SIMPLE` 选择另一种风格的图片。也可设置为自定义图片地址
 
 :::demo
 ```html
 <template>
- <my-empty :image="image"></my-empty>
+ <sp-empty :image="image"></sp-empty>
 </template>
 
 <script>
-import {MyEmpty} from '$ui'
+import {spEmpty} from '$ui'
 export default {
   components: {
-    MyEmpty
+    spEmpty
   },
   data() {
     return {
-      image: MyEmpty.IMAGE_SIMPLE
+      image: spEmpty.IMAGE_SIMPLE
     }
   }
 }
@@ -62,14 +62,14 @@ export default {
 :::demo
 ```html
 <template>
- <my-empty tip="该栏目下无内容"></my-empty>
+ <sp-empty tip="该栏目下无内容"></sp-empty>
 </template>
 
 <script>
-import {MyEmpty} from '$ui'
+import {spEmpty} from '$ui'
 export default {
   components: {
-    MyEmpty
+    spEmpty
   }
 }
 </script>
@@ -82,17 +82,17 @@ export default {
 :::demo
 ```html
 <template>
- <my-empty>
+ <sp-empty>
     <p>您还没创建任何内容！</p>
     <el-button icon="el-icon-plus" type="primary">创建</el-button>
- </my-empty>
+ </sp-empty>
 </template>
 
 <script>
-import {MyEmpty} from '$ui'
+import {spEmpty} from '$ui'
 export default {
   components: {
-    MyEmpty
+    spEmpty
   }
 }
 </script>
@@ -105,20 +105,20 @@ export default {
 :::demo
 ```html
 <template>
- <my-panel title="标题">
+ <sp-panel title="标题">
     <div style="height:400px">
-        <my-empty fit></my-empty>
+        <sp-empty fit></sp-empty>
     </div>
- </my-panel>
+ </sp-panel>
 
 </template>
 
 <script>
-import {MyEmpty, MyPanel} from '$ui'
+import {spEmpty, spPanel} from '$ui'
 export default {
   components: {
-    MyEmpty,
-    MyPanel
+    spEmpty,
+    spPanel
   }
 }
 </script>

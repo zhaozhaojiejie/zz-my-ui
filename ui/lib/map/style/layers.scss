@@ -1,6 +1,6 @@
 @import "vars";
 
-.my-map-layers {
+.sp-map-layers {
   padding: 4px;
   transition: all 0.3s;
   display: flex;
@@ -22,7 +22,7 @@
     cursor: pointer;
     border-radius: 2px;
 
-    .my-map-layers__title {
+    .sp-map-layers__title {
       background: $--border-color-base;
       color: $--title-color-light;
       border-radius: 2px 0 0 0;
@@ -31,7 +31,7 @@
     &.active {
       border-color: $--primary-color;
 
-      .my-map-layers__title {
+      .sp-map-layers__title {
         background: $--primary-color;
         color: $--title-color-dark;
       }
@@ -40,7 +40,7 @@
     &:hover {
       border-color: $--primary-color;
 
-      .my-map-layers__title {
+      .sp-map-layers__title {
         background: $--primary-color;
         color: $--title-color-dark;
       }

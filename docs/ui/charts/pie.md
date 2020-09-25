@@ -5,7 +5,7 @@
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data"></my-chart-pie>
+ <sp-chart-pie :data="data"></sp-chart-pie>
 </template>
 
 <script>
@@ -35,7 +35,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data" :settings="settings"></my-chart-pie>
+ <sp-chart-pie :data="data" :settings="settings"></sp-chart-pie>
 </template>
 
 <script>
@@ -68,7 +68,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data" :settings="settings"></my-chart-pie>
+ <sp-chart-pie :data="data" :settings="settings"></sp-chart-pie>
 </template>
 
 <script>
@@ -101,7 +101,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data" :settings="settings"></my-chart-pie>
+ <sp-chart-pie :data="data" :settings="settings"></sp-chart-pie>
 </template>
 
 <script>
@@ -134,7 +134,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data" :settings="settings"></my-chart-pie>
+ <sp-chart-pie :data="data" :settings="settings"></sp-chart-pie>
 </template>
 
 <script>
@@ -167,7 +167,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data" :settings="settings"></my-chart-pie>
+ <sp-chart-pie :data="data" :settings="settings"></sp-chart-pie>
 </template>
 
 <script>
@@ -202,7 +202,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data" :settings="settings"></my-chart-pie>
+ <sp-chart-pie :data="data" :settings="settings"></sp-chart-pie>
 </template>
 
 <script>
@@ -240,7 +240,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-chart-pie :data="data" :settings="settings" debug></my-chart-pie>
+ <sp-chart-pie :data="data" :settings="settings" debug></sp-chart-pie>
 </template>
 
 <script>

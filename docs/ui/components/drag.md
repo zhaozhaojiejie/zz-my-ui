@@ -2,7 +2,7 @@
 
 ## 何时使用
 
-需要实现对DOM元素拖拽移动时， 组件文档 <api-link href="components/my-drag">MyDrag</api-link> 
+需要实现对DOM元素拖拽移动时， 组件文档 <api-link href="components/sp-drag">spDrag</api-link> 
 
 ## 代码示例
 
@@ -12,15 +12,15 @@
 ```html
 <template>
   <div class="wrapper">
-      <my-drag class="demo"></my-drag>
+      <sp-drag class="demo"></sp-drag>
   </div>
 </template>
 
 <script>
-import {MyDrag} from '$ui'
+import {spDrag} from '$ui'
 export default {
   components: {
-    MyDrag
+    spDrag
   }
 }
 </script>
@@ -49,18 +49,18 @@ export default {
 ```html
 <template>
   <div class="wrapper">
-      <my-drag class="demo" handle=".el-card__header">
-        <my-panel title="Title">内容内容内容内容</my-panel>
-      </my-drag>
+      <sp-drag class="demo" handle=".el-card__header">
+        <sp-panel title="Title">内容内容内容内容</sp-panel>
+      </sp-drag>
   </div>
 </template>
 
 <script>
-import {MyDrag, MyPanel} from '$ui'
+import {spDrag, spPanel} from '$ui'
 export default {
   components: {
-    MyDrag,
-    MyPanel
+    spDrag,
+    spPanel
   }
 }
 </script>
@@ -84,16 +84,16 @@ export default {
     <el-row>
       <el-col :span="12">
        <div class="wrapper">
-          <my-drag class="demo" axis="h"">
-            <my-panel title="Title">水平方向</my-panel>
-          </my-drag>
+          <sp-drag class="demo" axis="h"">
+            <sp-panel title="Title">水平方向</sp-panel>
+          </sp-drag>
        </div>
       </el-col>
       <el-col :span="12">
        <div class="wrapper">
-          <my-drag class="demo" axis="v">
-            <my-panel title="Title">垂直方向</my-panel>
-          </my-drag>
+          <sp-drag class="demo" axis="v">
+            <sp-panel title="Title">垂直方向</sp-panel>
+          </sp-drag>
          </div>
       </el-col>
     </el-row>
@@ -101,11 +101,11 @@ export default {
 </template>
 
 <script>
-import {MyDrag, MyPanel} from '$ui'
+import {spDrag, spPanel} from '$ui'
 export default {
   components: {
-    MyDrag,
-    MyPanel
+    spDrag,
+    spPanel
   }
 }
 </script>
@@ -129,18 +129,18 @@ export default {
 ```html
 <template>
   <div class="wrapper" id="target">
-    <my-drag target="#target">
-        <my-panel title="Title">锁定访问</my-panel>
-    </my-drag>
+    <sp-drag target="#target">
+        <sp-panel title="Title">锁定访问</sp-panel>
+    </sp-drag>
   </div>
 </template>
 
 <script>
-import {MyDrag, MyPanel} from '$ui'
+import {spDrag, spPanel} from '$ui'
 export default {
   components: {
-    MyDrag,
-    MyPanel
+    spDrag,
+    spPanel
   }
 }
 </script>
@@ -164,19 +164,19 @@ export default {
 
 <template>
 
-   <my-drag clone revert append-body>
-      <my-panel title="Title">克隆自己</my-panel>
-   </my-drag>
+   <sp-drag clone revert append-body>
+      <sp-panel title="Title">克隆自己</sp-panel>
+   </sp-drag>
    
 
 </template>
 
 <script>
-import {MyDrag, MyPanel} from '$ui'
+import {spDrag, spPanel} from '$ui'
 export default {
   components: {
-    MyDrag,
-    MyPanel
+    spDrag,
+    spPanel
   }
 }
 </script>

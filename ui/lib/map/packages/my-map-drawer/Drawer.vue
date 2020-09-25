@@ -16,11 +16,11 @@
 </template>
 
 <script>
-  import MapPanel from '../my-map-panel'
+  import MapPanel from '../sp-map-panel'
   import clickoutside from 'element-ui/lib/utils/clickoutside'
 
   export default {
-    name: 'MyMapDrawer',
+    name: 'spMapDrawer',
     directives: {
       clickoutside
     },
@@ -72,14 +72,14 @@
       },
       classes() {
         return {
-          'my-map-drawer': true,
+          'sp-map-drawer': true,
           'is-collapsed': this.currentCollapsed,
           [`is-placement-${this.placement}`]: !!this.placement
         }
       },
       switchClass() {
         return {
-          'my-map-drawer__switch': true,
+          'sp-map-drawer__switch': true,
           [`is-${this.placement}`]: !!this.placement,
           [`is-${this.$attrs.theme}`]: !!this.$attrs.theme
         }

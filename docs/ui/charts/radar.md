@@ -6,7 +6,7 @@
 ```html
 <template>
   <div>
-    <my-chart-radar :data="data"></my-chart-radar>
+    <sp-chart-radar :data="data"></sp-chart-radar>
   </div>
 </template>
 

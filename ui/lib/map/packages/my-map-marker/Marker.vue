@@ -1,12 +1,12 @@
 <template>
-  <MyMapCluster ref="cluster"
+  <spMapCluster ref="cluster"
                 v-bind="clusterProps"
                 :data="markerData"
                 :styleCreator="styleCreator"
                 :cursor="cursor"
                 v-on="$listeners"
                 @ready="activePopup(activeIndex)">
-    <MyMapPopup v-if="!multiple && $scopedSlots.default"
+    <spMapPopup v-if="!multiple && $scopedSlots.default"
                 v-show="marker"
                 v-bind="popupProps"
                 @hide="handleHide">
@@ -14,10 +14,10 @@
         <slot v-if="marker" name="title" :marker="marker"></slot>
       </template>
       <slot v-if="marker" :marker="marker"></slot>
-    </MyMapPopup>
+    </spMapPopup>
 
     <template v-if="multiple && $scopedSlots.default">
-      <MyMapPopup v-for="(marker, index) in markers"
+      <spMapPopup v-for="(marker, index) in markers"
                   :key="index"
                   v-bind="multiplePopupProps"
                   :position="marker.coordinate"
@@ -26,21 +26,21 @@
           <slot v-if="marker" name="title" :marker="marker"></slot>
         </template>
         <slot v-if="marker" :marker="marker"></slot>
-      </MyMapPopup>
+      </spMapPopup>
     </template>
 
 
-  </MyMapCluster>
+  </spMapCluster>
 </template>
 
 <script>
   /**
    * 标记组件
-   * @module $ui/map/my-map-marker
+   * @module $ui/map/sp-map-marker
    *
    */
-  import MyMapCluster from '../my-map-cluster'
-  import MyMapPopup from '../my-map-popup'
+  import spMapCluster from '../sp-map-cluster'
+  import spMapPopup from '../sp-map-popup'
   import imageMixin from '../../mixins/image'
   import parseStyle from '../../utils/style'
   import defaultMarkerSrc from '$ui/map/sources/marker/blue.png'
@@ -63,15 +63,15 @@
    */
 
   export default {
-    name: 'MyMapMarker',
+    name: 'spMapMarker',
     inject: ['myMap'],
     mixins: [imageMixin],
     components: {
-      MyMapCluster,
-      MyMapPopup
+      spMapCluster,
+      spMapPopup
     },
     /**
-     * 属性参数, 继承 [$ui/map/packages/my-map-image]{@link module:$ui/map/packages/my-map-image}
+     * 属性参数, 继承 [$ui/map/packages/sp-map-image]{@link module:$ui/map/packages/sp-map-image}
      * @member props
      * @property {number[]} [coordinate] 单个标记时的坐标，无设置data时有效
      * @property {string} [src] 标记的默认图片url，data各项属性无src时采用该值
@@ -173,12 +173,12 @@
       clusterProps() {
         return mergeProps(this, ['keyMap', 'distance', 'cluster', 'zIndex'])
       },
-      // MyMapImage配置参数
+      // spMapImage配置参数
       imageProps() {
         const keys = Object.keys(imageMixin.props)
         return mergeProps(this, keys)
       },
-      // MyMapPopup配置参数
+      // spMapPopup配置参数
       popupProps() {
         if (!this.marker || this.multiple) return null
         const position = this.marker.coordinate

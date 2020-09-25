@@ -1,15 +1,15 @@
 # CornerMark 角标
 
- 文档 <api-link href="components/my-corner-mark">MyCornerMark</api-link>
+ 文档 <api-link href="components/sp-corner-mark">spCornerMark</api-link>
  
 ## 基础用法
 
 :::demo
 ```html
 <template>
-    <my-panel>
-      <my-corner-mark>HOT</my-corner-mark>
-    </my-panel>
+    <sp-panel>
+      <sp-corner-mark>HOT</sp-corner-mark>
+    </sp-panel>
 </template>
 ```
 :::
@@ -20,18 +20,18 @@
 ```html
 <template>
   <div>
-    <my-panel>
-      <my-corner-mark>HOT</my-corner-mark>
-    </my-panel>
-    <my-panel>
-      <my-corner-mark type="success">HOT</my-corner-mark>
-    </my-panel>
-    <my-panel>
-      <my-corner-mark type="warning">HOT</my-corner-mark>
-    </my-panel>
-    <my-panel>
-      <my-corner-mark type="danger">HOT</my-corner-mark>
-    </my-panel>
+    <sp-panel>
+      <sp-corner-mark>HOT</sp-corner-mark>
+    </sp-panel>
+    <sp-panel>
+      <sp-corner-mark type="success">HOT</sp-corner-mark>
+    </sp-panel>
+    <sp-panel>
+      <sp-corner-mark type="warning">HOT</sp-corner-mark>
+    </sp-panel>
+    <sp-panel>
+      <sp-corner-mark type="danger">HOT</sp-corner-mark>
+    </sp-panel>
   </div>
 </template>
 ```
@@ -43,15 +43,15 @@
 ```html
 <template>
   <div>
-    <my-panel>
-      <my-corner-mark size="large">HOT</my-corner-mark>
-    </my-panel>
-    <my-panel>
-      <my-corner-mark>HOT</my-corner-mark>
-    </my-panel>
-    <my-panel>
-      <my-corner-mark size="small">HOT</my-corner-mark>
-    </my-panel>
+    <sp-panel>
+      <sp-corner-mark size="large">HOT</sp-corner-mark>
+    </sp-panel>
+    <sp-panel>
+      <sp-corner-mark>HOT</sp-corner-mark>
+    </sp-panel>
+    <sp-panel>
+      <sp-corner-mark size="small">HOT</sp-corner-mark>
+    </sp-panel>
   </div>
 </template>
 ```

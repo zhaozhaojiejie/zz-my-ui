@@ -1,39 +1,39 @@
 <template>
-  <MyDrag v-if="visible"
-          class="my-map-placement my-map-panel"
+  <spDrag v-if="visible"
+          class="sp-map-placement sp-map-panel"
           v-bind="dragOptions"
           :class="classes"
           :style="wrapperStyle">
-    <MyResize v-bind="resizeOptions" :style="panelSize">
-      <div v-if="title || $slots.title || $slots.toolbar" ref="header" class="my-map-panel__header">
-        <div class="my-map-panel__title">
-          <MyIcon v-if="icon" v-bind="iconOptions"></MyIcon>
+    <spResize v-bind="resizeOptions" :style="panelSize">
+      <div v-if="title || $slots.title || $slots.toolbar" ref="header" class="sp-map-panel__header">
+        <div class="sp-map-panel__title">
+          <spIcon v-if="icon" v-bind="iconOptions"></spIcon>
           <slot name="title">{{title}}</slot>
         </div>
         <div v-if="$slots.toolbar" :class="toolbarClass">
           <slot name="toolbar"></slot>
         </div>
-        <i v-if="closable" @click="handleClose" class="my-map-panel__close el-icon-close"></i>
+        <i v-if="closable" @click="handleClose" class="sp-map-panel__close el-icon-close"></i>
       </div>
-      <div class="my-map-panel__body">
+      <div class="sp-map-panel__body">
         <slot></slot>
       </div>
       <div v-if="$slots.footer" ref="footer" :class="footerClass">
         <slot name="footer"></slot>
       </div>
       <slot name="append"></slot>
-    </MyResize>
-  </MyDrag>
+    </spResize>
+  </spDrag>
 
 </template>
 
 <script>
   /**
    * 面板组件
-   * @module $ui/map/my-map-panel
+   * @module $ui/map/sp-map-panel
    */
-  import MyMapPlacement from '../my-map-placement'
-  import {MyDrag, MyResize, MyIcon} from '$ui'
+  import spMapPlacement from '../sp-map-placement'
+  import {spDrag, spResize, spIcon} from '$ui'
 
   /**
    * 插槽
@@ -45,23 +45,23 @@
    */
 
   export default {
-    name: 'MyMapPanel',
-    mixins: [MyMapPlacement],
+    name: 'spMapPanel',
+    mixins: [spMapPlacement],
     inject: ['myMap'],
     components: {
-      MyDrag,
-      MyResize,
-      MyIcon
+      spDrag,
+      spResize,
+      spIcon
     },
     /**
-     * 属性参数，继承 [$ui/map/my-map-placement]{@link module:$ui/map/my-map-placement}
+     * 属性参数，继承 [$ui/map/sp-map-placement]{@link module:$ui/map/sp-map-placement}
      * @member props
      * @property {string} [width] 宽度
      * @property {string} [height] 高度
-     * @property {boolean|object} [draggable] 拖拽配置，参考 my-drag组件
-     * @property {boolean|resizable} [resizable] Resize配置，参考 my-resize
+     * @property {boolean|object} [draggable] 拖拽配置，参考 sp-drag组件
+     * @property {boolean|resizable} [resizable] Resize配置，参考 sp-resize
      * @property {string} [title] 标题文本，可以用插槽定义
-     * @property {string|object} [icon] 图标配置，参考 my-icon
+     * @property {string|object} [icon] 图标配置，参考 sp-icon
      * @property {boolean} [closable] 显示关闭按钮，visible需要加 sync 才有效
      * @property {boolean} [visible] 是否可见
      * @property {string} [footerAlign] 底部对齐方式,支持 'left', 'right', 'center'
@@ -130,7 +130,7 @@
       },
       toolbarClass() {
         return {
-          'my-map-panel__toolbar': true,
+          'sp-map-panel__toolbar': true,
           'is-closable': this.closable
         }
       },
@@ -143,7 +143,7 @@
       },
       footerClass() {
         return {
-          'my-map-panel__footer': true,
+          'sp-map-panel__footer': true,
           [`is-${this.footerAlign}`]: !!this.footerAlign
         }
       }

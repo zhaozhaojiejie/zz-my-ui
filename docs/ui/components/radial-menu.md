@@ -1,6 +1,6 @@
 # RadialMenu 圆形菜单
 
-文档 <api-link href="components/my-radial-menu">MyRadialMenu</api-link> 
+文档 <api-link href="components/sp-radial-menu">spRadialMenu</api-link> 
 
 :::warning
 由于组件采用svg生成，菜单项目用到的图标必须也要svg才可以。
@@ -13,7 +13,7 @@
 <template>
     <div style="height:200px; position:relative;">
       <el-button @click="visible=true">显示</el-button>
-      <my-radial-menu :items="items" :visible.sync="visible" :default-selected="6"></my-radial-menu>
+      <sp-radial-menu :items="items" :visible.sync="visible" :default-selected="6"></sp-radial-menu>
     </div>
 </template>
 
@@ -46,7 +46,7 @@ export default {
 <template>
     <div style="height:200px; position:relative;">
       <el-button @click="visible=true">显示</el-button>
-      <my-radial-menu :items="items" :visible.sync="visible"></my-radial-menu>
+      <sp-radial-menu :items="items" :visible.sync="visible"></sp-radial-menu>
     </div>
 </template>
 
@@ -139,7 +139,7 @@ export default {
 ```html
 <template>
     <div style="height:200px; position:relative;" @contextmenu="handleContextmenu">
-      <my-radial-menu :items="items" :visible.sync="visible" :position="position" append-to-body></my-radial-menu>
+      <sp-radial-menu :items="items" :visible.sync="visible" :position="position" append-to-body></sp-radial-menu>
     </div>
 </template>
 

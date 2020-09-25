@@ -1,15 +1,15 @@
 # Layers 图层切换
 
-图层切换控件。文档<api-link href="map/my-map-layers"> MyMapLayers </api-link>
+图层切换控件。文档<api-link href="map/sp-map-layers"> spMapLayers </api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-layers :layers="layers" :margin="10"></my-map-layers>
-  </my-map>
+  <sp-map>
+    <sp-map-layers :layers="layers" :margin="10"></sp-map-layers>
+  </sp-map>
 </template>
 <script>
   import Baidu from '$ui/map/sources/preview/Baidu.png'
@@ -55,12 +55,12 @@
 :::demo
 ```html
 <template>
-  <my-map invert>
-    <my-map-layers :layers="layers" 
+  <sp-map invert>
+    <sp-map-layers :layers="layers" 
                     :margin="10"
                     theme="dark"
-                    placement="center-bottom"></my-map-layers>
-  </my-map>
+                    placement="center-bottom"></sp-map-layers>
+  </sp-map>
 </template>
 <script>
   import Baidu from '$ui/map/sources/preview/Baidu.png'

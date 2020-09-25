@@ -1,6 +1,6 @@
 # 图表基础组件
 
-`my-chart` 是封装ECharts的Vue组件，所有图表都是基于`my-chart`进行扩展。
+`sp-chart` 是封装ECharts的Vue组件，所有图表都是基于`sp-chart`进行扩展。
 
 
 ## 通用参数
@@ -20,7 +20,7 @@
 :::demo(chart-1)
 ```html
 <template>
-   <my-chart :options="options" width="500px" height="300px"></my-chart>
+   <sp-chart :options="options" width="500px" height="300px"></sp-chart>
 </template>
 
 <script>
@@ -65,7 +65,7 @@ export default {
 <template>
    <div class="container">
        <div class="wrapper">
-         <my-chart :options="options" fit></my-chart>
+         <sp-chart :options="options" fit></sp-chart>
        </div>
    </div>
 </template>
@@ -127,7 +127,7 @@ export default {
 :::demo(chart-3)
 ```html
 <template>
-   <my-chart :options="options" theme="dark"></my-chart>
+   <sp-chart :options="options" theme="dark"></sp-chart>
 </template>
 
 <script>
@@ -169,7 +169,7 @@ export default {
 :::demo(chart-4)
 ```html
 <template>
-   <my-chart :options="options" :loading="loading"></my-chart>
+   <sp-chart :options="options" :loading="loading"></sp-chart>
 </template>
 
 <script>
@@ -217,7 +217,7 @@ export default {
 :::demo(chart-5)
 ```html
 <template>
-   <my-chart :options="options" :extend="extend"></my-chart>
+   <sp-chart :options="options" :extend="extend"></sp-chart>
 </template>
 
 <script>
@@ -269,7 +269,7 @@ export default {
 :::demo(chart-6)
 ```html
 <template>
-   <my-chart :options="options" debug></my-chart>
+   <sp-chart :options="options" debug></sp-chart>
 </template>
 
 <script>
@@ -347,7 +347,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-chart-line :data="data"></my-chart-line>
+  <sp-chart-line :data="data"></sp-chart-line>
 </template>   
 <script>
 export default {

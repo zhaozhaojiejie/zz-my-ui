@@ -4,12 +4,12 @@ FormItem不是一个组件，是一系列数据录入组件的统称。 这些�
 
 ## 公用属性参数
 
-表单项的公共属性参数，继承 el-form-item 的的全部特性。 需要与MyForm结合使用才有效。
+表单项的公共属性参数，继承 el-form-item 的的全部特性。 需要与spForm结合使用才有效。
 
 参数名称 | 类型 | 默认值 | 说明 
 - | - | - | -
 name | String | - | 表单域 model 字段名称, 等价于 el-form-item 的 prop 参数
-width | String | - | 宽度，css属性，支持像素，百分比和表达式，也可以在MyForm中统一设置itemWidth
+width | String | - | 宽度，css属性，支持像素，百分比和表达式，也可以在spForm中统一设置itemWidth
 props | Object | - | 输入组件参数对象，即 el-form-item 包含的组件参数
 options | Array | - | 选项数据，有选项的输入组件才有效
 keyMap | Object | {id, parentId, label, value} | 选项数据对象属性名称映射
@@ -29,7 +29,7 @@ placeholder | String | - | 占位文本
 表单项组件有两种调用方式：
 
 - 单独使用
-- 与[MyForm](form.md)结合使用
+- 与[spForm](form.md)结合使用
 
 ### 单独使用
 
@@ -38,7 +38,7 @@ placeholder | String | - | 占位文本
 :::demo(form-item-1)
 ```html
 <template>
-  <my-input placeholder="请输入标题" v-model="title"></my-input>
+  <sp-input placeholder="请输入标题" v-model="title"></sp-input>
 </template>
 <script>
 export default {
@@ -59,16 +59,16 @@ export default {
 <el-input placeholder="请输入标题" v-model="title"></el-input>
 ```
 
-### 结合MyForm 
+### 结合spForm 
 
-通常表单项需要结合MyForm使用，才能能便利实现数据录入功能。
+通常表单项需要结合spForm使用，才能能便利实现数据录入功能。
 
 :::demo(form-item-2)
 ```html
 <template>
-  <my-form :model="model" @submit="handleSubmit">
-     <my-input name="title" label="标题" placeholder="请输入标题"></my-input>
-  </my-form>
+  <sp-form :model="model" @submit="handleSubmit">
+     <sp-input name="title" label="标题" placeholder="请输入标题"></sp-input>
+  </sp-form>
 </template>
 <script>
 export default {
@@ -111,12 +111,12 @@ export default {
 :::demo(form-item-3)
 ```html
 <template>
-  <my-form inline item-width="calc(33% - 12px)">
-    <my-input name="input"></my-input>
-    <my-select name="select"></my-select>
-    <my-range name="range" mode="date"></my-range>
-    <my-input name="content" width="calc(100% - 12px)" :props="{type:'textarea'}"></my-input>
-  </my-form>
+  <sp-form inline item-width="calc(33% - 12px)">
+    <sp-input name="input"></sp-input>
+    <sp-select name="select"></sp-select>
+    <sp-range name="range" mode="date"></sp-range>
+    <sp-input name="content" width="calc(100% - 12px)" :props="{type:'textarea'}"></sp-input>
+  </sp-form>
 
 </template>
 ```
@@ -126,15 +126,15 @@ export default {
 
 ### 输入组件参数
 
-表单项内部都包含了一个输入组件，如：my-input 是 el-form-item 和 el-input 的结合体， 内部输入组件就是el-input.
+表单项内部都包含了一个输入组件，如：sp-input 是 el-form-item 和 el-input 的结合体， 内部输入组件就是el-input.
 输入组件的参数通过 `props` 设置。
 
 :::demo(form-item-4)
 ```html
 <template>
-  <my-form>
-    <my-input name="content" :props="{type:'textarea', rows:3}"></my-input>
-  </my-form>
+  <sp-form>
+    <sp-input name="content" :props="{type:'textarea', rows:3}"></sp-input>
+  </sp-form>
 </template>
 ```
 :::
@@ -143,19 +143,19 @@ export default {
 
 有选项数据的输入组件通过`options`参数设置。以下表单项组件有选项：
 
-- my-select
-- my-checkbox
-- my-radio
-- my-cascader
-- my-tag-select
-- my-tree-select
+- sp-select
+- sp-checkbox
+- sp-radio
+- sp-cascader
+- sp-tag-select
+- sp-tree-select
 
 :::demo(form-item-5)
 ```html
 <template>
-  <my-form>
-    <my-select name="select" :options="options"></my-select>
-  </my-form>
+  <sp-form>
+    <sp-select name="select" :options="options"></sp-select>
+  </sp-form>
 </template>
 
 <script>
@@ -184,9 +184,9 @@ export default {
 :::demo(form-item-5)
 ```html
 <template>
-  <my-form>
-    <my-select name="select" :loader="loader"></my-select>
-  </my-form>
+  <sp-form>
+    <sp-select name="select" :loader="loader"></sp-select>
+  </sp-form>
 </template>
 
 <script>
@@ -215,10 +215,10 @@ export default {
 :::demo(form-item-6)
 ```html
 <template>
-  <my-form @submit="handleSubmit" collapsible>
-     <my-input name="title" label="标题"></my-input>
-     <my-input name="content" label="内容" :props="{type:'textarea'}" collapsible></my-input>
-  </my-form>
+  <sp-form @submit="handleSubmit" collapsible>
+     <sp-input name="title" label="标题"></sp-input>
+     <sp-input name="content" label="内容" :props="{type:'textarea'}" collapsible></sp-input>
+  </sp-form>
 </template>
 
 <script>
@@ -242,11 +242,11 @@ export default {
 :::demo(form-item-7)
 ```html
 <template>
-  <my-form :model="model" @submit="handleSubmit">
-     <my-radio name="type" :options="types"></my-radio>
-     <my-input name="animal" label="动物名称" depend="type" :depend-value="1"></my-input>
-     <my-input name="fruit" label="水果名称" depend="type" :depend-value="2"></my-input>
-  </my-form>
+  <sp-form :model="model" @submit="handleSubmit">
+     <sp-radio name="type" :options="types"></sp-radio>
+     <sp-input name="animal" label="动物名称" depend="type" :depend-value="1"></sp-input>
+     <sp-input name="fruit" label="水果名称" depend="type" :depend-value="2"></sp-input>
+  </sp-form>
 </template>
 
 <script>
@@ -283,10 +283,10 @@ export default {
 :::demo(form-item-8)
 ```html
 <template>
-  <my-form :model="model" @submit="handleSubmit">
-     <my-radio name="type" :options="types"></my-radio>
-     <my-select name="name" cascade="type" :loader="loader"></my-select>
-  </my-form>
+  <sp-form :model="model" @submit="handleSubmit">
+     <sp-radio name="type" :options="types"></sp-radio>
+     <sp-select name="name" cascade="type" :loader="loader"></sp-select>
+  </sp-form>
 </template>
 
 <script>
@@ -339,16 +339,16 @@ export default {
 :::demo
 ```html
 <template>
- <my-form @submit="handleSubmit">
-    <my-autocomplete label="激活即列出输入建议" 
+ <sp-form @submit="handleSubmit">
+    <sp-autocomplete label="激活即列出输入建议" 
                      name="demo1" 
                      placeholder="请输入内容"
-                     :props="{fetchSuggestions: this.querySearch}"></my-autocomplete>
-    <my-autocomplete label="输入后匹配输入建议" 
+                     :props="{fetchSuggestions: this.querySearch}"></sp-autocomplete>
+    <sp-autocomplete label="输入后匹配输入建议" 
                      name="demo2" 
                      placeholder="请输入内容"
-                     :props="{fetchSuggestions: this.querySearch, triggerOnFocus: false}"></my-autocomplete>
-    <my-autocomplete label="自定义模板" 
+                     :props="{fetchSuggestions: this.querySearch, triggerOnFocus: false}"></sp-autocomplete>
+    <sp-autocomplete label="自定义模板" 
                         name="demo3"
                         placeholder="请输入内容"
                         :props="{fetchSuggestions: this.querySearch, popperClass:'autocomplete'}">
@@ -359,8 +359,8 @@ export default {
                         <div class="name">{{ item.value }}</div>
                         <span class="addr">{{ item.address }}</span>
                       </template>
-    </my-autocomplete>
- </my-form>
+    </sp-autocomplete>
+ </sp-form>
 </template>
 <script>
 export default {
@@ -469,20 +469,20 @@ export default {
 :::demo
 ```html
 <template>
-  <my-form @submit="handleSubmit">
-    <my-cascader name="demo1" label="默认 click 触发子菜单" :options="tree"></my-cascader>
-    <my-cascader name="demo2" label="hover 触发子菜单" :options="tree"
-                 :props="{props:{expandTrigger: 'hover'}}"></my-cascader>
-    <my-cascader name="demo4" label="多选" :options="tree"
-                 :props="{ props: {multiple: true}, clearable: true}"></my-cascader>
-    <my-cascader name="demo5" label="自定义节点内容" :options="tree">
+  <sp-form @submit="handleSubmit">
+    <sp-cascader name="demo1" label="默认 click 触发子菜单" :options="tree"></sp-cascader>
+    <sp-cascader name="demo2" label="hover 触发子菜单" :options="tree"
+                 :props="{props:{expandTrigger: 'hover'}}"></sp-cascader>
+    <sp-cascader name="demo4" label="多选" :options="tree"
+                 :props="{ props: {multiple: true}, clearable: true}"></sp-cascader>
+    <sp-cascader name="demo5" label="自定义节点内容" :options="tree">
       <template v-slot="{ node, data }">
         <span>{{ data.label }}</span>
         <span v-if="!node.isLeaf"> ({{ data.children.length }}) </span>
       </template>
-    </my-cascader>
+    </sp-cascader>
 
-  </my-form>
+  </sp-form>
 </template>
 
 <script>

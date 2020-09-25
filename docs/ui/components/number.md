@@ -1,7 +1,7 @@
 # Number 数字
 
 格式化数值的组件。
-组件文档 <api-link href="components/my-number">MyNumber</api-link>
+组件文档 <api-link href="components/sp-number">spNumber</api-link>
 
 ## 何时使用
 
@@ -14,20 +14,20 @@
 :::demo
 ```html
 <template>
- <my-number value="3234"></my-number>
+ <sp-number value="3234"></sp-number>
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -43,20 +43,20 @@ export default {
 :::demo
 ```html
 <template>
- <my-number value="null" default-value="0"></my-number>
+ <sp-number value="null" default-value="0"></sp-number>
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -71,24 +71,24 @@ export default {
 ```html
 <template>
  <div>
-     <my-number value="3345" trend="up"></my-number>
-     <my-number value="1234" trend="down"></my-number>
-     <my-number value="2002" trend="-"></my-number>
+     <sp-number value="3345" trend="up"></sp-number>
+     <sp-number value="1234" trend="down"></sp-number>
+     <sp-number value="2002" trend="-"></sp-number>
  </div>
 
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -104,24 +104,24 @@ export default {
 ```html
 <template>
  <div>
-     <my-number value="3345123" separator=","></my-number>
-     <my-number value="3345123" separator=""></my-number>
-     <my-number value="3345123" separator="-"></my-number>
+     <sp-number value="3345123" separator=","></sp-number>
+     <sp-number value="3345123" separator=""></sp-number>
+     <sp-number value="3345123" separator="-"></sp-number>
  </div>
 
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -136,24 +136,24 @@ export default {
 ```html
 <template>
  <div>
-     <my-number value="3345.2474914" :precision="1"></my-number>
-     <my-number value="3345.2474914" :precision="2"></my-number>
-     <my-number value="3345.2474914" :precision="3"></my-number>
+     <sp-number value="3345.2474914" :precision="1"></sp-number>
+     <sp-number value="3345.2474914" :precision="2"></sp-number>
+     <sp-number value="3345.2474914" :precision="3"></sp-number>
  </div>
 
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -168,22 +168,22 @@ export default {
 ```html
 <template>
  <div>
-     <my-number value="3345.2474914" :precision="2" prefix="￥" suffix="万"></my-number>
+     <sp-number value="3345.2474914" :precision="2" prefix="￥" suffix="万"></sp-number>
  </div>
 
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -198,23 +198,23 @@ export default {
 ```html
 <template>
  <div>
-    <my-number value="0.23233322" percentage></my-number>
-    <my-number value="0.23233322" percentage :precision="2"></my-number>
+    <sp-number value="0.23233322" percentage></sp-number>
+    <sp-number value="0.23233322" percentage :precision="2"></sp-number>
  </div>
 
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -229,27 +229,27 @@ export default {
 ```html
 <template>
  <div>
-    <my-number value="12345"></my-number>
-    <my-number value="12345" type="primary"></my-number>
-    <my-number value="12345" type="success"></my-number>
-    <my-number value="12345" type="warning"></my-number>
-    <my-number value="12345" type="danger"></my-number>
-    <my-number value="12345" type="info"></my-number>
+    <sp-number value="12345"></sp-number>
+    <sp-number value="12345" type="primary"></sp-number>
+    <sp-number value="12345" type="success"></sp-number>
+    <sp-number value="12345" type="warning"></sp-number>
+    <sp-number value="12345" type="danger"></sp-number>
+    <sp-number value="12345" type="info"></sp-number>
  </div>
 
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }
@@ -265,18 +265,18 @@ export default {
 <template>
  <div>
    <el-button @click="start">开始动画</el-button>
-    <my-number :value="value" count-up></my-number>
-    <my-number :value="value" type="primary" :count-up="{startVal: 1000}"></my-number>
-    <my-number :value="value" type="success" :count-up="{duration: 5}"></my-number>
+    <sp-number :value="value" count-up></sp-number>
+    <sp-number :value="value" type="primary" :count-up="{startVal: 1000}"></sp-number>
+    <sp-number :value="value" type="success" :count-up="{duration: 5}"></sp-number>
  </div>
 
 </template>
 
 <script>
-import {MyNumber} from '$ui'
+import {spNumber} from '$ui'
 export default {
   components: {
-    MyNumber
+    spNumber
   },
   data() {
     return {
@@ -292,7 +292,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-number {
+.sp-number {
  font-size: 20px;
  margin: 20px;
 }

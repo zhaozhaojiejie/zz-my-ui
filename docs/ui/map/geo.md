@@ -1,15 +1,15 @@
 # GeoJSON
 
-GeoJson图层。文档<api-link href="map/my-map-geo"> MyMapGeo</api-link>
+GeoJson图层。文档<api-link href="map/sp-map-geo"> spMapGeo</api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map :zoom="4" :center="[106.011022, 37.237037]">
-    <my-map-geo :json="geo"></my-map-geo>
-  </my-map>
+  <sp-map :zoom="4" :center="[106.011022, 37.237037]">
+    <sp-map-geo :json="geo"></sp-map-geo>
+  </sp-map>
 </template>
 <script>
   import china from '$ui/charts/geo/china.json'
@@ -31,9 +31,9 @@ GeoJson图层。文档<api-link href="map/my-map-geo"> MyMapGeo</api-link>
 :::demo
 ```html
 <template>
-  <my-map :zoom="4" :center="[106.011022, 37.237037]">
-    <my-map-geo :json="geo" :stroke="stroke" :fill="fill" :text="text"></my-map-geo>
-  </my-map>
+  <sp-map :zoom="4" :center="[106.011022, 37.237037]">
+    <sp-map-geo :json="geo" :stroke="stroke" :fill="fill" :text="text"></sp-map-geo>
+  </sp-map>
 </template>
 <script>
   import china from '$ui/charts/geo/china.json'
@@ -65,9 +65,9 @@ GeoJson图层。文档<api-link href="map/my-map-geo"> MyMapGeo</api-link>
 
 ```html
 <template>
-  <my-map :zoom="4" :center="[106.011022, 37.237037]"  >
-    <my-map-geo :json="geo" @ready="geoReadyHandle"></my-map-geo>
-  </my-map>
+  <sp-map :zoom="4" :center="[106.011022, 37.237037]"  >
+    <sp-map-geo :json="geo" @ready="geoReadyHandle"></sp-map-geo>
+  </sp-map>
 </template>
 <script>
   import china from '$ui/charts/geo/china.json'
@@ -124,9 +124,9 @@ GeoJson图层。文档<api-link href="map/my-map-geo"> MyMapGeo</api-link>
 :::demo
 ```html
 <template>
-  <my-map :zoom="4" :center="[106.011022, 37.237037]">
-    <my-map-geo :json="geo" :hover-style="hoverStyle"></my-map-geo>
-  </my-map>
+  <sp-map :zoom="4" :center="[106.011022, 37.237037]">
+    <sp-map-geo :json="geo" :hover-style="hoverStyle"></sp-map-geo>
+  </sp-map>
 </template>
 <script>
   import china from '$ui/charts/geo/china.json'
@@ -157,9 +157,9 @@ GeoJson图层。文档<api-link href="map/my-map-geo"> MyMapGeo</api-link>
 :::demo
 ```html
 <template>
-  <my-map :zoom="4" :center="[106.011022, 37.237037]">
-    <my-map-geo :json="geo" @click="handleClick"></my-map-geo>
-  </my-map>
+  <sp-map :zoom="4" :center="[106.011022, 37.237037]">
+    <sp-map-geo :json="geo" @click="handleClick"></sp-map-geo>
+  </sp-map>
 </template>
 <script>
   import china from '$ui/charts/geo/china.json'
@@ -185,15 +185,15 @@ GeoJson图层。文档<api-link href="map/my-map-geo"> MyMapGeo</api-link>
 :::demo
 ```html
 <template>
-  <my-map :zoom="4" :center="[106.011022, 37.237037]">
-    <my-map-geo :json="geo"
+  <sp-map :zoom="4" :center="[106.011022, 37.237037]">
+    <sp-map-geo :json="geo"
                 :hover-style="hoverStyle"
                 @mouseenter="handleMouseEnter"
-                @mouseleave="handleMouseLeave"></my-map-geo>
-    <my-map-popup width="200px" title="提示" :position="region.position">
+                @mouseleave="handleMouseLeave"></sp-map-geo>
+    <sp-map-popup width="200px" title="提示" :position="region.position">
       {{region}}
-    </my-map-popup>
-  </my-map>
+    </sp-map-popup>
+  </sp-map>
 </template>
 <script>
   import china from '$ui/charts/geo/china.json'
@@ -235,25 +235,25 @@ GeoJson图层。文档<api-link href="map/my-map-geo"> MyMapGeo</api-link>
 :::demo
 ```html
 <template>
-  <my-map :zoom="4" :center="[106.011022, 37.237037]" invert>
-    <my-map-geo ref="geo"
+  <sp-map :zoom="4" :center="[106.011022, 37.237037]" invert>
+    <sp-map-geo ref="geo"
                 :json="geo"
                 @ready="handleReady"
-                :stroke="{width:1,color:'#000'}"></my-map-geo>
-    <my-map-scatter v-for="item in scatters"
+                :stroke="{width:1,color:'#000'}"></sp-map-geo>
+    <sp-map-scatter v-for="item in scatters"
                     :key="item.join(',')"
                     :coordinate="item"
                     :radius="5"
-                    fill="red"></my-map-scatter>
-    <my-map-flight v-for="(item,index) in flights"
+                    fill="red"></sp-map-scatter>
+    <sp-map-flight v-for="(item,index) in flights"
                    :key="index"
                    :from="item.from"
                    :to="item.to"
                    :radius="10"
                    :space="0"
                    :smooth="0.03"
-                   arrow></my-map-flight>
-  </my-map>
+                   arrow></sp-map-flight>
+  </sp-map>
 </template>
 <script>
   import china from '$ui/charts/geo/china.json'

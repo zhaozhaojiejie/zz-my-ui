@@ -11,10 +11,10 @@ import {DEFAULT_THEME} from '$ui/charts/utils/constant'
 
 /**
  * 图表基础组件
- * @module $ui/charts/my-chart
+ * @module $ui/charts/sp-chart
  */
 export default {
-  name: 'MyChart',
+  name: 'spChart',
   /**
    * 属性参数
    * @member props
@@ -105,8 +105,8 @@ export default {
   computed: {
     classes() {
       return {
-        [`my-chart-${this._uid}`]: true,
-        'my-chart': true
+        [`sp-chart-${this._uid}`]: true,
+        'sp-chart': true
       }
     },
     styles() {
@@ -249,7 +249,7 @@ export default {
   },
   render() {
     return (
-      <div class={this.classes} style={this.styles}>my-chart</div>
+      <div class={this.classes} style={this.styles}>sp-chart</div>
     )
   },
   beforeCreate() {

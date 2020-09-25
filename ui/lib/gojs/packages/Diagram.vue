@@ -1,11 +1,11 @@
 <template>
-  <div class="my-go-diagram"
+  <div class="sp-go-diagram"
        :class="classes"
        :style="styles">
-    <div ref="content" class="my-go-diagram__content" :style="contentStyle"></div>
-    <div v-show="loading" class="my-go-diagram__loading">
-      <div class="my-go-diagram__loading-inner">
-        <MySpin loading></MySpin>
+    <div ref="content" class="sp-go-diagram__content" :style="contentStyle"></div>
+    <div v-show="loading" class="sp-go-diagram__loading">
+      <div class="sp-go-diagram__loading-inner">
+        <spSpin loading></spSpin>
       </div>
     </div>
     <slot></slot>
@@ -15,7 +15,7 @@
 
 <script>
   import {addResizeListener, removeResizeListener} from 'element-ui/lib/utils/resize-event'
-  import {MySpin} from '$ui'
+  import {spSpin} from '$ui'
   import go from '../utils/lib'
   import {debounce} from '$ui/utils/util'
   import creator from '../utils/creator'
@@ -60,7 +60,7 @@
       finder
     ],
     components: {
-      MySpin
+      spSpin
     },
     provide() {
       return {

@@ -5,7 +5,7 @@
 :::demo
 ```html
 <template>
-  <my-chart-fill :data="data"></my-chart-fill>
+  <sp-chart-fill :data="data"></sp-chart-fill>
 </template>
 
 <script>

@@ -1,0 +1,24 @@
+@import "./sp-water-fall.scss";
+
+.sp-h-water-fall .item-warp .img-warp{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  vertical-align: bottom; 
+  & > img{
+    display: block;
+    width: 100%;
+  }
+}
+
+.sp-v-water-fall{
+  .col-warp{
+    .img-warp{
+      position: relative;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

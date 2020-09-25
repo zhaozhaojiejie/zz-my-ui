@@ -1,12 +1,12 @@
-import MyChart from '$ui/charts/packages/my-chart'
+import spChart from '$ui/charts/packages/sp-chart'
 import 'echarts/lib/chart/pie'
 import {install} from '$ui/utils/helper'
 import Pie from './Pie'
 
 
 const Module = {
-  name: 'MyChartPie',
-  mixins: [MyChart],
+  name: 'spChartPie',
+  mixins: [spChart],
   adapter: Pie
 }
 

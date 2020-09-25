@@ -1,6 +1,6 @@
 /**
  * Img覆盖物组件
- * @module $ui/map/my-map-image
+ * @module $ui/map/sp-map-image
  */
 import featureMixin from '../../mixins/feature'
 import Point from 'ol/geom/Point'
@@ -8,7 +8,7 @@ import parseStyle from '../../utils/style'
 import imageMixin from '../../mixins/image'
 
 export default {
-  name: 'MyMapImage',
+  name: 'spMapImage',
   mixins: [imageMixin, featureMixin],
   /**
    * 属性参数

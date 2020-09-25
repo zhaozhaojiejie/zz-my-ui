@@ -1,15 +1,15 @@
 # Scatter 散点
 
-地图散点效果。文档<api-link href="map/my-map-scatter"> MyMapScatter </api-link>
+地图散点效果。文档<api-link href="map/sp-map-scatter"> spMapScatter </api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-    <my-map>
-      <my-map-scatter :coordinate="[113.261999, 23.130592]"></my-map-scatter>
-    </my-map>
+    <sp-map>
+      <sp-map-scatter :coordinate="[113.261999, 23.130592]"></sp-map-scatter>
+    </sp-map>
 </template>
 ```
 :::
@@ -19,12 +19,12 @@
 :::demo
 ```html
 <template>
-    <my-map>
-      <my-map-scatter :coordinate="[113.261999, 23.130592]"
+    <sp-map>
+      <sp-map-scatter :coordinate="[113.261999, 23.130592]"
                       fill="red"
                       :radius="5"
-                      :stroke="{width:2, color:'#fff'}"></my-map-scatter>
-    </my-map>
+                      :stroke="{width:2, color:'#fff'}"></sp-map-scatter>
+    </sp-map>
 </template>
 ```
 :::
@@ -34,11 +34,11 @@
 :::demo
 ```html
 <template>
-    <my-map>
-      <my-map-scatter :coordinate="[113.261999, 23.130592]"
+    <sp-map>
+      <sp-map-scatter :coordinate="[113.261999, 23.130592]"
                       :radius="20"
-                      :text="{text:'A', fill:'#fff',font:'16px'}"></my-map-scatter>
-    </my-map>
+                      :text="{text:'A', fill:'#fff',font:'16px'}"></sp-map-scatter>
+    </sp-map>
 </template>
 ```
 :::
@@ -47,14 +47,14 @@
 :::demo
 ```html
 <template>
-    <my-map>
-      <my-map-scatter :coordinate="[113.161999, 23.130592]"
+    <sp-map>
+      <sp-map-scatter :coordinate="[113.161999, 23.130592]"
                       :ripple="ripple1" 
-                      fill="red"></my-map-scatter>
-     <my-map-scatter :coordinate="[113.361999, 23.130592]"
+                      fill="red"></sp-map-scatter>
+     <sp-map-scatter :coordinate="[113.361999, 23.130592]"
                       :ripple="ripple2" 
-                      fill="red"></my-map-scatter>
-    </my-map>
+                      fill="red"></sp-map-scatter>
+    </sp-map>
 </template>
 <script>
 export default {
@@ -85,12 +85,12 @@ export default {
 :::demo
 ```html
 <template>
-    <my-map>
-      <my-map-scatter v-for="n in 50" 
+    <sp-map>
+      <sp-map-scatter v-for="n in 50" 
                       :key="n" 
                       :coordinate="getCoordinate()"
-                      :delay="Math.random() * 5000"></my-map-scatter>
-    </my-map>
+                      :delay="Math.random() * 5000"></sp-map-scatter>
+    </sp-map>
 </template>
 <script>
 export default {
@@ -112,15 +112,15 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-cluster :data="data" 
+  <sp-map>
+    <sp-map-cluster :data="data" 
                     :distance="50"
                     :styleCreator="styleCreator"
-                    @change="handleChange"></my-map-cluster>
-    <my-map-scatter v-for="(item, key) in scatters"
+                    @change="handleChange"></sp-map-cluster>
+    <sp-map-scatter v-for="(item, key) in scatters"
                     :key="key"
-                    v-bind="item"></my-map-scatter>
-  </my-map>
+                    v-bind="item"></sp-map-scatter>
+  </sp-map>
 </template>
 <script>
   export default {

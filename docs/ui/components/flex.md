@@ -5,8 +5,8 @@
 2009年，W3C 提出了一种新的方案----Flex 布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。
 
 Flex布局包含两个组件: 
-<api-link href="components/my-flex">MyFlex</api-link>、
-<api-link href="components/my-flex-item">MyFlexItem</api-link> 
+<api-link href="components/sp-flex">spFlex</api-link>、
+<api-link href="components/sp-flex-item">spFlexItem</api-link> 
 
 ## Flex 布局是什么？
 
@@ -53,19 +53,19 @@ flex-direction属性决定主轴的方向（即项目的排列方向）。
       <el-radio-group v-model="direction">
         <el-radio v-for="item in directionArray" :label="item">{{item}}</el-radio>
       </el-radio-group>
-      <my-flex :direction="direction">
-        <my-flex-item v-for="n in 4" :key="n">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex :direction="direction">
+        <sp-flex-item v-for="n in 4" :key="n">{{n}}</sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -113,19 +113,19 @@ export default {
       <el-radio-group v-model="wrap">
         <el-radio v-for="item in wrapArray" :label="item">{{item}}</el-radio>
       </el-radio-group>
-      <my-flex :wrap="wrap">
-        <my-flex-item v-for="n in 9" :key="n">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex :wrap="wrap">
+        <sp-flex-item v-for="n in 9" :key="n">{{n}}</sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -141,7 +141,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -174,19 +174,19 @@ justify-content属性定义了项目在主轴上的对齐方式。
       <el-radio-group v-model="justify">
         <el-radio v-for="item in justifyArray" :label="item">{{item}}</el-radio>
       </el-radio-group>
-      <my-flex :justify="justify">
-        <my-flex-item v-for="n in 4" :key="n">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex :justify="justify">
+        <sp-flex-item v-for="n in 4" :key="n">{{n}}</sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -204,7 +204,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -236,19 +236,19 @@ align-items属性定义项目在交叉轴上如何对齐。
       <el-radio-group v-model="alignItems">
         <el-radio v-for="item in alignItemsArray" :label="item">{{item}}</el-radio>
       </el-radio-group>
-      <my-flex :align-items="alignItems">
-        <my-flex-item v-for="n in 4" :class="{tall: n%2===0, auto: alignItems==='stretch'}" :key="n">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex :align-items="alignItems">
+        <sp-flex-item v-for="n in 4" :class="{tall: n%2===0, auto: alignItems==='stretch'}" :key="n">{{n}}</sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -266,10 +266,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex {
+.sp-flex {
   height: 450px;
 }
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: initial;
@@ -310,19 +310,19 @@ align-content属性定义了多根轴线（多行）的对齐方式。如果项�
       <el-radio-group v-model="alignContent">
         <el-radio v-for="item in alignContentArray" :label="item">{{item}}</el-radio>
       </el-radio-group>
-      <my-flex :align-content="alignContent" wrap="wrap">
-        <my-flex-item v-for="n in 9" :class="{auto: alignContent==='stretch'}" :key="n">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex :align-content="alignContent" wrap="wrap">
+        <sp-flex-item v-for="n in 9" :class="{auto: alignContent==='stretch'}" :key="n">{{n}}</sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -341,10 +341,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex {
+.sp-flex {
   height: 800px;
 }
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -371,22 +371,22 @@ order属性定义项目的排列顺序。数值越小，排列越靠前，默认
 ```html
 <template>
    <div>
-      <my-flex>
-        <my-flex-item v-for="(item, index) in items" :key="index" :order="item.order">
+      <sp-flex>
+        <sp-flex-item v-for="(item, index) in items" :key="index" :order="item.order">
         {{index+1}} 
         <span>order: {{item.order}}</span>
-        </my-flex-item>
-      </my-flex>
+        </sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -410,7 +410,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -441,22 +441,22 @@ flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余�
 ```html
 <template>
    <div>
-      <my-flex>
-        <my-flex-item v-for="(item, index) in items" :key="index" :grow="item.grow">
+      <sp-flex>
+        <sp-flex-item v-for="(item, index) in items" :key="index" :grow="item.grow">
         {{index+1}} 
         <span>grow: {{item.grow}}</span>
-        </my-flex-item>
-      </my-flex>
+        </sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -477,7 +477,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -509,22 +509,22 @@ flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间�
 ```html
 <template>
    <div>
-      <my-flex>
-        <my-flex-item v-for="(item, index) in items" :key="index" :shrink="item.shrink">
+      <sp-flex>
+        <sp-flex-item v-for="(item, index) in items" :key="index" :shrink="item.shrink">
         {{index+1}} 
         <span>shrink: {{item.shrink}}</span>
-        </my-flex-item>
-      </my-flex>
+        </sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -545,7 +545,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 600px;
     height: 200px;
     line-height: 200px;
@@ -574,22 +574,22 @@ flex-basis属性定义了在分配多余空间之前，项目占据的主轴空�
 ```html
 <template>
    <div>
-      <my-flex>
-        <my-flex-item v-for="(item, index) in items" :key="index" :basis="item.basis">
+      <sp-flex>
+        <sp-flex-item v-for="(item, index) in items" :key="index" :basis="item.basis">
         {{index+1}} 
         <span>basis: {{item.basis}}</span>
-        </my-flex-item>
-      </my-flex>
+        </sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -610,7 +610,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 600px;
     height: 200px;
     line-height: 200px;
@@ -639,22 +639,22 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 ```html
 <template>
    <div>
-      <my-flex>
-        <my-flex-item v-for="(item, index) in items" :key="index" :align="item.align">
+      <sp-flex>
+        <sp-flex-item v-for="(item, index) in items" :key="index" :align="item.align">
         {{index+1}} 
         <span>align: {{item.align}}</span>
-        </my-flex-item>
-      </my-flex>
+        </sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -678,10 +678,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex {
+.sp-flex {
   height: 400px;
 }
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -707,19 +707,19 @@ export default {
 ```html
 <template>
    <div style="height: 400px;">
-      <my-flex fit>
-        <my-flex-item v-for="n in 4" :key="n">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex fit>
+        <sp-flex-item v-for="n in 4" :key="n">{{n}}</sp-flex-item>
+      </sp-flex>
   </div>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -730,7 +730,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     line-height: 200px;
     margin: 5px;
@@ -748,18 +748,18 @@ export default {
 :::demo
 ```html
 <template>
-      <my-flex :column="4" wrap="wrap" border>
-        <my-flex-item v-for="n in 8" :key="n">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex :column="4" wrap="wrap" border>
+        <sp-flex-item v-for="n in 8" :key="n">{{n}}</sp-flex-item>
+      </sp-flex>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -770,7 +770,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -789,18 +789,18 @@ export default {
 :::demo
 ```html
 <template>
-      <my-flex :column="4" wrap="wrap" border>
-        <my-flex-item v-for="n in 8" :key="n" shadow="hover">{{n}}</my-flex-item>
-      </my-flex>
+      <sp-flex :column="4" wrap="wrap" border>
+        <sp-flex-item v-for="n in 8" :key="n" shadow="hover">{{n}}</sp-flex-item>
+      </sp-flex>
 </template>
 
 <script>
-import {MyFlex, MyFlexItem} from '$ui'
+import {spFlex, spFlexItem} from '$ui'
 
 export default {
   components: {
-    MyFlex,
-    MyFlexItem
+    spFlex,
+    spFlexItem
   },
   data() {
     return {
@@ -811,7 +811,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-flex-item {
+.sp-flex-item {
     width: 200px;
     height: 200px;
     line-height: 200px;

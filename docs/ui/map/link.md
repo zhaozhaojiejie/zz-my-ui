@@ -1,15 +1,15 @@
 # Link 连线
 
-两点之间的连线。文档<api-link href="map/my-map-link"> MyMapLink </api-link>
+两点之间的连线。文档<api-link href="map/sp-map-link"> spMapLink </api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-link :from="[112.810186, 23.267921]" :to="[113.577856, 23.277534]"></my-map-link>
-  </my-map>
+  <sp-map>
+    <sp-map-link :from="[112.810186, 23.267921]" :to="[113.577856, 23.277534]"></sp-map-link>
+  </sp-map>
 </template>
 ```
 :::
@@ -19,12 +19,12 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-link :from="[112.810186, 23.267921]" 
+  <sp-map>
+    <sp-map-link :from="[112.810186, 23.267921]" 
                  :to="[113.577856, 23.277534]"
                  color="red"
-                 :width="8"></my-map-link>
-  </my-map>
+                 :width="8"></sp-map-link>
+  </sp-map>
 </template>
 ```
 :::
@@ -34,9 +34,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-link :from="[112.810186, 23.267921]" :to="[113.577856, 23.277534]"  :radius="0.3" :angle="-90"></my-map-link>
-  </my-map>
+  <sp-map>
+    <sp-map-link :from="[112.810186, 23.267921]" :to="[113.577856, 23.277534]"  :radius="0.3" :angle="-90"></sp-map-link>
+  </sp-map>
 </template>
 ```
 :::
@@ -46,14 +46,14 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-link :from="[112.810186, 23.267921]" 
+  <sp-map>
+    <sp-map-link :from="[112.810186, 23.267921]" 
                  :to="[113.577856, 23.277534]" 
                  :radius="0.3" 
                  :angle="-90"
                  to-arrow 
-                 from-arrow></my-map-link>
-  </my-map>
+                 from-arrow></sp-map-link>
+  </sp-map>
 </template>
 ```
 :::
@@ -63,15 +63,15 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-link :from="[112.810186, 23.267921]" 
+  <sp-map>
+    <sp-map-link :from="[112.810186, 23.267921]" 
                  :to="[113.577856, 23.277534]" 
                  :radius="0.3" 
                  :angle="-90"
                  to-arrow 
                  from-arrow
-                 :text="{text:'示例文本',font:'16px', offsetY: -14}"></my-map-link>
-  </my-map>
+                 :text="{text:'示例文本',font:'16px', offsetY: -14}"></sp-map-link>
+  </sp-map>
 </template>
 ```
 :::

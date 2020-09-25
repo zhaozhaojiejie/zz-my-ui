@@ -4,7 +4,7 @@
 
 import uiConfig from '$ui/config'
 import {Vue} from './enhance'
-import {MyMasterApp} from '$ui'
+import {spMasterApp} from '$ui'
 import {
   registerMicroApps,
   start,
@@ -29,7 +29,7 @@ export function parseAppConfig(apps = []) {
       }
       : item
     return {
-      container: '#my-micro-app',
+      container: '#sp-micro-app',
       activeRule: activeRule(app.name, app.mode, app.publicPath),
       entry: app.entry ? app.entry : `${(app.publicPath || publicPath)}${app.name}/`,
       ...app
@@ -67,7 +67,7 @@ export function activeRule(appName, mode = 'hash', publicPath = '/') {
 export function masterRender({el, store, router, apps, access}) {
   return new Vue({
     components: {
-      MyMasterApp
+      spMasterApp
     },
     el: el,
     store,
@@ -92,7 +92,7 @@ export function masterRender({el, store, router, apps, access}) {
         matchApp: this.matchApp,
         ...uiConfig.scale
       }
-      return h('my-master-app', {props})
+      return h('sp-master-app', {props})
     }
   })
 }

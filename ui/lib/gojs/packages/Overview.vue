@@ -1,5 +1,5 @@
 <template>
-  <div class="my-go-overview" :class="classes" :style="styles"></div>
+  <div class="sp-go-overview" :class="classes" :style="styles"></div>
 </template>
 
 <script>

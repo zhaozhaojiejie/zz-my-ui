@@ -10,7 +10,7 @@ module.exports = {
     publicPath: '',
     libraryTarget: 'umd',
     chunkFilename: 'index.js',
-    library: 'MyBridge'
+    library: 'spBridge'
   },
   resolve: {
     alias: {

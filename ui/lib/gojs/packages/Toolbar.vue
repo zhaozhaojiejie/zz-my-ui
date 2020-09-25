@@ -1,9 +1,9 @@
 <template>
-  <div class="my-go-toolbar" :class="classes">
+  <div class="sp-go-toolbar" :class="classes">
     <template v-for="(item,index) in toolItems">
       <Divider v-if="typeof item==='string'"
                :key="index"
-               class="my-go-toolbar__divider"
+               class="sp-go-toolbar__divider"
                direction="vertical"></Divider>
       <ToolbarItem v-else
                    v-bind="item"

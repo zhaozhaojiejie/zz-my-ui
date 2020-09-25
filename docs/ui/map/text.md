@@ -1,15 +1,15 @@
 # Text 文本
 
-Text覆盖物。文档<api-link href="map/my-map-text"> MyMapText </api-link>
+Text覆盖物。文档<api-link href="map/sp-map-text"> spMapText </api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-text :coordinate="[113.261999, 23.130592]" text="文本样例" font="20px"></my-map-text>
-  </my-map>
+  <sp-map>
+    <sp-map-text :coordinate="[113.261999, 23.130592]" text="文本样例" font="20px"></sp-map-text>
+  </sp-map>
 </template>
 ```
 :::
@@ -19,9 +19,9 @@ Text覆盖物。文档<api-link href="map/my-map-text"> MyMapText </api-link>
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-text :coordinate="[113.261999, 23.130592]" v-bind="text"></my-map-text>
-  </my-map>
+  <sp-map>
+    <sp-map-text :coordinate="[113.261999, 23.130592]" v-bind="text"></sp-map-text>
+  </sp-map>
 </template>
 <script>
   export default {

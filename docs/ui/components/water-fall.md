@@ -1,6 +1,6 @@
 # WaterFall 瀑布流
 
-瀑布流组件 <api-link href="components/my-water-fall"> MyWaterFall </api-link>
+瀑布流组件 <api-link href="components/sp-water-fall"> spWaterFall </api-link>
 
 **图片墙使用注意**： 为确保展示效果，建议每个单元格的长宽比例（尤其横向布局时）控制在 1:3 (或3:1) 之内。
 
@@ -13,7 +13,7 @@
 ```html
 <template>
 <div style="max-height: 400px; overflow: auto; padding: 10px" > 
-  <my-water-fall :is-horizontal="isHorizontal" :data="showImgs" :margin="5" :item-height="200" :columns="{
+  <sp-water-fall :is-horizontal="isHorizontal" :data="showImgs" :margin="5" :item-height="200" :columns="{
     xxl: 8,
     xl: 6,
     lg: 4,
@@ -24,14 +24,14 @@
     ref="waterFall"
   >
     <template v-slot="{scope}">
-      <my-water-fall-slot v-for="(item, index) in scope.data" :key="index" :width="item.$width" :height="item.$height" :left="item.$left" :top="item.$top">
+      <sp-water-fall-slot v-for="(item, index) in scope.data" :key="index" :width="item.$width" :height="item.$height" :left="item.$left" :top="item.$top">
         <div style="height: 100%"  > 
           <img :src="item.src" style="width: 100%" />
         </div>
-      </my-water-fall-slot>
+      </sp-water-fall-slot>
     </template>
     
-  </my-water-fall>
+  </sp-water-fall>
   <div>
     <el-button @click="loadMore" type="small">更多</el-button>
     <el-button @click="isHorizontal = !isHorizontal" type="small">toggle</el-button> 

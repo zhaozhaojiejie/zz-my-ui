@@ -1,6 +1,6 @@
 /**
  *  user mixin module
- *  @module $my/code/mixin/user
+ *  @module $sp/code/mixin/user
  *  @author coder
  */
 import {

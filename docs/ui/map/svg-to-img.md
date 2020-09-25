@@ -8,9 +8,9 @@
 ```html
 <template>
   <div style="width: 100%; height: 600px">
-    <my-map height="100%" :center="[120, 33]"  :zoom="3" >
-      <my-map-image v-for="(item, index) in arr" :key="index" v-bind="item" ></my-map-image>
-    </my-map>
+    <sp-map height="100%" :center="[120, 33]"  :zoom="3" >
+      <sp-map-image v-for="(item, index) in arr" :key="index" v-bind="item" ></sp-map-image>
+    </sp-map>
   </div>
 </template>
 <script>

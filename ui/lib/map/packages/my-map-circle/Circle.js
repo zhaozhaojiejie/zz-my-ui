@@ -1,12 +1,12 @@
 /**
  * 圆图形覆盖物组件
- * @module $ui/map/my-map-circle
+ * @module $ui/map/sp-map-circle
  */
 import Circle from 'ol/geom/Circle'
 import featureMixin from '../../mixins/feature'
 
 export default {
-  name: 'MyMapCircle',
+  name: 'spMapCircle',
   mixins: [featureMixin],
   /**
    * 属性参数, 继承 [$ui/map/mixins/feature]{@link module:$ui/map/mixins/feature}

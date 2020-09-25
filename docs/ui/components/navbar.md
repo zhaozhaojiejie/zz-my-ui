@@ -2,10 +2,10 @@
 
 系统头部导航条，包含以下组件：
 
-- <api-link href="components/my-navbar">MyNavbar</api-link>
-- <api-link href="components/my-navbar-IconAction">IconAction</api-link>
-- <api-link href="components/my-navbar-UserAction">UserAction</api-link>
-- <api-link href="components/my-navbar-FullScreenAction">FullScreenAction</api-link>
+- <api-link href="components/sp-navbar">spNavbar</api-link>
+- <api-link href="components/sp-navbar-IconAction">IconAction</api-link>
+- <api-link href="components/sp-navbar-UserAction">UserAction</api-link>
+- <api-link href="components/sp-navbar-FullScreenAction">FullScreenAction</api-link>
 
 ## 代码演示
 
@@ -13,25 +13,25 @@
 :::demo(navbar-1)
 ```html
 <template>
-  <my-navbar :logo="logo" 
-             title="MyWeb Demo System"
+  <sp-navbar :logo="logo" 
+             title="spWeb Demo System"
              version="4.0">
       <template v-slot:actions>
         <UserAction username="Admin" extra="超级管理员" :avatar="{theme: 'primary'}"></UserAction>
         <IconAction icon="el-icon-message-solid" :badge="12"></IconAction>
         <IconAction icon="icon-poweroff" svg></IconAction>
       </template>           
-  </my-navbar>
+  </sp-navbar>
 </template>
 
 <script>
- import {MyNavbar} from '$ui'
+ import {spNavbar} from '$ui'
  import logo from '$ui/assets/xdh.png'
  import '$ui/icons/poweroff'
- const { IconAction, UserAction } = MyNavbar
+ const { IconAction, UserAction } = spNavbar
  export default {
    components: {
-     MyNavbar,
+     spNavbar,
      IconAction,
      UserAction
    },
@@ -50,8 +50,8 @@
 :::demo(navbar-2)
 ```html
 <template>
-  <my-navbar :logo="logo" 
-             title="MyWeb Demo System"
+  <sp-navbar :logo="logo" 
+             title="spWeb Demo System"
              version="4.0"
              :menus="menus">
       <template v-slot:actions>
@@ -59,14 +59,14 @@
         <IconAction icon="el-icon-message-solid" :badge="12"></IconAction>
         <IconAction icon="icon-poweroff" svg></IconAction>
       </template>           
-  </my-navbar>
+  </sp-navbar>
 </template>
 
 <script>
- import {MyNavbar} from '$ui'
+ import {spNavbar} from '$ui'
  import logo from '$ui/assets/xdh.png'
  import '$ui/icons/poweroff'
- const { IconAction, UserAction } = MyNavbar
+ const { IconAction, UserAction } = spNavbar
  
  const menus = [
    {
@@ -147,7 +147,7 @@
  ]
  export default {
    components: {
-     MyNavbar,
+     spNavbar,
      IconAction,
      UserAction
    },
@@ -168,23 +168,23 @@
 :::demo(navbar-3)
 ```html
 <template>
-  <my-navbar :logo="null" collapsible :collapsed.sync="collapsed">
+  <sp-navbar :logo="null" collapsible :collapsed.sync="collapsed">
       <template v-slot:actions>
         <UserAction username="Admin" extra="超级管理员" :avatar="{theme: 'primary'}"></UserAction>
         <IconAction icon="el-icon-message-solid" :badge="12"></IconAction>
         <IconAction icon="icon-poweroff" svg></IconAction>
       </template>           
-  </my-navbar>
+  </sp-navbar>
 </template>
 
 <script>
- import {MyNavbar} from '$ui'
+ import {spNavbar} from '$ui'
  import logo from '$ui/assets/xdh.png'
  import '$ui/icons/poweroff'
- const { IconAction, UserAction } = MyNavbar
+ const { IconAction, UserAction } = spNavbar
  export default {
    components: {
-     MyNavbar,
+     spNavbar,
      IconAction,
      UserAction
    },
@@ -214,10 +214,10 @@
     <el-radio-button label="gradual">gradual</el-radio-button>
   </el-radio-group>
   <div style="margin-top: 20px;">
-    <my-navbar :logo="logo" 
+    <sp-navbar :logo="logo" 
                :theme="theme"
                @select="handleSelect"
-               title="MyWeb Demo System"
+               title="spWeb Demo System"
                version="4.0"
                :menus="menus">
         <template v-slot:actions>
@@ -225,16 +225,16 @@
           <IconAction icon="el-icon-message-solid" :badge="12"></IconAction>
           <IconAction icon="icon-poweroff" svg></IconAction>
         </template>           
-    </my-navbar>
+    </sp-navbar>
   </div>
 </div>  
 </template>
 
 <script>
- import {MyNavbar} from '$ui'
+ import {spNavbar} from '$ui'
  import logo from '$ui/assets/xdh.png'
  import '$ui/icons/poweroff'
- const { IconAction, UserAction } = MyNavbar
+ const { IconAction, UserAction } = spNavbar
  
  const menus = [
    {
@@ -315,7 +315,7 @@
  ]
  export default {
    components: {
-     MyNavbar,
+     spNavbar,
      IconAction,
      UserAction
    },
@@ -342,7 +342,7 @@
 :::demo(navbar-5)
 ```html
 <template>
-  <my-navbar theme="gradual">
+  <sp-navbar theme="gradual">
       <template v-slot:actions>
         <UserAction username="Admin" 
                     extra="超级管理员" 
@@ -354,17 +354,17 @@
         <IconAction icon="el-icon-setting" tooltip="设置"></IconAction>
         <IconAction icon="icon-poweroff" svg></IconAction>
       </template>           
-  </my-navbar>
+  </sp-navbar>
 </template>
 
 <script>
- import {MyNavbar} from '$ui'
+ import {spNavbar} from '$ui'
  import logo from '$ui/assets/xdh.png'
  import '$ui/icons/poweroff'
- const { IconAction, UserAction, FullScreenAction} = MyNavbar
+ const { IconAction, UserAction, FullScreenAction} = spNavbar
  export default {
    components: {
-     MyNavbar,
+     spNavbar,
      IconAction,
      UserAction,
      FullScreenAction

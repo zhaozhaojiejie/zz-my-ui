@@ -1,7 +1,7 @@
 ## Print 打印
 
 打印工具，可保留打印内容原有的样式。
-组件文档 <api-link href="components/my-print">MyPrint</api-link>
+组件文档 <api-link href="components/sp-print">spPrint</api-link>
 
 ### 基础用法。
 
@@ -12,16 +12,16 @@
 ```html
 <template>
   <div>
-    <my-panel title="打印区域" theme="border-left">
+    <sp-panel title="打印区域" theme="border-left">
       <template v-slot:handle>
-        <my-print :print-range="'.print-range1'">
+        <sp-print :print-range="'.print-range1'">
           <el-button
             type="primary"
             size="mini"
             icon="el-icon-tickets"
             slot="button"
           ></el-button>
-        </my-print>
+        </sp-print>
       </template>
       <el-table
         :data="tableData"
@@ -34,7 +34,7 @@
         <el-table-column prop="address" label="地址" width="250">
         </el-table-column>
       </el-table>
-    </my-panel>
+    </sp-panel>
   </div>
 </template>
 <script>
@@ -61,21 +61,21 @@
 
 ### 分页处理。
 
-- 如果你希望打印一个表格，每页的行数固定，并且都有表头，可以对表格进行预处理。如代码所示将处理过的表格用.my-print-displaynone 隐藏起来，使用.my-print-visible 在打印时显示出来。
+- 如果你希望打印一个表格，每页的行数固定，并且都有表头，可以对表格进行预处理。如代码所示将处理过的表格用.sp-print-displaynone 隐藏起来，使用.sp-print-visible 在打印时显示出来。
 :::demo
 
 ```html
 <template>
   <div>
-    <my-panel title="分页处理" theme="border-left">
+    <sp-panel title="分页处理" theme="border-left">
       <template v-slot:handle>
-        <my-print
+        <sp-print
           :print-range="'.print-range2'"
           btn-type="primary"
           btn-class="div-print"
           btn-text="分页打印"
         >
-        </my-print>
+        </sp-print>
       </template>
       <el-table :data="tableData" height="250" border style="width: 100%">
         <el-table-column prop="name" label="姓名" width="100">
@@ -84,7 +84,7 @@
         </el-table-column>
       </el-table>
       <!-- 隐藏表格，在打印时显示 -->
-      <div class="my-print-displaynone my-print-visible">
+      <div class="sp-print-displaynone sp-print-visible">
         <el-table
           v-for="(item, idx) in tableData2"
           :key="idx"
@@ -99,7 +99,7 @@
           </el-table-column>
         </el-table>
       </div>
-    </my-panel>
+    </sp-panel>
   </div>
 </template>
 <script>
@@ -141,14 +141,14 @@
 ```html
 <template>
   <div>
-    <my-panel title="分页处理" theme="border-left">
+    <sp-panel title="分页处理" theme="border-left">
       <template v-slot:handle>
-        <my-print print-range=".print-range3" keep-preview></my-print>
+        <sp-print print-range=".print-range3" keep-preview></sp-print>
       </template>
       <div class="print-range3">
-        <my-chart-bar :data="data2"></my-chart-bar>
+        <sp-chart-bar :data="data2"></sp-chart-bar>
       </div>
-    </my-panel>
+    </sp-panel>
   </div>
 </template>
 <script>
@@ -187,60 +187,60 @@
 ```html
 <template>
   <div>
-    <my-panel title="单层父类" theme="border-left">
+    <sp-panel title="单层父类" theme="border-left">
       <template v-slot:handle>
-        <my-print :print-range="'.print-range4'" container-class="my-container" :root-style="{'border-width': 0}"> </my-print>
+        <sp-print :print-range="'.print-range4'" container-class="sp-container" :root-style="{'border-width': 0}"> </sp-print>
       </template>
-      <div class="my-container">
+      <div class="sp-container">
         <div class="other">其它非打印内容</div>
-        <div class="my-list print-range4">
-          <div class="item">MyWeb，一套为前端开发者准备的基于Vue的项目工程化方案</div>
+        <div class="sp-list print-range4">
+          <div class="item">spWeb，一套为前端开发者准备的基于Vue的项目工程化方案</div>
         </div>
       </div>
-    </my-panel>
-    <my-panel title="多层父类" theme="border-left">
+    </sp-panel>
+    <sp-panel title="多层父类" theme="border-left">
       <template v-slot:handle>
-        <my-print
-          container-class="my-wrapper"
+        <sp-print
+          container-class="sp-wrapper"
           :parent-dom="parentDom"
           :print-range="'.print-range5'"
         >
-        </my-print>
+        </sp-print>
       </template>
-      <div class="my-container">
+      <div class="sp-container">
         <div class="other">其它非打印内容</div>
-        <div class="my-wrapper">
-          <div class="my-list print-range5">
+        <div class="sp-wrapper">
+          <div class="sp-list print-range5">
             <div class="item">
-              MyWeb，一套为前端开发者准备的基于Vue的项目工程化方案
+              spWeb，一套为前端开发者准备的基于Vue的项目工程化方案
             </div>
           </div>
         </div>
       </div>
-    </my-panel>
+    </sp-panel>
   </div>
 </template>
 <script>
   export default {
     data() {
       return {
-        parentDom: `<div class="my-container" style="border-width:0">
-                             <div class="my-wrapper"></div>
+        parentDom: `<div class="sp-container" style="border-width:0">
+                             <div class="sp-wrapper"></div>
                          </div>`
       };
     }
   };
 </script>
 <style lang="scss" scoped>
-  .my-container {
+  .sp-container {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
   }
-  .my-container .my-list .item {
+  .sp-container .sp-list .item {
     color: #f5222d;
   }
-  .my-container .my-wrapper .my-list .item {
+  .sp-container .sp-wrapper .sp-list .item {
     color: #096dd9;
   }
 </style>
@@ -255,10 +255,10 @@
 ```html
 <template>
    <div>
-    <my-panel title="样式临时更改" theme="border-left">
+    <sp-panel title="样式临时更改" theme="border-left">
       <template v-slot:handle>
-        <my-print :print-range="'.print-range6'" :style-array="styleArray1">
-        </my-print>
+        <sp-print :print-range="'.print-range6'" :style-array="styleArray1">
+        </sp-print>
       </template>
        <div class="print-range6">
           <ul class="wrapper1">
@@ -267,7 +267,7 @@
               </li>
           </ul>
       </div>
-    </my-panel>
+    </sp-panel>
    </div>
 </template>
 <script>
@@ -317,10 +317,10 @@
 ```html
 <template>
    <div>
-    <my-panel title="自定义DOM处理" theme="border-left">
+    <sp-panel title="自定义DOM处理" theme="border-left">
       <template v-slot:handle>
-        <my-print :print-range="'.print-range7'" :dom-transfer="transfer" keep-preview>
-        </my-print>
+        <sp-print :print-range="'.print-range7'" :dom-transfer="transfer" keep-preview>
+        </sp-print>
       </template>
        <div class="print-range7">
           <ul class="wrapper2">
@@ -336,7 +336,7 @@
               </li>
           </ul>
       </div>
-    </my-panel>
+    </sp-panel>
    </div>
 </template>
 <script>
@@ -384,15 +384,15 @@
 ```html
 <template>
    <div>
-    <my-panel title="打印预览" theme="border-left">
+    <sp-panel title="打印预览" theme="border-left">
       <template v-slot:handle>
-        <my-print :print-range="'.print-range8'" preview>
-        </my-print>
+        <sp-print :print-range="'.print-range8'" preview>
+        </sp-print>
       </template>
       <div class="print-range8">
-         <div>MyWeb，一套为前端开发者准备的基于Vue的项目工程化方案</div>
+         <div>spWeb，一套为前端开发者准备的基于Vue的项目工程化方案</div>
       </div>
-    </my-panel>
+    </sp-panel>
    </div>
 </template>
 <script>

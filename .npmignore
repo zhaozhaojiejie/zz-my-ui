@@ -1,7 +1,7 @@
 .DS_Store
 *.map
 .temp
-.my
+.sp
 .npmignore
 .editorconfig
 .eslintignore
@@ -18,7 +18,7 @@
 /docs
 !web/docs
 /dist
-/my.config.js
+/sp.config.js
 /babel.config.js
 !core/babel.config.js
 /vue.config.js

@@ -1,18 +1,18 @@
 /**
  * icon覆盖物组件
- * @module $ui/map/my-map-icon
+ * @module $ui/map/sp-map-icon
  */
-import MyMapHtml from '../my-map-html/Html'
-import {MyIcon} from '$ui'
+import spMapHtml from '../sp-map-html/Html'
+import {spIcon} from '$ui'
 
 export default {
-  name: 'MyMapIcon',
+  name: 'spMapIcon',
   components: {
-    MyMapHtml,
-    MyIcon
+    spMapHtml,
+    spIcon
   },
   /**
-   * 属性参数, 继承 [$ui/map/packages/my-map-html]{@link module:$ui/map/packages/my-map-html}
+   * 属性参数, 继承 [$ui/map/packages/sp-map-html]{@link module:$ui/map/packages/sp-map-html}
    * @member props
    * @property {string} [name] 图标名称
    * @property {boolean} [svg] 是否svg图标
@@ -44,9 +44,9 @@ export default {
       on: this.$listeners
     }
     return (
-      <MyMapHtml {...{props: this.$attrs}} style={this.iconStyle}>
-        <MyIcon {...iconProps}></MyIcon>
-      </MyMapHtml>
+      <spMapHtml {...{props: this.$attrs}} style={this.iconStyle}>
+        <spIcon {...iconProps}></spIcon>
+      </spMapHtml>
     )
   }
 }

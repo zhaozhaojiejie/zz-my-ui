@@ -3,25 +3,25 @@
 ## 概述
 
 基础布局组件，在需要对元素、容器进行左右排版时使用。
-组件包含 <api-link href="components/my-float">MyFloat</api-link>  和 <api-link href="components/my-float-item">MyFloatItem</api-link> 两个组件
+组件包含 <api-link href="components/sp-float">spFloat</api-link>  和 <api-link href="components/sp-float-item">spFloatItem</api-link> 两个组件
 
 ## 基本用法
 
 :::demo
 ```html
 <template>
-  <my-float>
-     <my-float-item>左边内容</my-float-item>
-     <my-float-item float="right">右边内容</my-float-item>
-  </my-float>
+  <sp-float>
+     <sp-float-item>左边内容</sp-float-item>
+     <sp-float-item float="right">右边内容</sp-float-item>
+  </sp-float>
 </template>
 
 <script>
-import {MyFloat, MyFloatItem} from '$ui'
+import {spFloat, spFloatItem} from '$ui'
 export default {
   components: {
-    MyFloat,
-    MyFloatItem
+    spFloat,
+    spFloatItem
   }
 }
 </script>
@@ -37,19 +37,19 @@ export default {
 ```html
 <template>
   <div class="wrapper">
-    <my-float fit>
-       <my-float-item class="left">左边内容</my-float-item>
-       <my-float-item class="right" float="right">右边内容</my-float-item>
-    </my-float>
+    <sp-float fit>
+       <sp-float-item class="left">左边内容</sp-float-item>
+       <sp-float-item class="right" float="right">右边内容</sp-float-item>
+    </sp-float>
   </div>
 </template>
 
 <script>
-import {MyFloat, MyFloatItem} from '$ui'
+import {spFloat, spFloatItem} from '$ui'
 export default {
   components: {
-    MyFloat,
-    MyFloatItem
+    spFloat,
+    spFloatItem
   }
 }
 </script>
@@ -80,19 +80,19 @@ export default {
 ```html
 <template>
   <div class="wrapper">
-    <my-float fit reverse>
-       <my-float-item class="left">左边内容</my-float-item>
-       <my-float-item class="right" float="right">右边内容</my-float-item>
-    </my-float>
+    <sp-float fit reverse>
+       <sp-float-item class="left">左边内容</sp-float-item>
+       <sp-float-item class="right" float="right">右边内容</sp-float-item>
+    </sp-float>
   </div>
 </template>
 
 <script>
-import {MyFloat, MyFloatItem} from '$ui'
+import {spFloat, spFloatItem} from '$ui'
 export default {
   components: {
-    MyFloat,
-    MyFloatItem
+    spFloat,
+    spFloatItem
   }
 }
 </script>

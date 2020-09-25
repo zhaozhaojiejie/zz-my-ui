@@ -2,32 +2,32 @@
 title: 基础表单
 ---
 <template>
-  <my-wrapper title="基础表单">
+  <sp-wrapper title="基础表单">
     <template v-slot:extra>
       表单页用于向用户收集或验证信息，基础表单常见于数据项较少的表单场景。
     </template>
-    <my-panel theme="border-top" title="发布文章" size="large" shadow="never" :border="false">
-      <my-form label-width="100px"
+    <sp-panel theme="border-top" title="发布文章" size="large" shadow="never" :border="false">
+      <sp-form label-width="100px"
                :model="form"
                :rules="rules"
                @submit="handleSubmit">
-        <my-input label="标题" name="title" placeholder="给目标起个名字"></my-input>
-        <my-date-picker label="起止日期" name="range" :props="{
+        <sp-input label="标题" name="title" placeholder="给目标起个名字"></sp-input>
+        <sp-date-picker label="起止日期" name="range" :props="{
           type: 'daterange',
           startPlaceholder: '开始日期',
           endPlaceholder: '结束日期'
-        }"></my-date-picker>
-        <my-input label="目标描述" name="info" :props="{type:'textarea',rows:5}"></my-input>
-        <my-input label="衡量标准" name="standard" :props="{type:'textarea'}"></my-input>
-        <my-select label="客户" name="customer" :props="{multiple:true}" :loader="loader"></my-select>
-        <my-select label="邀评人" name="commenter" :loader="loader"></my-select>
-        <my-input-number label="权重" name="weight" width="300px"
-                         :props="{controlsPosition:'right',min:1, max:10}"></my-input-number>
-        <my-radio label="目标公开" name="opening" dict="option" :loader="loader">
-        </my-radio>
-      </my-form>
-    </my-panel>
-  </my-wrapper>
+        }"></sp-date-picker>
+        <sp-input label="目标描述" name="info" :props="{type:'textarea',rows:5}"></sp-input>
+        <sp-input label="衡量标准" name="standard" :props="{type:'textarea'}"></sp-input>
+        <sp-select label="客户" name="customer" :props="{multiple:true}" :loader="loader"></sp-select>
+        <sp-select label="邀评人" name="commenter" :loader="loader"></sp-select>
+        <sp-input-number label="权重" name="weight" width="300px"
+                         :props="{controlsPosition:'right',min:1, max:10}"></sp-input-number>
+        <sp-radio label="目标公开" name="opening" dict="option" :loader="loader">
+        </sp-radio>
+      </sp-form>
+    </sp-panel>
+  </sp-wrapper>
 </template>
 
 <script>

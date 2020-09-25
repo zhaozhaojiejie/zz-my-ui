@@ -1,7 +1,7 @@
 # Spin 加载中
 
 用于页面和区块的加载中状态。
-<api-link href="components/my-spin">my-spin</api-link> 文档
+<api-link href="components/sp-spin">sp-spin</api-link> 文档
 
 ## 何时使用
 
@@ -16,14 +16,14 @@
 :::demo
 ```html
 <template>
-  <my-spin loading></my-spin>
+  <sp-spin loading></sp-spin>
 </template>
 
 <script>
-import {MySpin} from '$ui'
+import {spSpin} from '$ui'
 export default {
   components: {
-    MySpin
+    spSpin
   }
 }
 </script>
@@ -39,24 +39,24 @@ export default {
 ```html
 <template>
  <div>
-     <my-spin size="small" loading></my-spin>
-     <my-spin loading></my-spin>
-     <my-spin size="large" loading></my-spin>
+     <sp-spin size="small" loading></sp-spin>
+     <sp-spin loading></sp-spin>
+     <sp-spin size="large" loading></sp-spin>
  </div>
 
 </template>
 
 <script>
-import {MySpin} from '$ui'
+import {spSpin} from '$ui'
 export default {
   components: {
-    MySpin
+    spSpin
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-spin {
+.sp-spin {
   margin-right: 20px;
 }
 </style>
@@ -72,16 +72,16 @@ export default {
 ```html
 <template>
   <div class="container">
-      <my-spin loading fit></my-spin>
+      <sp-spin loading fit></sp-spin>
   </div>
 
 </template>
 
 <script>
-import {MySpin} from '$ui'
+import {spSpin} from '$ui'
 export default {
   components: {
-    MySpin
+    spSpin
   }
 }
 </script>
@@ -105,19 +105,19 @@ export default {
 :::demo
 ```html
 <template>
-  <my-spin loading>
-    <my-panel title="标题">
+  <sp-spin loading>
+    <sp-panel title="标题">
       占位内容
-    </my-panel>
-  </my-spin>
+    </sp-panel>
+  </sp-spin>
 </template>
 
 <script>
-import {MySpin, MyPanel} from '$ui'
+import {spSpin, spPanel} from '$ui'
 export default {
   components: {
-    MySpin,
-    MyPanel
+    spSpin,
+    spPanel
   }
 }
 </script>
@@ -130,19 +130,19 @@ export default {
 :::demo
 ```html
 <template>
-  <my-spin loading tip="正在努力加载...">
-    <my-panel title="标题">
+  <sp-spin loading tip="正在努力加载...">
+    <sp-panel title="标题">
       占位内容
-    </my-panel>
-  </my-spin>
+    </sp-panel>
+  </sp-spin>
 </template>
 
 <script>
-import {MySpin, MyPanel} from '$ui'
+import {spSpin, spPanel} from '$ui'
 export default {
   components: {
-    MySpin,
-    MyPanel
+    spSpin,
+    spPanel
   }
 }
 </script>
@@ -156,20 +156,20 @@ export default {
 ```html
 <template>
   <div class="container">
-    <my-spin loading fit tip="loading...">
-      <my-panel title="标题" fit>
+    <sp-spin loading fit tip="loading...">
+      <sp-panel title="标题" fit>
         占位内容
-      </my-panel>
-    </my-spin>
+      </sp-panel>
+    </sp-spin>
   </div>
 </template>
 
 <script>
-import {MySpin, MyPanel} from '$ui'
+import {spSpin, spPanel} from '$ui'
 export default {
   components: {
-    MySpin,
-    MyPanel
+    spSpin,
+    spPanel
   }
 }
 </script>

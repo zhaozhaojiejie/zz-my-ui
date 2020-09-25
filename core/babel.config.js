@@ -13,7 +13,7 @@ module.exports = {
       'component',
       {
         libraryName: 'element-ui',
-        styleLibraryName: `~.my/el-themes/${process.env.THEME || 'default'}`
+        styleLibraryName: `~.sp/el-themes/${process.env.THEME || 'default'}`
       }
     ],
     [
@@ -21,7 +21,7 @@ module.exports = {
       {
         libraryName: '$ui',
         libDir: 'components',
-        styleLibraryName: `~.my/ui-themes/${process.env.THEME || 'default'}`
+        styleLibraryName: `~.sp/ui-themes/${process.env.THEME || 'default'}`
       },
       '$ui'
     ],

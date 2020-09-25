@@ -1,33 +1,33 @@
 <template>
-  <MyMapPlacement class="my-map-layers" v-bind="$attrs">
+  <spMapPlacement class="sp-map-layers" v-bind="$attrs">
     <div v-for="(item, index) in list"
          :key="index"
-         class="my-map-layers__item"
+         class="sp-map-layers__item"
          :class="{active:activeIndex===index}"
          @click="handleClick(item, index)">
       <img :src="item.preview"/>
-      <span class="my-map-layers__title">{{item.title}}</span>
+      <span class="sp-map-layers__title">{{item.title}}</span>
     </div>
-  </MyMapPlacement>
+  </spMapPlacement>
 </template>
 
 <script>
   /**
    * 切换地图图层组件
-   * @module $ui/map/my-map-layers
+   * @module $ui/map/sp-map-layers
    */
-  import {MyMapPlacement} from '$ui/map'
+  import {spMapPlacement} from '$ui/map'
   import {createLayer} from '../../utils/layer'
   import defaultPreviewImage from '$ui/map/sources/preview/TDT.png'
 
   export default {
-    name: 'MyMapLayers',
+    name: 'spMapLayers',
     inject: ['myMap'],
     components: {
-      MyMapPlacement
+      spMapPlacement
     },
     /**
-     * 属性参数, 继承 [$ui/map/my-map-placement]{@link module:$ui/map/my-map-placement}
+     * 属性参数, 继承 [$ui/map/sp-map-placement]{@link module:$ui/map/sp-map-placement}
      * @member props
      * @property {array} [layers] 图层列表
      * @property {string} [layers.title] 图层标题
@@ -87,7 +87,7 @@
           map.addLayer(item.layer)
         }
         this.$emit('change', item)
-        this.myMap.$emit('my-map-layers:change', item.adapter)
+        this.myMap.$emit('sp-map-layers:change', item.adapter)
       },
       handleClick(item, index) {
         this.activeIndex = index

@@ -1,6 +1,6 @@
 @import './_vars.scss';
 
-.my-map-overview {
+.sp-map-overview {
   background: transparent !important;
   padding: 0 !important;
 
@@ -47,7 +47,7 @@
   }
 }
 
-.my-map-overview--invert {
+.sp-map-overview--invert {
   .ol-viewport {
     filter: invert(0.9) brightness(1.2) hue-rotate(90deg);
   }

@@ -1,13 +1,13 @@
 <template>
   <Tooltip v-bind="tooltipProps">
-    <div class="my-go-toolbar__item" :class="classes" @click="handleClick">
-      <MyIcon v-bind="iconProps"></MyIcon>
+    <div class="sp-go-toolbar__item" :class="classes" @click="handleClick">
+      <spIcon v-bind="iconProps"></spIcon>
     </div>
   </Tooltip>
 </template>
 
 <script>
-  import {MyIcon} from '$ui'
+  import {spIcon} from '$ui'
   import {Tooltip} from 'element-ui'
   import '../utils/icons'
 
@@ -15,7 +15,7 @@
     name: 'ToolbarItem',
     inject: ['myDiagram'],
     components: {
-      MyIcon,
+      spIcon,
       Tooltip
     },
     props: {

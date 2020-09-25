@@ -1,6 +1,6 @@
 <template>
   <div class="components">
-    <my-header :title="`组件库 ( ${getTotal()} )`" theme="border-left" size="large" background>
+    <sp-header :title="`组件库 ( ${getTotal()} )`" theme="border-left" size="large" background>
       <template v-slot:handle>
         <el-input v-model="keyword"
                   size="small"
@@ -8,7 +8,7 @@
                   prefix-icon="el-icon-search"
                   clearable></el-input>
       </template>
-    </my-header>
+    </sp-header>
 
     <div class="category" v-if="result.length || keyword">
       <h3>搜索结果 ( {{result.length}} )</h3>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>$ui/map/sp-map-link - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ol.interaction.areaSelect.html">areaSelect</a></li><li><a href="ol.interaction.drag.html">drag</a></li><li><a href="ol.source.TileSuperMapRest.html">TileSuperMapRest</a><ul class='methods'><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.createTileGrid">createTileGrid</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#.optionsFromMapJSON">optionsFromMapJSON</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#changeTilesVersion">changeTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#createLayerUrl">createLayerUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getAllRequestParams">getAllRequestParams</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getFullRequestUrl">getFullRequestUrl</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#getRequestParamString">getRequestParamString</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#lastTilesVersion">lastTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#mergeTileVersionParam">mergeTileVersionParam</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#nextTilesVersion">nextTilesVersion</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#setTileSetsInfo">setTileSetsInfo</a></li><li data-type='method'><a href="ol.source.TileSuperMapRest.html#updateCurrentTileSetsIndex">updateCurrentTileSetsIndex</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_map_mixins_feature.html">$ui/map/mixins/feature</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_mixins_feature.html#~setStyle">setStyle</a></li></ul></li><li><a href="module-$ui_map_mixins_image.html">$ui/map/mixins/image</a></li><li><a href="module-$ui_map_mixins_stroke.html">$ui/map/mixins/stroke</a></li><li><a href="module-$ui_map_sp-map.html">$ui/map/sp-map</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_sp-map.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~clickTrigger">clickTrigger</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~dispose">dispose</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~getFeatureAtPixel">getFeatureAtPixel</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~getFeatureVM">getFeatureVM</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~getLayer">getLayer</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~getMetersPerUnit">getMetersPerUnit</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~mapReady">mapReady</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~moveTo">moveTo</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~removeFeature">removeFeature</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~resize">resize</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~setActive">setActive</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~setCursor">setCursor</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~zoomIn">zoomIn</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~zoomOut">zoomOut</a></li><li data-type='method'><a href="module-$ui_map_sp-map.html#~zoomTo">zoomTo</a></li></ul></li><li><a href="module-$ui_map_sp-map-circle.html">$ui/map/sp-map-circle</a></li><li><a href="module-$ui_map_sp-map-cluster.html">$ui/map/sp-map-cluster</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_sp-map-cluster.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_sp-map-cluster.html#~draw">draw</a></li></ul></li><li><a href="module-$ui_map_sp-map-draw.html">$ui/map/sp-map-draw</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_sp-map-draw.html#~addFeature">addFeature</a></li><li data-type='method'><a href="module-$ui_map_sp-map-draw.html#~clear">clear</a></li><li data-type='method'><a href="module-$ui_map_sp-map-draw.html#~draw">draw</a></li><li data-type='method'><a href="module-$ui_map_sp-map-draw.html#~finish">finish</a></li><li data-type='method'><a href="module-$ui_map_sp-map-draw.html#~getFeatures">getFeatures</a></li><li data-type='method'><a href="module-$ui_map_sp-map-draw.html#~modify">modify</a></li><li data-type='method'><a href="module-$ui_map_sp-map-draw.html#~removeFeature">removeFeature</a></li></ul></li><li><a href="module-$ui_map_sp-map-flight.html">$ui/map/sp-map-flight</a></li><li><a href="module-$ui_map_sp-map-geo.html">$ui/map/sp-map-geo</a></li><li><a href="module-$ui_map_sp-map-heat.html">$ui/map/sp-map-heat</a></li><li><a href="module-$ui_map_sp-map-html.html">$ui/map/sp-map-html</a></li><li><a href="module-$ui_map_sp-map-icon.html">$ui/map/sp-map-icon</a></li><li><a href="module-$ui_map_sp-map-image.html">$ui/map/sp-map-image</a></li><li><a href="module-$ui_map_sp-map-layers.html">$ui/map/sp-map-layers</a></li><li><a href="module-$ui_map_sp-map-line.html">$ui/map/sp-map-line</a></li><li><a href="module-$ui_map_sp-map-link.html">$ui/map/sp-map-link</a></li><li><a href="module-$ui_map_sp-map-marker.html">$ui/map/sp-map-marker</a></li><li><a href="module-$ui_map_sp-map-measure.html">$ui/map/sp-map-measure</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_sp-map-measure.html#~clear">clear</a></li></ul></li><li><a href="module-$ui_map_sp-map-overview.html">$ui/map/sp-map-overview</a></li><li><a href="module-$ui_map_sp-map-palette.html">$ui/map/sp-map-palette</a></li><li><a href="module-$ui_map_sp-map-panel.html">$ui/map/sp-map-panel</a></li><li><a href="module-$ui_map_sp-map-placement.html">$ui/map/sp-map-placement</a></li><li><a href="module-$ui_map_sp-map-pointer.html">$ui/map/sp-map-pointer</a></li><li><a href="module-$ui_map_sp-map-polygon.html">$ui/map/sp-map-polygon</a></li><li><a href="module-$ui_map_sp-map-popup.html">$ui/map/sp-map-popup</a></li><li><a href="module-$ui_map_sp-map-rectangle.html">$ui/map/sp-map-rectangle</a></li><li><a href="module-$ui_map_sp-map-scale.html">$ui/map/sp-map-scale</a></li><li><a href="module-$ui_map_sp-map-scatter.html">$ui/map/sp-map-scatter</a></li><li><a href="module-$ui_map_sp-map-text.html">$ui/map/sp-map-text</a></li><li><a href="module-$ui_map_sp-map-track.html">$ui/map/sp-map-track</a></li><li><a href="module-$ui_map_sp-map-zoom.html">$ui/map/sp-map-zoom</a></li><li><a href="module-$ui_map_utils_style.html">$ui/map/utils/style</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_style.html#~parse">parse</a></li></ul></li><li><a href="module-$ui_map_utils_util.html">$ui/map/utils/util</a><ul class='methods'><li data-type='method'><a href="module-$ui_map_utils_util.html#.coordinateEqual">coordinateEqual</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createBezierCurvePoints">createBezierCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createCurvePoints">createCurvePoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.createLinePathPoints">createLinePathPoints</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.factorial">factorial</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.fromLonLat">fromLonLat</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.geoJsonDecode">geoJsonDecode</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.getDistance">getDistance</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.mergeProps">mergeProps</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.parseDecimal">parseDecimal</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.svgToImg">svgToImg</a></li><li data-type='method'><a href="module-$ui_map_utils_util.html#.toLonLat">toLonLat</a></li></ul></li></ul><h3>Events</h3><ul><li><a href="module-$ui_map_sp-map-cluster.html#~event:change">change</a></li><li><a href="module-$ui_map_sp-map-panel.html#~event:close">close</a></li><li><a href="module-$ui_map_sp-map-pointer.html#~event:copy">copy</a></li><li><a href="module-$ui_map_sp-map-draw.html#~event:drawend">drawend</a></li><li><a href="module-$ui_map_sp-map-draw.html#~event:drawstart">drawstart</a></li><li><a href="module-$ui_map_sp-map-measure.html#~event:end">end</a></li><li><a href="module-$ui_map_sp-map-draw.html#~event:modifyend">modifyend</a></li><li><a href="module-$ui_map_sp-map-draw.html#~event:modifystart">modifystart</a></li><li><a href="global.html#event:on-boxEnd">on-boxEnd</a></li><li><a href="global.html#event:on-boxStart">on-boxStart</a></li><li><a href="global.html#event:on-dragDown">on-dragDown</a></li><li><a href="global.html#event:on-dragMove">on-dragMove</a></li><li><a href="global.html#event:on-dragUp">on-dragUp</a></li><li><a href="module-$ui_map_sp-map-geo.html#~event:ready">ready</a></li><li></li></ul><h3>Interfaces</h3><ul><li><a href="module-$ui_map_mixins_feature.methods.drawHandler.html">drawHandler</a></li><li><a href="module-$ui_map_mixins_feature.methods.modifyHandler.html">modifyHandler</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createEzMapLayer">createEzMapLayer</a></li><li><a href="global.html#createFcMapLayer">createFcMapLayer</a></li><li><a href="global.html#createFounderLayer">createFounderLayer</a></li><li><a href="global.html#createLayer">createLayer</a></li><li><a href="global.html#createSuperLayer">createSuperLayer</a></li><li><a href="global.html#createTdtLayer">createTdtLayer</a></li><li><a href="global.html#createTdtLayerGroup">createTdtLayerGroup</a></li><li><a href="global.html#createWMTSLayer">createWMTSLayer</a></li><li><a href="global.html#props">props</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">$ui/map/sp-map-link</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description"><p>Link 连线组件</p></div>
+            
+
+            
+                
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_sp-map-link_Link.js.html">packages/sp-map-link/Link.js</a>, <a href="packages_sp-map-link_Link.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="~props"><span class="type-signature">(inner) </span>props<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="packages_sp-map-link_Link.js.html">packages/sp-map-link/Link.js</a>, <a href="packages_sp-map-link_Link.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>from</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>起点</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>to</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>终点</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radius</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>曲线半径度数, 默认为0,直线</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>angle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>90</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>曲线角度，radius与 angle结合可定义曲线的形状</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fromArrow</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>起点箭头</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>toArrow</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>终点箭头</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>颜色</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>线条宽度</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lineCap</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lineJoin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lineDash</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lineDashOffset</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    <p>属性参数, 继承 <a href="module-$ui_map_mixins_feature.html">$ui/map/mixins/feature</a></p>
+</div>
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:46 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

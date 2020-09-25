@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import {MyLazy, MySkeleton} from '$ui'
-Vue.use(MyLazy)
-Vue.use(MySkeleton)
+import {spLazy, spSkeleton} from '$ui'
+Vue.use(spLazy)
+Vue.use(spSkeleton)

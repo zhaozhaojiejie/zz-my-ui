@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>sp-form/src/fields/Autocomplete.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Outline.html">Outline</a></li><li><a href="Tag.html">Tag</a></li><li><a href="TagCanvas.html">TagCanvas</a></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_components_my-affix.html">$ui/components/sp-affix</a></li><li><a href="module-$ui_components_my-anchor.html">$ui/components/sp-anchor</a></li><li><a href="module-$ui_components_my-autocomplete.html">$ui/components/sp-autocomplete</a></li><li><a href="module-$ui_components_my-avatar.html">$ui/components/sp-avatar</a></li><li><a href="module-$ui_components_my-avatars.html">$ui/components/sp-avatars</a></li><li><a href="module-$ui_components_my-back-top.html">$ui/components/sp-back-top</a></li><li><a href="module-$ui_components_my-capture.html">$ui/components/sp-capture</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-capture.html#~_renderImg">_renderImg</a></li></ul></li><li><a href="module-$ui_components_my-card-list.html">$ui/components/sp-card-list</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-card-list.html#~refresh">refresh</a></li></ul></li><li><a href="module-$ui_components_my-cascader.html">$ui/components/sp-cascader</a></li><li><a href="module-$ui_components_my-checkbox.html">$ui/components/sp-checkbox</a></li><li><a href="module-$ui_components_my-clipboard.html">$ui/components/sp-clipboard</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-clipboard.html#~copy">copy</a></li></ul></li><li><a href="module-$ui_components_my-color-picker.html">$ui/components/sp-color-picker</a></li><li><a href="module-$ui_components_my-contextmenu.html">$ui/components/sp-contextmenu</a></li><li><a href="module-$ui_components_my-corner-mark.html">$ui/components/sp-corner-mark</a></li><li><a href="module-$ui_components_my-crud.html">$ui/components/sp-crud</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-crud.html#~openAddDialog">openAddDialog</a></li><li data-type='method'><a href="module-$ui_components_my-crud.html#~refresh">refresh</a></li><li data-type='method'><a href="module-$ui_components_my-crud.html#~reload">reload</a></li></ul></li><li><a href="module-$ui_components_my-date.html">$ui/components/sp-date</a></li><li><a href="module-$ui_components_my-date-picker.html">$ui/components/sp-date-picker</a></li><li><a href="module-$ui_components_my-description.html">$ui/components/sp-description</a></li><li><a href="module-$ui_components_my-detail.html">$ui/components/sp-detail</a></li><li><a href="module-$ui_components_my-detail-item.html">$ui/components/sp-detail-item</a></li><li><a href="module-$ui_components_my-dialog.html">$ui/components/sp-dialog</a></li><li><a href="module-$ui_components_my-drag.html">$ui/components/sp-drag</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-drag.html#~getRelativeEl">getRelativeEl</a></li></ul></li><li><a href="module-$ui_components_my-drop.html">$ui/components/sp-drop</a></li><li><a href="module-$ui_components_my-edit-tags.html">$ui/components/sp-edit-tags</a></li><li><a href="module-$ui_components_my-editor.html">$ui/components/sp-editor</a></li><li><a href="module-$ui_components_my-empty.html">$ui/components/sp-empty</a></li><li><a href="module-$ui_components_my-filter.html">$ui/components/sp-filter</a></li><li><a href="module-$ui_components_my-fixed.html">$ui/components/sp-fixed</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-fixed.html#~resize">resize</a></li></ul></li><li><a href="module-$ui_components_my-flex.html">$ui/components/sp-flex</a></li><li><a href="module-$ui_components_my-flex-item.html">$ui/components/sp-flex-item</a></li><li><a href="module-$ui_components_my-flip.html">$ui/components/sp-flip</a></li><li><a href="module-$ui_components_my-float.html">$ui/components/sp-float</a></li><li><a href="module-$ui_components_my-float-item.html">$ui/components/sp-float-item</a></li><li><a href="module-$ui_components_my-form.html">$ui/components/sp-form</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-form.html#~reset">reset</a></li><li data-type='method'><a href="module-$ui_components_my-form.html#~submit">submit</a></li></ul></li><li><a href="module-$ui_components_my-form_src_Base.html">$ui/components/sp-form/src/Base</a></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html">$ui/components/sp-form/src/common/TagInput</a></li><li><a href="module-$ui_components_my-form_src_common_TagSelect.html">$ui/components/sp-form/src/common/TagSelect</a></li><li><a href="module-$ui_components_my-form_src_common_TreeSelect.html">$ui/components/sp-form/src/common/TreeSelect</a></li><li><a href="module-$ui_components_my-header.html">$ui/components/sp-header</a></li><li><a href="module-$ui_components_my-highlight.html">$ui/components/sp-highlight</a></li><li><a href="module-$ui_components_my-icon.html">$ui/components/sp-icon</a></li><li><a href="module-$ui_components_my-im-wall.html">$ui/components/sp-im-wall</a></li><li><a href="module-$ui_components_my-input.html">$ui/components/sp-input</a></li><li><a href="module-$ui_components_my-input-number.html">$ui/components/sp-input-number</a></li><li><a href="module-$ui_components_my-layout.html">$ui/components/sp-layout</a></li><li><a href="module-$ui_components_my-lazy.html">$ui/components/sp-lazy</a></li><li><a href="module-$ui_components_my-list.html">$ui/components/sp-list</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-list.html#~load">load</a></li><li data-type='method'><a href="module-$ui_components_my-list.html#~refresh">refresh</a></li><li data-type='method'><a href="module-$ui_components_my-list.html#~reset">reset</a></li><li data-type='method'><a href="module-$ui_components_my-list.html#~scrollTop">scrollTop</a></li></ul></li><li><a href="module-$ui_components_my-login.html">$ui/components/sp-login</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-login.html#~submit">submit</a></li></ul></li><li><a href="module-$ui_components_my-marquee.html">$ui/components/sp-marquee</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-marquee.html#~pause">pause</a></li><li data-type='method'><a href="module-$ui_components_my-marquee.html#~start">start</a></li><li data-type='method'><a href="module-$ui_components_my-marquee.html#~stop">stop</a></li></ul></li><li><a href="module-$ui_components_my-master-app.html">$ui/components/sp-master-app</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-master-app.html#~initState">initState</a></li><li data-type='method'><a href="module-$ui_components_my-master-app.html#~onStateChange">onStateChange</a></li><li data-type='method'><a href="module-$ui_components_my-master-app.html#~onStateChange">onStateChange</a></li><li data-type='method'><a href="module-$ui_components_my-master-app.html#~setState">setState</a></li></ul></li><li><a href="module-$ui_components_my-menu.html">$ui/components/sp-menu</a></li><li><a href="module-$ui_components_my-micro-app.html">$ui/components/sp-micro-app</a></li><li><a href="module-$ui_components_my-navbar.html">$ui/components/sp-navbar</a></li><li><a href="module-$ui_components_my-navbar-FullScreenAction.html">$ui/components/sp-navbar-FullScreenAction</a></li><li><a href="module-$ui_components_my-navbar-IconAction.html">$ui/components/sp-navbar-IconAction</a></li><li><a href="module-$ui_components_my-navbar-UserAction.html">$ui/components/sp-navbar-UserAction</a></li><li><a href="module-$ui_components_my-number.html">$ui/components/sp-number</a></li><li><a href="module-$ui_components_my-panel.html">$ui/components/sp-panel</a></li><li><a href="module-$ui_components_my-paragraph.html">$ui/components/sp-paragraph</a></li><li><a href="module-$ui_components_my-pro.html">$ui/components/sp-pro</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-pro.html#~addTab">addTab</a></li><li data-type='method'><a href="module-$ui_components_my-pro.html#~closeTabs">closeTabs</a></li><li data-type='method'><a href="module-$ui_components_my-pro.html#~setTab">setTab</a></li></ul></li><li><a href="module-$ui_components_my-promise.html">$ui/components/sp-promise</a></li><li><a href="module-$ui_components_my-radial-menu.html">$ui/components/sp-radial-menu</a></li><li><a href="module-$ui_components_my-radio.html">$ui/components/sp-radio</a></li><li><a href="module-$ui_components_my-range.html">$ui/components/sp-range</a></li><li><a href="module-$ui_components_my-rate.html">$ui/components/sp-rate</a></li><li><a href="module-$ui_components_my-resize.html">$ui/components/sp-resize</a></li><li><a href="module-$ui_components_my-result.html">$ui/components/sp-result</a></li><li><a href="module-$ui_components_my-revolve.html">$ui/components/sp-revolve</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-revolve.html#~next">next</a></li><li data-type='method'><a href="module-$ui_components_my-revolve.html#~prev">prev</a></li><li data-type='method'><a href="module-$ui_components_my-revolve.html#~start">start</a></li><li data-type='method'><a href="module-$ui_components_my-revolve.html#~stop">stop</a></li></ul></li><li><a href="module-$ui_components_my-select.html">$ui/components/sp-select</a></li><li><a href="module-$ui_components_my-sidebar.html">$ui/components/sp-sidebar</a></li><li><a href="module-$ui_components_my-skeleton.html">$ui/components/sp-skeleton</a></li><li><a href="module-$ui_components_my-slider.html">$ui/components/sp-slider</a></li><li><a href="module-$ui_components_my-sortable.html">$ui/components/sp-sortable</a></li><li><a href="module-$ui_components_my-spin.html">$ui/components/sp-spin</a></li><li><a href="module-$ui_components_my-stat-card.html">$ui/components/sp-stat-card</a></li><li><a href="module-$ui_components_my-switch.html">$ui/components/sp-switch</a></li><li><a href="module-$ui_components_my-table.html">$ui/components/sp-table</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-table.html#~refresh">refresh</a></li></ul></li><li><a href="module-$ui_components_my-tabs.html">$ui/components/sp-tabs</a></li><li><a href="module-$ui_components_my-tag-canvas.html">$ui/components/sp-tag-canvas</a></li><li><a href="module-$ui_components_my-tag-input.html">$ui/components/sp-tag-input</a></li><li><a href="module-$ui_components_my-tag-select.html">$ui/components/sp-tag-select</a></li><li><a href="module-$ui_components_my-text.html">$ui/components/sp-text</a></li><li><a href="module-$ui_components_my-timer.html">$ui/components/sp-timer</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-timer.html#~reset">reset</a></li><li data-type='method'><a href="module-$ui_components_my-timer.html#~start">start</a></li><li data-type='method'><a href="module-$ui_components_my-timer.html#~stop">stop</a></li></ul></li><li><a href="module-$ui_components_my-title.html">$ui/components/sp-title</a></li><li><a href="module-$ui_components_my-tree-select.html">$ui/components/sp-tree-select</a></li><li><a href="module-$ui_components_my-typography.html">$ui/components/sp-typography</a></li><li><a href="module-$ui_components_my-water-fall.html">$ui/components/sp-water-fall</a></li><li><a href="module-$ui_components_my-watermark.html">$ui/components/sp-watermark</a></li><li><a href="module-$ui_components_my-wave.html">$ui/components/sp-wave</a></li><li><a href="module-$ui_components_my-wrapper.html">$ui/components/sp-wrapper</a></li><li><a href="module-widgets_my-print.html">widgets/sp-print</a></li></ul><h3>Events</h3><ul><li><a href="module-$ui_components_my-stat-card.html#~event:action">action</a></li><li></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html#~event:add">add</a></li><li><a href="module-$ui_components_my-wrapper.html#~event:back">back</a></li><li><a href="module-$ui_components_my-dialog.html#~event:cancel">cancel</a></li><li><a href="module-$ui_components_my-typography.html#~event:change">change</a></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-radial-menu.html#~event:click">click</a></li><li></li><li></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-avatars.html#~event:click-add">click-add</a></li><li><a href="module-$ui_components_my-avatars.html#~event:click-item">click-item</a></li><li><a href="module-$ui_components_my-avatars.html#~event:click-more">click-more</a></li><li><a href="module-$ui_components_my-radial-menu.html#~event:close">close</a></li><li></li><li><a href="module-$ui_components_my-pro.html#~event:collapse">collapse</a></li><li><a href="module-$ui_components_my-form_src_common_TagSelect.html#~event:collapsed">collapsed</a></li><li><a href="module-$ui_components_my-table.html#~event:column-change">column-change</a></li><li><a href="module-$ui_components_my-navbar-UserAction.html#~event:command">command</a></li><li></li><li></li><li><a href="global.html#event:complete">complete</a></li><li></li><li><a href="module-$ui_components_my-typography.html#event:copy">copy</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-drag.html#~event:drag">drag</a></li><li></li><li><a href="module-$ui_components_my-dialog.html#~event:drag-start">drag-start</a></li><li><a href="module-$ui_components_my-dialog.html#~event:drag-stop">drag-stop</a></li><li><a href="module-$ui_components_my-drop.html#~event:drop">drop</a></li><li><a href="module-$ui_components_my-typography.html#event:edited">edited</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-typography.html#event:editing">editing</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-drop.html#~event:enter">enter</a></li><li><a href="module-$ui_components_my-table.html#~event:error">error</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-typography.html#event:expand">expand</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-timer.html#~event:finish">finish</a></li><li><a href="module-$ui_components_my-dialog.html#~event:hide">hide</a></li><li><a href="module-$ui_components_my-lazy.html#~event:init">init</a></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html#~event:input-change">input-change</a></li><li><a href="module-$ui_components_my-drop.html#~event:leave">leave</a></li><li><a href="module-$ui_components_my-wrapper.html#~event:link-click">link-click</a></li><li><a href="module-$ui_components_my-dialog.html#~event:load">load</a></li><li><a href="module-$ui_components_my-revolve.html#~event:loaded">loaded</a></li><li><a href="module-$ui_components_my-dialog.html#~event:maximize">maximize</a></li><li><a href="module-$ui_components_my-im-wall.html#~event:on-added">on-added</a></li><li><a href="module-$ui_components_my-capture.html#~event:on-capture">on-capture</a></li><li><a href="global.html#event:on-change">on-change</a></li><li><a href="module-$ui_components_my-tag-canvas.html#~event:on-click">on-click</a></li><li><a href="module-$ui_components_my-capture.html#~event:on-output">on-output</a></li><li><a href="module-$ui_components_my-radial-menu.html#~event:open">open</a></li><li></li><li><a href="module-$ui_components_my-drop.html#~event:over">over</a></li><li><a href="global.html#~event:page-change">page-change</a></li><li></li><li></li><li><a href="module-$ui_components_my-login.html#~event:pki">pki</a></li><li><a href="module-$ui_components_my-revolve.html#~event:progress">progress</a></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html#~event:remove">remove</a></li><li><a href="module-$ui_components_my-timer.html#~event:reset">reset</a></li><li></li><li><a href="module-$ui_components_my-resize.html#~event:resize">resize</a></li><li></li><li><a href="module-$ui_components_my-dialog.html#~event:resize-start">resize-start</a></li><li><a href="module-$ui_components_my-dialog.html#~event:resize-stop">resize-stop</a></li><li><a href="module-$ui_components_my-sidebar.html#~event:select">select</a></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-dialog.html#~event:show">show</a></li><li><a href="global.html#~event:size-change">size-change</a></li><li></li><li></li><li><a href="module-$ui_components_my-timer.html#~event:start">start</a></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-timer.html#~event:stop">stop</a></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-login.html#~event:submit">submit</a></li><li></li><li></li><li><a href="module-$ui_components_my-table.html#~event:success">success</a></li><li></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-panel.html#~event:tab-change">tab-change</a></li><li><a href="module-$ui_components_my-pro.html#~event:tab-remove">tab-remove</a></li><li><a href="module-$ui_components_my-pro.html#~event:tab-select">tab-select</a></li><li><a href="module-$ui_components_my-timer.html#~event:tick">tick</a></li><li><a href="module-$ui_components_my-form.html#~event:validate">validate</a></li><li><a href="module-widgets_my-back-top.html#event:click">click</a></li></ul><h3>Global</h3><ul><li><a href="global.html#AddShadowToImage">AddShadowToImage</a></li><li><a href="global.html#appendChildNode">appendChildNode</a></li><li><a href="global.html#createEllipsisContainer">createEllipsisContainer</a></li><li><a href="global.html#createEllipsisContentHolder">createEllipsisContentHolder</a></li><li><a href="global.html#destroyVue">destroyVue</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#inRange">inRange</a></li><li><a href="global.html#instanceVue">instanceVue</a></li><li><a href="global.html#props">props</a></li><li><a href="global.html#pxToNumber">pxToNumber</a></li><li><a href="global.html#removeEllipsisContainer">removeEllipsisContainer</a></li><li><a href="global.html#RoundImage">RoundImage</a></li><li><a href="global.html#scrollTop">scrollTop</a></li><li><a href="global.html#setData">setData</a></li><li><a href="global.html#styleToString">styleToString</a></li><li><a href="global.html#wrapperDecorations">wrapperDecorations</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">sp-form/src/fields/Autocomplete.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * 输入联想组件，继承Base
+ * @module $ui/components/sp-autocomplete
+ */
+
+import {Autocomplete} from 'element-ui'
+import Base from '../Base'
+
+export default {
+  name: 'spAutocomplete',
+  mixins: [Base],
+  components: {
+    Autocomplete
+  },
+  props: {
+    value: String
+  },
+  render() {
+    const scopedSlots = this.$scopedSlots.default
+      ? {
+        default: (props) => {
+          return this.$scopedSlots.default(props)
+        }
+        
+      }
+      : null;
+    
+    const vnode = (
+      &lt;Autocomplete ref="comp"
+                    class="sp-autocomplete"
+                    {
+                      ...{
+                        props: this.innerProps,
+                        on: {
+                          ...this.$listeners
+                        },
+                        attrs: this.innerProps,
+                        scopedSlots: scopedSlots
+                      }
+                    }
+                    vModel={this.fieldValue}>
+        
+        {this.createSlots(['prefix', 'suffix', 'prepend', 'append'])}
+      &lt;/Autocomplete>
+    )
+    
+    return this.renderComponent(vnode)
+  },
+  mounted() {
+    this.extendMethods(this.$refs.comp, ['focus'])
+  }
+  
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:47 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

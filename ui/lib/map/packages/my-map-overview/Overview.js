@@ -1,6 +1,6 @@
 /**
  * 切换地图图层组件
- * @module $ui/map/my-map-overview
+ * @module $ui/map/sp-map-overview
  */
 import {OverviewMap} from 'ol/control'
 import {createLayer} from '../../utils/layer'
@@ -18,7 +18,7 @@ import {createLayer} from '../../utils/layer'
  * @property {boolean} [invert] 颜色反相
  */
 export default {
-  name: 'MyMapOverview',
+  name: 'spMapOverview',
   inject: ['myMap'],
   props: {
     theme: {
@@ -70,11 +70,11 @@ export default {
       if (!this.adapter) return
       this.removeControl()
       const layer = createLayer(this.adapter)
-      const invert = this.invert ? 'my-map-overview--invert' : ''
+      const invert = this.invert ? 'sp-map-overview--invert' : ''
       this.overview = new OverviewMap({
         ...this.$props,
         layers: [layer],
-        className: `ol-overviewmap my-map-overview is-${this.theme} ${invert}`
+        className: `ol-overviewmap sp-map-overview is-${this.theme} ${invert}`
       })
       this.myMap.map.addControl(this.overview)
     },
@@ -86,14 +86,14 @@ export default {
     }
   },
   created() {
-    this.myMap.$on('my-map-layers:change', this.layerChangeHandler)
+    this.myMap.$on('sp-map-layers:change', this.layerChangeHandler)
     this.myMap.mapReady(() => {
       this.adapter = this.myMap.adapter
     })
   },
   beforeDestroy() {
     this.removeControl()
-    this.myMap.$off('my-map-layers:change', this.layerChangeHandler)
+    this.myMap.$off('sp-map-layers:change', this.layerChangeHandler)
   }
 
 }

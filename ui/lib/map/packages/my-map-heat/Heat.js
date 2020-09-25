@@ -1,6 +1,6 @@
 /**
  * 热力图组件
- * @module $ui/map/my-map-heat
+ * @module $ui/map/sp-map-heat
  */
 import Feature from 'ol/Feature'
 import Point from 'ol/geom/Point'
@@ -8,7 +8,7 @@ import Heatmap from 'ol/layer/Heatmap'
 import VectorSource from 'ol/source/Vector'
 
 export default {
-  name: 'MyMapHeat',
+  name: 'spMapHeat',
   inject: ['myMap'],
   render() {
     return null

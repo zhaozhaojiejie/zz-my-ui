@@ -1,20 +1,20 @@
 # Panel 面板
 
-Panel面板容器。文档<api-link href="map/my-map-panel"> MyMapPanel</api-link>
+Panel面板容器。文档<api-link href="map/sp-map-panel"> spMapPanel</api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-panel title="标题文本" 
+  <sp-map>  
+    <sp-map-panel title="标题文本" 
                   placement="center-center"
                   width="300px"
                   height="200px">
       面板占位内容
-    </my-map-panel>
-  </my-map>
+    </sp-map-panel>
+  </sp-map>
 </template>
 ```
 :::
@@ -24,8 +24,8 @@ Panel面板容器。文档<api-link href="map/my-map-panel"> MyMapPanel</api-lin
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-panel title="标题文本" 
+  <sp-map>  
+    <sp-map-panel title="标题文本" 
                   icon="el-icon-setting"
                   placement="center-center"
                   width="300px"
@@ -33,8 +33,8 @@ Panel面板容器。文档<api-link href="map/my-map-panel"> MyMapPanel</api-lin
                   closable
                   :visible.sync="visible">
       面板占位内容
-    </my-map-panel>
-  </my-map>
+    </sp-map-panel>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -53,8 +53,8 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-panel title="标题文本" 
+  <sp-map>  
+    <sp-map-panel title="标题文本" 
                   icon="el-icon-setting"
                   placement="center-center"
                   width="300px"
@@ -62,8 +62,8 @@ export default {
                   draggable
                   resizable>
       面板占位内容
-    </my-map-panel>
-  </my-map>
+    </sp-map-panel>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -81,8 +81,8 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-panel title="标题文本" 
+  <sp-map>  
+    <sp-map-panel title="标题文本" 
                   icon="el-icon-setting"
                   placement="left-center"
                   footer-align="right"
@@ -92,8 +92,8 @@ export default {
        <template v-slot:footer>
           <el-button size="small" type="primary">确 定</el-button>
        </template>
-    </my-map-panel>
-    <my-map-panel title="标题文本" 
+    </sp-map-panel>
+    <sp-map-panel title="标题文本" 
                   icon="el-icon-setting"
                   placement="right-center"
                   footer-align="right"
@@ -104,8 +104,8 @@ export default {
        <template v-slot:footer>
           <el-button size="small" type="primary">确 定</el-button>
        </template>
-    </my-map-panel>
-  </my-map>
+    </sp-map-panel>
+  </sp-map>
 </template>
 ```
 :::
@@ -114,8 +114,8 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-panel title="标题文本" 
+  <sp-map>  
+    <sp-map-panel title="标题文本" 
                   icon="el-icon-setting"
                   placement="center-center"
                   width="300px"
@@ -128,8 +128,8 @@ export default {
             </el-button-group>
         </template>    
       面板占位内容
-    </my-map-panel>
-  </my-map>
+    </sp-map-panel>
+  </sp-map>
 </template>
 ```
 :::

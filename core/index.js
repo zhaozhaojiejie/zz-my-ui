@@ -1,26 +1,26 @@
 const utils = require('./utils')
 
 // 检查当前是否安装模式，false表示开发模式
-const IsInstalled = utils.urlFormat(__dirname).includes('node_modules/@xdh/my')
+const IsInstalled = utils.urlFormat(__dirname).includes('node_modules/@xdh/sp')
 
-// My库所在的绝对路径位置
-const MyRootPath = utils.resolve('./')
+// sp库所在的绝对路径位置
+const spRootPath = utils.resolve('./')
 
 // 项目工程根目录
-const ProjectRootPath = IsInstalled ? process.cwd() : MyRootPath
+const ProjectRootPath = IsInstalled ? process.cwd() : spRootPath
 
 // UI 所在绝对路径位置
-const UIPath = utils.join(MyRootPath, 'ui')
+const UIPath = utils.join(spRootPath, 'ui')
 
 // lib 所在绝对路径位置
-const LibPath = utils.join(MyRootPath, 'ui/lib')
+const LibPath = utils.join(spRootPath, 'ui/lib')
 
 // core 所在绝对路径位置
-const CorePath = utils.join(MyRootPath, 'core')
+const CorePath = utils.join(spRootPath, 'core')
 
 
 // 临时文件存放绝对路径, 临时目录在工程下
-const TempPath = utils.join(ProjectRootPath, '.my')
+const TempPath = utils.join(ProjectRootPath, '.sp')
 
 // 调色板scss变量文件位置
 const ColorsVarFilePath = utils.join(LibPath, 'styles/common/_colors.scss')
@@ -49,7 +49,7 @@ const BuildThemeDistPath = utils.join(TempPath, 'dist')
 // 工程的主题配置SCSS文件夹路径
 const ProjectThemeVarPath = utils.join(ProjectRootPath, 'src/style/themes')
 
-const ThemeVarScssLoaderPath = utils.join(MyRootPath, 'core/loaders/theme-var-scss-loader.js')
+const ThemeVarScssLoaderPath = utils.join(spRootPath, 'core/loaders/theme-var-scss-loader.js')
 
 // ElementUI样式源码目录
 const ElementThemeSrcPath = utils.join(ProjectRootPath, 'node_modules/element-ui/packages/theme-chalk/src')
@@ -58,7 +58,7 @@ const ElementThemeSrcPath = utils.join(ProjectRootPath, 'node_modules/element-ui
 const UIThemeSrcPath = utils.join(LibPath, 'styles')
 
 // 组件自动注册加载器loader
-const ComponentLoaderPath = utils.join(MyRootPath, 'core/loaders/component-loader.js')
+const ComponentLoaderPath = utils.join(spRootPath, 'core/loaders/component-loader.js')
 
 // 工程项目视图目录
 const ViewsPath = utils.join(ProjectRootPath, 'src/views')
@@ -67,7 +67,7 @@ const ViewsPath = utils.join(ProjectRootPath, 'src/views')
 const OutputRoutesFile = utils.join(TempPath, 'routes/index.js')
 
 // 开发环境切换主题http服务接口路径
-const DevThemeSwitchServiceApi = '/my/dev-theme-switch-service'
+const DevThemeSwitchServiceApi = '/sp/dev-theme-switch-service'
 
 // 项目主题入口文件，显示什么样的主题由该文件决定
 const ProjectThemeScssFile = utils.join(ProjectRootPath, 'src/style/vars/_theme.scss')
@@ -82,13 +82,13 @@ const BackupLocalThemesFile = utils.join(TempPath, '_theme.scss')
 const DocsTempDemoPath = utils.join(TempPath, 'demo')
 
 // 文档工程目录位置
-const DocsPath = utils.join(MyRootPath, 'docs')
+const DocsPath = utils.join(spRootPath, 'docs')
 
 // babel 配置文件
-const BabelConfigFile = utils.join(MyRootPath, 'core/babel.config.js')
+const BabelConfigFile = utils.join(spRootPath, 'core/babel.config.js')
 
 // Bridge入口文件位置
-const BridgeEntry = utils.join(MyRootPath, 'core/build/bridge-entry.js')
+const BridgeEntry = utils.join(spRootPath, 'core/build/bridge-entry.js')
 
 // Bridge类库入口文件位置
 const BridgeLibEnter = utils.join(LibPath, 'utils/bridge.js')
@@ -100,11 +100,11 @@ const AppsPath = utils.join(ProjectRootPath, 'apps')
 const AppReservedWords = ['docs']
 
 // app模板目录
-const AppTemplatePath = utils.join(MyRootPath, 'core/templates/app')
+const AppTemplatePath = utils.join(spRootPath, 'core/templates/app')
 
 module.exports = {
   IsInstalled,
-  MyRootPath,
+  spRootPath,
   ProjectRootPath,
   UIPath,
   LibPath,

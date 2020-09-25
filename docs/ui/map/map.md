@@ -1,13 +1,13 @@
 # 瓦片图层
 
-地图瓦片基础图层，是地图应用的根组件。 组件文档 <api-link href="map/my-map">MyMap</api-link>
+地图瓦片基础图层，是地图应用的根组件。 组件文档 <api-link href="map/sp-map">spMap</api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map></my-map>
+  <sp-map></sp-map>
 </template>
 ```
 :::
@@ -16,7 +16,7 @@
 :::demo
 ```html
 <template>
-  <my-map :zoom="12" :center="[120, 33]"></my-map>
+  <sp-map :zoom="12" :center="[120, 33]"></sp-map>
 </template>
 ```
 :::
@@ -45,7 +45,7 @@ PGIS厂商
 :::demo
 ```html
 <template>
-  <my-map adapter="Baidu"></my-map>
+  <sp-map adapter="Baidu"></sp-map>
 </template>
 ```
 :::
@@ -55,7 +55,7 @@ PGIS厂商
 :::demo
 ```html
 <template>
-  <my-map :drag-pan="false" :mouse-wheel-zoom="false"></my-map>
+  <sp-map :drag-pan="false" :mouse-wheel-zoom="false"></sp-map>
 </template>
 ```
 :::
@@ -66,7 +66,7 @@ PGIS厂商
 :::demo
 ```html
 <template>
-  <my-map :adapter="adapter"></my-map>
+  <sp-map :adapter="adapter"></sp-map>
 </template>
 <script>
 export default {
@@ -88,7 +88,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map :adapter="adapter"></my-map>
+  <sp-map :adapter="adapter"></sp-map>
 </template>
 <script>
 export default {
@@ -110,12 +110,12 @@ export default {
 
 ## 事件
 
-MyMap 支持 `ol/Map`的全部事件，并扩展支持 `ready` 和 图层上的Feature 鼠标 进入`mouseenter` 、离开`mouseleave` 事件
+spMap 支持 `ol/Map`的全部事件，并扩展支持 `ready` 和 图层上的Feature 鼠标 进入`mouseenter` 、离开`mouseleave` 事件
 
 :::demo
 ```html
 <template>
-  <my-map adapter="TDT" @click="handleClick" @pointermove="handleMove"></my-map>
+  <sp-map adapter="TDT" @click="handleClick" @pointermove="handleMove"></sp-map>
 </template>
 <script>
 export default {
@@ -136,7 +136,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map invert></my-map>
+  <sp-map invert></sp-map>
 </template>
 ```
 :::
@@ -145,16 +145,16 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map :filter="filterValue">
-     <my-map-placement placement="left-top" style="padding: 10px;">
+  <sp-map :filter="filterValue">
+     <sp-map-placement placement="left-top" style="padding: 10px;">
         <el-select v-model="filter" size="small">
           <el-option v-for="(item, key) in filters" 
                      :key="key" 
                      :label="key" 
                      :value="key"></el-option>
         </el-select>
-     </my-map-placement>
-  </my-map>
+     </sp-map-placement>
+  </sp-map>
 </template>
 <script>
 import {deepBlue, techBlue, black, orange, blue} from '$ui/map/utils/filters'

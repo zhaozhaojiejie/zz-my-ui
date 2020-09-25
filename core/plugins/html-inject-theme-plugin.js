@@ -48,7 +48,7 @@ class InsertThemeScriptInHtmlPlugin {
           themes[name] = utils.urlFormat(utils.join(this.options.path, file))
         })
 
-        const varName = this.options.appName ? `__MY_THEMES_${this.options.appName}__` : '__MY_THEMES__'
+        const varName = this.options.appName ? `__SP_THEMES_${this.options.appName}__` : '__SP_THEMES__'
         const content = `(function(global){global.${varName}=${JSON.stringify(themes)}})(window)`
         utils.writeFile(utils.join(this.options.savePath, 'theme.js'), content)
         const file = utils.urlFormat(utils.join(this.options.baseUrl, '/theme.js?t=' + (new Date().getTime())))

@@ -1,6 +1,6 @@
 # TreeSelect 下拉树
 
-文档 <api-link href="components/my-tree-select">MyTreeSelect</api-link>
+文档 <api-link href="components/sp-tree-select">spTreeSelect</api-link>
 
 ## 代码示例
 
@@ -9,9 +9,9 @@
 :::demo
 ```html
 <template>
-  <my-form :model="model" @submit="handleSubmit">
-    <my-tree-select name="tree" label="下拉树" :options="options"></my-tree-select>
-  </my-form>
+  <sp-form :model="model" @submit="handleSubmit">
+    <sp-tree-select name="tree" label="下拉树" :options="options"></sp-tree-select>
+  </sp-form>
 </template>
 
 <script>
@@ -43,12 +43,12 @@
 :::demo
 ```html
 <template>
-  <my-form :model="model" @submit="handleSubmit">
-    <my-tree-select name="tree"
+  <sp-form :model="model" @submit="handleSubmit">
+    <sp-tree-select name="tree"
                     label="下拉树"
                     :options="options"
-                    :props="{multiple: true, collapseTags: true}"></my-tree-select>
-  </my-form>
+                    :props="{multiple: true, collapseTags: true}"></sp-tree-select>
+  </sp-form>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 /**
  * Link 连线组件
- * @module $ui/map/my-map-link
+ * @module $ui/map/sp-map-link
  */
 import strokeMixin from '../../mixins/stroke'
 import featureMixin from '../../mixins/feature'
@@ -25,7 +25,7 @@ import createArrow from '../../utils/arrow'
  * @property {number} [lineDashOffset]
  */
 export default {
-  name: 'MyMapLink',
+  name: 'spMapLink',
   mixins: [strokeMixin, featureMixin],
   props: {
     // 起点

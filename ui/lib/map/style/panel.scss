@@ -1,8 +1,8 @@
 @import "vars";
 
 
-.my-map-panel {
-  &.my-drag {
+.sp-map-panel {
+  &.sp-drag {
     &.is-dragged {
       transform: initial;
     }
@@ -13,7 +13,7 @@
     }
   }
 
-  .my-resize {
+  .sp-resize {
     overflow: hidden;
   }
 
@@ -27,7 +27,7 @@
     font-size: 16px;
     line-height: 40px;
 
-    > .my-icon {
+    > .sp-icon {
       margin-right: 6px;
     }
   }
@@ -76,23 +76,23 @@
   }
 
   &.is-light {
-    .my-map-panel__header {
+    .sp-map-panel__header {
       background: $--title-background-color-light;
       color: $--title-color-light;
     }
 
-    .my-map-panel__footer {
+    .sp-map-panel__footer {
       border-top: 1px solid $--title-background-color-light;
     }
   }
 
   &.is-dark {
-    .my-map-panel__header {
+    .sp-map-panel__header {
       background: $--title-background-color-dark;
       color: $--title-color-dark;
     }
 
-    .my-map-panel__footer {
+    .sp-map-panel__footer {
       border-top: 1px solid $--title-background-color-dark;
     }
   }

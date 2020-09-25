@@ -1,6 +1,6 @@
 # Header 头部
 
-头部组件，分类或分隔展示信息时使用。组件<api-link href="components/my-header">MyHeader</api-link>  
+头部组件，分类或分隔展示信息时使用。组件<api-link href="components/sp-header">spHeader</api-link>  
 
 ## 何时使用
 
@@ -15,14 +15,14 @@
 :::demo
 ```html
 <template>
-   <my-header title="我是标题文字" icon="el-icon-menu"></my-header>
+   <sp-header title="我是标题文字" icon="el-icon-menu"></sp-header>
 </template>
 
 <script>
-import {MyHeader} from '$ui'
+import {spHeader} from '$ui'
 export default {
   components: {
-    MyHeader
+    spHeader
   }
 }
 </script>
@@ -35,14 +35,14 @@ export default {
 :::demo
 ```html
 <template>
-   <my-header title="我是标题文字" icon="el-icon-menu" background></my-header>
+   <sp-header title="我是标题文字" icon="el-icon-menu" background></sp-header>
 </template>
 
 <script>
-import {MyHeader} from '$ui'
+import {spHeader} from '$ui'
 export default {
   components: {
-    MyHeader
+    spHeader
   }
 }
 </script>
@@ -62,58 +62,58 @@ export default {
 ```html
 <template>
    <div>
-      <my-header title="我是标题文字" icon="el-icon-menu" background size="large"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" background></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" background size="medium"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" background size="small"></my-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" background size="large"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" background></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" background size="medium"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" background size="small"></sp-header>
       
       <hr>
       
-      <my-header title="我是标题文字" theme="border-left" background size="large"></my-header>
-      <my-header title="我是标题文字" theme="border-left" background></my-header>
-      <my-header title="我是标题文字" theme="border-left" background size="medium"></my-header>
-      <my-header title="我是标题文字" theme="border-left" background size="small"></my-header>
+      <sp-header title="我是标题文字" theme="border-left" background size="large"></sp-header>
+      <sp-header title="我是标题文字" theme="border-left" background></sp-header>
+      <sp-header title="我是标题文字" theme="border-left" background size="medium"></sp-header>
+      <sp-header title="我是标题文字" theme="border-left" background size="small"></sp-header>
       
       <hr>
        
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background size="large"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background size="medium"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background size="small"></my-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background size="large"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background size="medium"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-top" background size="small"></sp-header>
       
       <hr>
       
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background size="large"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background size="medium"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background size="small"></my-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background size="large"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background size="medium"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="border-bottom" background size="small"></sp-header>
     
       <hr>
       
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background size="large"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background size="medium"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background size="small"></my-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background size="large"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background size="medium"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-icon" background size="small"></sp-header>
     
       <hr>
       
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background size="large"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background size="medium"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background size="small"></my-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background size="large"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background size="medium"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-down" background size="small"></sp-header>
       
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background size="large"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background size="medium"></my-header>
-      <my-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background size="small"></my-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background size="large"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background size="medium"></sp-header>
+      <sp-header title="我是标题文字" icon="el-icon-menu" theme="bg-right" background size="small"></sp-header>
    </div>
 </template>
 
 <script>
-import {MyHeader} from '$ui'
+import {spHeader} from '$ui'
 export default {
   components: {
-    MyHeader
+    spHeader
   }
 }
 </script>
@@ -128,19 +128,19 @@ export default {
 :::demo
 ```html
 <template>
-   <my-header icon="el-icon-menu" background>
+   <sp-header icon="el-icon-menu" background>
      <template v-slot:title>我是插槽定义的标题</template>
      <template v-slot:handle>
         <el-button type="primary" size="small">新增</el-button>
      </template>
-  </my-header>
+  </sp-header>
 </template>
 
 <script>
-import {MyHeader} from '$ui'
+import {spHeader} from '$ui'
 export default {
   components: {
-    MyHeader
+    spHeader
   }
 }
 </script>
@@ -154,13 +154,13 @@ export default {
 ```html
 <template>
    <div>
-     <my-header title="我是标题文字" icon="el-icon-menu" background>
+     <sp-header title="我是标题文字" icon="el-icon-menu" background>
        <template v-slot:handle>
           <el-button type="text" icon="el-icon-more">更多</el-button>
        </template>
-     </my-header>
+     </sp-header>
       
-     <my-header title="我是插槽定义的标题" icon="el-icon-menu" theme="bg-right" size="small">
+     <sp-header title="我是插槽定义的标题" icon="el-icon-menu" theme="bg-right" size="small">
        <template v-slot:handle>
           <el-pagination
             small
@@ -168,9 +168,9 @@ export default {
             :total="50">
           </el-pagination>
        </template>
-    </my-header>
+    </sp-header>
     
-     <my-header title="我是标题" icon="el-icon-menu" theme="bg-right" size="medium">
+     <sp-header title="我是标题" icon="el-icon-menu" theme="bg-right" size="medium">
        <template v-slot:handle>
         <el-radio-group v-model="radio" size="small">
           <el-radio-button label="上海"></el-radio-button>
@@ -179,9 +179,9 @@ export default {
           <el-radio-button label="深圳"></el-radio-button>
         </el-radio-group>
        </template>
-    </my-header>
+    </sp-header>
     
-     <my-header title="我是标题" icon="el-icon-menu" theme="border-bottom">
+     <sp-header title="我是标题" icon="el-icon-menu" theme="border-bottom">
        <template v-slot:handle>
         <el-dropdown>
           <span class="el-dropdown-link">
@@ -196,17 +196,17 @@ export default {
           </el-dropdown-menu>
         </el-dropdown>
        </template>
-    </my-header>
+    </sp-header>
     
    </div>
 
 </template>
 
 <script>
-import {MyHeader} from '$ui'
+import {spHeader} from '$ui'
 export default {
   components: {
-    MyHeader
+    spHeader
   },
   data() {
     return {

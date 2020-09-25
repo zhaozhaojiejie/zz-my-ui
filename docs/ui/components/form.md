@@ -1,6 +1,6 @@
 # Form 表单
 
-<api-link href="components/my-form">MyFrom</api-link>  是组件库的重要组成部分，
+<api-link href="components/sp-form">spFrom</api-link>  是组件库的重要组成部分，
 它是一个表单项的容器，用来收纳[表单项组件](form-item.md)，提供排版、验证和数据处理功能。
 
 
@@ -8,15 +8,15 @@
 
 ### 基础用法
 
-MyFrom继承 el-form的全部参数和事件。用法与el-from有差别， el-from需要与el-form-item结合使用。
-MyForm不需要显式调用，表单项组件内置了el-form-item， 不需要显式调用。
+spFrom继承 el-form的全部参数和事件。用法与el-from有差别， el-from需要与el-form-item结合使用。
+spForm不需要显式调用，表单项组件内置了el-form-item， 不需要显式调用。
 
 :::demo(form-1)
 ```html
 <template>
-  <my-form @submit="handleSubmit">
-     <my-input name="title" label="标题"></my-input>
-  </my-form>
+  <sp-form @submit="handleSubmit">
+     <sp-input name="title" label="标题"></sp-input>
+  </sp-form>
 </template>
 
 <script>
@@ -39,9 +39,9 @@ export default {
 :::demo(form-2)
 ```html
 <template>
-  <my-form :model="model" @submit="handleSubmit">
-     <my-input name="title" label="标题"></my-input>
-  </my-form>
+  <sp-form :model="model" @submit="handleSubmit">
+     <sp-input name="title" label="标题"></sp-input>
+  </sp-form>
 </template>
 
 <script>
@@ -75,19 +75,19 @@ export default {
 :::demo(form-3)
 ```html
 <template>
-  <my-form @submit="handleSubmit"
+  <sp-form @submit="handleSubmit"
            inline
            label-width="60px"
            item-width="calc(50% - 20px)"
            footer-block
            size="small"
            footer-align="right">
-     <my-checkbox name="category" label="种类" :options="categories" width="100%"></my-checkbox>
-     <my-select name="fruit" label="水果" :options="fruit"></my-select>
-     <my-date-picker name="date" label="日期" :props="{valueFormat:'yyyy-MM-dd'}"></my-date-picker>
-     <my-input name="title" label="标题" width="100%"></my-input>
-     <my-input name="content" label="内容" width="100%" :props="{type:'textarea'}"></my-input>
-  </my-form>
+     <sp-checkbox name="category" label="种类" :options="categories" width="100%"></sp-checkbox>
+     <sp-select name="fruit" label="水果" :options="fruit"></sp-select>
+     <sp-date-picker name="date" label="日期" :props="{valueFormat:'yyyy-MM-dd'}"></sp-date-picker>
+     <sp-input name="title" label="标题" width="100%"></sp-input>
+     <sp-input name="content" label="内容" width="100%" :props="{type:'textarea'}"></sp-input>
+  </sp-form>
 </template>
 
 <script>
@@ -121,17 +121,17 @@ export default {
 
 ### 验证
 
-可以在MyForm或表单项组件配置`rules`实现验证，用法与el-form、el-form-item一样
+可以在spForm或表单项组件配置`rules`实现验证，用法与el-form、el-form-item一样
 
 :::demo(form-4)
 ```html
 <template>
-  <my-form @submit="handleSubmit" :rules="rules" label-width="80px">
-     <my-input name="title" label="标题"></my-input>
-     <my-input name="content" label="内容"
+  <sp-form @submit="handleSubmit" :rules="rules" label-width="80px">
+     <sp-input name="title" label="标题"></sp-input>
+     <sp-input name="content" label="内容"
       :props="{type:'textarea'}" 
-      :rules="{required:true, message:'内容不能为空'}"></my-input>
-  </my-form>
+      :rules="{required:true, message:'内容不能为空'}"></sp-input>
+  </sp-form>
 </template>
 
 <script>
@@ -161,10 +161,10 @@ export default {
 :::demo(form-5)
 ```html
 <template>
-  <my-form @submit="handleSubmit" collapsible>
-     <my-input name="title" label="标题"></my-input>
-     <my-input name="content" label="内容" :props="{type:'textarea'}" collapsible></my-input>
-  </my-form>
+  <sp-form @submit="handleSubmit" collapsible>
+     <sp-input name="title" label="标题"></sp-input>
+     <sp-input name="content" label="内容" :props="{type:'textarea'}" collapsible></sp-input>
+  </sp-form>
 </template>
 
 <script>
@@ -187,9 +187,9 @@ export default {
 :::demo(form-6)
 ```html
 <template>
-  <my-form @submit="handleSubmit" :dict-map="dictMap" :model="model">
-     <my-radio name="radio" dict="fruit" button></my-radio>
-  </my-form>
+  <sp-form @submit="handleSubmit" :dict-map="dictMap" :model="model">
+     <sp-radio name="radio" dict="fruit" button></sp-radio>
+  </sp-form>
 </template>
 
 <script>
@@ -234,9 +234,9 @@ export default {
 :::demo(form-7)
 ```html
 <template>
-  <my-form @submit="handleSubmit" :loader="loader" :model="model">
-     <my-radio name="radio" dict="fruit" button></my-radio>
-  </my-form>
+  <sp-form @submit="handleSubmit" :loader="loader" :model="model">
+     <sp-radio name="radio" dict="fruit" button></sp-radio>
+  </sp-form>
 </template>
 
 <script>
@@ -272,24 +272,24 @@ export default {
 :::demo
 ```html
 <template>
-    <my-form @submit="handleSubmit"
+    <sp-form @submit="handleSubmit"
              @change="handleChange"
              :model="model"
              label-width="100px"
              inline
              footer-block>
       <div v-for="(item, index) in model.users" :key="index">
-        <my-input :name="`users.${index}.name`"
+        <sp-input :name="`users.${index}.name`"
                   :rules="{required:true, message:'名称不能为空'}"
                   :label="`用户名称${index+1}`"
                   width="400px">
-        </my-input>
-        <my-form-custom>
+        </sp-input>
+        <sp-form-custom>
           <el-button @click="handleAdd(item, index)">增加</el-button>
           <el-button v-if="index>0" @click="handleRemove(item, index)">删除</el-button>
-        </my-form-custom>
+        </sp-form-custom>
       </div>
-    </my-form>
+    </sp-form>
 </template>
 
 <script>
@@ -337,15 +337,15 @@ export default {
 :::demo(form-8)
 ```html
 <template>
-  <my-form @submit="handleSubmit" 
+  <sp-form @submit="handleSubmit" 
            @reset="handleReset" 
            @change="handleChange" 
            @collapse="handleCollapse" 
            collapsible>
      <div>change: {{model}}</div>
-     <my-input name="title" label="标题"></my-input>
-     <my-input name="content" label="内容" :props="{type:'textarea'}" collapsible></my-input>
-  </my-form>
+     <sp-input name="title" label="标题"></sp-input>
+     <sp-input name="content" label="内容" :props="{type:'textarea'}" collapsible></sp-input>
+  </sp-form>
 </template>
 
 <script>

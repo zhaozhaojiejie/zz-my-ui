@@ -2,14 +2,14 @@
 
 常用卡片 和 详情页中.
 
-组件文档 <api-link href="components/my-description">MyDescription</api-link>
+组件文档 <api-link href="components/sp-description">spDescription</api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-description title="标题">数据项内容</my-description>
+  <sp-description title="标题">数据项内容</sp-description>
 </template>
 
 ```
@@ -22,13 +22,13 @@
 <template>
   <el-row>
     <el-col :span="8">
-      <my-description title="标题左对齐" :width="100">数据项内容</my-description>  
+      <sp-description title="标题左对齐" :width="100">数据项内容</sp-description>  
     </el-col>
     <el-col :span="8">
-      <my-description title="标题居中" :width="100" align="center">数据项内容</my-description> 
+      <sp-description title="标题居中" :width="100" align="center">数据项内容</sp-description> 
     </el-col>
     <el-col :span="8">
-      <my-description title="标题右对齐" :width="100" align="right">数据项内容</my-description> 
+      <sp-description title="标题右对齐" :width="100" align="right">数据项内容</sp-description> 
     </el-col>
   </el-row>
  
@@ -44,19 +44,19 @@
 <template>
   <el-row>
     <el-col :span="8">
-      <my-description title="标题左对齐" :width="100" top>
-        <my-title :level="3">253个</my-title>
-      </my-description>  
+      <sp-description title="标题左对齐" :width="100" top>
+        <sp-title :level="3">253个</sp-title>
+      </sp-description>  
     </el-col>
     <el-col :span="8">
-      <my-description title="标题居中" :width="100" align="center" top>
-       <my-title :level="3">253个</my-title>
-     </my-description> 
+      <sp-description title="标题居中" :width="100" align="center" top>
+       <sp-title :level="3">253个</sp-title>
+     </sp-description> 
     </el-col>
     <el-col :span="8">
-      <my-description title="标题右对齐" :width="100" align="right" top>
-       <my-title :level="3">253个</my-title>
-      </my-description> 
+      <sp-description title="标题右对齐" :width="100" align="right" top>
+       <sp-title :level="3">253个</sp-title>
+      </sp-description> 
     </el-col>
   </el-row>
  
@@ -71,16 +71,16 @@
 <template>
   <el-row>
     <el-col :span="12">
-      <my-description title="标题左对齐" :width="100">
-       <el-image slot="title" src="/my/img/avatar.jpeg"></el-image>
+      <sp-description title="标题左对齐" :width="100">
+       <el-image slot="title" src="/sp/img/avatar.jpeg"></el-image>
       文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容
-      </my-description>  
+      </sp-description>  
     </el-col>
     <el-col :span="12">
-      <my-description title="标题居中" :width="100" top>
-       <el-image slot="title" src="/my/img/avatar.jpeg" fit="cover" style="height:100px"></el-image>
+      <sp-description title="标题居中" :width="100" top>
+       <el-image slot="title" src="/sp/img/avatar.jpeg" fit="cover" style="height:100px"></el-image>
       文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容
-     </my-description> 
+     </sp-description> 
     </el-col>
   </el-row>
 

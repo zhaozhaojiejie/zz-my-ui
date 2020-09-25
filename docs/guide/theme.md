@@ -1,6 +1,6 @@
 # 内置主题
 
-MyWeb 4.x 的样式是用SCSS预处理，内置了一套变量。原则上在开发过程只允许使用内置的变量，不建议另起变量名，便于实现主题在线切换功能。
+spWeb 4.x 的样式是用SCSS预处理，内置了一套变量。原则上在开发过程只允许使用内置的变量，不建议另起变量名，便于实现主题在线切换功能。
 如需定制主题，只需重新给变量赋值即可。
 
 ## 通用配置
@@ -22,43 +22,43 @@ MyWeb 4.x 的样式是用SCSS预处理，内置了一套变量。原则上在开
        <td>主标题</td>
        <td>$--font-size-extra-large</td>
        <td>30px</td>
-       <td><span class="font-size-extra-large">MyWeb 4.x 文字样本</span></td>
+       <td><span class="font-size-extra-large">spWeb 4.x 文字样本</span></td>
      </tr>
      <tr>
        <td>标题</td>
        <td>$--font-size-large</td>
        <td>24px</td>
-       <td><span class="font-size-large">MyWeb 4.x 文字样本</span></td>
+       <td><span class="font-size-large">spWeb 4.x 文字样本</span></td>
      </tr>
      <tr>
        <td>小标题</td>
        <td>$--font-size-medium</td>
        <td>20px</td>
-       <td> <span class="font-size-medium">MyWeb 4.x 文字样本</span></td>
+       <td> <span class="font-size-medium">spWeb 4.x 文字样本</span></td>
      </tr>
     <tr>
        <td>正文（ 大 ）</td>
        <td>$--font-size-normal</td>
        <td>18px</td>
-       <td> <span class="font-size-normal">MyWeb 4.x 文字样本</span></td>
+       <td> <span class="font-size-normal">spWeb 4.x 文字样本</span></td>
      </tr>
      <tr>
        <td>正文</td>
        <td>$--font-size</td>
        <td>16px</td>
-       <td><span class="font-size">MyWeb 4.x 文字样本</span></td>
+       <td><span class="font-size">spWeb 4.x 文字样本</span></td>
      </tr>
       <tr>
        <td>正文（ 小 ）</td>
         <td>$--font-size-small</td>
         <td>14px</td>
-        <td><span class="font-size-small">MyWeb 4.x 文字样本</span></td>
+        <td><span class="font-size-small">spWeb 4.x 文字样本</span></td>
       </tr>
       <tr>
         <td>辅助文字</td>
         <td>$--font-size-extra-small</td>
         <td>12px</td>
-        <td><span class="font-size-extra-small">MyWeb 4.x 文字样本</span></td>
+        <td><span class="font-size-extra-small">spWeb 4.x 文字样本</span></td>
       </tr>
    </table>
 </template>

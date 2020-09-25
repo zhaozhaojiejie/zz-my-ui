@@ -1,55 +1,55 @@
 <template>
-  <my-wrapper :header="null">
+  <sp-wrapper :header="null">
     <el-row :gutter="10">
       <el-col :span="6" :xs="24" :sm="24" :md="12" :lg="6">
-        <my-stat-card title="总销售量" :actions="actions">
-          <my-number slot="total" value="13345" prefix="￥"></my-number>
+        <sp-stat-card title="总销售量" :actions="actions">
+          <sp-number slot="total" value="13345" prefix="￥"></sp-number>
           <div style="height: 60px; padding-top: 35px;">
-            <span>周同比<my-number :value="0.12" percentage type="primary" trend="up"></my-number></span>
-            <span style="margin-left: 10px">日同比<my-number :value="0.1" percentage type="primary"
-                                                          trend="down"></my-number></span>
+            <span>周同比<sp-number :value="0.12" percentage type="primary" trend="up"></sp-number></span>
+            <span style="margin-left: 10px">日同比<sp-number :value="0.1" percentage type="primary"
+                                                          trend="down"></sp-number></span>
           </div>
           <div slot="footer">日销售额
-            <my-number value="3345" prefix="￥"></my-number>
+            <sp-number value="3345" prefix="￥"></sp-number>
           </div>
-        </my-stat-card>
+        </sp-stat-card>
       </el-col>
       <el-col :span="6" :xs="24" :sm="24" :md="12" :lg="6">
-        <my-stat-card title="访问量" :actions="actions">
-          <my-number slot="total" value="3345"></my-number>
-          <my-chart-line height="60px" :data="getChartData()" :extend="chartOption"
-                         :settings="{stack:['数量']}"></my-chart-line>
+        <sp-stat-card title="访问量" :actions="actions">
+          <sp-number slot="total" value="3345"></sp-number>
+          <sp-chart-line height="60px" :data="getChartData()" :extend="chartOption"
+                         :settings="{stack:['数量']}"></sp-chart-line>
           <div slot="footer">日访问量
-            <my-number value="3345" prefix="￥"></my-number>
+            <sp-number value="3345" prefix="￥"></sp-number>
           </div>
-        </my-stat-card>
+        </sp-stat-card>
       </el-col>
       <el-col :span="6" :xs="24" :sm="24" :md="12" :lg="6">
-        <my-stat-card title="总销售量">
-          <my-corner-mark>HOT</my-corner-mark>
-          <my-number slot="total" value="3345"></my-number>
-          <my-chart-bar height="60px" :data="getChartData()" :extend="chartOption"
-                        :settings="{stack:['数量']}"></my-chart-bar>
+        <sp-stat-card title="总销售量">
+          <sp-corner-mark>HOT</sp-corner-mark>
+          <sp-number slot="total" value="3345"></sp-number>
+          <sp-chart-bar height="60px" :data="getChartData()" :extend="chartOption"
+                        :settings="{stack:['数量']}"></sp-chart-bar>
           <div slot="footer">日访问量
-            <my-number value="3345" prefix="￥"></my-number>
+            <sp-number value="3345" prefix="￥"></sp-number>
           </div>
-        </my-stat-card>
+        </sp-stat-card>
       </el-col>
       <el-col :span="6" :xs="24" :sm="24" :md="12" :lg="6">
-        <my-stat-card title="总销售量">
-          <my-corner-mark type="success">TOP</my-corner-mark>
-          <my-number slot="total" value="0.5" percentage></my-number>
+        <sp-stat-card title="总销售量">
+          <sp-corner-mark type="success">TOP</sp-corner-mark>
+          <sp-number slot="total" value="0.5" percentage></sp-number>
           <div style="height: 60px; padding-top: 35px;">
             <el-progress :stroke-width="14" :percentage="50" :show-text="false"></el-progress>
           </div>
           <div slot="footer">日访问量
-            <my-number value="3345" prefix="￥"></my-number>
+            <sp-number value="3345" prefix="￥"></sp-number>
           </div>
-        </my-stat-card>
+        </sp-stat-card>
       </el-col>
     </el-row>
     <el-row class="chart-row">
-      <my-panel title="销售额" theme="border-left">
+      <sp-panel title="销售额" theme="border-left">
         <template v-slot:handle>
           <el-radio-group size="mini" v-model="range">
             <el-radio-button label="year">年</el-radio-button>
@@ -57,26 +57,26 @@
             <el-radio-button label="day">日</el-radio-button>
           </el-radio-group>
         </template>
-        <my-chart-line :data="chartData" :settings="settings" :extend="extend"></my-chart-line>
-      </my-panel>
+        <sp-chart-line :data="chartData" :settings="settings" :extend="extend"></sp-chart-line>
+      </sp-panel>
     </el-row>
     <el-row :gutter="14">
       <el-col :span="12" :sm="24" :xs="24" :md="12" :lg="12" style="height: 600px">
-        <my-panel title="热门搜索" theme="border-left" fit>
-          <my-table :columns="columns" :loader="loader" :page-size="8" fit>
+        <sp-panel title="热门搜索" theme="border-left" fit>
+          <sp-table :columns="columns" :loader="loader" :page-size="8" fit>
             <template v-slot:percent="{row}">
-              <my-number :value="row.percent" :precision="2" percentage trend="up"></my-number>
+              <sp-number :value="row.percent" :precision="2" percentage trend="up"></sp-number>
             </template>
-          </my-table>
-        </my-panel>
+          </sp-table>
+        </sp-panel>
       </el-col>
       <el-col :span="12" :sm="24" :xs="24" :md="12" :lg="12" style="height: 600px">
-        <my-panel title="关键字" theme="border-left" fit>
-          <my-chart-cloud :data="cloudData"></my-chart-cloud>
-        </my-panel>
+        <sp-panel title="关键字" theme="border-left" fit>
+          <sp-chart-cloud :data="cloudData"></sp-chart-cloud>
+        </sp-panel>
       </el-col>
     </el-row>
-  </my-wrapper>
+  </sp-wrapper>
 </template>
 
 <script>
@@ -207,9 +207,9 @@
     }
   }
 
-  .my-wrapper {
+  .sp-wrapper {
     /deep/ {
-      .my-wrapper__body {
+      .sp-wrapper__body {
         padding-bottom: 0 !important;
       }
     }

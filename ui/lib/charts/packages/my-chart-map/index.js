@@ -1,4 +1,4 @@
-import MyChart from '$ui/charts/packages/my-chart'
+import spChart from '$ui/charts/packages/sp-chart'
 import 'echarts/lib/chart/map'
 import 'echarts/lib/chart/scatter'
 import 'echarts/lib/chart/effectScatter'
@@ -9,8 +9,8 @@ import {install} from '$ui/utils/helper'
 import Map from './Map'
 
 const Module = {
-  name: 'MyChartMap',
-  mixins: [MyChart],
+  name: 'spChartMap',
+  mixins: [spChart],
   adapter: Map
 }
 

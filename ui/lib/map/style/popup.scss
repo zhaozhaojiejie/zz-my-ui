@@ -1,6 +1,6 @@
 @import "vars";
 
-.my-map-popup {
+.sp-map-popup {
   font-size: 14px;
   position: relative;
   min-width: 120px;
@@ -65,7 +65,7 @@
     background: $--background-color-dark;
     color: $--text-color-dark;
 
-    .my-map-popup__title {
+    .sp-map-popup__title {
       background: $--title-background-color-dark;
       color: $--title-color-dark;
     }

@@ -8,9 +8,9 @@
  *
  */
 const axios = require('axios')
-const devThemeSwitchServiceApi = '/my/dev-theme-switch-service'
+const devThemeSwitchServiceApi = '/sp/dev-theme-switch-service'
 
-const domId = 'my-skin-style'
+const domId = 'sp-skin-style'
 
 function setStyle(content, theme) {
   let styleEl = document.getElementById(domId)

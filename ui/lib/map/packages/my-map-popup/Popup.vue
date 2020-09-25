@@ -1,30 +1,30 @@
 <template>
-  <MyMapHtml v-bind="$attrs"
+  <spMapHtml v-bind="$attrs"
              ref="html"
              positioning="bottom-center"
              :class="classes"
              :style="{'width': width}"
              v-clickoutside="handleClickOutside">
-    <i class="my-map-popup__close el-icon-close" v-if="closable" @click="hide"></i>
-    <div v-if="title" class="my-map-popup__title">
+    <i class="sp-map-popup__close el-icon-close" v-if="closable" @click="hide"></i>
+    <div v-if="title" class="sp-map-popup__title">
       <slot name="title">
-        <MyIcon v-if="icon" v-bind="iconProps"></MyIcon>
+        <spIcon v-if="icon" v-bind="iconProps"></spIcon>
         {{title}}
       </slot>
     </div>
-    <div class="my-map-popup__body" :style="{'height': height}">
+    <div class="sp-map-popup__body" :style="{'height': height}">
       <slot></slot>
     </div>
-  </MyMapHtml>
+  </spMapHtml>
 </template>
 
 <script>
   /**
    * 地图弹窗组件
-   * @module $ui/map/my-map-popup
+   * @module $ui/map/sp-map-popup
    */
-  import MyMapHtml from '../my-map-html/Html'
-  import {MyIcon} from '$ui'
+  import spMapHtml from '../sp-map-html/Html'
+  import {spIcon} from '$ui'
   import clickoutside from 'element-ui/lib/utils/clickoutside'
   /**
    * 属性参数
@@ -46,13 +46,13 @@
    * @property {string} title 头部标题的插槽
    */
   export default {
-    name: 'MyMapPopup',
+    name: 'spMapPopup',
     directives: {
       clickoutside
     },
     components: {
-      MyMapHtml,
-      MyIcon
+      spMapHtml,
+      spIcon
     },
     props: {
       width: String,
@@ -82,7 +82,7 @@
         return typeof this.icon === 'object' ? {...this.icon} : {name: this.icon}
       },
       classes() {
-        return ['my-map-popup', `is-${this.theme}`, `${this.showArrow ? 'arrow' : ''}`]
+        return ['sp-map-popup', `is-${this.theme}`, `${this.showArrow ? 'arrow' : ''}`]
       }
     },
     methods: {

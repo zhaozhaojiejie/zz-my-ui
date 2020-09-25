@@ -1,6 +1,6 @@
 .DS_Store
 .temp
-.my
+.sp
 node_modules
 /dist
 /apps

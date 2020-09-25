@@ -1,6 +1,6 @@
 /**
  * Draw 绘画组件
- * @module $ui/map/my-map-draw
+ * @module $ui/map/sp-map-draw
  */
 import {Vector as VectorLayer} from 'ol/layer'
 import {Vector as VectorSource} from 'ol/source'
@@ -26,7 +26,7 @@ const defaultEffect = {
 }
 
 export default {
-  name: 'MyMapDraw',
+  name: 'spMapDraw',
   inject: ['myMap'],
   render() {
     return this.$slots.default

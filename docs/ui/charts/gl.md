@@ -5,7 +5,7 @@
 :::demo(gl-1)
 ```html
 <template>
-  <my-chart-gl :options="options"></my-chart-gl>
+  <sp-chart-gl :options="options"></sp-chart-gl>
 </template>
 
 <script>

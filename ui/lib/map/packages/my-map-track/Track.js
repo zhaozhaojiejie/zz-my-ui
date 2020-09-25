@@ -1,8 +1,8 @@
 /**
  * 轨迹组件
- * @module $ui/map/my-map-track
+ * @module $ui/map/sp-map-track
  */
-import MapLine from '../my-map-line'
+import MapLine from '../sp-map-line'
 import parseStyle from '../../utils/style'
 import Feature from 'ol/Feature'
 import Point from 'ol/geom/Point'
@@ -15,10 +15,10 @@ const defaultEffect = {
 }
 
 export default {
-  name: 'MyMapTrack',
+  name: 'spMapTrack',
   mixins: [MapLine],
   /**
-   * 属性参数，继承 [$ui/map/my-map-line]{@link module:$ui/map/my-map-line}
+   * 属性参数，继承 [$ui/map/sp-map-line]{@link module:$ui/map/sp-map-line}
    * @member props
    * @property {boolean} [auto=true] 自动播放
    * @property {boolean} [loop=true] 动画循环

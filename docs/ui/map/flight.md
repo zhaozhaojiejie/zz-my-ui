@@ -1,19 +1,19 @@
 # Flight 航线
 
-动态航线效果，文档<api-link href="map/my-map-flight"> MyMapFlight</api-link>
+动态航线效果，文档<api-link href="map/sp-map-flight"> spMapFlight</api-link>
 
 ## 基础用法
 :::demo(map-flight-1)
 ```html
 <template>
-  <my-map :center="[108.683729, 31.166113]" :zoom="4">
-    <my-map-flight :from="[116.566478, 40.513797]"
+  <sp-map :center="[108.683729, 31.166113]" :zoom="4">
+    <sp-map-flight :from="[116.566478, 40.513797]"
                    :to="[113.261999, 23.130592]"
                    :radius="10"
                    :angle="-120"
                    :space="0.1"
-                   arrow></my-map-flight>
-  </my-map>
+                   arrow></sp-map-flight>
+  </sp-map>
 </template>
 ```
 :::
@@ -22,8 +22,8 @@
 :::demo(map-flight-2)
 ```html
 <template>
-  <my-map :center="[108.683729, 31.166113]" :zoom="4">
-    <my-map-flight :from="[116.566478, 40.513797]"
+  <sp-map :center="[108.683729, 31.166113]" :zoom="4">
+    <sp-map-flight :from="[116.566478, 40.513797]"
                    :to="[113.261999, 23.130592]"
                    :radius="10"
                    :angle="-120"
@@ -31,8 +31,8 @@
                    color="#ccc"
                    :width="2"
                    :line-effect="lineEffect"
-                   arrow></my-map-flight>
-  </my-map>
+                   arrow></sp-map-flight>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -52,16 +52,16 @@ export default {
 :::demo(map-flight-3)
 ```html
 <template>
-  <my-map :center="[108.683729, 31.166113]" :zoom="4">
-    <my-map-flight :from="[116.566478, 40.513797]"
+  <sp-map :center="[108.683729, 31.166113]" :zoom="4">
+    <sp-map-flight :from="[116.566478, 40.513797]"
                    :to="[113.261999, 23.130592]"
                    :radius="10"
                    :angle="-120"
                    :space="0.1"
                    :line-effect="false"
                    :point-effect="true"
-                   arrow></my-map-flight>
-  </my-map>
+                   arrow></sp-map-flight>
+  </sp-map>
 </template>
 ```
 :::
@@ -70,8 +70,8 @@ export default {
 :::demo(map-flight-4)
 ```html
 <template>
-  <my-map :center="[108.683729, 31.166113]">
-    <my-map-flight v-for="n in 20"
+  <sp-map :center="[108.683729, 31.166113]">
+    <sp-map-flight v-for="n in 20"
                    :key="n"
                    :from="[108.683729, 31.166113]"
                    :to="getCoordinate()"
@@ -80,8 +80,8 @@ export default {
                    :line-effect="false"
                    :delay="5000 * Math.random()"
                    :point-effect="pointEffect"
-                   arrow></my-map-flight>
-  </my-map>
+                   arrow></sp-map-flight>
+  </sp-map>
 </template>
 <script>
   import plane from '$ui/map/sources/arrows/plane.svg'

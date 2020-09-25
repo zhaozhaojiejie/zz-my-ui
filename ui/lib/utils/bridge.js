@@ -66,7 +66,7 @@ export function once(channel, handler) {
  *
  *   // 请求服务
  service({
-        name: 'MyService',
+        name: 'spService',
         bridge: 'http://localhost:8001/app1/assets/bridge/index.html',
         origin: 'http://localhost:8000/assets/bridge/index.html',
         data: {
@@ -108,7 +108,7 @@ export function service({name, bridge, data, origin, callback}) {
  *
  *  // 创建一个服务提供者
  *  const messager = provider({
-        name: 'MyService',
+        name: 'spService',
         origin: 'http://localhost:8000/assets/bridge/index.html',
         handler: function (data, callback) {
           const response = '响应内容'

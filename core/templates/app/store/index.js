@@ -6,7 +6,7 @@
 import state from './state'
 import mutations from './mutations'
 import getters from './getters'
-import modules from '$my/code/modules'
+import modules from '$sp/code/modules'
 
 /**
  * Vuex.Store 实例

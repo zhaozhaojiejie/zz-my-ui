@@ -1,7 +1,7 @@
 {
   "id": "1614114",
-  "name": "my-web",
-  "font_family": "my-icon",
+  "name": "sp-web",
+  "font_family": "sp-icon",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
@@ -2898,7 +2898,7 @@
     },
     {
       "icon_id": "11184936",
-      "name": "my",
+      "name": "sp",
       "font_class": "logo",
       "unicode": "e7f4",
       "unicode_decimal": 59380

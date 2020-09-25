@@ -2,7 +2,7 @@ const _ = require('lodash')
 module.exports = _.template(`
 <% if(importApiArray.length>0){%>
 // <%=importApiArray.join(', ')%>
-import { <%=importApiArray.join(', ')%> } from '$my/code/api/<%=kebabCaseName%>'
+import { <%=importApiArray.join(', ')%> } from '$sp/code/api/<%=kebabCaseName%>'
 <%}%>
 <%if(templateArray.length>0){%>
 // <%=templateArray.join(', ')%>

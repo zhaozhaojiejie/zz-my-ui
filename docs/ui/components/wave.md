@@ -1,6 +1,6 @@
 # Wave 波浪特效
 
-文档 <api-link href="components/my-wave">MyWave</api-link>
+文档 <api-link href="components/sp-wave">spWave</api-link>
 
 ## 基础用法
 
@@ -13,7 +13,7 @@
 <script>
 export default {
   components: {
-    Wave: () => import('$ui/components/my-wave')
+    Wave: () => import('$ui/components/sp-wave')
   }
 }
 </script>

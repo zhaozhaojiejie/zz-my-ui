@@ -3,14 +3,14 @@ const _ = require('lodash')
 module.exports = _.template(`
 /**
  *  icons
- *  @module $my/code/icons
+ *  @module $sp/code/icons
  *  @author coder
  */
 
 export const elIcons = <%=elItems%>;
 
-export const myIcons = <%=items%>
+export const spIcons = <%=items%>
 
-export default {elIcons, myIcons}
+export default {elIcons, spIcons}
 
 `)

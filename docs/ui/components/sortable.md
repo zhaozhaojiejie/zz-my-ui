@@ -1,6 +1,6 @@
 # Sortable 拖拽排序
 
-功能强大的JavaScript拖拽组件，文档 <api-link href="components/my-sortable">MySortable</api-link>
+功能强大的JavaScript拖拽组件，文档 <api-link href="components/sp-sortable">spSortable</api-link>
 
 ## 代码示例
 
@@ -11,7 +11,7 @@
 :::demo(sortable-1)
 ```html
 <template>
-  <my-sortable :data="list" :options="sortable"></my-sortable>
+  <sp-sortable :data="list" :options="sortable"></sp-sortable>
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .my-sortable {
+  .sp-sortable {
     margin-bottom: 50px;
 
     > div {
@@ -61,7 +61,7 @@ export default {
     store: null,  // @see Store
     animation: 150,  // ms, number 单位：ms，定义排序动画的时间
     easing: "cubic-bezier(1, 0, 0, 1)", // Easing for animation. Defaults to null. See https://easings.net/ for examples.
-    handle: ".my-handle",  // 格式为简单css选择器的字符串，使列表单元中符合选择器的元素成为拖动的手柄，只有按住拖动手柄才能使列表单元进行拖动
+    handle: ".sp-handle",  // 格式为简单css选择器的字符串，使列表单元中符合选择器的元素成为拖动的手柄，只有按住拖动手柄才能使列表单元进行拖动
     filter: ".ignore-elements",  // 过滤器，不需要进行拖动的元素
     preventOnFilter: true, //  在触发过滤器`filter`的时候调用`event.preventDefault()`
     draggable: ".item",  // 允许拖拽的项目类名

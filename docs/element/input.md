@@ -494,7 +494,7 @@ export default {
 ```html
 <template>
   <el-autocomplete
-    popper-class="my-autocomplete"
+    popper-class="sp-autocomplete"
     v-model="state"
     :fetch-suggestions="querySearch"
     placeholder="请输入内容"
@@ -512,7 +512,7 @@ export default {
 </template>
 
 <style>
-.my-autocomplete {
+.sp-autocomplete {
   li {
     line-height: normal;
     padding: 7px;

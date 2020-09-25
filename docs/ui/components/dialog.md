@@ -1,7 +1,7 @@
 # Dialog 弹窗组件
 
 模态对话框。需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-文档 <api-link href="components/my-dialog">MyDialog</api-link>
+文档 <api-link href="components/sp-dialog">spDialog</api-link>
 
 ## 代码演示
 
@@ -12,9 +12,9 @@
 <template>
     <div>
       <el-button type="primary" @click="open">简单弹窗</el-button>
-      <my-dialog :visible.sync="visible" target="body" title="标题文字" width="400px" height="200px">
+      <sp-dialog :visible.sync="visible" target="body" title="标题文字" width="400px" height="200px">
         这里是内容
-      </my-dialog>
+      </sp-dialog>
     </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
 <template>
     <div>
       <el-button type="primary" @click="open">打开弹窗</el-button>
-      <my-dialog :visible.sync="visible"
+      <sp-dialog :visible.sync="visible"
                   modal
                   target="body"
                   icon="el-icon-menu"
@@ -51,7 +51,7 @@ export default {
                   width="400px" 
                   height="200px">
         这里是内容
-      </my-dialog>
+      </sp-dialog>
     </div>
 </template>
 
@@ -82,7 +82,7 @@ export default {
       <el-button type="primary" @click="open1">Primary</el-button>
       <el-button type="primary" @click="open2">Light</el-button>
       <el-button type="primary" @click="open3">Dark</el-button>
-      <my-dialog :visible.sync="visible1"
+      <sp-dialog :visible.sync="visible1"
                   target="body"
                   theme="primary"
                   icon="el-icon-menu"
@@ -94,8 +94,8 @@ export default {
                   width="400px" 
                   height="200px">
         这里是内容
-      </my-dialog>
-      <my-dialog :visible.sync="visible2"
+      </sp-dialog>
+      <sp-dialog :visible.sync="visible2"
                   theme="light"
                   target="body"
                   icon="el-icon-menu"
@@ -107,8 +107,8 @@ export default {
                   width="400px" 
                   height="200px">
         这里是内容
-      </my-dialog>
-      <my-dialog :visible.sync="visible3"
+      </sp-dialog>
+      <sp-dialog :visible.sync="visible3"
                   theme="dark"
                   target="body"
                   icon="el-icon-menu"
@@ -120,7 +120,7 @@ export default {
                   width="400px" 
                   height="200px">
         这里是内容
-      </my-dialog>
+      </sp-dialog>
     </div>
 </template>
 
@@ -157,7 +157,7 @@ export default {
 <template>
     <div>
       <el-button type="primary" @click="open">打开</el-button>
-      <my-dialog :visible.sync="visible"
+      <sp-dialog :visible.sync="visible"
                   theme="primary"
                   target="body"
                   icon="el-icon-menu"
@@ -169,7 +169,7 @@ export default {
                   width="400px" 
                   height="200px">
         这里是内容
-      </my-dialog>
+      </sp-dialog>
     </div>
 </template>
 
@@ -203,7 +203,7 @@ visible 与 最小化的区别，两者都不可见，visible销毁内部组件�
       <el-button type="primary" @click="open">打开</el-button>
       <el-button @click="show">显示</el-button> 
     
-      <my-dialog  ref="dialog" 
+      <sp-dialog  ref="dialog" 
                   :visible.sync="visible"
                   target="body"
                   theme="primary"
@@ -216,7 +216,7 @@ visible 与 最小化的区别，两者都不可见，visible销毁内部组件�
                   width="400px" 
                   height="200px">
         这里是内容
-      </my-dialog>
+      </sp-dialog>
     </div>
 </template>
 
@@ -249,9 +249,9 @@ export default {
 <template>
     <div>
       <el-button type="primary" @click="open">打开弹窗</el-button>
-      <my-dialog :visible.sync="visible" target="body" loading title="标题文字" width="400px" height="200px">
+      <sp-dialog :visible.sync="visible" target="body" loading title="标题文字" width="400px" height="200px">
         这里是内容
-      </my-dialog>
+      </sp-dialog>
     </div>
 </template>
 
@@ -281,13 +281,13 @@ export default {
 <template>
     <div>
       <el-button type="primary" @click="open">打开弹窗</el-button>
-      <my-dialog  ref="dialog" 
+      <sp-dialog  ref="dialog" 
                   target="body"
                   :visible.sync="visible"
                   theme="primary"
                   icon="el-icon-menu"
                   title="标题文字"
-                  src="/my/"
+                  src="/sp/"
                   :footer="false"
                   draggable
                   resizable
@@ -295,7 +295,7 @@ export default {
                   minimizable
                   width="80%" 
                   height="80%">
-      </my-dialog>
+      </sp-dialog>
     </div>
 </template>
 
@@ -333,7 +333,7 @@ export default {
 </template>
 
 <script>
-import {MyDialog} from '$ui'
+import {spDialog} from '$ui'
 
 export default {
   data() {
@@ -343,7 +343,7 @@ export default {
   },
   methods: {
     createDialog() {
-     this.dialog = MyDialog.create({
+     this.dialog = spDialog.create({
         title: '标题',
         width: '300px',
         height: '200px',
@@ -370,23 +370,23 @@ export default {
 
 ### 弹窗表单
 
-结合MyForm实现弹窗表单
+结合spForm实现弹窗表单
 
 :::demo
 ```html
 <template>
   <div>
     <el-button type="primary" @click="open">打开弹窗</el-button>
-    <my-dialog :visible.sync="visible" target="body" title="表单" width="60%" draggable resizable :footer="false">
-      <my-form :model="model"
+    <sp-dialog :visible.sync="visible" target="body" title="表单" width="60%" draggable resizable :footer="false">
+      <sp-form :model="model"
                :rules="rules"
                footer-align="right"
                label-position="top"
                :on-submit="handleSubmit">
-        <my-input name="title" label="标题"></my-input>
-        <my-range name="range" label="日期范围" mode="date" :props="{valueFormat:'yyyy-MM-dd'}"></my-range>
-      </my-form>
-    </my-dialog>
+        <sp-input name="title" label="标题"></sp-input>
+        <sp-range name="range" label="日期范围" mode="date" :props="{valueFormat:'yyyy-MM-dd'}"></sp-range>
+      </sp-form>
+    </sp-dialog>
   </div>
 </template>
 

@@ -1,11 +1,11 @@
-import MyChart from '$ui/charts/packages/my-chart'
+import spChart from '$ui/charts/packages/sp-chart'
 import 'echarts-wordcloud'
 import {install} from '$ui/utils/helper'
 import Cloud from './Cloud'
 
 const Module = {
-  name: 'MyChartCloud',
-  mixins: [MyChart],
+  name: 'spChartCloud',
+  mixins: [spChart],
   adapter: Cloud
 }
 

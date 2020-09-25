@@ -1,4 +1,4 @@
-import '../styles/my-tree-connect.scss'
+import '../styles/sp-tree-connect.scss'
 export default {
   /**
    * 元素在页面渲染时回调，在这里进行实例化selecttext

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>sp-dialog/src/Dialog.vue - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Outline.html">Outline</a></li><li><a href="Tag.html">Tag</a></li><li><a href="TagCanvas.html">TagCanvas</a></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_components_my-affix.html">$ui/components/sp-affix</a></li><li><a href="module-$ui_components_my-anchor.html">$ui/components/sp-anchor</a></li><li><a href="module-$ui_components_my-autocomplete.html">$ui/components/sp-autocomplete</a></li><li><a href="module-$ui_components_my-avatar.html">$ui/components/sp-avatar</a></li><li><a href="module-$ui_components_my-avatars.html">$ui/components/sp-avatars</a></li><li><a href="module-$ui_components_my-back-top.html">$ui/components/sp-back-top</a></li><li><a href="module-$ui_components_my-capture.html">$ui/components/sp-capture</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-capture.html#~_renderImg">_renderImg</a></li></ul></li><li><a href="module-$ui_components_my-card-list.html">$ui/components/sp-card-list</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-card-list.html#~refresh">refresh</a></li></ul></li><li><a href="module-$ui_components_my-cascader.html">$ui/components/sp-cascader</a></li><li><a href="module-$ui_components_my-checkbox.html">$ui/components/sp-checkbox</a></li><li><a href="module-$ui_components_my-clipboard.html">$ui/components/sp-clipboard</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-clipboard.html#~copy">copy</a></li></ul></li><li><a href="module-$ui_components_my-color-picker.html">$ui/components/sp-color-picker</a></li><li><a href="module-$ui_components_my-contextmenu.html">$ui/components/sp-contextmenu</a></li><li><a href="module-$ui_components_my-corner-mark.html">$ui/components/sp-corner-mark</a></li><li><a href="module-$ui_components_my-crud.html">$ui/components/sp-crud</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-crud.html#~openAddDialog">openAddDialog</a></li><li data-type='method'><a href="module-$ui_components_my-crud.html#~refresh">refresh</a></li><li data-type='method'><a href="module-$ui_components_my-crud.html#~reload">reload</a></li></ul></li><li><a href="module-$ui_components_my-date.html">$ui/components/sp-date</a></li><li><a href="module-$ui_components_my-date-picker.html">$ui/components/sp-date-picker</a></li><li><a href="module-$ui_components_my-description.html">$ui/components/sp-description</a></li><li><a href="module-$ui_components_my-detail.html">$ui/components/sp-detail</a></li><li><a href="module-$ui_components_my-detail-item.html">$ui/components/sp-detail-item</a></li><li><a href="module-$ui_components_my-dialog.html">$ui/components/sp-dialog</a></li><li><a href="module-$ui_components_my-drag.html">$ui/components/sp-drag</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-drag.html#~getRelativeEl">getRelativeEl</a></li></ul></li><li><a href="module-$ui_components_my-drop.html">$ui/components/sp-drop</a></li><li><a href="module-$ui_components_my-edit-tags.html">$ui/components/sp-edit-tags</a></li><li><a href="module-$ui_components_my-editor.html">$ui/components/sp-editor</a></li><li><a href="module-$ui_components_my-empty.html">$ui/components/sp-empty</a></li><li><a href="module-$ui_components_my-filter.html">$ui/components/sp-filter</a></li><li><a href="module-$ui_components_my-fixed.html">$ui/components/sp-fixed</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-fixed.html#~resize">resize</a></li></ul></li><li><a href="module-$ui_components_my-flex.html">$ui/components/sp-flex</a></li><li><a href="module-$ui_components_my-flex-item.html">$ui/components/sp-flex-item</a></li><li><a href="module-$ui_components_my-flip.html">$ui/components/sp-flip</a></li><li><a href="module-$ui_components_my-float.html">$ui/components/sp-float</a></li><li><a href="module-$ui_components_my-float-item.html">$ui/components/sp-float-item</a></li><li><a href="module-$ui_components_my-form.html">$ui/components/sp-form</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-form.html#~reset">reset</a></li><li data-type='method'><a href="module-$ui_components_my-form.html#~submit">submit</a></li></ul></li><li><a href="module-$ui_components_my-form_src_Base.html">$ui/components/sp-form/src/Base</a></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html">$ui/components/sp-form/src/common/TagInput</a></li><li><a href="module-$ui_components_my-form_src_common_TagSelect.html">$ui/components/sp-form/src/common/TagSelect</a></li><li><a href="module-$ui_components_my-form_src_common_TreeSelect.html">$ui/components/sp-form/src/common/TreeSelect</a></li><li><a href="module-$ui_components_my-header.html">$ui/components/sp-header</a></li><li><a href="module-$ui_components_my-highlight.html">$ui/components/sp-highlight</a></li><li><a href="module-$ui_components_my-icon.html">$ui/components/sp-icon</a></li><li><a href="module-$ui_components_my-im-wall.html">$ui/components/sp-im-wall</a></li><li><a href="module-$ui_components_my-input.html">$ui/components/sp-input</a></li><li><a href="module-$ui_components_my-input-number.html">$ui/components/sp-input-number</a></li><li><a href="module-$ui_components_my-layout.html">$ui/components/sp-layout</a></li><li><a href="module-$ui_components_my-lazy.html">$ui/components/sp-lazy</a></li><li><a href="module-$ui_components_my-list.html">$ui/components/sp-list</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-list.html#~load">load</a></li><li data-type='method'><a href="module-$ui_components_my-list.html#~refresh">refresh</a></li><li data-type='method'><a href="module-$ui_components_my-list.html#~reset">reset</a></li><li data-type='method'><a href="module-$ui_components_my-list.html#~scrollTop">scrollTop</a></li></ul></li><li><a href="module-$ui_components_my-login.html">$ui/components/sp-login</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-login.html#~submit">submit</a></li></ul></li><li><a href="module-$ui_components_my-marquee.html">$ui/components/sp-marquee</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-marquee.html#~pause">pause</a></li><li data-type='method'><a href="module-$ui_components_my-marquee.html#~start">start</a></li><li data-type='method'><a href="module-$ui_components_my-marquee.html#~stop">stop</a></li></ul></li><li><a href="module-$ui_components_my-master-app.html">$ui/components/sp-master-app</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-master-app.html#~initState">initState</a></li><li data-type='method'><a href="module-$ui_components_my-master-app.html#~onStateChange">onStateChange</a></li><li data-type='method'><a href="module-$ui_components_my-master-app.html#~onStateChange">onStateChange</a></li><li data-type='method'><a href="module-$ui_components_my-master-app.html#~setState">setState</a></li></ul></li><li><a href="module-$ui_components_my-menu.html">$ui/components/sp-menu</a></li><li><a href="module-$ui_components_my-micro-app.html">$ui/components/sp-micro-app</a></li><li><a href="module-$ui_components_my-navbar.html">$ui/components/sp-navbar</a></li><li><a href="module-$ui_components_my-navbar-FullScreenAction.html">$ui/components/sp-navbar-FullScreenAction</a></li><li><a href="module-$ui_components_my-navbar-IconAction.html">$ui/components/sp-navbar-IconAction</a></li><li><a href="module-$ui_components_my-navbar-UserAction.html">$ui/components/sp-navbar-UserAction</a></li><li><a href="module-$ui_components_my-number.html">$ui/components/sp-number</a></li><li><a href="module-$ui_components_my-panel.html">$ui/components/sp-panel</a></li><li><a href="module-$ui_components_my-paragraph.html">$ui/components/sp-paragraph</a></li><li><a href="module-$ui_components_my-pro.html">$ui/components/sp-pro</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-pro.html#~addTab">addTab</a></li><li data-type='method'><a href="module-$ui_components_my-pro.html#~closeTabs">closeTabs</a></li><li data-type='method'><a href="module-$ui_components_my-pro.html#~setTab">setTab</a></li></ul></li><li><a href="module-$ui_components_my-promise.html">$ui/components/sp-promise</a></li><li><a href="module-$ui_components_my-radial-menu.html">$ui/components/sp-radial-menu</a></li><li><a href="module-$ui_components_my-radio.html">$ui/components/sp-radio</a></li><li><a href="module-$ui_components_my-range.html">$ui/components/sp-range</a></li><li><a href="module-$ui_components_my-rate.html">$ui/components/sp-rate</a></li><li><a href="module-$ui_components_my-resize.html">$ui/components/sp-resize</a></li><li><a href="module-$ui_components_my-result.html">$ui/components/sp-result</a></li><li><a href="module-$ui_components_my-revolve.html">$ui/components/sp-revolve</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-revolve.html#~next">next</a></li><li data-type='method'><a href="module-$ui_components_my-revolve.html#~prev">prev</a></li><li data-type='method'><a href="module-$ui_components_my-revolve.html#~start">start</a></li><li data-type='method'><a href="module-$ui_components_my-revolve.html#~stop">stop</a></li></ul></li><li><a href="module-$ui_components_my-select.html">$ui/components/sp-select</a></li><li><a href="module-$ui_components_my-sidebar.html">$ui/components/sp-sidebar</a></li><li><a href="module-$ui_components_my-skeleton.html">$ui/components/sp-skeleton</a></li><li><a href="module-$ui_components_my-slider.html">$ui/components/sp-slider</a></li><li><a href="module-$ui_components_my-sortable.html">$ui/components/sp-sortable</a></li><li><a href="module-$ui_components_my-spin.html">$ui/components/sp-spin</a></li><li><a href="module-$ui_components_my-stat-card.html">$ui/components/sp-stat-card</a></li><li><a href="module-$ui_components_my-switch.html">$ui/components/sp-switch</a></li><li><a href="module-$ui_components_my-table.html">$ui/components/sp-table</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-table.html#~refresh">refresh</a></li></ul></li><li><a href="module-$ui_components_my-tabs.html">$ui/components/sp-tabs</a></li><li><a href="module-$ui_components_my-tag-canvas.html">$ui/components/sp-tag-canvas</a></li><li><a href="module-$ui_components_my-tag-input.html">$ui/components/sp-tag-input</a></li><li><a href="module-$ui_components_my-tag-select.html">$ui/components/sp-tag-select</a></li><li><a href="module-$ui_components_my-text.html">$ui/components/sp-text</a></li><li><a href="module-$ui_components_my-timer.html">$ui/components/sp-timer</a><ul class='methods'><li data-type='method'><a href="module-$ui_components_my-timer.html#~reset">reset</a></li><li data-type='method'><a href="module-$ui_components_my-timer.html#~start">start</a></li><li data-type='method'><a href="module-$ui_components_my-timer.html#~stop">stop</a></li></ul></li><li><a href="module-$ui_components_my-title.html">$ui/components/sp-title</a></li><li><a href="module-$ui_components_my-tree-select.html">$ui/components/sp-tree-select</a></li><li><a href="module-$ui_components_my-typography.html">$ui/components/sp-typography</a></li><li><a href="module-$ui_components_my-water-fall.html">$ui/components/sp-water-fall</a></li><li><a href="module-$ui_components_my-watermark.html">$ui/components/sp-watermark</a></li><li><a href="module-$ui_components_my-wave.html">$ui/components/sp-wave</a></li><li><a href="module-$ui_components_my-wrapper.html">$ui/components/sp-wrapper</a></li><li><a href="module-widgets_my-print.html">widgets/sp-print</a></li></ul><h3>Events</h3><ul><li><a href="module-$ui_components_my-stat-card.html#~event:action">action</a></li><li></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html#~event:add">add</a></li><li><a href="module-$ui_components_my-wrapper.html#~event:back">back</a></li><li><a href="module-$ui_components_my-dialog.html#~event:cancel">cancel</a></li><li><a href="module-$ui_components_my-typography.html#~event:change">change</a></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-radial-menu.html#~event:click">click</a></li><li></li><li></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-avatars.html#~event:click-add">click-add</a></li><li><a href="module-$ui_components_my-avatars.html#~event:click-item">click-item</a></li><li><a href="module-$ui_components_my-avatars.html#~event:click-more">click-more</a></li><li><a href="module-$ui_components_my-radial-menu.html#~event:close">close</a></li><li></li><li><a href="module-$ui_components_my-pro.html#~event:collapse">collapse</a></li><li><a href="module-$ui_components_my-form_src_common_TagSelect.html#~event:collapsed">collapsed</a></li><li><a href="module-$ui_components_my-table.html#~event:column-change">column-change</a></li><li><a href="module-$ui_components_my-navbar-UserAction.html#~event:command">command</a></li><li></li><li></li><li><a href="global.html#event:complete">complete</a></li><li></li><li><a href="module-$ui_components_my-typography.html#event:copy">copy</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-drag.html#~event:drag">drag</a></li><li></li><li><a href="module-$ui_components_my-dialog.html#~event:drag-start">drag-start</a></li><li><a href="module-$ui_components_my-dialog.html#~event:drag-stop">drag-stop</a></li><li><a href="module-$ui_components_my-drop.html#~event:drop">drop</a></li><li><a href="module-$ui_components_my-typography.html#event:edited">edited</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-typography.html#event:editing">editing</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-drop.html#~event:enter">enter</a></li><li><a href="module-$ui_components_my-table.html#~event:error">error</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-typography.html#event:expand">expand</a></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-timer.html#~event:finish">finish</a></li><li><a href="module-$ui_components_my-dialog.html#~event:hide">hide</a></li><li><a href="module-$ui_components_my-lazy.html#~event:init">init</a></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html#~event:input-change">input-change</a></li><li><a href="module-$ui_components_my-drop.html#~event:leave">leave</a></li><li><a href="module-$ui_components_my-wrapper.html#~event:link-click">link-click</a></li><li><a href="module-$ui_components_my-dialog.html#~event:load">load</a></li><li><a href="module-$ui_components_my-revolve.html#~event:loaded">loaded</a></li><li><a href="module-$ui_components_my-dialog.html#~event:maximize">maximize</a></li><li><a href="module-$ui_components_my-im-wall.html#~event:on-added">on-added</a></li><li><a href="module-$ui_components_my-capture.html#~event:on-capture">on-capture</a></li><li><a href="global.html#event:on-change">on-change</a></li><li><a href="module-$ui_components_my-tag-canvas.html#~event:on-click">on-click</a></li><li><a href="module-$ui_components_my-capture.html#~event:on-output">on-output</a></li><li><a href="module-$ui_components_my-radial-menu.html#~event:open">open</a></li><li></li><li><a href="module-$ui_components_my-drop.html#~event:over">over</a></li><li><a href="global.html#~event:page-change">page-change</a></li><li></li><li></li><li><a href="module-$ui_components_my-login.html#~event:pki">pki</a></li><li><a href="module-$ui_components_my-revolve.html#~event:progress">progress</a></li><li><a href="module-$ui_components_my-form_src_common_TagInput.html#~event:remove">remove</a></li><li><a href="module-$ui_components_my-timer.html#~event:reset">reset</a></li><li></li><li><a href="module-$ui_components_my-resize.html#~event:resize">resize</a></li><li></li><li><a href="module-$ui_components_my-dialog.html#~event:resize-start">resize-start</a></li><li><a href="module-$ui_components_my-dialog.html#~event:resize-stop">resize-stop</a></li><li><a href="module-$ui_components_my-sidebar.html#~event:select">select</a></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-dialog.html#~event:show">show</a></li><li><a href="global.html#~event:size-change">size-change</a></li><li></li><li></li><li><a href="module-$ui_components_my-timer.html#~event:start">start</a></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-timer.html#~event:stop">stop</a></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-login.html#~event:submit">submit</a></li><li></li><li></li><li><a href="module-$ui_components_my-table.html#~event:success">success</a></li><li></li><li></li><li></li><li></li><li></li><li><a href="module-$ui_components_my-panel.html#~event:tab-change">tab-change</a></li><li><a href="module-$ui_components_my-pro.html#~event:tab-remove">tab-remove</a></li><li><a href="module-$ui_components_my-pro.html#~event:tab-select">tab-select</a></li><li><a href="module-$ui_components_my-timer.html#~event:tick">tick</a></li><li><a href="module-$ui_components_my-form.html#~event:validate">validate</a></li><li><a href="module-widgets_my-back-top.html#event:click">click</a></li></ul><h3>Global</h3><ul><li><a href="global.html#AddShadowToImage">AddShadowToImage</a></li><li><a href="global.html#appendChildNode">appendChildNode</a></li><li><a href="global.html#createEllipsisContainer">createEllipsisContainer</a></li><li><a href="global.html#createEllipsisContentHolder">createEllipsisContentHolder</a></li><li><a href="global.html#destroyVue">destroyVue</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#inRange">inRange</a></li><li><a href="global.html#instanceVue">instanceVue</a></li><li><a href="global.html#props">props</a></li><li><a href="global.html#pxToNumber">pxToNumber</a></li><li><a href="global.html#removeEllipsisContainer">removeEllipsisContainer</a></li><li><a href="global.html#RoundImage">RoundImage</a></li><li><a href="global.html#scrollTop">scrollTop</a></li><li><a href="global.html#setData">setData</a></li><li><a href="global.html#styleToString">styleToString</a></li><li><a href="global.html#wrapperDecorations">wrapperDecorations</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">sp-dialog/src/Dialog.vue</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>&lt;template>
+  &lt;transition :name="animation">
+    &lt;div v-if="currentVisible" v-show="!currentMinimized" class="sp-dialog__wrapper" :style="wrapperStyle">
+      &lt;div class="sp-dialog__modal" v-if="modal">&lt;/div>
+      &lt;spDrag ref="dialog"
+              @mousedown.native="handleMousedown"
+              v-clickoutside="handleClickOutside"
+              v-bind="dragOptions"
+              :class="dialogClass"
+              :style="dialogStyle"
+              @stop="handleDragStop"
+              @drag="handleDrag"
+              @start="handleDragStart">
+        &lt;spResize ref="resize"
+                  v-bind="resizeOptions"
+                  @start="handleResizeStart"
+                  @stop="handleResizeStop"
+                  @resize="handleResize">
+          &lt;Panel ref="panel"
+                 :title="title"
+                 :icon="iconOptions"
+                 :width="dialogWidth"
+                 :height="dialogHeight"
+                 :submit-text="submitText"
+                 :cancel-text="cancelText"
+                 :submit-loading="submitLoading"
+                 :footer="footer"
+                 :theme="theme"
+                 :closable="closable"
+                 :before-close="beforeClose"
+                 :maximizable="maximizable"
+                 :maximized.sync="currentMaximized"
+                 :minimizable="minimizable"
+                 :minimized.sync="currentMinimized"
+                 @submit="handleSubmit"
+                 @cancel="handleCancel"
+                 @close="handleClose">
+            &lt;template v-if="$slots.icon" v-slot:icon>
+              &lt;slot name="icon">&lt;/slot>
+            &lt;/template>
+            &lt;template v-if="$slots.title" v-slot:title>
+              &lt;slot name="title">&lt;/slot>
+            &lt;/template>
+            &lt;template v-if="$slots.tool" v-slot:tool>
+              &lt;slot name="tool">&lt;/slot>
+            &lt;/template>
+            &lt;template v-if="$slots.footer" v-slot:footer>
+              &lt;slot name="footer">&lt;/slot>
+            &lt;/template>
+            &lt;spSpin fit :tip="loadingTip" :loading="loading">
+              &lt;SrcFrame v-if="src" :src="src" @load="handleSrcLoad">&lt;/SrcFrame>
+              &lt;slot v-else>&lt;/slot>
+            &lt;/spSpin>
+          &lt;/Panel>
+        &lt;/spResize>
+      &lt;/spDrag>
+    &lt;/div>
+  &lt;/transition>
+
+&lt;/template>
+
+&lt;script>
+  /**
+   * 弹窗组件
+   * @module $ui/components/sp-dialog
+   */
+  import {spDrag, spResize, spSpin} from '$ui'
+  import {addResizeListener, removeResizeListener} from 'element-ui/lib/utils/resize-event'
+  import clickoutside from 'element-ui/lib/utils/clickoutside'
+  import {addClass, removeClass} from 'element-ui/lib/utils/dom'
+  import Panel from './Panel'
+  import SrcFrame from './SrcFrame'
+
+  let Z_INDEX = 100
+
+  /**
+   * 适配百分比或像素单位
+   * @private
+   * @param {number} max 最大的长度
+   * @param {string} value 要转换的长度值
+   * @return {number}
+   */
+  function getLength(max, value) {
+    if (!value) return 0
+    const percent = value.includes('%')
+    const val = Number.parseFloat(value)
+    return percent ? max * val / 100 : val
+  }
+
+  /**
+   * 插槽
+   * @member slots
+   * @property {string} default 默认插槽，弹窗显示的内容
+   * @property {string} icon 定义标题前的图标
+   * @property {string} title 定义标题
+   * @property {string} tool 定义头部的工具按钮操作区
+   * @property {string} footer 定义底部， 定义底部将会导致确定、取消按钮失效
+   */
+  export default {
+    name: 'spDialog',
+    components: {
+      Panel,
+      spDrag,
+      spResize,
+      spSpin,
+      SrcFrame
+    },
+    directives: {
+      clickoutside
+    },
+    /**
+     * 属性参数
+     * @member props
+     * @property {boolean} [visible=true] 显示弹窗，支持sync修饰符
+     * @property {string} [title] 标题文本，复杂内容可通过插槽定义
+     * @property {string|object} [icon] 标题前的图标，可以是字体图标或svg
+     * @property {string} [width] 弹窗宽度
+     * @property {string} [height] 高度
+     * @property {boolean} [modal] 显示遮罩层
+     * @property {string} [theme] 主题风格，可选值：'primary', 'dark', 'light'
+     * @property {boolean|object} [draggable] 拖拽配置，参考spDrag组件
+     * @property {boolean|object} [resizable] resize配置，参考spResize组件
+     * @property {string} [animation=el-fade-in] 显示动画
+     * @property {boolean} [footer=true] 显示底部
+     * @property {string} [submitText=确定] 确定按钮文本
+     * @property {string} [cancelText=取消] 取消按钮文本
+     * @property {boolean} [submitLoading] 确定按钮显示loading，防止重复提交
+     * @property {boolean} [closable=true] 窗体可关闭
+     * @property {function} [beforeClose] 窗体关闭前进行的操作，必须要返回Promise
+     * @property {boolean} [maximizable] 可最大化
+     * @property {boolean} [maximized] 初始是否最大化
+     * @property {boolean} [minimizable] 可最小化，最小化只隐藏，不销毁组件
+     * @property {boolean} [minimized] 初始是否最小化
+     * @property {boolean} [cancelClose] 点击取消按钮关闭窗体
+     * @property {boolean} [loading] 显示loading
+     * @property {boolean} [loadingTip=正在拼命加载...] loading提示文本
+     * @property {string} [src] 用iframe加载的页面地址
+     * @property {string} [bodyClass] dialog内容容器className
+     * @property {string} [target] 窗体加载到容器的html选择器
+     * @property {boolean} [closeOnClickOutside] 点击窗体外部关闭
+     */
+    props: {
+      // 显示
+      visible: {
+        type: Boolean,
+        default: true
+      },
+      title: String,
+      icon: [String, Object],
+      width: String,
+      height: String,
+      modal: Boolean,
+      theme: {
+        type: String,
+        default: 'light',
+        validator(val) {
+          return ['primary', 'dark', 'light'].includes(val)
+        }
+      },
+      draggable: [Boolean, Object],
+      resizable: [Boolean, Object],
+      animation: {
+        type: String,
+        default: 'el-fade-in'
+      },
+      footer: {
+        type: Boolean,
+        default: true
+      },
+      submitText: {
+        type: String,
+        default: '确定'
+      },
+      submitLoading: Boolean,
+      cancelText: {
+        type: String,
+        default: '取消'
+      },
+      closable: {
+        type: Boolean,
+        default: true
+      },
+      beforeClose: Function,
+      maximizable: Boolean,
+      maximized: Boolean,
+      minimizable: Boolean,
+      minimized: Boolean,
+      cancelClose: {
+        type: Boolean,
+        default: true
+      },
+      loading: Boolean,
+      loadingTip: {
+        type: String,
+        default: '正在拼命加载...'
+      },
+      src: String,
+      bodyClass: String,
+      // 窗体加载到容器的html选择器
+      target: String,
+      closeOnClickOutside: Boolean
+    },
+    data() {
+      return {
+        currentVisible: this.visible,
+        viewWidth: 0,
+        viewHeight: 0,
+        viewLeft: 0,
+        viewTop: 0,
+        originalWidth: 0,
+        originalHeight: 0,
+        dialogWidth: 0,
+        dialogHeight: 0,
+        zIndex: ++Z_INDEX, // Z_INDEX,
+        currentMaximized: this.maximized,
+        currentMinimized: false
+      }
+    },
+    computed: {
+      wrapperStyle() {
+        return {
+          zIndex: this.zIndex,
+          left: `${this.viewLeft}px`,
+          top: `${this.viewTop}px`
+        }
+      },
+      dialogClass() {
+        return {
+          'sp-dialog': true,
+          'sp-dialog--src': this.src,
+          [this.bodyClass]: !!this.bodyClass
+        }
+      },
+      dialogStyle() {
+        const left = Math.max((this.viewWidth - this.originalWidth) / 2, 0),
+          top = Math.max((this.viewHeight - this.originalHeight) / 2, 0)
+        return {
+          left: `${left}px`,
+          top: `${top}px`
+        }
+      },
+      iconOptions() {
+        if (!this.icon) return null
+        return typeof this.icon === 'object'
+          ? {
+            ...this.icon
+          }
+          : {
+            name: this.icon
+          }
+      },
+      resizeOptions() {
+        return {
+          minWidth: 300,
+          minHeight: 150,
+          maxWidth: this.viewWidth,
+          maxHeight: this.viewHeight,
+          ...(this.resizable || {}),
+          disabled: this.currentMaximized ? true : !this.resizable
+        }
+      },
+      dragOptions() {
+        return {
+          handle: () => {
+            if (this.$refs.panel) {
+              if (this.$refs.panel.$refs.header) {
+                return this.$refs.panel.$refs.header
+              }
+              return this.$refs.panel
+            }
+            return null
+          },
+          range: () => {
+            return {
+              left: -this.dialogWidth + 10,
+              top: 0,
+              width: this.viewWidth + this.dialogWidth - 20,
+              height: this.viewHeight - 10
+            }
+          },
+          disabled: this.currentMaximized ? true : !this.draggable,
+          ...this.draggable
+        }
+      }
+    },
+    watch: {
+      width() {
+        this.$nextTick(() => {
+          this.updateView()
+        })
+      },
+      height() {
+        this.$nextTick(() => {
+          this.updateView()
+        })
+      },
+
+      visible(val) {
+        this.currentVisible = val
+        // 如果不可见，最小化已经无意义，需要重置
+        if (!val) {
+          this.currentMinimized = false
+        }
+      },
+      currentVisible(val) {
+        this.dispose()
+        if (val) {
+          this.zIndex = ++Z_INDEX
+          this.$nextTick(this.init)
+        }
+      },
+      maximized: {
+        immediate: true,
+        handler(val) {
+          this.maximizable &amp;&amp; (this.currentMaximized = val)
+        }
+      },
+      currentMaximized(val) {
+        if (!this.currentVisible) return
+        /**
+         * 最大化变化时触发
+         * @event maximize
+         * @param {boolean} 是否最大化
+         */
+        this.$emit('maximize', val)
+        this.$nextTick(() => {
+          this.maximize(val)
+        })
+      },
+      minimized: {
+        immediate: true,
+        handler(val) {
+          this.minimizable &amp;&amp; (this.currentMinimized = val)
+        }
+      },
+      currentMinimized(val) {
+        // 如果组件不可见，最小化失效
+        if (!this.currentVisible) return
+        this.$nextTick(() => {
+          val ? this.hide() : this.show()
+          this.setBodyHidden(!val)
+        })
+      }
+    },
+    methods: {
+      init() {
+        if (!this.$el || this.$el.nodeType !== 1) return
+        if (this.target) {
+          this.targetDOM = document.querySelector(this.target)
+          this.targetDOM &amp;&amp; this.targetDOM.appendChild(this.$el)
+        }
+
+        if (this.$el.parentNode) {
+          addResizeListener(this.$el.parentNode, this.updateView)
+        }
+
+        if (!this.draggable &amp;&amp; !this.resizable) {
+          addResizeListener(this.$el, this.updateView)
+        }
+        this.updateView()
+        /**
+         * 窗体打开时触发
+         * @event open
+         */
+        this.$emit('open')
+
+        this.setBodyHidden(true)
+      },
+      dispose() {
+        if (this.$el &amp;&amp; this.$el.parentNode) {
+          removeResizeListener(this.$el.parentNode, this.updateView)
+
+          if (!this.draggable &amp;&amp; !this.resizable) {
+            removeResizeListener(this.$el, this.updateView)
+          }
+          if (this.target) {
+            this.$el.parentNode.removeChild(this.$el)
+          }
+          this.setBodyHidden(false)
+          this.dialogWidth = null
+          this.dialogHeight = null
+          this.currentMinimized = this.minimized
+          this.currentMaximized = this.maximized
+          this.targetDOM = null
+          this.$emit('dispose')
+        }
+      },
+      updateView() {
+        if (!this.$el || !this.$refs.dialog) return
+        const rect = this.$el.getBoundingClientRect()
+        this.viewHeight = rect.height
+        this.viewWidth = rect.width
+        this.viewLeft = Math.max(document.documentElement.scrollLeft, document.body.scrollLeft)
+        this.viewTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+        if (this.currentMaximized) {
+          this.maximize(true)
+        }
+        if (!this.dialogWidth || !this.dialogHeight) {
+          const dialogRect = this.$refs.dialog.$el.getBoundingClientRect()
+          this.originalWidth = this.dialogWidth = getLength(this.viewWidth, this.width) || dialogRect.width
+          this.originalHeight = this.dialogHeight = getLength(this.viewHeight, this.height) || dialogRect.height
+        }
+
+      },
+      handleResizeStart(e) {
+        /**
+         * 开始改变尺寸时触发
+         * @event resize-start
+         * @param {Object} e
+         */
+        this.$emit('resize-start', e)
+      },
+      handleResizeStop(e) {
+        /**
+         * 停止改变尺寸时触发
+         * @event resize-stop
+         * @param {Object} e
+         */
+        this.$emit('resize-stop', e)
+      },
+      handleResize(e) {
+        const {width, height} = e
+        this.dialogWidth = width || this.dialogWidth
+        this.dialogHeight = height || this.dialogHeight
+        /**
+         * 改变尺寸时触发
+         * @event resize
+         * @param {Object} e
+         */
+        this.$emit('resize', e)
+      },
+      handleDragStart(e) {
+        /**
+         * 开始拖拽时触发
+         * @event drag-start
+         * @param {Object} e
+         */
+        this.$emit('drag-start', e)
+      },
+      handleDrag(e) {
+        /**
+         * 拖拽时触发
+         * @event drag
+         * @param {Object} e
+         */
+        this.$emit('drag', e)
+      },
+      handleDragStop(e) {
+        /**
+         * 停止拖拽时触发
+         * @event drag-stop
+         * @param {Object} e
+         */
+        this.$emit('drag-stop', e)
+      },
+      handleMousedown() {
+        this.zIndex = ++Z_INDEX
+      },
+      handleClickOutside() {
+        if (this.closeOnClickOutside) {
+          this.handleClose()
+        }
+      },
+      handleClose() {
+        this.currentVisible = false
+        this.$emit('update:visible', false)
+        /**
+         * 窗体关闭时触发
+         * @event close
+         */
+        this.$emit('close')
+      },
+      handleSubmit() {
+        /**
+         * 点击确定按钮时触发
+         * @event submit
+         */
+        this.$emit('submit')
+      },
+      handleCancel() {
+        /**
+         * 点击取消按钮时触发
+         * @event cancel
+         */
+        this.$emit('cancel')
+        if (this.cancelClose) {
+          this.handleClose()
+        }
+      },
+      handleSrcLoad() {
+        /**
+         * iframe完成加载内容时触发
+         * @event load
+         */
+        this.$emit('load')
+      },
+      maximize(maximized) {
+        if (maximized) {
+          // 记录全屏之前的窗口尺寸
+          if (!this.sizeCaches) {
+            this.sizeCaches = {
+              dialogWidth: this.dialogWidth,
+              dialogHeight: this.dialogHeight
+            }
+          }
+          this.originalWidth = this.dialogWidth = this.viewWidth
+          this.originalHeight = this.dialogHeight = this.viewHeight
+
+        } else {
+          if (this.sizeCaches) {
+            const {dialogWidth, dialogHeight} = this.sizeCaches
+            this.originalWidth = this.dialogWidth = dialogWidth
+            this.originalHeight = this.dialogHeight = dialogHeight
+          }
+        }
+
+        if (this.resizable) {
+          this.$refs.resize.width = this.originalWidth
+          this.$refs.resize.height = this.originalHeight
+        }
+      },
+      show() {
+        this.zIndex = ++Z_INDEX
+        this.currentMinimized = false
+        /**
+         * 显示时触发
+         * @event show
+         */
+        this.$emit('show')
+      },
+      hide() {
+        this.currentMinimized = true
+        /**
+         * 隐藏时触发
+         * @event hide
+         */
+        this.$emit('hide')
+      },
+      setBodyHidden(hidden) {
+        const name = 'sp-dialog-hidden-' + this._uid
+        const targetDom = this.targetDOM || this.$el.parentNode
+        hidden ? addClass(targetDom, name) : removeClass(targetDom, name)
+      }
+
+    },
+    mounted() {
+      this.currentVisible &amp;&amp; this.init()
+
+    },
+    beforeDestroy() {
+      this.dispose()
+    }
+  }
+&lt;/script>
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:47 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

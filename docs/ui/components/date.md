@@ -1,7 +1,7 @@
 # Date 日期时间
 
 基于 Dayjs 类库的日期时间格式化组件。
-组件文档 <api-link href="components/my-date">MyDate</api-link>
+组件文档 <api-link href="components/sp-date">spDate</api-link>
 
 ## 何时使用
 
@@ -16,14 +16,14 @@
 :::demo
 ```html
 <template>
-  <my-date></my-date>
+  <sp-date></sp-date>
 </template>
 
 <script>
-import {MyDate} from '$ui'
+import {spDate} from '$ui'
 export default {
   components: {
-    MyDate
+    spDate
   }
 }
 </script>
@@ -68,23 +68,23 @@ export default {
 ```html
 <template>
   <div>
-     <my-date value="2019-09-21 21:36:46" format="YYYY/MM/DD"></my-date>
-     <my-date :value="new Date()" format="YYYY-MM-DD HH:mm:ss.SSS ZZ A"></my-date>
+     <sp-date value="2019-09-21 21:36:46" format="YYYY/MM/DD"></sp-date>
+     <sp-date :value="new Date()" format="YYYY-MM-DD HH:mm:ss.SSS ZZ A"></sp-date>
   </div>
 
 </template>
 
 <script>
-import {MyDate} from '$ui'
+import {spDate} from '$ui'
 export default {
   components: {
-    MyDate
+    spDate
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-date {
+.sp-date {
   margin: 0 20px;
 }
 </style>
@@ -114,23 +114,23 @@ export default {
 ```html
 <template>
   <div>
-     <my-date relative></my-date>
-     <my-date value="2019-09-21 21:44:35" relative></my-date>
+     <sp-date relative></sp-date>
+     <sp-date value="2019-09-21 21:44:35" relative></sp-date>
   </div>
 
 </template>
 
 <script>
-import {MyDate} from '$ui'
+import {spDate} from '$ui'
 export default {
   components: {
-    MyDate
+    spDate
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-date {
+.sp-date {
   margin: 0 20px;
 }
 </style>
@@ -145,27 +145,27 @@ export default {
 ```html
 <template>
   <div>
-     <my-date></my-date>
-     <my-date type="primary"></my-date>
-     <my-date type="success"></my-date>
-     <my-date type="warning"></my-date>
-     <my-date type="danger"></my-date>
-     <my-date type="info"></my-date>
+     <sp-date></sp-date>
+     <sp-date type="primary"></sp-date>
+     <sp-date type="success"></sp-date>
+     <sp-date type="warning"></sp-date>
+     <sp-date type="danger"></sp-date>
+     <sp-date type="info"></sp-date>
   </div>
 
 </template>
 
 <script>
-import {MyDate} from '$ui'
+import {spDate} from '$ui'
 export default {
   components: {
-    MyDate
+    spDate
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-date {
+.sp-date {
   margin: 0 20px;
 }
 </style>
@@ -180,22 +180,22 @@ export default {
 ```html
 <template>
   <div>
-     <my-date tick></my-date>
+     <sp-date tick></sp-date>
   </div>
 
 </template>
 
 <script>
-import {MyDate} from '$ui'
+import {spDate} from '$ui'
 export default {
   components: {
-    MyDate
+    spDate
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.my-date {
+.sp-date {
   margin: 0 20px;
 }
 </style>

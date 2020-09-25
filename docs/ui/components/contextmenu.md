@@ -1,7 +1,7 @@
 # Contextmenu 右键菜单
 
 
-右键操作 组件文档 <api-link href="components/my-contextmenu"> MyContextmenu </api-link>
+右键操作 组件文档 <api-link href="components/sp-contextmenu"> spContextmenu </api-link>
 
 ## 基础用法
 
@@ -13,7 +13,7 @@
     <div class="action-box">
       右键触发区域
     </div>
-    <my-contextmenu target=".action-box" :data="menu" @click="handleClick"></my-contextmenu>
+    <sp-contextmenu target=".action-box" :data="menu" @click="handleClick"></sp-contextmenu>
 
   </div>
 </template>
@@ -80,7 +80,7 @@
     <div class="action-box" id="box2">
       右键触发区域
     </div>
-    <my-contextmenu target="#box2" :data="menu" theme="dark" @click="handleClick"></my-contextmenu>
+    <sp-contextmenu target="#box2" :data="menu" theme="dark" @click="handleClick"></sp-contextmenu>
 
   </div>
 </template>

@@ -1,12 +1,12 @@
 /**
  * 缩放控件
- * @module $ui/map/my-map-zoom
+ * @module $ui/map/sp-map-zoom
  */
 import {Zoom, ZoomSlider} from 'ol/control'
-import Placement from '../my-map-placement'
+import Placement from '../sp-map-placement'
 
 export default {
-  name: 'MyMapZoom',
+  name: 'spMapZoom',
   inject: ['myMap'],
   components: {
     Placement
@@ -41,7 +41,7 @@ export default {
   computed: {
     classes() {
       return Object.keys({
-        'my-map-zoom': true,
+        'sp-map-zoom': true,
         [`is-${this.theme}`]: !!this.theme,
         [`is-${this.placement}`]: !!this.placement
       }).join(' ')

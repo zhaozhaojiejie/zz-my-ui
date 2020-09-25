@@ -1,11 +1,11 @@
-import MyChart from '$ui/charts/packages/my-chart'
+import spChart from '$ui/charts/packages/sp-chart'
 import 'echarts-liquidfill/dist/echarts-liquidfill'
 import {install} from '$ui/utils/helper'
 import Fill from './Fill'
 
 const Module = {
-  name: 'MyChartFill',
-  mixins: [MyChart],
+  name: 'spChartFill',
+  mixins: [spChart],
   adapter: Fill
 }
 

@@ -7,7 +7,7 @@ ECharts的基于地理坐标系的图表，如：`map` `scatter` `effectScatter`
 :::demo(chart-map-1)
 ```html
 <template>
-   <my-chart-map :data="data" :register="register" map="china"></my-chart-map>
+   <sp-chart-map :data="data" :register="register" map="china"></sp-chart-map>
 </template>
 
 <script>
@@ -47,7 +47,7 @@ export default {
 :::demo(chart-map-2)
 ```html
 <template>
-   <my-chart-map :data="data" :register="register" map="china" :settings="settings"></my-chart-map>
+   <sp-chart-map :data="data" :register="register" map="china" :settings="settings"></sp-chart-map>
 </template>
 
 <script>
@@ -91,7 +91,7 @@ export default {
 :::demo(chart-map-3)
 ```html
 <template>
-   <my-chart-map :data="data" :register="register" map="china" :settings="settings"></my-chart-map>
+   <sp-chart-map :data="data" :register="register" map="china" :settings="settings"></sp-chart-map>
 </template>
 
 <script>
@@ -136,7 +136,7 @@ export default {
 :::demo(chart-map-4)
 ```html
 <template>
-   <my-chart-map :data="data" :register="register" map="china" :settings="settings"></my-chart-map>
+   <sp-chart-map :data="data" :register="register" map="china" :settings="settings"></sp-chart-map>
 </template>
 
 <script>
@@ -174,7 +174,7 @@ export default {
 :::demo(chart-map-5)
 ```html
 <template>
-   <my-chart-map :data="data" :register="register" map="china" :settings="settings"></my-chart-map>
+   <sp-chart-map :data="data" :register="register" map="china" :settings="settings"></sp-chart-map>
 </template>
 
 <script>
@@ -254,12 +254,12 @@ export default {
 :::demo(chart-map-6)
 ```html
 <template>
-  <my-chart-map debug
+  <sp-chart-map debug
                 :data="data"
                 :register="register"
                 map="china"
                 :settings="settings"
-                :extend="extend"></my-chart-map>
+                :extend="extend"></sp-chart-map>
 </template>
 
 <script>
@@ -361,12 +361,12 @@ export default {
 :::demo(chart-map-7)
 ```html
 <template>
-  <my-chart-map debug
+  <sp-chart-map debug
                 :data="data"
                 :register="register"
                 map="china"
                 :extend="extend"
-                :settings="settings"></my-chart-map>
+                :settings="settings"></sp-chart-map>
 </template>
 
 <script>

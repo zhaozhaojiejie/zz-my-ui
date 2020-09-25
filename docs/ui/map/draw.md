@@ -1,15 +1,15 @@
 # Draw 绘画
 
-Draw 绘画组件。文档<api-link href="map/my-map-draw"> MyMapDraw</api-link>
+Draw 绘画组件。文档<api-link href="map/sp-map-draw"> spMapDraw</api-link>
 
 
 ## 基础用法
 :::demo
 ```html
 <template>
-  <my-map>
-     <my-map-draw></my-map-draw>
-  </my-map>
+  <sp-map>
+     <sp-map-draw></sp-map-draw>
+  </sp-map>
 </template>
 ```
 :::
@@ -19,9 +19,9 @@ Draw 绘画组件。文档<api-link href="map/my-map-draw"> MyMapDraw</api-link>
 :::demo
 ```html
 <template>
-  <my-map>
-     <my-map-draw ref="draw" :type="value"></my-map-draw>
-     <my-map-placement style="padding: 10px;">
+  <sp-map>
+     <sp-map-draw ref="draw" :type="value"></sp-map-draw>
+     <sp-map-placement style="padding: 10px;">
        <el-select v-model="value" size="small">
         <el-option
           v-for="item in types"
@@ -30,8 +30,8 @@ Draw 绘画组件。文档<api-link href="map/my-map-draw"> MyMapDraw</api-link>
           :value="item">
         </el-option>
       </el-select>
-     </my-map-placement>
-  </my-map>
+     </sp-map-placement>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -51,9 +51,9 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>
-     <my-map-draw type="Circle" :brush="brush" :effect="effect"></my-map-draw>
-  </my-map>
+  <sp-map>
+     <sp-map-draw type="Circle" :brush="brush" :effect="effect"></sp-map-draw>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -94,17 +94,17 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-placement placement="left-top" style="padding: 10px;">
+  <sp-map>
+    <sp-map-placement placement="left-top" style="padding: 10px;">
       <el-button size="small" :disabled="mode==='draw'" @click="draw">绘画模式</el-button>
       <el-button size="small" :disabled="mode==='modify'" @click="modify">编辑模式</el-button>
       <el-button size="small" :disabled="mode==='finish'" @click="finish">结束</el-button>
       <el-button size="small" @click="getFeatures">获取图形</el-button>
       <el-button size="small" type="primary" @click="save">保存</el-button>
       <el-button size="small" @click="clear">清空</el-button>
-    </my-map-placement>
-    <my-map-draw ref="draw" @ready="handleReady" manual></my-map-draw>
-  </my-map>
+    </sp-map-placement>
+    <sp-map-draw ref="draw" @ready="handleReady" manual></sp-map-draw>
+  </sp-map>
 </template>
 
 <script>

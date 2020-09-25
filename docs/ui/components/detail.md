@@ -1,8 +1,8 @@
 # Detail 数据详情描述列表
 
 成组展示多个只读字段，包含两个组件：
-<api-link href="components/my-detail">MyDetail</api-link>、
-<api-link href="components/my-detail-item">MyDetailItem</api-link>
+<api-link href="components/sp-detail">spDetail</api-link>、
+<api-link href="components/sp-detail-item">spDetailItem</api-link>
 
 ## 何时使用
 
@@ -20,22 +20,22 @@
 ```html
 <template>
   <div class="table-origin">
-   <my-detail title="用户信息">
-      <my-detail-item label="名称">张三</my-detail-item>
-      <my-detail-item label="电话">020-88888888</my-detail-item>
-      <my-detail-item label="籍贯">广东 广州</my-detail-item>
-      <my-detail-item label="备注">无</my-detail-item>
-      <my-detail-item label="地址">广东省广州市越秀区东风东路</my-detail-item>
-   </my-detail>
+   <sp-detail title="用户信息">
+      <sp-detail-item label="名称">张三</sp-detail-item>
+      <sp-detail-item label="电话">020-88888888</sp-detail-item>
+      <sp-detail-item label="籍贯">广东 广州</sp-detail-item>
+      <sp-detail-item label="备注">无</sp-detail-item>
+      <sp-detail-item label="地址">广东省广州市越秀区东风东路</sp-detail-item>
+   </sp-detail>
    </div>
 </template>
 
 <script>
-import {MyDetail, MyDetailItem} from '$ui'
+import {spDetail, spDetailItem} from '$ui'
 export default {
   components: {
-    MyDetail,
-    MyDetailItem
+    spDetail,
+    spDetailItem
   }
 }
 </script>
@@ -51,22 +51,22 @@ export default {
 ```html
 <template>
   <div class="table-origin">
-     <my-detail title="用户信息" border>
-        <my-detail-item label="名称">张三</my-detail-item>
-        <my-detail-item label="电话">020-88888888</my-detail-item>
-        <my-detail-item label="籍贯">广东 广州</my-detail-item>
-        <my-detail-item label="备注">无</my-detail-item>
-        <my-detail-item label="地址">广东省广州市越秀区东风东路</my-detail-item>
-     </my-detail>
+     <sp-detail title="用户信息" border>
+        <sp-detail-item label="名称">张三</sp-detail-item>
+        <sp-detail-item label="电话">020-88888888</sp-detail-item>
+        <sp-detail-item label="籍贯">广东 广州</sp-detail-item>
+        <sp-detail-item label="备注">无</sp-detail-item>
+        <sp-detail-item label="地址">广东省广州市越秀区东风东路</sp-detail-item>
+     </sp-detail>
    </div>
 </template>
 
 <script>
-import {MyDetail, MyDetailItem} from '$ui'
+import {spDetail, spDetailItem} from '$ui'
 export default {
   components: {
-    MyDetail,
-    MyDetailItem
+    spDetail,
+    spDetailItem
   }
 }
 </script>
@@ -87,22 +87,22 @@ export default {
        <el-radio label="middle">middle</el-radio>
        <el-radio label="small">small</el-radio>
      </el-radio-group>
-     <my-detail title="用户信息" border :size="size">
-        <my-detail-item label="名称">张三</my-detail-item>
-        <my-detail-item label="电话">020-88888888</my-detail-item>
-        <my-detail-item label="籍贯">广东 广州</my-detail-item>
-        <my-detail-item label="备注">无</my-detail-item>
-        <my-detail-item label="地址">广东省广州市越秀区东风东路</my-detail-item>
-     </my-detail>
+     <sp-detail title="用户信息" border :size="size">
+        <sp-detail-item label="名称">张三</sp-detail-item>
+        <sp-detail-item label="电话">020-88888888</sp-detail-item>
+        <sp-detail-item label="籍贯">广东 广州</sp-detail-item>
+        <sp-detail-item label="备注">无</sp-detail-item>
+        <sp-detail-item label="地址">广东省广州市越秀区东风东路</sp-detail-item>
+     </sp-detail>
    </div>
 </template>
 
 <script>
-import {MyDetail, MyDetailItem} from '$ui'
+import {spDetail, spDetailItem} from '$ui'
 export default {
   components: {
-    MyDetail,
-    MyDetailItem
+    spDetail,
+    spDetailItem
   },
   data() {
     return {
@@ -124,22 +124,22 @@ export default {
 ```html
 <template>
   <div class="table-origin">
-     <my-detail title="用户信息" border layout="vertical">
-        <my-detail-item label="名称">张三</my-detail-item>
-        <my-detail-item label="电话">020-88888888</my-detail-item>
-        <my-detail-item label="籍贯">广东 广州</my-detail-item>
-        <my-detail-item label="备注">无</my-detail-item>
-        <my-detail-item label="地址">广东省广州市越秀区东风东路</my-detail-item>
-     </my-detail>
+     <sp-detail title="用户信息" border layout="vertical">
+        <sp-detail-item label="名称">张三</sp-detail-item>
+        <sp-detail-item label="电话">020-88888888</sp-detail-item>
+        <sp-detail-item label="籍贯">广东 广州</sp-detail-item>
+        <sp-detail-item label="备注">无</sp-detail-item>
+        <sp-detail-item label="地址">广东省广州市越秀区东风东路</sp-detail-item>
+     </sp-detail>
    </div>
 </template>
 
 <script>
-import {MyDetail, MyDetailItem} from '$ui'
+import {spDetail, spDetailItem} from '$ui'
 export default {
   components: {
-    MyDetail,
-    MyDetailItem
+    spDetail,
+    spDetailItem
   }
 }
 </script>
@@ -153,22 +153,22 @@ export default {
 ```html
 <template>
   <div class="table-origin">
-     <my-detail title="用户信息" border label-align="right">
-        <my-detail-item label="名称">张三</my-detail-item>
-        <my-detail-item label="电话">020-88888888</my-detail-item>
-        <my-detail-item label="籍贯">广东 广州</my-detail-item>
-        <my-detail-item label="备注">无</my-detail-item>
-        <my-detail-item label="地址">广东省广州市越秀区东风东路</my-detail-item>
-     </my-detail>
+     <sp-detail title="用户信息" border label-align="right">
+        <sp-detail-item label="名称">张三</sp-detail-item>
+        <sp-detail-item label="电话">020-88888888</sp-detail-item>
+        <sp-detail-item label="籍贯">广东 广州</sp-detail-item>
+        <sp-detail-item label="备注">无</sp-detail-item>
+        <sp-detail-item label="地址">广东省广州市越秀区东风东路</sp-detail-item>
+     </sp-detail>
    </div>
 </template>
 
 <script>
-import {MyDetail, MyDetailItem} from '$ui'
+import {spDetail, spDetailItem} from '$ui'
 export default {
   components: {
-    MyDetail,
-    MyDetailItem
+    spDetail,
+    spDetailItem
   }
 }
 </script>

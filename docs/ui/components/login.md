@@ -1,12 +1,12 @@
 # Login 登录
 
-文档 <api-link href="components/my-login">MyLogin</api-link>
+文档 <api-link href="components/sp-login">spLogin</api-link>
 
 ## 基本用法
 :::demo
 ```html
 <template>
- <my-login :login="login"></my-login>
+ <sp-login :login="login"></sp-login>
 </template>
 <script>
 export default {
@@ -30,7 +30,7 @@ export default {
 ```html
 <template>
  <div class="bg">
-    <my-login :login="login" center transparent></my-login>
+    <sp-login :login="login" center transparent></sp-login>
  </div>
 </template>
 <script>
@@ -62,7 +62,7 @@ export default {
 :::demo
 ```html
 <template>
- <my-login :login="login" pki></my-login>
+ <sp-login :login="login" pki></sp-login>
 </template>
 <script>
 export default {
@@ -85,14 +85,14 @@ export default {
 :::demo
 ```html
 <template>
-    <my-login :login="login">
+    <sp-login :login="login">
         <div slot="extra">
             <el-checkbox>记住密码</el-checkbox>
         </div>
         <div slot="footer" style="text-align: right">
             <el-link type="primary">登录帮助</el-link>
         </div>
-    </my-login>
+    </sp-login>
 </template>
 <script>
 export default {

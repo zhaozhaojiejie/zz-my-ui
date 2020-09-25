@@ -1,7 +1,7 @@
 # TagCanvas 标签云
 
 基于 tagcanvas.js 实现，文档
- <api-link href="components/my-tag-canvas">MyTagCanvas</api-link>
+ <api-link href="components/sp-tag-canvas">spTagCanvas</api-link>
 
 
 :::demo
@@ -9,7 +9,7 @@
 <template>
   <div style="text-align: center;">
     <div style="height: 400px">
-      <my-tag-canvas ref="tag" :data="tags" :options="options"></my-tag-canvas>
+      <sp-tag-canvas ref="tag" :data="tags" :options="options"></sp-tag-canvas>
     </div>
     <el-button @click="pause">pause</el-button>
     <el-button @click="resume">resume</el-button>

@@ -1,15 +1,15 @@
 # Heat 热力图
 
-热力图组件 <api-link href="map/my-map-heat">MyMapHeat</api-link>
+热力图组件 <api-link href="map/sp-map-heat">spMapHeat</api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-    <my-map :center="center" adapter="Amap">
-       <my-map-heat v-if="data" :data="data"></my-map-heat>
-    </my-map>
+    <sp-map :center="center" adapter="Amap">
+       <sp-map-heat v-if="data" :data="data"></sp-map-heat>
+    </sp-map>
 </template>
 
 <script>

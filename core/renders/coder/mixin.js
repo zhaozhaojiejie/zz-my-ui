@@ -2,10 +2,10 @@ const _ = require('lodash')
 module.exports = _.template(`
 /**
  *  <%=cname%> mixin module
- *  @module $my/code/mixin/<%=name%>
+ *  @module $sp/code/mixin/<%=name%>
  *  @author coder
  */
-import { <%=importApiArray.join(', ')%> } from '$my/code/api/<%=kebabCaseName%>'
+import { <%=importApiArray.join(', ')%> } from '$sp/code/api/<%=kebabCaseName%>'
 
 // mixin
 export default {

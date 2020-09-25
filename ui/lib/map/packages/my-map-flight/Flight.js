@@ -1,6 +1,6 @@
 /**
  * Flight 航线组件
- * @module $ui/map/my-map-flight
+ * @module $ui/map/sp-map-flight
  */
 import strokeMixin from '../../mixins/stroke'
 import featureMixin from '../../mixins/feature'
@@ -47,7 +47,7 @@ const defaultPointEffect = {
  * @property {boolean|object|function} [pointEffect=false] 点动画样式配置
  */
 export default {
-  name: 'MyMapFlight',
+  name: 'spMapFlight',
   mixins: [strokeMixin, featureMixin],
   props: {
     // 起点

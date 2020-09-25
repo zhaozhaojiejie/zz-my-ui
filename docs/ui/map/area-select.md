@@ -8,12 +8,12 @@
 ```html
 <template>
   <div style="width: 100%; height: 600px">
-    <my-map height="100%"  :center="center" @ready="mapReady"  :zoom="9"  @on-boxend="boxEndHandle" >
-      <my-map-icon v-for="(item, index) in arr" :key="index" v-bind="item" ></my-map-icon>
-      <my-map-placement>
+    <sp-map height="100%"  :center="center" @ready="mapReady"  :zoom="9"  @on-boxend="boxEndHandle" >
+      <sp-map-icon v-for="(item, index) in arr" :key="index" v-bind="item" ></sp-map-icon>
+      <sp-map-placement>
         <button @click="resetClick">reset</button>
-      </my-map-placement>
-    </my-map>
+      </sp-map-placement>
+    </sp-map>
   </div>
 </template>
 <script>

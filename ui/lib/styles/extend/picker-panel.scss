@@ -1,18 +1,18 @@
 @import "../common/var";
 
-.my-base-picker__popover {
+.sp-base-picker__popover {
   padding: 0;
 }
 
 @include b(picker-panel) {
-  > .my-layout__west {
+  > .sp-layout__west {
     border-right: 1px solid $--color-table-header;
   }
-  > .my-layout__wrapper > .my-layout__north, > .my-layout__north {
+  > .sp-layout__wrapper > .sp-layout__north, > .sp-layout__north {
     border-bottom: 1px solid $--color-table-header;
     padding: 12px;
   }
-  > .my-layout__wrapper > .my-layout__default, > .my-layout__default {
+  > .sp-layout__wrapper > .sp-layout__default, > .sp-layout__default {
     padding: 0;
   }
 
@@ -60,7 +60,7 @@
 @include b(picker-panel-icon-item) {
   text-align: center;
   padding: 0 10px;
-  .my-icon {
+  .sp-icon {
     font-size: 32px;
     margin-top: 10px;
   }

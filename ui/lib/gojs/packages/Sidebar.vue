@@ -1,7 +1,7 @@
 <template>
-  <div class="my-go-sidebar" :class="classes" :style="styles">
+  <div class="sp-go-sidebar" :class="classes" :style="styles">
     <slot></slot>
-    <div class="my-go-sidebar__collapsible" @click="handleCollapse">
+    <div class="sp-go-sidebar__collapsible" @click="handleCollapse">
       <i :class="arrow"></i>
     </div>
   </div>

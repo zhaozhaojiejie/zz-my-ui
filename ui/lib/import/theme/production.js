@@ -6,7 +6,7 @@
  */
 
 module.exports = function (key, app, container) {
-  const domId = `my-skin-link-${app || 'master'}`
+  const domId = `sp-skin-link-${app || 'master'}`
   const mapName = app ? `__MY_THEMES_${app}__` : '__MY_THEMES__'
   const themes = window[mapName] || {}
   const theme = themes[key]
@@ -19,7 +19,7 @@ module.exports = function (key, app, container) {
     linkEl.id = domId
     linkEl.rel = 'stylesheet'
     linkEl.href = theme
-    const parent = container || document.getElementById('my-master-app') || document.body
+    const parent = container || document.getElementById('sp-master-app') || document.body
     if (parent) {
       parent.appendChild(linkEl)
     }

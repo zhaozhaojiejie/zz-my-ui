@@ -20,7 +20,7 @@ module.exports = function (theme, entry, outDir) {
       alias: {
         '@': utils.join(core.ProjectRootPath, 'src'),
         $ui: core.LibPath,
-        $my: core.TempPath
+        $sp: core.TempPath
       }
     },
     module: {

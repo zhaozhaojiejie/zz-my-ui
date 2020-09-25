@@ -1,6 +1,6 @@
 # Lazy 懒加载
 
-组件级懒加载方案 组件文档 <api-link href="components/my-lazy">MyLazy</api-link>
+组件级懒加载方案 组件文档 <api-link href="components/sp-lazy">spLazy</api-link>
 
 - 支持 组件可见或即将可见时懒加载
 - 支持 组件延时加载
@@ -15,22 +15,22 @@
 <template>
   <div>
      <div  v-for="i in 5" :key="i" class="item">
-       <my-lazy>
-          <my-empty></my-empty> 
-          <my-skeleton slot="skeleton" loading active></my-skeleton>
-       </my-lazy>
+       <sp-lazy>
+          <sp-empty></sp-empty> 
+          <sp-skeleton slot="skeleton" loading active></sp-skeleton>
+       </sp-lazy>
      </div>
 
   </div>
 </template>
 
 <script>
-import {MyLazy, MySkeleton, MyEmpty} from '$ui'
+import {spLazy, spSkeleton, spEmpty} from '$ui'
 export default {
   components: {
-    MyLazy,
-    MySkeleton,
-    MyEmpty
+    spLazy,
+    spSkeleton,
+    spEmpty
   }
 }
 </script>
@@ -55,22 +55,22 @@ export default {
 <template>
   <div>
      <div class="item">
-       <my-lazy :timeout="5000">
-          <my-empty></my-empty> 
-          <my-skeleton slot="skeleton" loading active></my-skeleton>
-       </my-lazy>
+       <sp-lazy :timeout="5000">
+          <sp-empty></sp-empty> 
+          <sp-skeleton slot="skeleton" loading active></sp-skeleton>
+       </sp-lazy>
      </div>
 
   </div>
 </template>
 
 <script>
-import {MyLazy, MySkeleton, MyEmpty} from '$ui'
+import {spLazy, spSkeleton, spEmpty} from '$ui'
 export default {
   components: {
-    MyLazy,
-    MySkeleton,
-    MyEmpty
+    spLazy,
+    spSkeleton,
+    spEmpty
   }
 }
 </script>

@@ -21,7 +21,7 @@
 
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 ```sh 
-npm i @xdh/my --save
+npm i @xdh/sp --save
 ```
 
 ## 快速上手
@@ -36,7 +36,7 @@ npm i @xdh/my --save
 
 安装组件
 ```sh 
-npm i element-ui @xdh/my --save
+npm i element-ui @xdh/sp --save
 ```
 
 安装项目依赖插件
@@ -53,7 +53,7 @@ module.exports = {
     '@vue/cli-plugin-babel/preset'
   ],
   plugins: [
-    ...require('@xdh/my/core/babel.plugins')
+    ...require('@xdh/sp/core/babel.plugins')
   ]
 }
 ```
@@ -64,9 +64,9 @@ module.exports = {
 
 ```js 
 module.exports = {
-  transpileDependencies: ['@xdh/my'],
+  transpileDependencies: ['@xdh/sp'],
   chainWebpack(chain) {
-    chain.resolve.alias.set('$ui', '@xdh/my/ui/lib')
+    chain.resolve.alias.set('$ui', '@xdh/sp/ui/lib')
   }
 }
 ```
@@ -77,17 +77,17 @@ module.exports = {
 <template>
   <div>
     <Button type="primary">Button</Button>
-    <MyPanel title="Title">Content</MyPanel>
+    <spPanel title="Title">Content</spPanel>
   </div>
 </template>
 
 <script>
   import {Button} from 'element-ui'
-  import {MyPanel} from '$ui'
+  import {spPanel} from '$ui'
   export default {
     components: {
       Button,
-      MyPanel
+      spPanel
     }
   }
 </script>

@@ -27,7 +27,7 @@
   }
 }
 
-.my-map-zoom {
+.sp-map-zoom {
   &.is-light {
     @include zoom-theme(rgba(0, 0, 0, 0.1), $--background-color-light, $--text-color-light);
   }

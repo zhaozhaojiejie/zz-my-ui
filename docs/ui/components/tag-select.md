@@ -1,6 +1,6 @@
 # TagSelect 标签选择器
 
- 文档 <api-link href="components/my-tag-select">MyTagSelect</api-link>
+ 文档 <api-link href="components/sp-tag-select">spTagSelect</api-link>
 
 ## 代码示例
 
@@ -9,9 +9,9 @@
 :::demo
 ```html
 <template>
-  <my-form @submit="handleSubmit" :model="model">
-    <my-tag-select name="tag" :options="fruit"></my-tag-select>
-  </my-form>
+  <sp-form @submit="handleSubmit" :model="model">
+    <sp-tag-select name="tag" :options="fruit"></sp-tag-select>
+  </sp-form>
 </template>
 
 <script>
@@ -39,11 +39,11 @@
 :::demo
 ```html
 <template>
-  <my-form @submit="handleSubmit" :model="model">
-    <my-tag-select name="tag"
+  <sp-form @submit="handleSubmit" :model="model">
+    <sp-tag-select name="tag"
                    :options="fruit"
-                   :props="{multiple:true}"></my-tag-select>
-  </my-form>
+                   :props="{multiple:true}"></sp-tag-select>
+  </sp-form>
 </template>
 
 <script>
@@ -73,11 +73,11 @@
 ```html
 <template>
     <div style="width: 600px">
-      <my-form @submit="handleSubmit" :model="model">
-        <my-tag-select name="tag"
+      <sp-form @submit="handleSubmit" :model="model">
+        <sp-tag-select name="tag"
                        :options="fruit"
-                       :props="{multiple:true, checkAll:true, collapsible:true}"></my-tag-select>
-      </my-form>
+                       :props="{multiple:true, checkAll:true, collapsible:true}"></sp-tag-select>
+      </sp-form>
     </div>
 </template>
 
@@ -110,25 +110,25 @@
 ```html
 <template>
   <div style="width: 600px">
-    <my-form @submit="handleSubmit">
-      <my-tag-select name="tag1"
+    <sp-form @submit="handleSubmit">
+      <sp-tag-select name="tag1"
                      :options="fruit"
-                     :props="{tag:true, collapsible:true}"></my-tag-select>
+                     :props="{tag:true, collapsible:true}"></sp-tag-select>
 
-      <my-tag-select name="tag2"
+      <sp-tag-select name="tag2"
                      size="medium"
                      :options="fruit"
-                     :props="{tag:true, collapsible:true}"></my-tag-select>
+                     :props="{tag:true, collapsible:true}"></sp-tag-select>
 
-      <my-tag-select name="tag3"
+      <sp-tag-select name="tag3"
                      size="small"
                      :options="fruit"
-                     :props="{tag:true, collapsible:true}"></my-tag-select>
-      <my-tag-select name="tag4"
+                     :props="{tag:true, collapsible:true}"></sp-tag-select>
+      <sp-tag-select name="tag4"
                      size="mini"
                      :options="fruit"
-                     :props="{tag:true, collapsible:true}"></my-tag-select>
-    </my-form>
+                     :props="{tag:true, collapsible:true}"></sp-tag-select>
+    </sp-form>
   </div>
 </template>
 

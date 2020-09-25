@@ -1,6 +1,6 @@
 /**
  *  icons
- *  @module $my/code/icons
+ *  @module $sp/code/icons
  *  @author coder
  */
 function fixIconfont(elArray, array) {

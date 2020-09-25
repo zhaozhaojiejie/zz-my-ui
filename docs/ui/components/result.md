@@ -1,7 +1,7 @@
 # Result 结果
 
 用于反馈一系列操作任务的处理结果。
-组件文档 <api-link href="components/my-result">MyResult</api-link>
+组件文档 <api-link href="components/sp-result">spResult</api-link>
 
 ## 何时使用
 
@@ -17,18 +17,18 @@
 :::demo
 ```html
 <template>
-    <my-result title="Your operation has been executed">
+    <sp-result title="Your operation has been executed">
         <template v-slot:extra>
             <el-button type="primary">Go Console</el-button>
         </template>
-     </my-result>
+     </sp-result>
 </template>
 
 <script>
-import {MyResult} from '$ui'
+import {spResult} from '$ui'
 export default {
   components: {
-    MyResult
+    spResult
   }
 }
 </script>
@@ -44,21 +44,21 @@ export default {
 :::demo
 ```html
 <template>
-    <my-result status="success"
+    <sp-result status="success"
      title="Successfully Purchased Cloud Server ECS!"
      subtitle="Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait.">
         <template v-slot:extra>
             <el-button type="primary">Go Console</el-button>
             <el-button>Buy Again</el-button>
         </template>
-     </my-result>
+     </sp-result>
 </template>
 
 <script>
-import {MyResult} from '$ui'
+import {spResult} from '$ui'
 export default {
   components: {
-    MyResult
+    spResult
   }
 }
 </script>
@@ -73,19 +73,19 @@ export default {
 :::demo
 ```html
 <template>
-    <my-result status="warning"
+    <sp-result status="warning"
      title="There are some problems with your operation.">
         <template v-slot:extra>
             <el-button type="primary">Go Console</el-button>
         </template>
-     </my-result>
+     </sp-result>
 </template>
 
 <script>
-import {MyResult} from '$ui'
+import {spResult} from '$ui'
 export default {
   components: {
-    MyResult
+    spResult
   }
 }
 </script>
@@ -99,34 +99,34 @@ export default {
 :::demo
 ```html
 <template>
-    <my-result status="error"
+    <sp-result status="error"
      title="Submission Failed"
      subtitle="Please check and modify the following information before resubmitting.">
-       <my-title level="4">The content you submitted has the following error:</my-title>
-        <my-paragraph>
-          <my-icon name="el-icon-circle-close" theme="danger"></my-icon>
-          Your account has been frozen <my-text type="primary">Thaw immediately &gt;</my-text>
-        </my-paragraph>
-        <my-paragraph>
-          <my-icon name="el-icon-circle-close" theme="danger"></my-icon>
-          Your account is not yet eligible to apply <my-text type="primary">Apply Unlock &gt;</my-text>
-        </my-paragraph>
+       <sp-title level="4">The content you submitted has the following error:</sp-title>
+        <sp-paragraph>
+          <sp-icon name="el-icon-circle-close" theme="danger"></sp-icon>
+          Your account has been frozen <sp-text type="primary">Thaw immediately &gt;</sp-text>
+        </sp-paragraph>
+        <sp-paragraph>
+          <sp-icon name="el-icon-circle-close" theme="danger"></sp-icon>
+          Your account is not yet eligible to apply <sp-text type="primary">Apply Unlock &gt;</sp-text>
+        </sp-paragraph>
         <template v-slot:extra>
             <el-button type="primary">Go Console</el-button>
             <el-button>Buy Again</el-button>
         </template>
-     </my-result>
+     </sp-result>
 </template>
 
 <script>
-import {MyResult, MyTitle, MyParagraph, MyText, MyIcon} from '$ui'
+import {spResult, spTitle, spParagraph, spText, spIcon} from '$ui'
 export default {
   components: {
-    MyResult,
-    MyTitle,
-    MyParagraph,
-    MyText,
-    MyIcon
+    spResult,
+    spTitle,
+    spParagraph,
+    spText,
+    spIcon
   }
 }
 </script>
@@ -140,20 +140,20 @@ export default {
 :::demo
 ```html
 <template>
-    <my-result status="403"
+    <sp-result status="403"
      title="403"
      subtitle="Sorry, you are not authorized to access this page.">
         <template v-slot:extra>
             <el-button type="primary">Go Console</el-button>
         </template>
-     </my-result>
+     </sp-result>
 </template>
 
 <script>
-import {MyResult} from '$ui'
+import {spResult} from '$ui'
 export default {
   components: {
-    MyResult
+    spResult
   }
 }
 </script>
@@ -168,20 +168,20 @@ export default {
 :::demo
 ```html
 <template>
-    <my-result status="404"
+    <sp-result status="404"
      title="404"
      subtitle="Sorry, the page you visited does not exist.">
         <template v-slot:extra>
             <el-button type="primary">Go Console</el-button>
         </template>
-     </my-result>
+     </sp-result>
 </template>
 
 <script>
-import {MyResult} from '$ui'
+import {spResult} from '$ui'
 export default {
   components: {
-    MyResult
+    spResult
   }
 }
 </script>
@@ -196,20 +196,20 @@ export default {
 :::demo
 ```html
 <template>
-    <my-result status="500"
+    <sp-result status="500"
      title="500"
      subtitle="Sorry, the server is wrong.">
         <template v-slot:extra>
             <el-button type="primary">Go Console</el-button>
         </template>
-     </my-result>
+     </sp-result>
 </template>
 
 <script>
-import {MyResult} from '$ui'
+import {spResult} from '$ui'
 export default {
   components: {
-    MyResult
+    spResult
   }
 }
 </script>

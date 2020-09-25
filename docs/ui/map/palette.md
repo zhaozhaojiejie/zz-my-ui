@@ -3,10 +3,10 @@
 :::demo
 ```html
 <template>
-  <my-map height="600px" :center="[106.011022, 37.237037]" :filter="model">
-    <my-map-palette @change="change"></my-map-palette>
-    <my-map-layers :layers="layers" placement="right-bottom" :margin="10"></my-map-layers>
-  </my-map>
+  <sp-map height="600px" :center="[106.011022, 37.237037]" :filter="model">
+    <sp-map-palette @change="change"></sp-map-palette>
+    <sp-map-layers :layers="layers" placement="right-bottom" :margin="10"></sp-map-layers>
+  </sp-map>
 </template>
 <script>
   import Baidu from '$ui/map/sources/preview/Baidu.png'

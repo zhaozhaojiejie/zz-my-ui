@@ -6,12 +6,12 @@
 
 ```html
 <template>
-    <my-map>  
-      <my-map-circle :center="[113.261999, 23.130592]"
+    <sp-map>  
+      <sp-map-circle :center="[113.261999, 23.130592]"
                      :radius="20000"
                      :styleFunction="styleFn"
-                      ></my-map-circle>
-    </my-map>
+                      ></sp-map-circle>
+    </sp-map>
 </template>
 <script>
 import parseStyle from '$ui/map/utils/style'

@@ -1,4 +1,4 @@
-import rules from '$my/code/rules'
+import rules from '$sp/code/rules'
 import mock from '$ui/utils/mock'
 
 rules.forEach(function (item) {

@@ -1,7 +1,7 @@
 # 3D旋转
 
 常用作人物额旋转展示。
-组件文档 <api-link href="components/my-revolve">MyRevolve</api-link>
+组件文档 <api-link href="components/sp-revolve">spRevolve</api-link>
 
 ## 基本用法
 
@@ -9,12 +9,12 @@
 ```html
 <template>
   <div class="box">
-    <my-revolve :data="data" :width="400" :height="500" auto></my-revolve>
+    <sp-revolve :data="data" :width="400" :height="500" auto></sp-revolve>
   </div>
 </template>
 
 <script>
-  import men from '$ui/components/my-revolve/men.js'
+  import men from '$ui/components/sp-revolve/men.js'
   export default {
     data() {
       return {
@@ -42,12 +42,12 @@
 ```html
 <template>
   <div class="box">
-    <my-revolve :data="data" :step="6" :wait="2000" auto></my-revolve>
+    <sp-revolve :data="data" :step="6" :wait="2000" auto></sp-revolve>
   </div>
 </template>
 
 <script>
-  import men from '$ui/components/my-revolve/men.js'
+  import men from '$ui/components/sp-revolve/men.js'
   export default {
     data() {
       return {
@@ -74,12 +74,12 @@
 ```html
 <template>
   <div class="box">
-    <my-revolve :data="data" manual></my-revolve>
+    <sp-revolve :data="data" manual></sp-revolve>
   </div>
 </template>
 
 <script>
-  import men from '$ui/components/my-revolve/men.js'
+  import men from '$ui/components/sp-revolve/men.js'
   export default {
     data() {
       return {

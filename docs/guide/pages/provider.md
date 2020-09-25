@@ -7,10 +7,10 @@ navbar: false
 :::demo
 ```html
 <template>
- <my-form @submit="submitHandler">
+ <sp-form @submit="submitHandler">
     id: {{params.id}}
-    <my-input name="content" label="消息内容"></my-input>
- </my-form>
+    <sp-input name="content" label="消息内容"></sp-input>
+ </sp-form>
 </template>
 
 <script>
@@ -35,7 +35,7 @@ export default {
   created() {
     this.messager = provider({
       name: 'ServiceName',
-      origin: '/my/bridge/index.html',
+      origin: '/sp/bridge/index.html',
       handler: (params, callback) => {
         this.params = params
         this.callbackFunc = callback

@@ -8,7 +8,7 @@
 :::demo
 ```html
 <template>
-  <my-container shadow>Container</my-container>
+  <sp-container shadow>Container</sp-container>
 </template>
 
 ```
@@ -19,12 +19,12 @@
 ```html
 <template>
   <div>
-      <my-container border>Container</my-container>
-      <my-container border theme="primary">Container</my-container>
-      <my-container border theme="success">Container</my-container>
-      <my-container border theme="warning">Container</my-container>
-      <my-container border theme="danger">Container</my-container>
-      <my-container border theme="info">Container</my-container>
+      <sp-container border>Container</sp-container>
+      <sp-container border theme="primary">Container</sp-container>
+      <sp-container border theme="success">Container</sp-container>
+      <sp-container border theme="warning">Container</sp-container>
+      <sp-container border theme="danger">Container</sp-container>
+      <sp-container border theme="info">Container</sp-container>
   </div>
 </template>
 
@@ -38,12 +38,12 @@
 ```html
 <template>
   <div>
-      <my-container shadow>Container</my-container>
-      <my-container shadow theme="primary">Container</my-container>
-      <my-container shadow theme="success">Container</my-container>
-      <my-container shadow theme="warning">Container</my-container>
-      <my-container shadow theme="danger">Container</my-container>
-      <my-container shadow theme="info">Container</my-container>
+      <sp-container shadow>Container</sp-container>
+      <sp-container shadow theme="primary">Container</sp-container>
+      <sp-container shadow theme="success">Container</sp-container>
+      <sp-container shadow theme="warning">Container</sp-container>
+      <sp-container shadow theme="danger">Container</sp-container>
+      <sp-container shadow theme="info">Container</sp-container>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 # Sidebar 侧边导航
 
 网站侧边栏导航条，文档：
-<api-link href="components/my-sidebar">MySidebar</api-link>
+<api-link href="components/sp-sidebar">spSidebar</api-link>
 
 ## 代码演示
 
@@ -10,12 +10,12 @@
 ```html
 <template>
   <div style="width:300px;">
-    <my-sidebar title="MyWeb" version="4.0" :menus="menus"></my-sidebar>
+    <sp-sidebar title="spWeb" version="4.0" :menus="menus"></sp-sidebar>
   </div>
 </template>
 
 <script>
-import {MySidebar} from '$ui'
+import {spSidebar} from '$ui'
 const mock = [
   {
     icon: 'el-icon-setting',
@@ -95,7 +95,7 @@ const mock = [
 ]
 export default {
   components: {
-    MySidebar
+    spSidebar
   },
   data() {
     return {
@@ -113,12 +113,12 @@ export default {
 ```html
 <template>
   <div style="width:300px;">
-    <my-sidebar :collapsible="true" :collapsed.sync="collapsed" title="MyWeb" :menus="menus"></my-sidebar>
+    <sp-sidebar :collapsible="true" :collapsed.sync="collapsed" title="spWeb" :menus="menus"></sp-sidebar>
   </div>
 </template>
 
 <script>
-import {MySidebar} from '$ui'
+import {spSidebar} from '$ui'
 const mock = [
   {
     icon: 'el-icon-setting',
@@ -198,7 +198,7 @@ const mock = [
 ]
 export default {
   components: {
-    MySidebar
+    spSidebar
   },
   data() {
     return {
@@ -226,13 +226,13 @@ export default {
     </el-radio-group>
   
     <div style="width:300px; margin-top:20px;">
-      <my-sidebar :theme="theme" :collapsible="true" :collapsed.sync="collapsed" title="MyWeb" :menus="menus"></my-sidebar>
+      <sp-sidebar :theme="theme" :collapsible="true" :collapsed.sync="collapsed" title="spWeb" :menus="menus"></sp-sidebar>
     </div>
   </div>
 </template>
 
 <script>
-import {MySidebar} from '$ui'
+import {spSidebar} from '$ui'
 const mock = [
   {
     icon: 'el-icon-setting',
@@ -312,7 +312,7 @@ const mock = [
 ]
 export default {
   components: {
-    MySidebar
+    spSidebar
   },
   data() {
     return {

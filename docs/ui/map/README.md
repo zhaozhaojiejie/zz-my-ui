@@ -4,29 +4,29 @@
 包含文本、图形、html、热力图、轨迹回放等20个组件，支持与ECharts结合实现散点、飞行迁徙等基于地理位置的图表，满足项目常见需求。
  使用者不需要有地图相关专业知识，甚至不需要写任何JS代码就能实现通用功能
 
-![架构图](/my/img/map/my-map.png)
+![架构图](/sp/img/map/sp-map.png)
 
 
 ## 预览
 
-![info](/my/img/map/2.jpg)
+![info](/sp/img/map/2.jpg)
 
-![info](/my/img/map/3.jpg)
+![info](/sp/img/map/3.jpg)
 
-![info](/my/img/map/4.jpg)
+![info](/sp/img/map/4.jpg)
 
-![info](/my/img/map/5.jpg)
+![info](/sp/img/map/5.jpg)
 
-![info](/my/img/map/6.jpg)
+![info](/sp/img/map/6.jpg)
 
-![info](/my/img/map/7.jpg)
+![info](/sp/img/map/7.jpg)
 
 
 ## 安装
 
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 ```sh 
-npm i @xdh/my --save
+npm i @xdh/sp --save
 ```
 
 ## 快速上手
@@ -37,7 +37,7 @@ npm i @xdh/my --save
 
 安装组件
 ```sh 
-npm i element-ui @xdh/my --save
+npm i element-ui @xdh/sp --save
 ```
 
 安装项目依赖插件
@@ -54,7 +54,7 @@ module.exports = {
     '@vue/cli-plugin-babel/preset'
   ],
   plugins: [
-    ...require('@xdh/my/core/babel.plugins')
+    ...require('@xdh/sp/core/babel.plugins')
   ]
 }
 ```
@@ -65,9 +65,9 @@ module.exports = {
 
 ```js 
 module.exports = {
-  transpileDependencies: ['@xdh/my'],
+  transpileDependencies: ['@xdh/sp'],
   chainWebpack(chain) {
-    chain.resolve.alias.set('$ui', '@xdh/my/ui/lib')
+    chain.resolve.alias.set('$ui', '@xdh/sp/ui/lib')
   }
 }
 ```
@@ -76,14 +76,14 @@ module.exports = {
 到此，你可以开始引入组件开始编码了，如：
 ```html 
 <template>
-  <my-map></my-map>
+  <sp-map></sp-map>
 </template>
 
 <script>
-  import {MyMap} from '$ui/map'
+  import {spMap} from '$ui/map'
   export default {
     components: {
-      MyMap
+      spMap
     }
   }
 </script>

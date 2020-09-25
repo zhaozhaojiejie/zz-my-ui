@@ -1,7 +1,7 @@
 # Avatars 头像列表
 
 一组用户头像，常用在项目/团队成员列表。可以设置尺寸，也可以限制最多显示数量。 
-组件文档 <api-link href="components/my-avatars">MyAvatars</api-link>
+组件文档 <api-link href="components/sp-avatars">spAvatars</api-link>
 
 ## 代码示例
 
@@ -9,7 +9,7 @@
 :::demo(avatars-1)
 ```html
 <template>
- <my-avatars :data="data" size="large"></my-avatars>
+ <sp-avatars :data="data" size="large"></sp-avatars>
 </template>
 <script>
 export default {
@@ -33,7 +33,7 @@ export default {
 :::demo(avatars-2)
 ```html
 <template>
- <my-avatars :data="data" :max="2" size="large"></my-avatars>
+ <sp-avatars :data="data" :max="2" size="large"></sp-avatars>
 </template>
 <script>
 export default {

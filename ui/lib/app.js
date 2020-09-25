@@ -1,7 +1,7 @@
 /**
  * 子应用
  */
-import {MyChildApp} from '$ui'
+import {spChildApp} from '$ui'
 import {
   Vue,
   Vuex,
@@ -122,7 +122,7 @@ export function createMicroApp({el, routes, config, store}) {
       })
       instance = new Vue({
         components: {
-          MyChildApp
+          spChildApp
         },
         provide() {
           return {
@@ -132,7 +132,7 @@ export function createMicroApp({el, routes, config, store}) {
         router,
         store,
         access,
-        render: h => h('my-child-app', {
+        render: h => h('sp-child-app', {
           props: uiConfig.scale
         })
       }).$mount(el)

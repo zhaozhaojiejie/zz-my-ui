@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <my-pro :fixed="setting.fixed"
+    <sp-pro :fixed="setting.fixed"
             :logo="logo"
             :title="title"
             :mode="setting.layout"
@@ -31,20 +31,20 @@
         <router-view v-if="$route.meta.keepAlive"></router-view>
       </keep-alive>
       <router-view v-if="!$route.meta.keepAlive"></router-view>
-    </my-pro>
+    </sp-pro>
   </div>
 </template>
 
 <script>
   import logo from '$ui/assets/logo.png'
-  import {MyPro} from '$ui'
-  import MockForExample from '$my/code/mixin/mock-for-example'
+  import {spPro} from '$ui'
+  import MockForExample from '$sp/code/mixin/mock-for-example'
 
-  const {IconAction, UserAction} = MyPro
+  const {IconAction, UserAction} = spPro
   export default {
     mixins: [MockForExample],
     components: {
-      MyPro,
+      spPro,
       IconAction,
       UserAction
     },
@@ -66,7 +66,7 @@
           invert: false
         },
         logo: logo,
-        title: 'MyUI Pro',
+        title: 'spUI Pro',
         menus: [],
         dropdown: [
           {
@@ -124,8 +124,8 @@
       // 页面标题构建函数，可根据匹配的路由返回响应的标题名称
       createDocumentTitle(matched) {
         return matched.meta.title
-          ? `${matched.meta.title} - MyWeb 4.x`
-          : 'MyWeb 4.x'
+          ? `${matched.meta.title} - spWeb 4.x`
+          : 'spWeb 4.x'
       },
       handleUserCommand(cmd) {
         switch (cmd) {
@@ -177,7 +177,7 @@
         }
       },
       handleInfo() {
-        window.location.href = 'http://newgateway.gitee.io/my/'
+        window.location.href = 'http://newgateway.gitee.io/sp/'
       }
     },
     created() {

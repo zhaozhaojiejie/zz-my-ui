@@ -1,6 +1,6 @@
 # Panel 面板容器
 
-Panel(面板)是一个容器，它具有特定的功能和结构部件，这使它成为面向应用用户界面的完美基石。<api-link href="components/my-panel">my-panel</api-link> 文档
+Panel(面板)是一个容器，它具有特定的功能和结构部件，这使它成为面向应用用户界面的完美基石。<api-link href="components/sp-panel">sp-panel</api-link> 文档
 
 ## 何时使用
 
@@ -13,9 +13,9 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 :::demo
 ```html
 <template>
- <my-panel title="容器标题">
+ <sp-panel title="容器标题">
     我是内容
- </my-panel>
+ </sp-panel>
 </template>
 
 ```
@@ -28,10 +28,10 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 :::demo
 ```html
 <template>
- <my-panel icon="el-icon-menu">
+ <sp-panel icon="el-icon-menu">
    <template v-slot:title>我是插槽定义的标题</template>
     我是内容
- </my-panel>
+ </sp-panel>
 </template>
 ```
 :::
@@ -43,19 +43,19 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 <template>
  <el-row :gutter="20">
     <el-col :span="8">
-       <my-panel title="容器标题" shadow="always">
+       <sp-panel title="容器标题" shadow="always">
           always
-       </my-panel>
+       </sp-panel>
     </el-col>
     <el-col :span="8">
-       <my-panel title="容器标题" shadow="hover">
+       <sp-panel title="容器标题" shadow="hover">
           hover
-       </my-panel>
+       </sp-panel>
     </el-col>
     <el-col :span="8">
-       <my-panel title="容器标题" shadow="never">
+       <sp-panel title="容器标题" shadow="never">
           never
-       </my-panel>
+       </sp-panel>
     </el-col>
  </el-row>
 
@@ -73,37 +73,37 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
   <div>
    <el-row :gutter="20">
       <el-col :span="8">
-         <my-panel title="容器标题" icon="el-icon-menu">
+         <sp-panel title="容器标题" icon="el-icon-menu">
             默认风格
             <template v-slot:footer>底部</template>
-         </my-panel>
+         </sp-panel>
       </el-col>
       <el-col :span="8">
-         <my-panel title="容器标题" theme="background" icon="el-icon-menu">
+         <sp-panel title="容器标题" theme="background" icon="el-icon-menu">
             头部加背景
             <template v-slot:footer>底部</template>
-         </my-panel>
+         </sp-panel>
       </el-col>
       <el-col :span="8">
-         <my-panel title="容器标题" theme="border-top" icon="el-icon-menu">
+         <sp-panel title="容器标题" theme="border-top" icon="el-icon-menu">
             顶部加边框
             <template v-slot:footer>底部</template> 
-         </my-panel>
+         </sp-panel>
       </el-col>
 
    </el-row>
    <el-row :gutter="20">
       <el-col :span="8">
-         <my-panel title="容器标题" theme="border-left">
+         <sp-panel title="容器标题" theme="border-left">
             标题左边框
             <template v-slot:footer>底部</template> 
-         </my-panel>
+         </sp-panel>
       </el-col>
       <el-col :span="8">
-         <my-panel title="容器标题" theme="flag" icon="el-icon-menu">
+         <sp-panel title="容器标题" theme="flag" icon="el-icon-menu">
             标题标志
             <template v-slot:footer>底部</template> 
-         </my-panel>
+         </sp-panel>
       </el-col>
    </el-row>
   </div>
@@ -111,7 +111,7 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 
 
 <style lang="scss" scoped>
-.my-panel {
+.sp-panel {
   margin-top: 20px;
 }
 </style>
@@ -126,36 +126,36 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 <template>
  <el-row :gutter="20">
     <el-col :span="6">
-       <my-panel title="容器标题" size="large">
+       <sp-panel title="容器标题" size="large">
           大尺寸
           <template v-slot:footer>
              <el-button type="primary">确定</el-button>
           </template> 
-       </my-panel>
+       </sp-panel>
     </el-col>
     <el-col :span="6">
-       <my-panel title="容器标题">
+       <sp-panel title="容器标题">
           默认
           <template v-slot:footer>
              <el-button type="primary" size="medium">确定</el-button>
           </template>  
-       </my-panel>
+       </sp-panel>
     </el-col>
     <el-col :span="6">
-       <my-panel title="容器标题" size="medium">
+       <sp-panel title="容器标题" size="medium">
           中
           <template v-slot:footer>
              <el-button type="primary" size="small">确定</el-button>
           </template> 
-       </my-panel>
+       </sp-panel>
     </el-col>
     <el-col :span="6">
-       <my-panel title="容器标题" size="small">
+       <sp-panel title="容器标题" size="small">
           小
           <template v-slot:footer>
              <el-button type="primary" size="mini">确定</el-button>
           </template> 
-       </my-panel>
+       </sp-panel>
     </el-col>
  </el-row>
 
@@ -171,13 +171,13 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 ```html
 <template>
   <div class="box">
-   <my-panel title="容器标题" icon="el-icon-menu" fit>
+   <sp-panel title="容器标题" icon="el-icon-menu" fit>
       <p v-for="n in 20" :key="n"> 占位文字 </p>
       <template v-slot:footer>
          <el-button size="small" type="primary">提交</el-button>
          <el-button size="small">取消</el-button>
       </template>
-   </my-panel>
+   </sp-panel>
    </div>
 </template>
 
@@ -198,9 +198,9 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 :::demo
 ```html
 <template>
- <my-panel title="容器标题" icon="el-icon-menu" :border="false" shadow="never">
+ <sp-panel title="容器标题" icon="el-icon-menu" :border="false" shadow="never">
     我是内容
- </my-panel>
+ </sp-panel>
 </template>
 
 
@@ -214,30 +214,30 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 <template>
  <el-row :gutter="20">
     <el-col :span="8">
-       <my-panel title="容器标题" footer-align="left">
+       <sp-panel title="容器标题" footer-align="left">
 
       <template v-slot:footer>
          <el-button size="small" type="primary">提交</el-button>
          <el-button size="small">取消</el-button>
       </template>
           
-       </my-panel>
+       </sp-panel>
     </el-col>
     <el-col :span="8">
-       <my-panel title="容器标题" footer-align="center">
+       <sp-panel title="容器标题" footer-align="center">
         <template v-slot:footer>
            <el-button size="small" type="primary">提交</el-button>
            <el-button size="small">取消</el-button>
         </template>
-       </my-panel>
+       </sp-panel>
     </el-col>
     <el-col :span="8">
-       <my-panel title="容器标题" footer-align="right">
+       <sp-panel title="容器标题" footer-align="right">
           <template v-slot:footer>
              <el-button size="small" type="primary">提交</el-button>
              <el-button size="small">取消</el-button>
           </template>
-       </my-panel>
+       </sp-panel>
     </el-col>
  </el-row>
 
@@ -253,14 +253,14 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 ```html
 <template>
   <div>
-   <my-panel title="容器标题" theme="border-top">
+   <sp-panel title="容器标题" theme="border-top">
      <template v-slot:handle>
        <el-button type="text">MORE</el-button>
      </template>
       我是内容
-   </my-panel>
+   </sp-panel>
    
-   <my-panel title="容器标题" theme="border-left">
+   <sp-panel title="容器标题" theme="border-left">
      <template v-slot:handle>
       <el-button-group>
         <el-button type="primary" icon="el-icon-edit"  size="small"></el-button>
@@ -269,9 +269,9 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
       </el-button-group>
      </template>
       我是内容
-   </my-panel>
+   </sp-panel>
    
-   <my-panel title="容器标题" theme="flag">
+   <sp-panel title="容器标题" theme="flag">
      <template v-slot:handle>
         <el-pagination
           small
@@ -280,14 +280,14 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
         </el-pagination>
      </template>
       我是内容
-   </my-panel>
+   </sp-panel>
    
   </div>
 </template>
 
 
 <style lang="scss" scoped>
-.my-panel {
+.sp-panel {
   margin-bottom: 2rem;
 }
 </style>
@@ -298,7 +298,7 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
 :::demo
 ```html
 <template>
- <my-panel :tabs="tabs">
+ <sp-panel :tabs="tabs">
     <template v-slot:tab1> Tab1 Content</template>
     <template v-slot:tab2> Tab2 Content</template>
     <template v-slot:tab3> Tab3 Content</template>
@@ -309,7 +309,7 @@ Panel可以包含底部和顶部的工具栏，以及独立的页眉，页脚和
         <el-button icon="el-icon-delete" size="mini"></el-button>
       </el-button-group>
      </template>
- </my-panel>
+ </sp-panel>
 </template>
 
 <script>
@@ -334,9 +334,9 @@ export default {
 :::demo
 ```html
 <template>
- <my-panel title="容器标题" :actions="actions" @action="handleAction">
+ <sp-panel title="容器标题" :actions="actions" @action="handleAction">
     我是内容
- </my-panel>
+ </sp-panel>
 </template>
 
 <script>
@@ -371,9 +371,9 @@ export default {
 :::demo
 ```html
 <template>
- <my-panel title="容器标题">
-    <my-corner-mark>角标</my-corner-mark>
- </my-panel>
+ <sp-panel title="容器标题">
+    <sp-corner-mark>角标</sp-corner-mark>
+ </sp-panel>
 </template>
 
 ```

@@ -10,27 +10,27 @@
  *
  *     config.module.rule('vue')
  *                 .use('el-loader')
- *                 .loader(utils.resolve('.my/core/loaders/el-loader.js'))
+ *                 .loader(utils.resolve('.sp/core/loaders/el-loader.js'))
  *
  */
 
 const compiler = require('vue-template-compiler')
 const utils = require('../utils')
 const elTagRegex = /<el-[\w-]+/g
-const myTagRegex = /<my-[\w-]+/g
+const spTagRegex = /<sp-[\w-]+/g
 
 /**
  * 注入 依赖ElementUI组件的代码
  * @param {string|NULL} code 原本的js代码
  * @param {array} elTags 模板里包含的element-ui组件
- * @param {array} myTags 模板里包含的my组件
+ * @param {array} spTags 模板里包含的sp组件
  * @param {string}  theme 主题名称
  * @return {string} 注入后的代码
  */
-function injectCode(code = null, elTags = [], myTags = [], theme) {
+function injectCode(code = null, elTags = [], spTags = [], theme) {
   // 不同组件加载css的顺序不一致，mini-css-extract-plugin 会发出警告，需要做统一排序
   elTags.sort()
-  myTags.sort()
+  spTags.sort()
   const elImport = elTags.length
     ? `import {${elTags.map(t => t + ' as __' + t + '__').join(',')}} from 'element-ui';`
     : '';
@@ -39,40 +39,40 @@ function injectCode(code = null, elTags = [], myTags = [], theme) {
     ? `${elTags.map(t => '__vue__.use(__' + t + '__)').join(';\n')}`
     : '';
   
-  const myCharts = myTags.filter(tag => tag.includes('MyChart'))
-  const myMaps = myTags.filter(tag => tag.includes('MyMap'))
-  const myGos = myTags.filter(tag => tag.includes('MyGo'))
-  const myComponents = myTags.filter(tag => !myCharts.includes(tag) && !myMaps.includes(tag) && !myGos.includes(tag))
+  const spCharts = spTags.filter(tag => tag.includes('spChart'))
+  const spMaps = spTags.filter(tag => tag.includes('spMap'))
+  const spGos = spTags.filter(tag => tag.includes('spGo'))
+  const spComponents = spTags.filter(tag => !spCharts.includes(tag) && !spMaps.includes(tag) && !spGos.includes(tag))
   
-  const myComponentsImport = myComponents.length
-    ? `import {${myComponents.map(t => t + ' as __' + t + '__').join(',')}} from '$ui';`
+  const spComponentsImport = spComponents.length
+    ? `import {${spComponents.map(t => t + ' as __' + t + '__').join(',')}} from '$ui';`
     : '';
-  const myChartsImport = myCharts.length
-    ? `import {${myCharts.map(t => t + ' as __' + t + '__').join(',')}} from '$ui/charts';`
-    : '';
-  
-  const myMapsImport = myMaps.length
-    ? `import {${myMaps.map(t => t + ' as __' + t + '__').join(',')}} from '$ui/map';`
+  const spChartsImport = spCharts.length
+    ? `import {${spCharts.map(t => t + ' as __' + t + '__').join(',')}} from '$ui/charts';`
     : '';
   
-  const myGosImport = myGos.length
-    ? `import {${myGos.map(t => t + ' as __' + t + '__').join(',')}} from '$ui/go';`
+  const spMapsImport = spMaps.length
+    ? `import {${spMaps.map(t => t + ' as __' + t + '__').join(',')}} from '$ui/map';`
+    : '';
+  
+  const spGosImport = spGos.length
+    ? `import {${spGos.map(t => t + ' as __' + t + '__').join(',')}} from '$ui/go';`
     : '';
 
-  const myUse = myTags.length
-    ? `${myTags.map(t => '__vue__.use(__' + t + '__)').join(';\n')}`
+  const spUse = spTags.length
+    ? `${spTags.map(t => '__vue__.use(__' + t + '__)').join(';\n')}`
     : '';
   
   return `
      import __vue__ from 'vue';
      ${elImport}
-     ${myComponentsImport}
-     ${myChartsImport}
-     ${myMapsImport}
-     ${myGosImport}
+     ${spComponentsImport}
+     ${spChartsImport}
+     ${spMapsImport}
+     ${spGosImport}
      ${code || 'export default {};'}
      ${elUse}
-     ${myUse}
+     ${spUse}
     `
 }
 
@@ -105,10 +105,10 @@ module.exports = function (source) {
   
   let elTags = vue.template.content.match(elTagRegex) || []
   
-  let myTags = vue.template.content.match(myTagRegex) || []
+  let spTags = vue.template.content.match(spTagRegex) || []
   
-  // 没有 my 和 el 组件，不需要处理
-  if (elTags.length === 0 && myTags.length === 0) {
+  // 没有 sp 和 el 组件，不需要处理
+  if (elTags.length === 0 && spTags.length === 0) {
     return source
   }
   
@@ -119,25 +119,25 @@ module.exports = function (source) {
     elTags = [...new Set(elTags)].map(tag => utils.upperFirst(utils.camelCase(tag)))
   }
   
-  if (myTags.length) {
-    // 匹配到my组件名称去掉<符号，并转换成大写开头的驼峰式
-    myTags = myTags.map(item => item.replace('<', ''))
+  if (spTags.length) {
+    // 匹配到sp组件名称去掉<符号，并转换成大写开头的驼峰式
+    spTags = spTags.map(item => item.replace('<', ''))
     // 去重 并 转换成大小开头的驼峰
-    myTags = [...new Set(myTags)].map(tag => utils.upperFirst(utils.camelCase(tag)))
+    spTags = [...new Set(spTags)].map(tag => utils.upperFirst(utils.camelCase(tag)))
   }
   
   
   // 源码有script块，注入的代码替换script的内容
   if (vue.script) {
     const code = source.substring(vue.script.start, vue.script.end).trim()
-    const scriptContent = injectCode(code, elTags, myTags, theme)
+    const scriptContent = injectCode(code, elTags, spTags, theme)
     return replaceScript(source, vue.script.start, vue.script.end, scriptContent)
   } else {
     // 源码没有script块，追加注入内容
     return `
      ${source}
      <script>
-     ${injectCode(null, elTags, myTags, theme)}
+     ${injectCode(null, elTags, spTags, theme)}
      </script>
      `
   }

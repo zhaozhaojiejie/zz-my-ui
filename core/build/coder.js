@@ -289,7 +289,7 @@ function writeMock(json) {
   const dbConfig = [], extendsArray = [];
   _.each(json, function (model, name) {
     const kebabCaseName = toKebabCase(name)
-    dbConfig.push(`import ${name} from '$my/code/mock/${kebabCaseName}'`)
+    dbConfig.push(`import ${name} from '$sp/code/mock/${kebabCaseName}'`)
     extendsArray.push(`...${name}`)
     const mocks = []
     let importApiArray = [], templateArray = []
@@ -403,7 +403,7 @@ function writeStore(json, info) {
     if (!info[name].vuex) {
       return
     }
-    modules.push(`import {${name}} from '$my/code/store/${toKebabCase(name)}'`)
+    modules.push(`import {${name}} from '$sp/code/store/${toKebabCase(name)}'`)
     extendsArray.push(name)
     
     let importTypeArray = [],
@@ -463,7 +463,7 @@ function writeStore(json, info) {
   writeFile(config.outStoreType, 'modules', modules.join('\n') + '\n')
 }
 
-function getMyIconData() {
+function getspIconData() {
   const content = fs.readFileSync(config.iconCssFile, {encoding: 'utf-8'})
   const regex = /.icon-[\w-_]+:/g
   const matches = content.match(regex)
@@ -481,7 +481,7 @@ function writeIconData() {
     return item.replace('.el-', 'el-').replace(':', '')
   })
   
-  const items = getMyIconData()
+  const items = getspIconData()
   
   const fileContent = iconsRender({items: stringify(items), elItems: stringify(elItems)})
   fs.writeFileSync(config.outIconFile,

@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <my-pro :menus="menus"
+    <sp-pro :menus="menus"
             :mode="mode"
             :navbar-theme="navbarTheme"
             :sidebar-theme="sidebarTheme"
@@ -17,10 +17,10 @@
         <IconAction icon="icon-poweroff" svg></IconAction>
       </template>
 
-      <my-wrapper title="参数设置"
+      <sp-wrapper title="参数设置"
                   sub-title="子标题说明文字">
 
-        <my-container>
+        <sp-container>
           <el-form ref="form" label-width="100px" size="small" style="padding: 20px">
 
             <el-form-item label="导航模式">
@@ -78,18 +78,18 @@
 
           </el-form>
           <div v-if="scrollEnabled" style="height: 1000px"></div>
-        </my-container>
+        </sp-container>
 
-      </my-wrapper>
-    </my-pro>
+      </sp-wrapper>
+    </sp-pro>
   </ClientOnly>
 </template>
 
 <script>
-  import {MyPro} from '$ui'
+  import {spPro} from '$ui'
   import '$ui/icons/poweroff'
 
-  const {IconAction, UserAction} = MyPro
+  const {IconAction, UserAction} = spPro
   const mock = [
     {
       icon: 'el-icon-setting',
@@ -175,7 +175,7 @@
   ]
   export default {
     components: {
-      MyPro,
+      spPro,
       IconAction,
       UserAction
     },

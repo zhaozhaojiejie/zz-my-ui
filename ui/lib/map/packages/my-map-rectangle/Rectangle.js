@@ -1,12 +1,12 @@
 /**
  * 矩形图形组件
- * @module $ui/map/my-map-rectangle
+ * @module $ui/map/sp-map-rectangle
  */
 import featureMixin from '../../mixins/feature'
 import Polygon from 'ol/geom/Polygon'
 
 export default {
-  name: 'MyMapRectangle',
+  name: 'spMapRectangle',
   mixins: [featureMixin],
   /**
    * 属性参数, 继承 [$ui/map/mixins/feature]{@link module:$ui/map/mixins/feature}

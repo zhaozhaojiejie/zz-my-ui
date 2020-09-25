@@ -2,34 +2,34 @@
 title: 搜索列表（项目）
 ---
 <template>
-  <my-wrapper title="搜索列表">
-    <my-container>
-      <my-form :model="query"
+  <sp-wrapper title="搜索列表">
+    <sp-container>
+      <sp-form :model="query"
                size="small"
                label-width="100px"
                :footer="null"
                inline
                @change="handleChange">
-        <my-tag-select label="所属类目："
+        <sp-tag-select label="所属类目："
                        name="tag"
                        width="100%"
                        :options="tags"
-                       :props="{multiple:true, checkAll:true, collapsible:true}"></my-tag-select>
-        <my-select label="作者："
+                       :props="{multiple:true, checkAll:true, collapsible:true}"></sp-tag-select>
+        <sp-select label="作者："
                    name="owner"
                    width="calc(50% - 20px)"
                    :loader="optionLoader"
                    :key-map="{label:'name',value:'id'}"
-                   :props="{multiple:true,  collapseTags:true}"></my-select>
-        <my-range label="日期："
+                   :props="{multiple:true,  collapseTags:true}"></sp-select>
+        <sp-range label="日期："
                   name="date"
                   mode="date"
                   width="calc(50% - 20px)"
-                  :props="{valueFormat:'yyyy-MM-dd'}"></my-range>
-      </my-form>
-    </my-container>
+                  :props="{valueFormat:'yyyy-MM-dd'}"></sp-range>
+      </sp-form>
+    </sp-container>
 
-    <my-card-list ref="list"
+    <sp-card-list ref="list"
                   class="card-list"
                   :loader="loader"
                   :columns="{xs:1,sm:1,md:2,lg:3,xl:4,xxl:6}"
@@ -38,28 +38,28 @@ title: 搜索列表（项目）
                shadow="hover"
                :body-style="{padding:0}">
         <el-image :src="item.avatar" style="height: 180px; width:100%" fit="cover"></el-image>
-        <my-container>
-          <my-title :level="4">{{item.name}}</my-title>
-          <my-paragraph ellipsis :rows="2">{{item.info}}</my-paragraph>
-          <my-float>
-            <my-float-item>
-              <my-text type="secondary">{{item.date}}</my-text>
-            </my-float-item>
-            <my-float-item float="right">
+        <sp-container>
+          <sp-title :level="4">{{item.name}}</sp-title>
+          <sp-paragraph ellipsis :rows="2">{{item.info}}</sp-paragraph>
+          <sp-float>
+            <sp-float-item>
+              <sp-text type="secondary">{{item.date}}</sp-text>
+            </sp-float-item>
+            <sp-float-item float="right">
               <el-link :underline="false"><i class="el-icon-star-off"></i>
                 {{item.views}}
               </el-link>
-            </my-float-item>
-          </my-float>
-        </my-container>
+            </sp-float-item>
+          </sp-float>
+        </sp-container>
       </el-card>
-    </my-card-list>
+    </sp-card-list>
 
-  </my-wrapper>
+  </sp-wrapper>
 </template>
 
 <script>
-  import MockForExample from '$my/code/mixin/mock-for-example'
+  import MockForExample from '$sp/code/mixin/mock-for-example'
 
   export default {
     mixins: [MockForExample],

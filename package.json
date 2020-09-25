@@ -1,5 +1,5 @@
 {
-  "name": "@xdh/my",
+  "name": "@xdh/sp",
   "version": "1.0.0",
   "keywords": [
     "ElementUI",
@@ -23,26 +23,26 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "color": "node bin/my color",
-    "fix": "node bin/my  fix",
-    "coder": "node bin/my coder",
-    "svg": "node bin/my svg",
-    "theme": "node bin/my theme",
-    "ready": "node bin/my ready",
-    "route": "node bin/my route",
+    "color": "node bin/sp color",
+    "fix": "node bin/sp  fix",
+    "coder": "node bin/sp coder",
+    "svg": "node bin/sp svg",
+    "theme": "node bin/sp theme",
+    "ready": "node bin/sp ready",
+    "route": "node bin/sp route",
     "dev": "npm run ready && concurrently \"npm run serve -- --open\" \"npm run route watch\"",
     "build": "npm run ready force && npm run route build && npm run theme prod && vue-cli-service build",
-    "preview": "node bin/my preview",
-    "demo": "node bin/my demo",
-    "jsdoc": "node bin/my jsdoc",
+    "preview": "node bin/sp preview",
+    "demo": "node bin/sp demo",
+    "jsdoc": "node bin/sp jsdoc",
     "lint": "vue-cli-service lint && vue-cli-service lint ui/**/*.vue && vue-cli-service lint ui/**/*.js && vue-cli-service lint core/**/*.js",
     "test": "vue-cli-service test:unit",
     "dev:docs": "npm run ready && npm run demo && npm run jsdoc && node --max_old_space_size=8096 node_modules/vuepress/cli.js dev docs",
     "build:docs": "npm run ready && npm run demo && npm run jsdoc && node --max_old_space_size=8096 node_modules/vuepress/cli.js build docs",
-    "start": "node bin/my start",
-    "bridge": "node bin/my bridge",
-    "app": "node bin/my app",
-    "page": "node bin/my page",
+    "start": "node bin/sp start",
+    "bridge": "node bin/sp bridge",
+    "app": "node bin/sp app",
+    "page": "node bin/sp page",
     "release": "npm run svg && npm run lint && npm run build && npm run build:docs",
     "deploy:major": "npm version major && npm publish --access public",
     "deploy:minor": "version minor && npm publish --access public",
@@ -52,13 +52,13 @@
     "node": ">=10"
   },
   "bin": {
-    "my": "bin/my.js"
+    "sp": "bin/sp.js"
   },
   "repository": {
     "type": "git",
     "url": "http://172.16.0.25/potato-chips/sp-ui.git"
   },
-  "homepage": "http://newgateway.gitee.io/my/",
+  "homepage": "http://newgateway.gitee.io/sp/",
   "author": "shupiankeji",
   "license": "MIT",
   "dependencies": {
@@ -175,7 +175,7 @@
     "**/icons/iconfont.js",
     "**/templates/jsdoc/**/*.js",
     "**/charts/themes/**/*.js",
-    "ui/lib/components/my-tag-canvas/src/tagcanvas.js"
+    "ui/lib/components/sp-tag-canvas/src/tagcanvas.js"
   ],
   "postcss": {
     "plugins": {

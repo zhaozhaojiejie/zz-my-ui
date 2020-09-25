@@ -1,6 +1,6 @@
 /**
  * 聚合组件
- * @module $ui/map/my-map-cluster
+ * @module $ui/map/sp-map-cluster
  */
 import Point from 'ol/geom/Point';
 import Feature from 'ol/Feature';
@@ -32,7 +32,7 @@ const defaultStyleCreator = config => {
 }
 
 export default {
-  name: 'MyMapCluster',
+  name: 'spMapCluster',
   inject: ['myMap'],
   render(h) {
     const children = this.$slots.default

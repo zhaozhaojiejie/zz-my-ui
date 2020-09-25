@@ -1,6 +1,6 @@
 # Capture 抓屏工具
 
-抓屏工具 文档 <api-link href="components/my-capture"> MyCapture </api-link>
+抓屏工具 文档 <api-link href="components/sp-capture"> spCapture </api-link>
 
 ## 基础用法
 
@@ -11,7 +11,7 @@
   <div>
     <h1> hello world </h1>
     <p>capture控件默认以document.body作为目标dom进行截图</p>
-    <my-capture></my-capture>
+    <sp-capture></sp-capture>
   </div>
 </template>
 
@@ -46,12 +46,12 @@ export default {
         <li v-for="i in 60" :key="i">{{i}}</li>
       </ul>
     </div>
-    <my-capture :dom="targetDom" 
+    <sp-capture :dom="targetDom" 
       @on-capture="startCapHandle"
       :before-capture="beforeCaptureHandle"
       @on-output="successHandle" :options="options">
       <el-button slot="button" type="primary" :loading="loading" :disabled="loading">列表截图</el-button>
-    </my-capture>
+    </sp-capture>
   </div>
 </template>
 

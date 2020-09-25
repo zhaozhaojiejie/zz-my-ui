@@ -2,11 +2,11 @@
 title: 树结构列表
 ---
 <template>
-  <my-wrapper title="树结构列表">
+  <sp-wrapper title="树结构列表">
     <template v-slot:extra>对树结构数据进行维护管理</template>
     <el-row :gutter="14">
       <el-col :span="8" :xs="24">
-        <my-panel theme="border-left" shadow="never" title="组织机构">
+        <sp-panel theme="border-left" shadow="never" title="组织机构">
           <el-tree ref="tree"
                    v-treeConnect
                    lazy
@@ -17,12 +17,12 @@ title: 树结构列表
                    :default-expanded-keys="expandedKeys"
                    :current-node-key="0"
                    @current-change="handleCurrentChange"></el-tree>
-        </my-panel>
+        </sp-panel>
       </el-col>
       <el-col :span="16" :xs="24">
-        <my-panel theme="border-left" shadow="never">
+        <sp-panel theme="border-left" shadow="never">
           <template v-slot:title>
-            <my-text type="secondary">当前节点：</my-text>
+            <sp-text type="secondary">当前节点：</sp-text>
             <el-tag size="small">{{currentTitle}}</el-tag>
           </template>
 
@@ -31,22 +31,22 @@ title: 树结构列表
             <el-button size="mini" icon="el-icon-bottom-right">迁移</el-button>
             <el-button size="mini" icon="el-icon-delete">批量删除</el-button>
           </template>
-          <my-table v-loading.body="loading" border stripe size="medium" :columns="columns"
+          <sp-table v-loading.body="loading" border stripe size="medium" :columns="columns"
                     :data="tableData">
             <template v-slot:handle>
               <el-link type="primary">编辑</el-link>
               <el-divider direction="vertical"></el-divider>
               <el-link type="primary">删除</el-link>
             </template>
-          </my-table>
-        </my-panel>
+          </sp-table>
+        </sp-panel>
       </el-col>
     </el-row>
-  </my-wrapper>
+  </sp-wrapper>
 </template>
 
 <script>
-  import MockForExample from '$my/code/mixin/mock-for-example'
+  import MockForExample from '$sp/code/mixin/mock-for-example'
   import treeConnect from '$ui/directives/tree-connect'
 
   export default {

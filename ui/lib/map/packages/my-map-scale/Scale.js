@@ -1,11 +1,11 @@
 /**
  * 比例尺 组件
- * @module $ui/map/my-map-scale
+ * @module $ui/map/sp-map-scale
  */
 import {ScaleLine} from 'ol/control'
 
 export default {
-  name: 'MyMapScale',
+  name: 'spMapScale',
   inject: ['myMap'],
   render() {
     return null

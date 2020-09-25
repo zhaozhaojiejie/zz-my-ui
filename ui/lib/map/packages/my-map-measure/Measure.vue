@@ -10,35 +10,35 @@
              manual>
     </MapDraw>
 
-    <my-map-html v-for="(item, index) in measures"
+    <sp-map-html v-for="(item, index) in measures"
                  :key="index"
-                 class="my-map-measure__tip"
+                 class="sp-map-measure__tip"
                  :class="`is-${theme}`"
                  positioning="bottom-center"
                  :position="item.position"
                  :offset="[0, -7]">
       <span v-html="item.content"></span>
-      <i @click="handleDelete(item, index)" class="my-map-measure__delete el-icon-delete"></i>
-    </my-map-html>
+      <i @click="handleDelete(item, index)" class="sp-map-measure__delete el-icon-delete"></i>
+    </sp-map-html>
 
-    <my-map-html v-if="helpTipPosition && !disabled"
-                 class="my-map-measure__help"
+    <sp-map-html v-if="helpTipPosition && !disabled"
+                 class="sp-map-measure__help"
                  :class="`is-${theme}`"
                  ref="helpTooltip"
                  :offset="[15, 0]"
                  positioning="center-left"
                  :position="helpTipPosition">
       {{helpTip}}
-    </my-map-html>
+    </sp-map-html>
 
-    <my-map-html v-if="measureTipPosition"
-                 class="my-map-measure__tip"
+    <sp-map-html v-if="measureTipPosition"
+                 class="sp-map-measure__tip"
                  :class="`is-${theme}`"
                  :position="measureTipPosition"
                  :offset="[0,-15]"
                  positioning="bottom-center">
       <span v-html="measureTip"></span>
-    </my-map-html>
+    </sp-map-html>
   </div>
 </template>
 
@@ -46,9 +46,9 @@
 
   /**
    * 测量组件
-   * @module $ui/map/my-map-measure
+   * @module $ui/map/sp-map-measure
    */
-  import MapDraw from '../my-map-draw'
+  import MapDraw from '../sp-map-draw'
   import {getArea, getLength} from 'ol/sphere'
   import {unByKey} from 'ol/Observable'
 
@@ -70,7 +70,7 @@
   }
 
   export default {
-    name: 'MyMapMeasure',
+    name: 'spMapMeasure',
     inject: ['myMap'],
     components: {
       MapDraw

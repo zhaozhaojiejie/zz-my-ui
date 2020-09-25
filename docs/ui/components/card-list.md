@@ -1,14 +1,14 @@
 # CardList 卡片列表
 
-卡片形式的数据展示列表，支持分页。文档 <api-link href="components/my-card-list">MyCardList</api-link> 
+卡片形式的数据展示列表，支持分页。文档 <api-link href="components/sp-card-list">spCardList</api-link> 
 
 ## 基础用法
 :::demo
 ```html
 <template>
-  <my-card-list :data="data" :columns="3">
+  <sp-card-list :data="data" :columns="3">
     <el-card slot-scope="{item}">{{item}}</el-card>
-  </my-card-list>
+  </sp-card-list>
 </template>
 <script>
   export default {
@@ -41,9 +41,9 @@
 :::demo
 ```html
 <template>
-  <my-card-list :data="data" :columns="columns">
+  <sp-card-list :data="data" :columns="columns">
     <el-card slot-scope="{item}">{{item}}</el-card>
-  </my-card-list>
+  </sp-card-list>
 </template>
 <script>
   export default {
@@ -71,12 +71,12 @@
 :::demo
 ```html
 <template>
-  <my-card-list :loader="load"
+  <sp-card-list :loader="load"
                 :columns="columns"
                 pager
                 :page-size="pageSize">
     <el-card slot-scope="{item}">{{item}}</el-card>
-  </my-card-list>
+  </sp-card-list>
 </template>
 <script>
   export default {

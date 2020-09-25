@@ -1,12 +1,12 @@
 /**
  * 多边形覆盖物组件
- * @module $ui/map/my-map-polygon
+ * @module $ui/map/sp-map-polygon
  */
 import featureMixin from '../../mixins/feature'
 import Polygon from 'ol/geom/Polygon'
 
 export default {
-  name: 'MyMapPolygon',
+  name: 'spMapPolygon',
   mixins: [featureMixin],
   /**
    * 属性参数, 继承 [$ui/map/mixins/feature]{@link module:$ui/map/mixins/feature}

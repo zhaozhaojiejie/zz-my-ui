@@ -1,6 +1,6 @@
 /**
  * 地图基础图层组件
- * @module $ui/map/my-map
+ * @module $ui/map/sp-map
  *
  */
 import Map from 'ol/Map'
@@ -14,7 +14,7 @@ import {createLayer} from '../../utils/layer'
 import {addResizeListener, removeResizeListener} from 'element-ui/lib/utils/resize-event'
 
 export default {
-  name: 'MyMap',
+  name: 'spMap',
   provide() {
     return {
       myMap: this
@@ -111,8 +111,8 @@ export default {
   computed: {
     classes() {
       return {
-        'my-map': true,
-        'my-map--invert': this.invert
+        'sp-map': true,
+        'sp-map--invert': this.invert
       }
     },
     styles() {

@@ -2,8 +2,8 @@
 title: 标准列表
 ---
 <template>
-  <my-wrapper title="标准列表" fit>
-    <my-container class="data-stat" :border="false">
+  <sp-wrapper title="标准列表" fit>
+    <sp-container class="data-stat" :border="false">
       <el-row>
         <el-col :span="8">
           <span class="title">我的代办</span>
@@ -18,9 +18,9 @@ title: 标准列表
           <span class="info">24个任务</span>
         </el-col>
       </el-row>
-    </my-container>
-    <my-container :border="false">
-      <my-table ref="table"
+    </sp-container>
+    <sp-container :border="false">
+      <sp-table ref="table"
                 toolbar
                 stripe
                 title="基本列表"
@@ -28,18 +28,18 @@ title: 标准列表
                 :loader="loader"
                 :show-header="false">
         <template v-slot:actions>
-          <my-form class="filter-form"
+          <sp-form class="filter-form"
                    :model="query"
                    @change="handleFilterChange"
                    inline
                    :footer="null"
                    size="small">
-            <my-radio name="state"
+            <sp-radio name="state"
                       button
-                      :options="[{label:'全部',value:1},{label:'进行中',value:2},{label:'等待中',value:3}]"></my-radio>
-            <my-input name="keyword" placeholder="输入关键字" :props="{prefixIcon:'el-icon-search', clearable:true}">
-            </my-input>
-          </my-form>
+                      :options="[{label:'全部',value:1},{label:'进行中',value:2},{label:'等待中',value:3}]"></sp-radio>
+            <sp-input name="keyword" placeholder="输入关键字" :props="{prefixIcon:'el-icon-search', clearable:true}">
+            </sp-input>
+          </sp-form>
         </template>
 
         <template v-slot:prepend>
@@ -48,7 +48,7 @@ title: 标准列表
 
         <template v-slot:name="{row}">
           <div class="data-item">
-            <my-avatar :size="50" shape="square">{{row.name.substring(0,1)}}</my-avatar>
+            <sp-avatar :size="50" shape="square">{{row.name.substring(0,1)}}</sp-avatar>
             <h4>{{row.name}}</h4>
             <p>{{row.title}}</p>
           </div>
@@ -68,31 +68,31 @@ title: 标准列表
           <el-button type="text" @click="handleRemove(row)">删除</el-button>
         </template>
 
-      </my-table>
-    </my-container>
-    <my-dialog :title="dialogTitle"
+      </sp-table>
+    </sp-container>
+    <sp-dialog :title="dialogTitle"
                :footer="null"
                target="body"
                modal
                width="50%"
                :visible.sync="visible">
-      <my-form size="medium"
+      <sp-form size="medium"
                label-width="100px"
                :on-submit="handleSubmit"
                :rules="rules"
                :model="form">
-        <my-input label="任务名称" name="title"></my-input>
-        <my-date-picker label="开始时间" name="created"
-                        :props="{type:'datetime',valueFormat:'yyyy-MM-dd hh:mm:ss'}"></my-date-picker>
-        <my-select label="任务负责人" name="name" :options="[{label:'选项一', value:1}]"></my-select>
-        <my-input label="任务描述" name="info" :props="{type:'textarea', rows:5}"></my-input>
-      </my-form>
-    </my-dialog>
-  </my-wrapper>
+        <sp-input label="任务名称" name="title"></sp-input>
+        <sp-date-picker label="开始时间" name="created"
+                        :props="{type:'datetime',valueFormat:'yyyy-MM-dd hh:mm:ss'}"></sp-date-picker>
+        <sp-select label="任务负责人" name="name" :options="[{label:'选项一', value:1}]"></sp-select>
+        <sp-input label="任务描述" name="info" :props="{type:'textarea', rows:5}"></sp-input>
+      </sp-form>
+    </sp-dialog>
+  </sp-wrapper>
 </template>
 
 <script>
-  import MockForExample from '$my/code/mixin/mock-for-example'
+  import MockForExample from '$sp/code/mixin/mock-for-example'
 
   export default {
     mixins: [MockForExample],
@@ -215,7 +215,7 @@ title: 标准列表
         margin-bottom: 0 !important;
       }
 
-      .my-radio {
+      .sp-radio {
         transform: translateY(-2px);
       }
     }
@@ -239,7 +239,7 @@ title: 标准列表
   }
 
   .data-item {
-    .my-avatar {
+    .sp-avatar {
       float: left;
     }
 

@@ -1,6 +1,6 @@
 # Polygon 多边形
 
-多边形覆盖物。文档<api-link href="map/my-map-polygon"> MyMapPolygon</api-link>
+多边形覆盖物。文档<api-link href="map/sp-map-polygon"> spMapPolygon</api-link>
 
 ## 基础用法
 
@@ -8,9 +8,9 @@
 
 ```html
 <template>
-  <my-map :center="[120, 33]" :zoom="6" >
-    <my-map-polygon :coordinates="line"></my-map-polygon>
-  </my-map> 
+  <sp-map :center="[120, 33]" :zoom="6" >
+    <sp-map-polygon :coordinates="line"></sp-map-polygon>
+  </sp-map> 
 </template>
 <script>
 export default {
@@ -31,9 +31,9 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map :center="[120, 33]" :zoom="6" >
-    <my-map-polygon :coordinates="line" :fill="fill" :stroke="stroke"></my-map-polygon>
-  </my-map>
+  <sp-map :center="[120, 33]" :zoom="6" >
+    <sp-map-polygon :coordinates="line" :fill="fill" :stroke="stroke"></sp-map-polygon>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -59,9 +59,9 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map :center="[120, 33]" :zoom="6" >
-    <my-map-polygon :coordinates="line" :text="text"></my-map-polygon>
-  </my-map> 
+  <sp-map :center="[120, 33]" :zoom="6" >
+    <sp-map-polygon :coordinates="line" :text="text"></sp-map-polygon>
+  </sp-map> 
 </template>
 <script>
 export default {

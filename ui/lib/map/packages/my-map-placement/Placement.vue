@@ -1,5 +1,5 @@
 <template>
-  <div class="my-map-placement"
+  <div class="sp-map-placement"
        :class="classes"
        :style="styles">
     <slot></slot>
@@ -9,10 +9,10 @@
 <script>
   /**
    * 定位容器
-   * @module $ui/map/my-map-placement
+   * @module $ui/map/sp-map-placement
    */
   export default {
-    name: 'MyMapPlacement',
+    name: 'spMapPlacement',
     /**
      * 参数属性
      * @member props

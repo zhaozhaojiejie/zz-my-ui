@@ -1,16 +1,16 @@
 # Circle 圆
 
-圆形覆盖物。文档<api-link href="map/my-map-circle"> MyMapCircle</api-link>
+圆形覆盖物。文档<api-link href="map/sp-map-circle"> spMapCircle</api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-    <my-map>  
-      <my-map-circle :center="[113.261999, 23.130592]" 
-                     :radius="20000"></my-map-circle>
-    </my-map>
+    <sp-map>  
+      <sp-map-circle :center="[113.261999, 23.130592]" 
+                     :radius="20000"></sp-map-circle>
+    </sp-map>
 </template>
 ```
 :::
@@ -22,12 +22,12 @@
 :::demo
 ```html
 <template>
-    <my-map>  
-      <my-map-circle :center="[113.261999, 23.130592]" 
+    <sp-map>  
+      <sp-map-circle :center="[113.261999, 23.130592]" 
                      :radius="20000"
                       fill="#ff0000"
-                      :stroke="{width:5, color:'#000'}"></my-map-circle>
-    </my-map>
+                      :stroke="{width:5, color:'#000'}"></sp-map-circle>
+    </sp-map>
 </template>
 ```
 :::
@@ -37,28 +37,28 @@
 :::demo
 ```html
 <template>
-    <my-map>  
-      <my-map-circle :center="[113.261999, 23.130592]" 
+    <sp-map>  
+      <sp-map-circle :center="[113.261999, 23.130592]" 
                      :radius="20000"
-                     :text="{text:'占位文本', font:'30px', fill:'blue'}"></my-map-circle>
-    </my-map>
+                     :text="{text:'占位文本', font:'30px', fill:'blue'}"></sp-map-circle>
+    </sp-map>
 </template>
 ```
 :::
 
 ## 事件
 
-:::demo(my-map-circle-4)
+:::demo(sp-map-circle-4)
 ```html
 <template>
-    <my-map>  
-      <my-map-circle :center="[113.261999, 23.130592]" 
+    <sp-map>  
+      <sp-map-circle :center="[113.261999, 23.130592]" 
                      :radius="20000"
                      @mouseenter="handleEnter"
                      @mouseleave="handleLeave"
                      @click="handleClick"
-                     :text="{text:text, font:'30px', fill:'blue'}"></my-map-circle>
-    </my-map>
+                     :text="{text:text, font:'30px', fill:'blue'}"></sp-map-circle>
+    </sp-map>
 </template>
 <script>
 export default {

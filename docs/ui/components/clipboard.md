@@ -1,7 +1,7 @@
 # Clipboard 复制剪切
 
 基于clipboard.js 实现的现代化的拷贝文字组件
-组件文档 <api-link href="components/my-clipboard">MyClipboard</api-link>
+组件文档 <api-link href="components/sp-clipboard">spClipboard</api-link>
 
 ## 何时使用
 
@@ -16,18 +16,18 @@
 <template>
     <el-input :value="value">
       <template v-slot:append>
-        <my-clipboard :text="value" tooltip>
+        <sp-clipboard :text="value" tooltip>
          <el-button>复制</el-button>
-        </my-clipboard>
+        </sp-clipboard>
       </template>
     </el-input>
 </template>
 
 <script>
-import {MyClipboard} from '$ui'
+import {spClipboard} from '$ui'
 export default {
   components: {
-    MyClipboard
+    spClipboard
   },
   data() {
     return  {
@@ -47,17 +47,17 @@ export default {
 <template>
   <div>
      <el-input id="input" type="textarea" v-model="value"></el-input>
-     <my-clipboard tag="div" target=".el-textarea__inner" action="cut" style="margin-top:10px;">
+     <sp-clipboard tag="div" target=".el-textarea__inner" action="cut" style="margin-top:10px;">
         <el-button type="primary">复制到剪切板</el-button> 
-     </my-clipboard>
+     </sp-clipboard>
   </div>
 </template>
 
 <script>
-import {MyClipboard} from '$ui'
+import {spClipboard} from '$ui'
 export default {
   components: {
-    MyClipboard
+    spClipboard
   },
   data() {
     return  {
@@ -75,16 +75,16 @@ export default {
 :::demo
 ```html
 <template>
-  <my-clipboard :text="text" tooltip>
+  <sp-clipboard :text="text" tooltip>
     <el-button type="primary">复制到剪切板</el-button>
-  </my-clipboard>
+  </sp-clipboard>
 </template>
 
 <script>
-import {MyClipboard} from '$ui'
+import {spClipboard} from '$ui'
 export default {
   components: {
-    MyClipboard
+    spClipboard
   },
   data() {
     return  {
@@ -102,16 +102,16 @@ export default {
 :::demo
 ```html
 <template>
-  <my-clipboard :text="text" message>
+  <sp-clipboard :text="text" message>
     <el-button type="primary">复制到剪切板</el-button>
-  </my-clipboard>
+  </sp-clipboard>
 </template>
 
 <script>
-import {MyClipboard} from '$ui'
+import {spClipboard} from '$ui'
 export default {
   components: {
-    MyClipboard
+    spClipboard
   },
   data() {
     return  {

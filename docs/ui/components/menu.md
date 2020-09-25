@@ -1,7 +1,7 @@
 # Menu 菜单
 
 为页面和功能提供导航的菜单列表。
-组件文档 <api-link href="components/my-menu">MyMenu</api-link>
+组件文档 <api-link href="components/sp-menu">spMenu</api-link>
 
 ## 何时使用
 
@@ -30,12 +30,12 @@
       <span>collapsed: <el-switch v-model="collapsed"></el-switch> </span>
 
     </div>
-    <my-menu :data="menus" :theme="theme" :mode="mode" :collapsed="collapsed"></my-menu>
+    <sp-menu :data="menus" :theme="theme" :mode="mode" :collapsed="collapsed"></sp-menu>
   </div>
 </template>
 
 <script>
-  import {MyMenu} from '$ui'
+  import {spMenu} from '$ui'
 
   const mock = [
     {
@@ -117,7 +117,7 @@
 
   export default {
     components: {
-      MyMenu
+      spMenu
     },
     data() {
       return {

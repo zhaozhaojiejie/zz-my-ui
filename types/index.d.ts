@@ -1,4 +1,4 @@
-// import * as MyComponents from './components/index'
+// import * as spComponents from './components/index'
 //
 // export * from './components/index'
-// export default MyComponents
+// export default spComponents

@@ -5,7 +5,7 @@
 :::demo
 ```html
 <template>
-  <my-chart-bar :data="data"></my-chart-bar>
+  <sp-chart-bar :data="data"></sp-chart-bar>
 </template>
 
 <script>
@@ -35,7 +35,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-chart-bar :data="data" :extend="extend"></my-chart-bar>
+  <sp-chart-bar :data="data" :extend="extend"></sp-chart-bar>
 </template>
 
 <script>
@@ -70,7 +70,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-chart-bar :data="data" :settings="settings"></my-chart-bar>
+  <sp-chart-bar :data="data" :settings="settings"></sp-chart-bar>
 </template>
 
 <script>
@@ -103,7 +103,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-chart-bar :data="data" :settings="settings"></my-chart-bar>
+  <sp-chart-bar :data="data" :settings="settings"></sp-chart-bar>
 </template>
 
 <script>
@@ -136,7 +136,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-chart-bar :data="data" :settings="settings"></my-chart-bar>
+  <sp-chart-bar :data="data" :settings="settings"></sp-chart-bar>
 </template>
 
 <script>
@@ -167,7 +167,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-chart-bar :data="data" :settings="settings"></my-chart-bar>
+  <sp-chart-bar :data="data" :settings="settings"></sp-chart-bar>
 </template>
 
 <script>

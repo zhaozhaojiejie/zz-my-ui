@@ -1,6 +1,6 @@
 /**
  *  mockForExample mixin module
- *  @module $my/code/mixin/mockForExample
+ *  @module $sp/code/mixin/mockForExample
  *  @author coder
  */
 import {

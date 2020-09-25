@@ -1,6 +1,6 @@
 # Skeleton 骨架屏
 在需要等待加载内容的位置提供一个占位图形组合。
-<api-link href="components/my-skeleton">MySkeleton</api-link>
+<api-link href="components/sp-skeleton">spSkeleton</api-link>
 
 ## 何时使用
 
@@ -18,14 +18,14 @@
 :::demo
 ```html
 <template>
-  <my-skeleton loading></my-skeleton>
+  <sp-skeleton loading></sp-skeleton>
 </template>
 
 <script>
-import {MySkeleton} from '$ui'
+import {spSkeleton} from '$ui'
 export default {
   components: {
-    MySkeleton
+    spSkeleton
   }
 }
 </script>
@@ -41,14 +41,14 @@ export default {
 :::demo
 ```html
 <template>
-  <my-skeleton avatar :paragraph="{rows:4}" loading></my-skeleton>
+  <sp-skeleton avatar :paragraph="{rows:4}" loading></sp-skeleton>
 </template>
 
 <script>
-import {MySkeleton} from '$ui'
+import {spSkeleton} from '$ui'
 export default {
   components: {
-    MySkeleton
+    spSkeleton
   }
 }
 </script>
@@ -62,14 +62,14 @@ export default {
 :::demo
 ```html
 <template>
-  <my-skeleton avatar active loading></my-skeleton>
+  <sp-skeleton avatar active loading></sp-skeleton>
 </template>
 
 <script>
-import {MySkeleton} from '$ui'
+import {spSkeleton} from '$ui'
 export default {
   components: {
-    MySkeleton
+    spSkeleton
   }
 }
 </script>
@@ -85,21 +85,21 @@ export default {
 ```html
 <template>
   <div>
-    <my-skeleton active :loading="loading">
-      <my-title level="3">前端框架 MyWeb 4.0</my-title>
-      <my-paragraph>MyWeb产品是一个庞大且复杂的体系。这类产品不仅量级巨大且功能复杂，而且变动和并发频繁，常常需要设计与开发能够快速的做出响应。同时这类产品中有存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。</my-paragraph>
-    </my-skeleton>
+    <sp-skeleton active :loading="loading">
+      <sp-title level="3">前端框架 spWeb 4.0</sp-title>
+      <sp-paragraph>spWeb产品是一个庞大且复杂的体系。这类产品不仅量级巨大且功能复杂，而且变动和并发频繁，常常需要设计与开发能够快速的做出响应。同时这类产品中有存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。</sp-paragraph>
+    </sp-skeleton>
     <el-button @click="show" style="margin-top: 20px">显示骨架屏</el-button>
   </div>
 </template>
 
 <script>
-import {MySkeleton, MyTitle, MyParagraph} from '$ui'
+import {spSkeleton, spTitle, spParagraph} from '$ui'
 export default {
   components: {
-    MySkeleton,
-    MyTitle,
-    MyParagraph
+    spSkeleton,
+    spTitle,
+    spParagraph
   },
   data() {
     return {

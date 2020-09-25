@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  const docsBaseUrl = '/my/'
+  const docsBaseUrl = '/sp/'
   export default {
     name: 'ApiLink',
     props: {

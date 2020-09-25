@@ -1,6 +1,6 @@
 # TagInput 标签输入框
 
-输入标签， 文档  <api-link href="components/my-tag-input">MyTagInput</api-link>
+输入标签， 文档  <api-link href="components/sp-tag-input">spTagInput</api-link>
 
 ## 代码示例
 
@@ -11,9 +11,9 @@
 :::demo
 ```html
 <template>
-  <my-form @submit="handleSubmit">
-    <my-tag-input name="tags" label="标签"></my-tag-input>
-  </my-form>
+  <sp-form @submit="handleSubmit">
+    <sp-tag-input name="tags" label="标签"></sp-tag-input>
+  </sp-form>
 </template>
 
 <script>
@@ -36,9 +36,9 @@
 :::demo
 ```html
 <template>
-  <my-form @submit="handleSubmit" :model="model">
-    <my-tag-input name="tags" label="标签" :props="{collapseTags:true}"></my-tag-input>
-  </my-form>
+  <sp-form @submit="handleSubmit" :model="model">
+    <sp-tag-input name="tags" label="标签" :props="{collapseTags:true}"></sp-tag-input>
+  </sp-form>
 </template>
 
 <script>

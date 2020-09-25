@@ -1,15 +1,15 @@
 # Marker 标记
 
-Marker覆盖物。支持在地图打点，并提供popup功能支持。 文档<api-link href="map/my-map-marker"> MyMapMarker </api-link>
+Marker覆盖物。支持在地图打点，并提供popup功能支持。 文档<api-link href="map/sp-map-marker"> spMapMarker </api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-marker :coordinate="[113.261999, 23.130592]"></my-map-marker>
-  </my-map>
+  <sp-map>
+    <sp-map-marker :coordinate="[113.261999, 23.130592]"></sp-map-marker>
+  </sp-map>
 </template>
 ```
 :::
@@ -19,9 +19,9 @@ Marker覆盖物。支持在地图打点，并提供popup功能支持。 文档<a
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-marker :coordinate="[113.261999, 23.130592]" :src="pin"></my-map-marker>
-  </my-map>
+  <sp-map>
+    <sp-map-marker :coordinate="[113.261999, 23.130592]" :src="pin"></sp-map-marker>
+  </sp-map>
 </template>
 <script>
 import pin from '$ui/map/sources/pin/red.png'
@@ -41,15 +41,15 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-marker :coordinate="[113.261999, 23.130592]" :active-index="0">
+  <sp-map>
+    <sp-map-marker :coordinate="[113.261999, 23.130592]" :active-index="0">
       <template v-slot="{marker}">
          坐标：{{marker.coordinate}} <br>
          数据项：{{marker.items}} <br>
          集群: {{marker.cluster}} <br>
       </template>
-    </my-map-marker>
-  </my-map>
+    </sp-map-marker>
+  </sp-map>
 </template>
 <script>
 export default {
@@ -67,15 +67,15 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map adapter="TDT">
-    <my-map-marker v-if="markers" :data="markers">
+  <sp-map adapter="TDT">
+    <sp-map-marker v-if="markers" :data="markers">
       <template v-slot="{marker}">
         坐标：{{marker.coordinate}} <br>
         数据项个数：{{marker.items.length}} <br>
         集群: {{marker.cluster}} <br>
       </template>
-    </my-map-marker>
-  </my-map>
+    </sp-map-marker>
+  </sp-map>
 </template>
 <script>
   export default {
@@ -114,15 +114,15 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map adapter="TDT">
-    <my-map-marker v-if="markers" :data="markers" multiple>
+  <sp-map adapter="TDT">
+    <sp-map-marker v-if="markers" :data="markers" multiple>
       <template v-slot="{marker}">
         坐标：{{marker.coordinate}} <br>
         数据项个数：{{marker.items.length}} <br>
         集群: {{marker.cluster}} <br>
       </template>
-    </my-map-marker>
-  </my-map>
+    </sp-map-marker>
+  </sp-map>
 </template>
 <script>
   export default {

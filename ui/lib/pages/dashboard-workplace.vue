@@ -2,39 +2,39 @@
 title: 工作台
 ---
 <template>
-  <my-wrapper>
-    <my-float slot="extra">
-      <my-float-item>
-        <my-description :width="72">
-          <my-avatar slot="title" :size="72" theme="warning" icon="el-icon-user"></my-avatar>
-          <my-title class="welcome" :level="2">早安 <span>Admin</span>，祝你开心每一天！</my-title>
-          <my-text type="secondary">交互专家 | 薯片－某某某事业群－某某平台部－某某技术部－UED</my-text>
-        </my-description>
-      </my-float-item>
-      <my-float-item float="right">
-        <my-description title="项目数量" inline top align="right">
-          <my-title>
-            <my-number :value="56"></my-number>
-          </my-title>
-        </my-description>
+  <sp-wrapper>
+    <sp-float slot="extra">
+      <sp-float-item>
+        <sp-description :width="72">
+          <sp-avatar slot="title" :size="72" theme="warning" icon="el-icon-user"></sp-avatar>
+          <sp-title class="welcome" :level="2">早安 <span>Admin</span>，祝你开心每一天！</sp-title>
+          <sp-text type="secondary">交互专家 | 薯片－某某某事业群－某某平台部－某某技术部－UED</sp-text>
+        </sp-description>
+      </sp-float-item>
+      <sp-float-item float="right">
+        <sp-description title="项目数量" inline top align="right">
+          <sp-title>
+            <sp-number :value="56"></sp-number>
+          </sp-title>
+        </sp-description>
         <el-divider direction="vertical"></el-divider>
-        <my-description title="团队内排名" inline top align="right">
-          <my-title>
-            <my-number :value="8" suffix=" / 24" sup></my-number>
-          </my-title>
-        </my-description>
+        <sp-description title="团队内排名" inline top align="right">
+          <sp-title>
+            <sp-number :value="8" suffix=" / 24" sup></sp-number>
+          </sp-title>
+        </sp-description>
         <el-divider direction="vertical"></el-divider>
-        <my-description title="项目访问" inline top align="right">
-          <my-title>
-            <my-number :value="2223"></my-number>
-          </my-title>
-        </my-description>
-      </my-float-item>
-    </my-float>
+        <sp-description title="项目访问" inline top align="right">
+          <sp-title>
+            <sp-number :value="2223"></sp-number>
+          </sp-title>
+        </sp-description>
+      </sp-float-item>
+    </sp-float>
 
     <el-row :gutter="14">
       <el-col :xs="24" :sm="24" :md="16">
-        <my-panel title="进行中的项目"
+        <sp-panel title="进行中的项目"
                   shadow="never"
                   :border="false"
                   :body-style="{padding:0}"
@@ -42,85 +42,85 @@ title: 工作台
           <template v-slot:handle>
             <el-button type="text">全部项目</el-button>
           </template>
-          <my-list class="project-list" :data="projects" :columns="3" split>
+          <sp-list class="project-list" :data="projects" :columns="3" split>
             <template v-slot="{item}">
               <div>
-                <my-description :width="32" :gutter="8">
-                  <my-avatar slot="title" :src="item.avatar"></my-avatar>
-                  <my-title :level="4" :rows="1" ellipsis style="padding-top: 5px">{{item.title}}</my-title>
-                </my-description>
-                <my-paragraph type="secondary" :rows="2" ellipsis>{{item.info}}</my-paragraph>
-                <my-float>
-                  <my-float-item>
-                    <my-text type="secondary" small>{{item.name}}</my-text>
-                  </my-float-item>
-                  <my-float-item float="right">
-                    <my-text type="secondary" small>{{item.date}}</my-text>
-                  </my-float-item>
-                </my-float>
+                <sp-description :width="32" :gutter="8">
+                  <sp-avatar slot="title" :src="item.avatar"></sp-avatar>
+                  <sp-title :level="4" :rows="1" ellipsis style="padding-top: 5px">{{item.title}}</sp-title>
+                </sp-description>
+                <sp-paragraph type="secondary" :rows="2" ellipsis>{{item.info}}</sp-paragraph>
+                <sp-float>
+                  <sp-float-item>
+                    <sp-text type="secondary" small>{{item.name}}</sp-text>
+                  </sp-float-item>
+                  <sp-float-item float="right">
+                    <sp-text type="secondary" small>{{item.date}}</sp-text>
+                  </sp-float-item>
+                </sp-float>
               </div>
             </template>
-          </my-list>
-        </my-panel>
+          </sp-list>
+        </sp-panel>
 
-        <my-panel title="动态" shadow="never"
+        <sp-panel title="动态" shadow="never"
                   :border="false"
                   theme="border-left">
 
-          <my-list :data="projects" split>
+          <sp-list :data="projects" split>
             <template v-slot="{item}">
-              <my-description :width="40" style="margin-bottom: 0;">
-                <my-avatar slot="title" size="large" :src="item.avatar">
-                </my-avatar>
-                <my-paragraph style="margin-bottom: 0;">{{item.name}} 在
+              <sp-description :width="40" style="margin-bottom: 0;">
+                <sp-avatar slot="title" size="large" :src="item.avatar">
+                </sp-avatar>
+                <sp-paragraph style="margin-bottom: 0;">{{item.name}} 在
                   <el-link type="primary">{{item.city}}</el-link>
                   新建项目
                   <el-link type="primary">{{item.title}}</el-link>
                   <br>
-                  <my-text type="secondary">{{item.created}}</my-text>
-                </my-paragraph>
+                  <sp-text type="secondary">{{item.created}}</sp-text>
+                </sp-paragraph>
 
-              </my-description>
+              </sp-description>
             </template>
-          </my-list>
+          </sp-list>
 
-        </my-panel>
+        </sp-panel>
 
       </el-col>
       <el-col :xs="24" :sm="24" :md="8">
-        <my-panel title="便捷导航" shadow="never" :border="false" theme="border-left">
+        <sp-panel title="便捷导航" shadow="never" :border="false" theme="border-left">
           <template v-slot:handle>
             <el-button type="text" icon="el-icon-plus">添加</el-button>
           </template>
-          <my-list :data="projects" :columns="4" size="small">
+          <sp-list :data="projects" :columns="4" size="small">
             <template v-slot="{item}">
               <el-link>{{item.name}}</el-link>
             </template>
-          </my-list>
-        </my-panel>
+          </sp-list>
+        </sp-panel>
 
-        <my-panel title="XX指数" shadow="never" :border="false" theme="border-left">
-          <my-chart-radar :data="rader" height="200px"></my-chart-radar>
-        </my-panel>
+        <sp-panel title="XX指数" shadow="never" :border="false" theme="border-left">
+          <sp-chart-radar :data="rader" height="200px"></sp-chart-radar>
+        </sp-panel>
 
-        <my-panel title="团队" shadow="never" :border="false" theme="border-left">
-          <my-list :data="projects" :columns="2" size="small">
+        <sp-panel title="团队" shadow="never" :border="false" theme="border-left">
+          <sp-list :data="projects" :columns="2" size="small">
             <template v-slot="{item}">
-              <my-description :width="32">
-                <my-avatar :src="item.avatar"></my-avatar>
+              <sp-description :width="32">
+                <sp-avatar :src="item.avatar"></sp-avatar>
                 {{item.title}}
-              </my-description>
+              </sp-description>
             </template>
-          </my-list>
-        </my-panel>
+          </sp-list>
+        </sp-panel>
 
       </el-col>
     </el-row>
-  </my-wrapper>
+  </sp-wrapper>
 </template>
 
 <script>
-  import MockForExample from '$my/code/mixin/mock-for-example'
+  import MockForExample from '$sp/code/mixin/mock-for-example'
 
   export default {
     mixins: [MockForExample],
@@ -156,13 +156,13 @@ title: 工作台
     margin-bottom: 14px;
   }
 
-  .my-panel {
+  .sp-panel {
     overflow: visible;
   }
 
   .project-list {
     /deep/ {
-      .my-list__item {
+      .sp-list__item {
         cursor: pointer;
 
         &:hover {

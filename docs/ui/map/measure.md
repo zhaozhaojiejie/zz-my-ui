@@ -1,14 +1,14 @@
 # Measure 测量
 
-可测量距离 或 面积。文档 文档<api-link href="map/my-map-measure">MyMapMeasure</api-link>
+可测量距离 或 面积。文档 文档<api-link href="map/sp-map-measure">spMapMeasure</api-link>
 
 ## 基础用法
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-measure></my-map-measure>
-  </my-map>
+  <sp-map>
+    <sp-map-measure></sp-map-measure>
+  </sp-map>
 </template>
 ```
 :::
@@ -17,9 +17,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-measure type="area"></my-map-measure>
-  </my-map>
+  <sp-map>
+    <sp-map-measure type="area"></sp-map-measure>
+  </sp-map>
 </template>
 ```
 :::
@@ -28,9 +28,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-measure theme="dark"></my-map-measure>
-  </my-map>
+  <sp-map>
+    <sp-map-measure theme="dark"></sp-map-measure>
+  </sp-map>
 </template>
 ```
 :::

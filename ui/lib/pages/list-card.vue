@@ -2,39 +2,39 @@
 title: 卡片列表
 ---
 <template>
-  <my-wrapper title="卡片列表">
+  <sp-wrapper title="卡片列表">
     <template v-slot:extra>
       卡片类型的列表，配合栅格实现响应式布局。
     </template>
     <template v-slot:actions>
       <el-button type="primary" size="medium" icon="el-icon-plus">新增</el-button>
     </template>
-    <my-card-list
+    <sp-card-list
       :loader="loader"
       :columns="{xs:1,sm:1,md:2,lg:2,xl:3,xxl:4}"
       pager
       :page-size="limit">
-      <my-panel slot-scope="{item}"
+      <sp-panel slot-scope="{item}"
                 shadow="hover"
                 :actions="actions"
                 :header="false">
-        <my-corner-mark :type="{ '逃': 'danger', '毒': 'warning'}[item.label]">{{item.label}}</my-corner-mark>
+        <sp-corner-mark :type="{ '逃': 'danger', '毒': 'warning'}[item.label]">{{item.label}}</sp-corner-mark>
         <div class="data-item">
           <el-image :src="item.avatar" fit="cover"></el-image>
           <div class="text">
-            <my-title :level="3">{{item.name}}</my-title>
-            <my-paragraph ellipsis :rows="3">
+            <sp-title :level="3">{{item.name}}</sp-title>
+            <sp-paragraph ellipsis :rows="3">
               {{item.info}}
-            </my-paragraph>
+            </sp-paragraph>
           </div>
         </div>
-      </my-panel>
-    </my-card-list>
-  </my-wrapper>
+      </sp-panel>
+    </sp-card-list>
+  </sp-wrapper>
 </template>
 
 <script>
-  import MockForExample from '$my/code/mixin/mock-for-example'
+  import MockForExample from '$sp/code/mixin/mock-for-example'
 
   export default {
     mixins: [MockForExample],
@@ -94,11 +94,11 @@ title: 卡片列表
       float: left;
     }
 
-    .my-title {
+    .sp-title {
       margin-top: 0;
     }
 
-    .my-paragraph {
+    .sp-paragraph {
       margin-bottom: 0;
     }
 

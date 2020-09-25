@@ -2,7 +2,7 @@
 
 ## 概述
 
-定位布局组件。头部、底部可固定位置，不跟随滚动条移动。组件文档 <api-link href="components/my-fixed">MyFixed</api-link> 
+定位布局组件。头部、底部可固定位置，不跟随滚动条移动。组件文档 <api-link href="components/sp-fixed">spFixed</api-link> 
 
 ## 基本用法
 
@@ -11,7 +11,7 @@
 :::demo
 ```html
 <template>
-   <my-fixed>
+   <sp-fixed>
       <template v-slot:header>
        <div class="header">Header</div>
      </template>
@@ -20,14 +20,14 @@
          <p v-for="n in 30" :key="n">占位文字 {{n}}</p>
       </div>
 
-   </my-fixed>
+   </sp-fixed>
 </template>
 
 <script>
-import {MyFixed} from '$ui'
+import {spFixed} from '$ui'
 export default {
   components: {
-    MyFixed
+    spFixed
   }
 }
 </script>
@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 
 
-.my-fixed {
+.sp-fixed {
   height: 400px;
   min-height: 100%;
   background: #ddd;
@@ -62,7 +62,7 @@ export default {
 :::demo
 ```html
 <template>
-   <my-fixed>
+   <sp-fixed>
       <template v-slot:header>
        <div class="header">Header</div>
      </template>
@@ -75,21 +75,21 @@ export default {
         <div class="footer">Footer</div>
      </template>
 
-   </my-fixed>
+   </sp-fixed>
 </template>
 
 <script>
-import {MyFixed} from '$ui'
+import {spFixed} from '$ui'
 export default {
   components: {
-    MyFixed
+    spFixed
   }
 }
 </script>
 
 <style lang="scss" scoped>
 
-.my-fixed {
+.sp-fixed {
   height: 400px;
   min-height: 100%;
   background: #ddd;

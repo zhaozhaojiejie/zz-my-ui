@@ -16,7 +16,7 @@ import routesFactory from '@/router/routes'
 /**
  * 按views目录下文件自动生成的路由
  */
-import autoRoutesFactory from '$my/routes/index'
+import autoRoutesFactory from '$sp/routes/index'
 
 /**
  * 项目Vuex实例参数选项

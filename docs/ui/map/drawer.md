@@ -1,17 +1,17 @@
 # Drawer 抽屉
 
-Drawer 抽屉容器。文档<api-link href="map/my-map-drawer"> MyMapDrawer</api-link>
+Drawer 抽屉容器。文档<api-link href="map/sp-map-drawer"> spMapDrawer</api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-drawer title="标题文本" width="300px">
+  <sp-map>  
+    <sp-map-drawer title="标题文本" width="300px">
       占位内容
-    </my-map-drawer>
-  </my-map>
+    </sp-map-drawer>
+  </sp-map>
 </template>
 ```
 :::
@@ -21,11 +21,11 @@ Drawer 抽屉容器。文档<api-link href="map/my-map-drawer"> MyMapDrawer</api
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-drawer title="标题文本" width="300px" collapsed>
+  <sp-map>  
+    <sp-map-drawer title="标题文本" width="300px" collapsed>
       占位内容
-    </my-map-drawer>
-  </my-map>
+    </sp-map-drawer>
+  </sp-map>
 </template>
 ```
 :::
@@ -35,14 +35,14 @@ Drawer 抽屉容器。文档<api-link href="map/my-map-drawer"> MyMapDrawer</api
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-drawer title="标题文本" width="300px" close-on-click-outside footer-align="right">
+  <sp-map>  
+    <sp-map-drawer title="标题文本" width="300px" close-on-click-outside footer-align="right">
        <p v-for="n in 20" :key="n">占位内容</p>
        <template v-slot:footer>
           <el-button type="primary">确定</el-button>
        </template>
-    </my-map-drawer>
-  </my-map>
+    </sp-map-drawer>
+  </sp-map>
 </template>
 ```
 :::
@@ -52,11 +52,11 @@ Drawer 抽屉容器。文档<api-link href="map/my-map-drawer"> MyMapDrawer</api
 :::demo
 ```html
 <template>
-  <my-map>  
-    <my-map-drawer title="标题文本" width="300px" theme="dark">
+  <sp-map>  
+    <sp-map-drawer title="标题文本" width="300px" theme="dark">
       占位内容
-    </my-map-drawer>
-  </my-map>
+    </sp-map-drawer>
+  </sp-map>
 </template>
 ```
 :::
@@ -66,12 +66,12 @@ Drawer 抽屉容器。文档<api-link href="map/my-map-drawer"> MyMapDrawer</api
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-drawer placement="left" title="标题文本" width="300px" theme="dark">占位内容</my-map-drawer>
-    <my-map-drawer placement="right" title="标题文本" width="300px" theme="dark">占位内容</my-map-drawer>
-    <my-map-drawer placement="top" title="标题文本" height="100px" theme="dark">占位内容</my-map-drawer>
-    <my-map-drawer placement="bottom" title="标题文本" height="100px" theme="dark">占位内容</my-map-drawer>
-  </my-map>
+  <sp-map>
+    <sp-map-drawer placement="left" title="标题文本" width="300px" theme="dark">占位内容</sp-map-drawer>
+    <sp-map-drawer placement="right" title="标题文本" width="300px" theme="dark">占位内容</sp-map-drawer>
+    <sp-map-drawer placement="top" title="标题文本" height="100px" theme="dark">占位内容</sp-map-drawer>
+    <sp-map-drawer placement="bottom" title="标题文本" height="100px" theme="dark">占位内容</sp-map-drawer>
+  </sp-map>
 </template>
 
 ```

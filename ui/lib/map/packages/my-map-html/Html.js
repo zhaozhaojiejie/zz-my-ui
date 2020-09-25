@@ -1,11 +1,11 @@
 /**
  * HTML覆盖物组件
- * @module $ui/map/my-map-html
+ * @module $ui/map/sp-map-html
  */
 import Overlay from 'ol/Overlay'
 
 export default {
-  name: 'MyMapHtml',
+  name: 'spMapHtml',
   inject: ['myMap'],
   /**
    * 属性参数
@@ -81,7 +81,7 @@ export default {
   },
   render() {
     return (
-      <div class="my-map-html" style={this.styles} {...{on: this.$listeners}}>
+      <div class="sp-map-html" style={this.styles} {...{on: this.$listeners}}>
         {this.$slots.default}
       </div>
     )

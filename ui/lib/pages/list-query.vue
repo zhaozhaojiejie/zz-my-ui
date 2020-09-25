@@ -2,20 +2,20 @@
 title: 查询列表
 ---
 <template>
-  <my-wrapper title="查询列表">
+  <sp-wrapper title="查询列表">
     <template v-slot:extra>
       表格查询的复杂示例
     </template>
-    <my-container>
-      <my-filter label-width="80px" collapsible :model="defaultQuery" @submit="handleQuery">
-        <my-input name="q1" label="关键字"></my-input>
-        <my-range name="q2" label="时间范围" mode="date" :props="{valueFormat:'yyyy-MM-dd'}"></my-range>
-        <my-select name="q3" label="条件三" collapsible :loader="optionsLoader"></my-select>
-        <my-select name="q4" label="条件四" collapsible :loader="optionsLoader"></my-select>
-        <my-select name="q5" label="条件五" collapsible :loader="optionsLoader"></my-select>
-      </my-filter>
-    </my-container>
-    <my-container>
+    <sp-container>
+      <sp-filter label-width="80px" collapsible :model="defaultQuery" @submit="handleQuery">
+        <sp-input name="q1" label="关键字"></sp-input>
+        <sp-range name="q2" label="时间范围" mode="date" :props="{valueFormat:'yyyy-MM-dd'}"></sp-range>
+        <sp-select name="q3" label="条件三" collapsible :loader="optionsLoader"></sp-select>
+        <sp-select name="q4" label="条件四" collapsible :loader="optionsLoader"></sp-select>
+        <sp-select name="q5" label="条件五" collapsible :loader="optionsLoader"></sp-select>
+      </sp-filter>
+    </sp-container>
+    <sp-container>
       <div class="toolbar">
         <el-button size="small" type="primary" icon="el-icon-plus">新建</el-button>
         <el-button size="small" icon="el-icon-upload2">导入</el-button>
@@ -23,14 +23,14 @@ title: 查询列表
         <el-button v-show="selection.length" size="small">批量删除</el-button>
         <el-button v-show="selection.length" size="small">批量审核</el-button>
       </div>
-      <my-container class="selection-tip" theme="info" :body-style="{padding:'0 10px'}">
+      <sp-container class="selection-tip" theme="info" :body-style="{padding:'0 10px'}">
         已选择
-        <my-text strong type="primary">{{selection.length}}</my-text>
+        <sp-text strong type="primary">{{selection.length}}</sp-text>
         项。
         <el-button type="text" @click="clearSelection">清空</el-button>
-      </my-container>
+      </sp-container>
 
-      <my-table ref="table"
+      <sp-table ref="table"
                 stripe
                 column-filter
                 :columns="tableColumns"
@@ -50,14 +50,14 @@ title: 查询列表
           <el-link type="primary">删除</el-link>
         </template>
 
-      </my-table>
-    </my-container>
+      </sp-table>
+    </sp-container>
 
-  </my-wrapper>
+  </sp-wrapper>
 </template>
 
 <script>
-  import MockForExample from '$my/code/mixin/mock-for-example'
+  import MockForExample from '$sp/code/mixin/mock-for-example'
 
   export default {
     mixins: [MockForExample],

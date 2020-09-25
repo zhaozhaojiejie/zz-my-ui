@@ -1,15 +1,15 @@
 # Line 线
 
-线覆盖物。文档<api-link href="map/my-map-line"> MyMapLine </api-link>
+线覆盖物。文档<api-link href="map/sp-map-line"> spMapLine </api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-line :coordinates="coordinates"></my-map-line>
-  </my-map>
+  <sp-map>
+    <sp-map-line :coordinates="coordinates"></sp-map-line>
+  </sp-map>
 </template>
 <script>
   export default {
@@ -34,12 +34,12 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-line :coordinates="coordinates"
+  <sp-map>
+    <sp-map-line :coordinates="coordinates"
                  :width="5"
                  :lineDash="[10]"
-                 color="red"></my-map-line>
-  </my-map>
+                 color="red"></sp-map-line>
+  </sp-map>
 </template>
 <script>
   export default {
@@ -64,9 +64,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-line :coordinates="coordinates" arrow></my-map-line>
-  </my-map>
+  <sp-map>
+    <sp-map-line :coordinates="coordinates" arrow></sp-map-line>
+  </sp-map>
 </template>
 <script>
   export default {
@@ -91,9 +91,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-line :coordinates="coordinates"  :arrow="{color:'#000'}" arrow-each></my-map-line>
-  </my-map>
+  <sp-map>
+    <sp-map-line :coordinates="coordinates"  :arrow="{color:'#000'}" arrow-each></sp-map-line>
+  </sp-map>
 </template>
 <script>
   export default {
@@ -118,9 +118,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-line :coordinates="coordinates" arrow bezier></my-map-line>
-  </my-map>
+  <sp-map>
+    <sp-map-line :coordinates="coordinates" arrow bezier></sp-map-line>
+  </sp-map>
 </template>
 <script>
   export default {
@@ -144,10 +144,10 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-line :coordinates="coordinates" bezier  text="文本示例一"></my-map-line>
-    <my-map-line :coordinates="[[112.810186, 23.267921],[113.577856, 23.277534]]" :text="text"></my-map-line>
-  </my-map>
+  <sp-map>
+    <sp-map-line :coordinates="coordinates" bezier  text="文本示例一"></sp-map-line>
+    <sp-map-line :coordinates="[[112.810186, 23.267921],[113.577856, 23.277534]]" :text="text"></sp-map-line>
+  </sp-map>
 </template>
 <script>
   export default {

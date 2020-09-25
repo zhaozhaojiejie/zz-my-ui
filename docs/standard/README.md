@@ -2,13 +2,13 @@
 
 ## 项目规范
 
-## MyWeb运行架构图
+## spWeb运行架构图
 
 ### 不需要提交到代码仓库的文件和目录
 
 `git` 或 `svn` 可以忽略以下文件或目录
 
-- /.my
+- /.sp
 - /node_modules
 - /dist
 - /.idea

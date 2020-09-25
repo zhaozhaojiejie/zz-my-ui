@@ -1,7 +1,7 @@
 # Table 表格
 
 在el-table的基础上扩展功能，增加了通过列配置、工具区插槽、分页、滚动加载、虚拟列表、拖拽排序等功能。
- <api-link href="components/my-table">MyTable</api-link>
+ <api-link href="components/sp-table">spTable</api-link>
  
 ## 代码示例
 
@@ -13,7 +13,7 @@
 ```html
 <template>
     <div class="table-origin">
-      <my-table :columns="columns" :data="list"></my-table>
+      <sp-table :columns="columns" :data="list"></sp-table>
     </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
 ```html
 <template>
     <div class="table-origin">
-      <my-table :columns="columns" :data="list">
+      <sp-table :columns="columns" :data="list">
          
          <template v-slot:name="{row}">
            <el-tag size="small">{{row.name}}</el-tag>
@@ -80,7 +80,7 @@ export default {
              <el-tag size="small">{{column.label}}</el-tag>
          </template>
          
-      </my-table>
+      </sp-table>
     </div>
 </template>
 
@@ -140,12 +140,12 @@ columns的项对象display默认为true，支持以下值：
 ```html
 <template>
   <div class="table-origin">
-    <my-table :columns="columns"
+    <sp-table :columns="columns"
               :loader="loader"
               border
               column-filter
               :page="1"
-              :page-size="5"></my-table>
+              :page-size="5"></sp-table>
   </div>
 </template>
 
@@ -225,7 +225,7 @@ columns的项对象display默认为true，支持以下值：
 ```html
 <template>
     <div class="table-origin">
-      <my-table toolbar 
+      <sp-table toolbar 
                 header-background
                 border
                 title="表格标题文本"
@@ -240,7 +240,7 @@ columns的项对象display默认为true，支持以下值：
             </el-button-group>
             <el-button size="medium" type="warning">删除</el-button>
          </template>       
-      </my-table>
+      </sp-table>
     </div>
 </template>
 
@@ -291,7 +291,7 @@ export default {
 ```html
 <template>
     <div class="table-origin">
-      <my-table :columns="columns" :loader="loader" :page="2" :page-size="5"></my-table>
+      <sp-table :columns="columns" :loader="loader" :page="2" :page-size="5"></sp-table>
     </div>
 </template>
 
@@ -348,7 +348,7 @@ export default {
 ```html
 <template>
     <div class="table-origin" style="height: 400px">
-      <my-table fit mode="scroll" :columns="columns" :loader="loader"></my-table>
+      <sp-table fit mode="scroll" :columns="columns" :loader="loader"></sp-table>
     </div>
 </template>
 
@@ -405,7 +405,7 @@ export default {
 ```html
 <template>
     <div class="table-origin" style="height: 400px">
-      <my-table fit mode="virtual" :columns="columns" :loader="loader"></my-table>
+      <sp-table fit mode="virtual" :columns="columns" :loader="loader"></sp-table>
     </div>
 </template>
 
@@ -462,7 +462,7 @@ export default {
 ```html
 <template>
     <div class="table-origin" style="height: 400px">
-      <my-table fit
+      <sp-table fit
         :columns="columns" 
         :loader="loader"
         :pagination="null"
@@ -472,7 +472,7 @@ export default {
         @column-change="colFilterHandle"
         @on-column-sort="colSortHandle"
         @on-row-sort="rowSortHandle"
-      ></my-table>
+      ></sp-table>
     </div>
 </template>
 

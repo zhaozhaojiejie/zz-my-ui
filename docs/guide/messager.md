@@ -68,12 +68,12 @@ A页面中用`iframe`加载了B页面， 这两个页面不同源，需要双向
      <el-button type="primary" @click="openDialog">弹窗打开</el-button>
      <el-button type="primary" @click="openWindow">跨窗口打开</el-button>
      <el-button @click="sendMessage">发送消息</el-button>
-     <my-list :data="replyList">
+     <sp-list :data="replyList">
         <template v-slot:header>
-             <my-header title="收到的回复" theme="border-left" background></my-header>
+             <sp-header title="收到的回复" theme="border-left" background></sp-header>
         </template>
-     </my-list>
-     <my-dialog :visible.sync="visible" 
+     </sp-list>
+     <sp-dialog :visible.sync="visible" 
                 :footer="false"
                 target="body"
                 draggable
@@ -81,7 +81,7 @@ A页面中用`iframe`加载了B页面， 这两个页面不同源，需要双向
                 title="弹窗" 
                 width="500px" 
                 height="400px" 
-                src="pages/dialog.html"></my-dialog>
+                src="pages/dialog.html"></sp-dialog>
   </div>
 </template>
 
@@ -104,7 +104,7 @@ export default {
     sendMessage() {
       const data = {content: `消息内容：${new Date().getTime()}`}
       fire({
-       bridge: '/my/bridge/index.html',
+       bridge: '/sp/bridge/index.html',
        channel: 'SendDialogMessageChannel',
        data: data
       })
@@ -155,8 +155,8 @@ export default {
       opener.onload = () => {
         service({
          name: 'ServiceName',
-         bridge: '/my/bridge/index.html',
-         origin:'/my/bridge/index.html',
+         bridge: '/sp/bridge/index.html',
+         origin:'/sp/bridge/index.html',
          data: {
            id: new Date().getTime()
          },

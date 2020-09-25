@@ -183,18 +183,18 @@
              :nodes="nodes"
              :links="links"
              :options="init">
-      <MyContextmenu ref="menu1" :data="menus" manual></MyContextmenu>
-      <MyContextmenu ref="menu2" :data="nodeMenus" manual></MyContextmenu>
+      <spContextmenu ref="menu1" :data="menus" manual></spContextmenu>
+      <spContextmenu ref="menu2" :data="nodeMenus" manual></spContextmenu>
     </Diagram>
 </template>
 <script>
   import {Diagram, circle, link} from '$ui/gojs'
-  import {MyContextmenu} from '$ui'
+  import {spContextmenu} from '$ui'
 
   export default {
     components: {
       Diagram,
-      MyContextmenu
+      spContextmenu
     },
     data() {
       return {

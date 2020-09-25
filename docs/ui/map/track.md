@@ -1,14 +1,14 @@
 # Track 轨迹
 
-地图轨迹动画 <api-link href="map/my-map-track">MyMapTrack</api-link>
+地图轨迹动画 <api-link href="map/sp-map-track">spMapTrack</api-link>
 
 ## 基础用法
 :::demo
 ```html
 <template>
-    <my-map :zoom="9">
-        <my-map-track :coordinates="coordinates" :period="20"></my-map-track>
-    </my-map>
+    <sp-map :zoom="9">
+        <sp-map-track :coordinates="coordinates" :period="20"></sp-map-track>
+    </sp-map>
 </template>
 
 <script>
@@ -33,9 +33,9 @@ export default {
 :::demo
 ```html
 <template>
-    <my-map :zoom="9">
-        <my-map-track :coordinates="coordinates" :period="20" :effect="effect"></my-map-track>
-    </my-map>
+    <sp-map :zoom="9">
+        <sp-map-track :coordinates="coordinates" :period="20" :effect="effect"></sp-map-track>
+    </sp-map>
 </template>
 
 <script>
@@ -63,14 +63,14 @@ export default {
 :::demo
 ```html
 <template>
-    <my-map :zoom="9">
-        <my-map-track :coordinates="coordinates" 
+    <sp-map :zoom="9">
+        <sp-map-track :coordinates="coordinates" 
                       :period="20" 
                       color="#999999"
                       :width="6"
                       :lineDash="[10]"
-                      :effect="effect"></my-map-track>
-    </my-map>
+                      :effect="effect"></sp-map-track>
+    </sp-map>
 </template>
 
 <script>
@@ -103,14 +103,14 @@ export default {
 :::demo
 ```html
 <template>
-  <my-map :zoom="9">
-    <my-map-track :coordinates="coordinates"
+  <sp-map :zoom="9">
+    <sp-map-track :coordinates="coordinates"
                   :period="40"
                   :effect="null"
                   @move="handleMove"
-    ></my-map-track>
-    <my-map-scatter v-if="coordinate" :coordinate="coordinate" fill="red"></my-map-scatter>
-  </my-map>
+    ></sp-map-track>
+    <sp-map-scatter v-if="coordinate" :coordinate="coordinate" fill="red"></sp-map-scatter>
+  </sp-map>
 </template>
 
 <script>
@@ -144,12 +144,12 @@ export default {
 :::demo
 ```html
 <template>
-    <my-map :zoom="9">
-        <my-map-track :coordinates="coordinates" 
+    <sp-map :zoom="9">
+        <sp-map-track :coordinates="coordinates" 
                       :period="20" 
                       :effect="effect"
-                       bezier></my-map-track>
-    </my-map>
+                       bezier></sp-map-track>
+    </sp-map>
 </template>
 
 <script>

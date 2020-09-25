@@ -1,6 +1,6 @@
 # Flip 数字反转
 
-标签编辑 文档 <api-link href="components/my-flip"> MyFlip </api-link>
+标签编辑 文档 <api-link href="components/sp-flip"> spFlip </api-link>
 
 ## 基础用法
 
@@ -9,13 +9,13 @@
 ```html
 <template>
   <div>
-    <my-flip :number="firstNumber" size="mini" color="green"></my-flip>
-    <my-flip :number="5" size="small" color="black"></my-flip>
+    <sp-flip :number="firstNumber" size="mini" color="green"></sp-flip>
+    <sp-flip :number="5" size="small" color="black"></sp-flip>
   </div>
 </template>
 
 <script>
-import {MyFlip} from '$ui'
+import {spFlip} from '$ui'
 export default {
   data() {
     return {

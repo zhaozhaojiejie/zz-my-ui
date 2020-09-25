@@ -1,54 +1,54 @@
 <template>
-  <MyMapPanel class="my-map-palette" title="调色板" width="300px" draggable>
+  <spMapPanel class="sp-map-palette" title="调色板" width="300px" draggable>
     <template v-slot:toolbar>
-      <MyClipboard :text="getText" action="copy" message success-tip="已导出到粘贴板">
+      <spClipboard :text="getText" action="copy" message success-tip="已导出到粘贴板">
         <el-button size="mini" type="primary">导出</el-button>
-      </MyClipboard>
+      </spClipboard>
 
       <el-button size="mini" @click="reset">重置</el-button>
     </template>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">色相</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">色相</div>
       <el-slider :max="360" v-model="model['hue-rotate']"></el-slider>
     </div>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">亮度</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">亮度</div>
       <el-slider :max="2" :step="0.01" v-model="model.brightness"></el-slider>
     </div>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">对比度</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">对比度</div>
       <el-slider :max="2" :step="0.01" v-model="model.contrast"></el-slider>
     </div>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">饱和度</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">饱和度</div>
       <el-slider :max="10" :step="0.01" :min="1" v-model="model.saturate"></el-slider>
     </div>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">透明度</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">透明度</div>
       <el-slider :max="1" :step="0.01" v-model="model.opacity"></el-slider>
     </div>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">灰度</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">灰度</div>
       <el-slider :max="1" :step="0.01" v-model="model.grayscale"></el-slider>
     </div>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">反相</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">反相</div>
       <el-slider :max="1" :step="0.01" v-model="model.invert"></el-slider>
     </div>
-    <div class="my-map-palette__item">
-      <div class="my-map-palette__title">深褐色</div>
+    <div class="sp-map-palette__item">
+      <div class="sp-map-palette__title">深褐色</div>
       <el-slider :max="1" :step="0.01" v-model="model.sepia"></el-slider>
     </div>
-  </MyMapPanel>
+  </spMapPanel>
 </template>
 
 <script>
   /**
    * 瓦片调色板
-   * @module $ui/map/my-map-palette
+   * @module $ui/map/sp-map-palette
    */
-  import MyMapPanel from '../my-map-panel'
-  import {MyClipboard} from '$ui'
+  import spMapPanel from '../sp-map-panel'
+  import {spClipboard} from '$ui'
 
   const defaultModel = {
     // 亮度
@@ -69,10 +69,10 @@
     invert: 0
   }
   export default {
-    name: 'MyMapPalette',
+    name: 'spMapPalette',
     components: {
-      MyMapPanel,
-      MyClipboard
+      spMapPanel,
+      spClipboard
     },
     props: {
       value: Object

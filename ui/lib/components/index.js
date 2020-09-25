@@ -1,20 +1,20 @@
 
 // todo:
 //  ----- components --------
-//  my-menu、my-pro
-//  my-card、my-wrapper
-//  my-stat、my-mention
-//  my-capture、my-list
-//  my-comment、
-//  my-window、my-dialog
-//  my-login、my-modify-password
-//  my-search-input
-//  my-navbar、my-sidebar、my-nav-tabs
+//  sp-menu、sp-pro
+//  sp-card、sp-wrapper
+//  sp-stat、sp-mention
+//  sp-capture、sp-list
+//  sp-comment、
+//  sp-window、sp-dialog
+//  sp-login、sp-modify-password
+//  sp-search-input
+//  sp-navbar、sp-sidebar、sp-nav-tabs
 //  ------ directives ---------
 //  v-unit
 //  ------ blocks ----------
 //  login
 //  ------- templates ---------
-//  my-admin
+//  sp-admin
 
 

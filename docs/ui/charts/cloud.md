@@ -7,7 +7,7 @@
 :::demo
 ```html
 <template>
-  <my-chart-cloud :data="data"></my-chart-cloud>
+  <sp-chart-cloud :data="data"></sp-chart-cloud>
 </template>
 
 <script>
@@ -37,7 +37,7 @@ export default {
 :::demo
 ```html
 <template>
-  <my-chart-cloud :data="data"></my-chart-cloud>
+  <sp-chart-cloud :data="data"></sp-chart-cloud>
 </template>
 
 <script>

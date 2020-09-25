@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <my-header title="图标库" theme="border-left" size="large">
+    <sp-header title="图标库" theme="border-left" size="large">
       <template v-slot:handle>
         <el-input v-model="keyword"
                   size="small"
@@ -8,12 +8,12 @@
                   prefix-icon="el-icon-search"
                   clearable></el-input>
       </template>
-    </my-header>
+    </sp-header>
     <div class="category" v-if="result.length">
       <h3>搜索结果</h3>
       <ul>
         <li v-for="(item, index) in result" :key="`${item.name}-${index}`">
-          <my-icon :name="item.name" :svg="item.svg"></my-icon>
+          <sp-icon :name="item.name" :svg="item.svg"></sp-icon>
           <p>{{item.name}}</p>
           <p>{{item.title}}</p>
         </li>
@@ -27,7 +27,7 @@
         <el-tab-pane label="全部" name="全部">
           <ul>
             <li v-for="(item, index) in getAllByType(name)" :key="`${item.name}-${index}`">
-              <my-icon :name="item.name" :svg="item.svg"></my-icon>
+              <sp-icon :name="item.name" :svg="item.svg"></sp-icon>
               <p>{{item.name}}</p>
               <p>{{item.title}}</p>
             </li>
@@ -36,7 +36,7 @@
         <el-tab-pane v-for="(items, key) in category" :key="`${name}-${key}`" :label="key" :name="key">
           <ul>
             <li v-for="(item, index) in items" :key="`${item.name}-${index}`">
-              <my-icon :name="item.name" :svg="item.svg"></my-icon>
+              <sp-icon :name="item.name" :svg="item.svg"></sp-icon>
               <p>{{item.name}}</p>
               <p>{{item.title}}</p>
             </li>
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-  import {MyIcon} from '$ui'
+  import {spIcon} from '$ui'
   import icons from '../data/icons'
   import '$ui/icons/index'
 
@@ -68,7 +68,7 @@
   export default {
     name: 'Icons',
     components: {
-      MyIcon
+      spIcon
     },
     data() {
       this.icons = icons
@@ -119,7 +119,7 @@
     width: 400px;
   }
 
-  .my-icon {
+  .sp-icon {
     font-size: 50px;
     padding: 15px 0 0 0;
   }

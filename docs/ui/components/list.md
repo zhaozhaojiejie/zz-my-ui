@@ -1,6 +1,6 @@
 # List 列表组件
 
-列表是数据展示的高频组件，文档 <api-link href="components/my-list">MyList</api-link>
+列表是数据展示的高频组件，文档 <api-link href="components/sp-list">spList</api-link>
 
 ## 使用示例
 
@@ -8,11 +8,11 @@
 :::demo(list-1)
 ```html
 <template>
-  <my-list :data="list">
+  <sp-list :data="list">
      <template v-slot="{item}">
        <div class="item">{{item}}</div>
      </template>
-  </my-list>
+  </sp-list>
 </template>
 <script>
 export default {
@@ -42,11 +42,11 @@ export default {
 :::demo(list-2)
 ```html
 <template>
-  <my-list :data="list" border split stripe>
+  <sp-list :data="list" border split stripe>
      <template v-slot="{item}">
        <div class="item">{{item}}</div>
      </template>
-  </my-list>
+  </sp-list>
 </template>
 <script>
 export default {
@@ -67,10 +67,10 @@ export default {
 :::demo(list-3)
 ```html
 <template>
-  <my-list :data="list" split :header-style="{padding:0}">
+  <sp-list :data="list" split :header-style="{padding:0}">
   
      <template v-slot:header>
-       <my-header title="头部标题" theme="bg-right"></my-header>
+       <sp-header title="头部标题" theme="bg-right"></sp-header>
      </template>
      
      <template v-slot="{item}">
@@ -81,7 +81,7 @@ export default {
         底部内容
      </template>
      
-  </my-list>
+  </sp-list>
 </template>
 <script>
 export default {
@@ -102,11 +102,11 @@ export default {
 :::demo(list-4)
 ```html
 <template>
-  <my-list :data="list" :columns="5" border split stripe>
+  <sp-list :data="list" :columns="5" border split stripe>
      <template v-slot="{item}">
        <div class="item">{{item}}</div>
      </template>
-  </my-list>
+  </sp-list>
 </template>
 <script>
 export default {
@@ -126,11 +126,11 @@ export default {
 :::demo(list-5)
 ```html
 <template>
-  <my-list :data="list" :columns="columns" fix-columns border split stripe>
+  <sp-list :data="list" :columns="columns" fix-columns border split stripe>
      <template v-slot="{item}">
        <div class="item">{{item}}</div>
      </template>
-  </my-list>
+  </sp-list>
 </template>
 <script>
 export default {
@@ -162,32 +162,32 @@ export default {
 <template>
   <el-row :gutter="20">
      <el-col :span="6">
-      <my-list :data="list" size="large" border split stripe>
+      <sp-list :data="list" size="large" border split stripe>
          <template v-slot="{item}">
            <div class="item">{{item}}</div>
          </template>
-      </my-list>
+      </sp-list>
      </el-col>
      <el-col :span="6">
-      <my-list :data="list" border split stripe>
+      <sp-list :data="list" border split stripe>
          <template v-slot="{item}">
            <div class="item">{{item}}</div>
          </template>
-      </my-list>
+      </sp-list>
      </el-col>
      <el-col :span="6">
-      <my-list :data="list" size="small" border split stripe>
+      <sp-list :data="list" size="small" border split stripe>
          <template v-slot="{item}">
            <div class="item">{{item}}</div>
          </template>
-      </my-list>
+      </sp-list>
      </el-col>
      <el-col :span="6">
-      <my-list :data="list" size="mini" border split stripe>
+      <sp-list :data="list" size="mini" border split stripe>
          <template v-slot="{item}">
            <div class="item">{{item}}</div>
          </template>
-      </my-list>
+      </sp-list>
     </el-col>
   </el-row>
 
@@ -209,7 +209,7 @@ export default {
 :::demo(list-7)
 ```html
 <template>
-  <my-list split border stripe :page-size="5" :loader="loader">
+  <sp-list split border stripe :page-size="5" :loader="loader">
      <template v-slot:header>
        Header
      </template>
@@ -222,7 +222,7 @@ export default {
         Footer
      </template>
      
-  </my-list>
+  </sp-list>
 </template>
 <script>
 export default {
@@ -254,7 +254,7 @@ export default {
 ```html
 <template>
   <div style="height: 400px; overflow: auto;">
-    <my-list split border stripe :page-size="10" :loader="loader" mode="scroll" fit>
+    <sp-list split border stripe :page-size="10" :loader="loader" mode="scroll" fit>
       <template v-slot:header>
         Header
       </template>
@@ -267,7 +267,7 @@ export default {
         Footer
       </template>
 
-    </my-list>
+    </sp-list>
   </div>
 </template>
 <script>
@@ -302,7 +302,7 @@ export default {
 ```html
 <template>
   <div style="height: 400px; overflow: auto;">
-    <my-list split border stripe :loader="loader" mode="virtual" :item-height="50">
+    <sp-list split border stripe :loader="loader" mode="virtual" :item-height="50">
       <template v-slot:header>
         Header
       </template>
@@ -315,7 +315,7 @@ export default {
         Footer
       </template>
 
-    </my-list>
+    </sp-list>
   </div>
 </template>
 <script>

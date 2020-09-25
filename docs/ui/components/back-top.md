@@ -1,7 +1,7 @@
 # BackTop 回到顶部按钮
 
 文档：
-<api-link href="components/my-back-top">MyBackTop</api-link> 
+<api-link href="components/sp-back-top">spBackTop</api-link> 
 
 ## 何时使用
 
@@ -19,15 +19,15 @@
     <ul ref="ul" style="height: 300px; overflow: auto">
       <li v-for="i in 50" :key="i">{{i}}</li>
     </ul>
-    <my-back-top v-if="container" :height="150" :container="container"></my-back-top>
+    <sp-back-top v-if="container" :height="150" :container="container"></sp-back-top>
    </div>
 </template>
 
 <script>
-import {MyBackTop} from '$ui'
+import {spBackTop} from '$ui'
 export default {
   components: {
-    MyBackTop
+    spBackTop
   },
   data() {
     return {

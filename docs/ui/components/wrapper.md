@@ -2,9 +2,9 @@
 
 页面容器，起到了内容概览和引导页级操作的作用。包括由面包屑、标题、页面内容简介、页面级操作等、页面级导航组成。
 
-通常与MyPro结合使用。
+通常与spPro结合使用。
 
-组件文档 <api-link href="components/my-wrapper">MyWrapper</api-link>
+组件文档 <api-link href="components/sp-wrapper">spWrapper</api-link>
 
 ## 代码示例
 
@@ -13,18 +13,18 @@
 :::demo(wrapper-1)
 ```html
 <template>
- <my-wrapper title="页面标题" sub-title="我是子标题" back>
+ <sp-wrapper title="页面标题" sub-title="我是子标题" back>
    <div>
       页面主要内容，页面主要内容，页面主要内容，页面主要内容，页面主要内容
    </div>
- </my-wrapper>
+ </sp-wrapper>
 </template>
 
 <script>
-import {MyWrapper} from '$ui'
+import {spWrapper} from '$ui'
 export default {
   components: {
-    MyWrapper
+    spWrapper
   }
 }
 </script>
@@ -37,7 +37,7 @@ export default {
 ```html
 <template>
   <div style="background: #eee;">
-   <my-wrapper title="页面标题"
+   <sp-wrapper title="页面标题"
                 sub-title="我是子标题"
                 back
                 :split="true"
@@ -66,15 +66,15 @@ export default {
       </el-dropdown>
     </template>    
     
-    <my-container>子容器内容</my-container>
-    <my-container>子容器内容</my-container>
+    <sp-container>子容器内容</sp-container>
+    <sp-container>子容器内容</sp-container>
      
      <div>
         页面主要内容，页面主要内容，页面主要内容，页面主要内容，页面主要内容
      </div>
      
     
-   </my-wrapper>
+   </sp-wrapper>
    </div>
 </template>
 

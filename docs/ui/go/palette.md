@@ -85,7 +85,7 @@
     }
   }
 
-  .my-go-palette {
+  .sp-go-palette {
     border-right: 1px solid #eee;
   }
 </style>

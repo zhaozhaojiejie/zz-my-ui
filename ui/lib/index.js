@@ -1,5 +1,5 @@
 import uiConfig from '$ui/config'
-import {MyMasterApp} from '$ui'
+import {spMasterApp} from '$ui'
 import {
   Vue,
   Vuex,
@@ -25,7 +25,7 @@ export const getView = require('$ui/import/view/' + process.env.NODE_ENV)
 export function appRender({el, store, router, access}) {
   return new Vue({
     components: {
-      MyMasterApp
+      spMasterApp
     },
     el: el,
     store,
@@ -33,7 +33,7 @@ export function appRender({el, store, router, access}) {
     access,
     render(h) {
       const props = {...uiConfig.scale}
-      return h('my-master-app', {props})
+      return h('sp-master-app', {props})
     }
   })
 }

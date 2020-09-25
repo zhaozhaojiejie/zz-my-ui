@@ -1,6 +1,6 @@
 # Marquee 无缝滚动
 
-无缝滚动的列表 文档 <api-link href="components/my-marquee">MyMarquee</api-link>
+无缝滚动的列表 文档 <api-link href="components/sp-marquee">spMarquee</api-link>
 
 :::tip
 滚动容器需要固定尺寸
@@ -12,12 +12,12 @@
 :::demo(marquee-1)
 ```html
 <template>
-  <my-marquee class="container" :data="list">
+  <sp-marquee class="container" :data="list">
     <div v-for="item in list" :key="item.title" class="item">
       <span class="title">{{item.title}}</span>
       <span class="date">{{item.date}}</span>
     </div>
-  </my-marquee>
+  </sp-marquee>
 </template>   
 
 <script>
@@ -58,12 +58,12 @@ export default {
 :::demo(marquee-2)
 ```html
 <template>
-  <my-marquee class="container" :data="list" direction="down">
+  <sp-marquee class="container" :data="list" direction="down">
     <div v-for="item in list" :key="item.title" class="item">
       <span class="title">{{item.title}}</span>
       <span class="date">{{item.date}}</span>
     </div>
-  </my-marquee>
+  </sp-marquee>
 </template>   
 
 <script>
@@ -105,9 +105,9 @@ export default {
 :::demo(marquee-3)
 ```html
 <template>
-  <my-marquee class="container" :data="list" direction="left">
+  <sp-marquee class="container" :data="list" direction="left">
     <div v-for="item in list" :key="item" class="item">{{item}}</div>
-  </my-marquee>
+  </sp-marquee>
 </template>   
 
 <script>
@@ -152,9 +152,9 @@ export default {
 :::demo(marquee-4)
 ```html
 <template>
-  <my-marquee class="container" :data="list" direction="right">
+  <sp-marquee class="container" :data="list" direction="right">
     <div v-for="item in list" :key="item" class="item">{{item}}</div>
-  </my-marquee>
+  </sp-marquee>
 </template>   
 
 <script>
@@ -198,12 +198,12 @@ export default {
 :::demo(marquee-5)
 ```html
 <template>
-  <my-marquee class="container" :data="list" :scroll-length="60" :wait-time="2000">
+  <sp-marquee class="container" :data="list" :scroll-length="60" :wait-time="2000">
     <div v-for="item in list" :key="item.title" class="item">
       <span class="title">{{item.title}}</span>
       <span class="date">{{item.date}}</span>
     </div>
-  </my-marquee>
+  </sp-marquee>
 </template>   
 
 <script>

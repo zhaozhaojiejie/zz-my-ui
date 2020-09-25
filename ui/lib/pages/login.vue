@@ -1,6 +1,6 @@
 <template>
   <div class="bg">
-    <my-login pki center :login="login" @success="handleSuccess"></my-login>
+    <sp-login pki center :login="login" @success="handleSuccess"></sp-login>
     <Wave width="100%" height="100%"></Wave>
   </div>
 </template>
@@ -9,7 +9,7 @@
 
   export default {
     components: {
-      Wave: () => import('$ui/components/my-wave')
+      Wave: () => import('$ui/components/sp-wave')
     },
     props: {
       // url查询参数名称
@@ -76,11 +76,11 @@
     background: url("~$ui/assets/bg/01.jpg") center center;
   }
 
-  .my-login {
+  .sp-login {
     z-index: 3;
   }
 
-  .my-wave {
+  .sp-wave {
     position: absolute;
     left: 0;
     bottom: 0;

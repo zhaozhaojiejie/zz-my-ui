@@ -3,31 +3,31 @@
     <h3>{{title}}</h3>
     <p>{{summary}}</p>
     <div class="primary" v-if="primary">
-      <my-float class="clipboard" :style="getStyle(primary)" title="点击可复制颜色码" :data-clipboard-text="primary">
-        <my-float-item>${{name}}-primary</my-float-item>
-        <my-float-item float="right">{{primary}}</my-float-item>
-      </my-float>
+      <sp-float class="clipboard" :style="getStyle(primary)" title="点击可复制颜色码" :data-clipboard-text="primary">
+        <sp-float-item>${{name}}-primary</sp-float-item>
+        <sp-float-item float="right">{{primary}}</sp-float-item>
+      </sp-float>
     </div>
     <div class="levels">
-      <my-float class="clipboard" :data-clipboard-text="color" title="点击可复制颜色码" v-for="(color,index) in colors"
+      <sp-float class="clipboard" :data-clipboard-text="color" title="点击可复制颜色码" v-for="(color,index) in colors"
                 :key="index"
                 :style="getStyle(color,index)">
-        <my-float-item>{{getVarName(index)}}</my-float-item>
-        <my-float-item float="right">{{color}}</my-float-item>
-      </my-float>
+        <sp-float-item>{{getVarName(index)}}</sp-float-item>
+        <sp-float-item float="right">{{color}}</sp-float-item>
+      </sp-float>
     </div>
   </div>
 </template>
 
 <script>
-  import {MyFloat, MyFloatItem} from '$ui'
+  import {spFloat, spFloatItem} from '$ui'
   import Clipboard from 'clipboard'
 
   export default {
     name: 'Palette',
     components: {
-      MyFloat,
-      MyFloatItem
+      spFloat,
+      spFloatItem
     },
     props: {
       name: String,
@@ -93,25 +93,25 @@
     }
   }
 
-  .my-float {
+  .sp-float {
     cursor: pointer;
     transition: all 0.2s;
     font-size: $--font-size-small;
   }
 
-  .my-float-item {
+  .sp-float-item {
     opacity: 0.9;
   }
 
   .primary {
     margin-bottom: 1rem;
 
-    .my-float {
+    .sp-float {
       border-radius: 4px;
     }
   }
 
-  .my-float {
+  .sp-float {
     height: 40px;
     line-height: 40px;
     padding: 0 15px;
@@ -125,11 +125,11 @@
 
   .levels {
 
-    .my-float:first-child {
+    .sp-float:first-child {
       border-radius: 4px 4px 0 0;
     }
 
-    .my-float:last-child {
+    .sp-float:last-child {
       border-radius: 0 0 4px 4px;
     }
   }

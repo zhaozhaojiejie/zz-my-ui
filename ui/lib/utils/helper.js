@@ -7,7 +7,7 @@
  * 组件前缀
  * @member prefix
  */
-export const prefix = 'My'
+export const prefix = 'sp'
 
 /**
  * 命名空间

@@ -6,10 +6,10 @@
 
 ```html
 <template>
-  <my-map ref="map"  :center="[120, 30]"  :zoom="6"  @ready="readyHandle" @on-dragUp="dragUpHandle">
-    <my-map-circle :center="[120, 30]" :radius="50000" fill="red" :props="{'drag': false, 'id': 'c1'}" ></my-map-circle>
-    <my-map-circle :center="[120.08, 30.08]" :radius="50000" fill="green" :props="{'drag': true, 'id': 'c2'}" ></my-map-circle>
-  </my-map>
+  <sp-map ref="map"  :center="[120, 30]"  :zoom="6"  @ready="readyHandle" @on-dragUp="dragUpHandle">
+    <sp-map-circle :center="[120, 30]" :radius="50000" fill="red" :props="{'drag': false, 'id': 'c1'}" ></sp-map-circle>
+    <sp-map-circle :center="[120.08, 30.08]" :radius="50000" fill="green" :props="{'drag': true, 'id': 'c2'}" ></sp-map-circle>
+  </sp-map>
 </template>
 <script>
 import Drag from '$ui/map/utils/interactions/drag.js'
@@ -42,13 +42,13 @@ export default {
 
 ```html
 <template>
-<my-map ref="map" :center="[120, 30]"  :zoom="6" @pointermove="overLayMouseMove">
-  <my-map-html ref="html1" id="html1" :position="htmlPoint" @mousedown="overLayMouseDown"  @mouseup="overLayMouseUp" >
+<sp-map ref="map" :center="[120, 30]"  :zoom="6" @pointermove="overLayMouseMove">
+  <sp-map-html ref="html1" id="html1" :position="htmlPoint" @mousedown="overLayMouseDown"  @mouseup="overLayMouseUp" >
     <div class="warp"  >
       <h2>hello world</h2>
     </div>
-  </my-map-html>
-</my-map>
+  </sp-map-html>
+</sp-map>
 </template>
 <style lang="scss" scope>
 .warp{

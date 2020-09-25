@@ -5,11 +5,11 @@ const fs = require('fs')
 const utils = require('./utils')
 const core = require('./index')
 const merge = require('lodash/merge')
-const configPath = utils.join(core.ProjectRootPath, 'my.config.js')
-let myConfig = null
-// 如果项目工程根目录有 my.config.js 文件，即读取配置文件，合并到配置信息
-if (!myConfig && fs.existsSync(configPath)) {
-  myConfig = core.IsInstalled ? require('../../../../my.config.js') : require('../my.config')
+const configPath = utils.join(core.ProjectRootPath, 'sp.config.js')
+let spConfig = null
+// 如果项目工程根目录有 sp.config.js 文件，即读取配置文件，合并到配置信息
+if (!spConfig && fs.existsSync(configPath)) {
+  spConfig = core.IsInstalled ? require('../../../../sp.config.js') : require('../sp.config')
 }
 
 let __config__ = {
@@ -81,7 +81,7 @@ let __config__ = {
   /**
    * 文档部署目录
    */
-  docsBaseUrl: '/my/',
+  docsBaseUrl: '/sp/',
 
   /**
    * 文档编译输出目录
@@ -111,7 +111,7 @@ let __config__ = {
   /**
    * 默认情况下 babel-loader 会忽略所有 node_modules 中的文件。如果你想要通过 Babel 显式转译一个依赖，可以在这个选项中列出来。
    */
-  transpileDependencies: ['@xdh/my'],
+  transpileDependencies: ['@xdh/sp'],
 
   // 生成环境是否生成SourceMap
   productionSourceMap: false,
@@ -131,7 +131,7 @@ let __config__ = {
   }
 }
 
-__config__ = merge(__config__, myConfig || {})
+__config__ = merge(__config__, spConfig || {})
 
 
 module.exports = config => {

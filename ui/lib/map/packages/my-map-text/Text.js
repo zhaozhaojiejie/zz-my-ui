@@ -1,13 +1,13 @@
 /**
  * 文字覆盖物组件
- * @module $ui/map/my-map-text
+ * @module $ui/map/sp-map-text
  */
 import Point from 'ol/geom/Point'
 import parseStyle from '../../utils/style'
 import featureMixin from '../../mixins/feature'
 
 export default {
-  name: 'MyMapText',
+  name: 'spMapText',
   mixins: [featureMixin],
   /**
    * 属性参数, 继承 [$ui/map/mixins/feature]{@link module:$ui/map/mixins/feature}

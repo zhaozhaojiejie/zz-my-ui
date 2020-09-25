@@ -1,0 +1,5 @@
+@import "sp-typography";
+
+@include b(paragraph) {
+  margin-bottom: 1em;
+}

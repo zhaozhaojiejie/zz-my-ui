@@ -31,7 +31,7 @@
       }
     },
     mounted() {
-      import(`../../../.my/demo/${this.id}.vue`).then(res => {
+      import(`../../../.sp/demo/${this.id}.vue`).then(res => {
         this.component = res.default
       })
     }

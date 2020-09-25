@@ -1,15 +1,15 @@
 # Overview 鹰眼
 
-地图缩略图控件。文档<api-link href="map/my-map-overview"> MyMapOverview </api-link>
+地图缩略图控件。文档<api-link href="map/sp-map-overview"> spMapOverview </api-link>
 
 ## 基础用法
 
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-overview></my-map-overview>
-  </my-map>
+  <sp-map>
+    <sp-map-overview></sp-map-overview>
+  </sp-map>
 </template>
 ```
 :::
@@ -18,9 +18,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-overview :collapsed="false"></my-map-overview>
-  </my-map>
+  <sp-map>
+    <sp-map-overview :collapsed="false"></sp-map-overview>
+  </sp-map>
 </template>
 ```
 :::
@@ -30,9 +30,9 @@
 :::demo
 ```html
 <template>
-  <my-map>
-    <my-map-overview theme="dark"></my-map-overview>
-  </my-map>
+  <sp-map>
+    <sp-map-overview theme="dark"></sp-map-overview>
+  </sp-map>
 </template>
 ```
 :::

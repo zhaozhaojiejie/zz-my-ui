@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>$ui/utils/bridge - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-$ui_utils_events-Events.html">Events</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_events-Events.html#$emit">$emit</a></li><li data-type='method'><a href="module-$ui_utils_events-Events.html#$off">$off</a></li><li data-type='method'><a href="module-$ui_utils_events-Events.html#$on">$on</a></li><li data-type='method'><a href="module-$ui_utils_events-Events.html#$once">$once</a></li><li data-type='method'><a href="module-$ui_utils_events-Events.html#destroy">destroy</a></li><li data-type='method'><a href="module-$ui_utils_events-Events.html#off">off</a></li><li data-type='method'><a href="module-$ui_utils_events-Events.html#on">on</a></li></ul></li><li><a href="module-$ui_utils_messager.html">$ui/utils/messager</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_messager.html#bridgeHandler">bridgeHandler</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#buildBridge">buildBridge</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#destroy">destroy</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#off">off</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#pass">pass</a></li></ul></li><li><a href="module-$ui_utils_queue-Queue.html">Queue</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_queue-Queue.html#clear">clear</a></li><li data-type='method'><a href="module-$ui_utils_queue-Queue.html#destroy">destroy</a></li><li data-type='method'><a href="module-$ui_utils_queue-Queue.html#push">push</a></li><li data-type='method'><a href="module-$ui_utils_queue-Queue.html#run">run</a></li><li data-type='method'><a href="module-$ui_utils_queue-Queue.html#start">start</a></li><li data-type='method'><a href="module-$ui_utils_queue-Queue.html#stop">stop</a></li></ul></li><li><a href="module-$ui_utils_socket.html">$ui/utils/socket</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_socket.html#close">close</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#connect">connect</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#destroy">destroy</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#getState">getState</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#reconnect">reconnect</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#send">send</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-$ui_utils_ajax.html">$ui/utils/ajax</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_ajax.html#.transformHandler">transformHandler</a></li></ul></li><li><a href="module-$ui_utils_axios.html">$ui/utils/axios</a></li><li><a href="module-$ui_utils_bom.html">$ui/utils/bom</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_bom.html#.exitFullScreen">exitFullScreen</a></li><li data-type='method'><a href="module-$ui_utils_bom.html#.fullScreen">fullScreen</a></li><li data-type='method'><a href="module-$ui_utils_bom.html#.isFullScreen">isFullScreen</a></li></ul></li><li><a href="module-$ui_utils_bridge.html">$ui/utils/bridge</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_bridge.html#.fire">fire</a></li><li data-type='method'><a href="module-$ui_utils_bridge.html#.on">on</a></li><li data-type='method'><a href="module-$ui_utils_bridge.html#.once">once</a></li><li data-type='method'><a href="module-$ui_utils_bridge.html#.provider">provider</a></li><li data-type='method'><a href="module-$ui_utils_bridge.html#.service">service</a></li></ul></li><li><a href="module-$ui_utils_bus.html">$ui/utils/bus</a></li><li><a href="module-$ui_utils_cookie.html">$ui/utils/cookie</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_cookie.html#.get">get</a></li><li data-type='method'><a href="module-$ui_utils_cookie.html#.has">has</a></li><li data-type='method'><a href="module-$ui_utils_cookie.html#.keys">keys</a></li><li data-type='method'><a href="module-$ui_utils_cookie.html#.remove">remove</a></li><li data-type='method'><a href="module-$ui_utils_cookie.html#.set">set</a></li></ul></li><li><a href="module-$ui_utils_crypto.html">$ui/utils/crypto</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_crypto.html#.base64Decode">base64Decode</a></li><li data-type='method'><a href="module-$ui_utils_crypto.html#.base64Encode">base64Encode</a></li><li data-type='method'><a href="module-$ui_utils_crypto.html#.decryptByDES">decryptByDES</a></li><li data-type='method'><a href="module-$ui_utils_crypto.html#.encryptByDES">encryptByDES</a></li><li data-type='method'><a href="module-$ui_utils_crypto.html#.md5">md5</a></li></ul></li><li><a href="module-$ui_utils_date.html">$ui/utils/date</a></li><li><a href="module-$ui_utils_dictionary.html">$ui/utils/dictionary</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_dictionary.html#.arrayToMap">arrayToMap</a></li><li data-type='method'><a href="module-$ui_utils_dictionary.html#.keysToMap">keysToMap</a></li><li data-type='method'><a href="module-$ui_utils_dictionary.html#.mapToArray">mapToArray</a></li><li data-type='method'><a href="module-$ui_utils_dictionary.html#.mapToKeys">mapToKeys</a></li></ul></li><li><a href="module-$ui_utils_dom.html">$ui/utils/dom</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_dom.html#.insertAfter">insertAfter</a></li><li data-type='method'><a href="module-$ui_utils_dom.html#.isHidden">isHidden</a></li><li data-type='method'><a href="module-$ui_utils_dom.html#.scrollTop">scrollTop</a></li></ul></li><li><a href="module-$ui_utils_download.html">$ui/utils/download</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_download.html#.download">download</a></li><li data-type='method'><a href="module-$ui_utils_download.html#.downloadBlob">downloadBlob</a></li><li data-type='method'><a href="module-$ui_utils_download.html#.downloadByData">downloadByData</a></li><li data-type='method'><a href="module-$ui_utils_download.html#.downloadByPost">downloadByPost</a></li><li data-type='method'><a href="module-$ui_utils_download.html#.stringToBlob">stringToBlob</a></li></ul></li><li><a href="module-$ui_utils_events.html">$ui/utils/events</a></li><li><a href="module-$ui_utils_excel.html">$ui/utils/excel</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_excel.html#.reader">reader</a></li></ul></li><li><a href="module-$ui_utils_helper.html">$ui/utils/helper</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_helper.html#.install">install</a></li></ul></li><li><a href="module-$ui_utils_log.html">$ui/utils/log</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_log.html#.create">create</a></li><li data-type='method'><a href="module-$ui_utils_log.html#.dir">dir</a></li><li data-type='method'><a href="module-$ui_utils_log.html#.error">error</a></li><li data-type='method'><a href="module-$ui_utils_log.html#.info">info</a></li><li data-type='method'><a href="module-$ui_utils_log.html#.log">log</a></li><li data-type='method'><a href="module-$ui_utils_log.html#.tip">tip</a></li><li data-type='method'><a href="module-$ui_utils_log.html#.warn">warn</a></li></ul></li><li><a href="module-$ui_utils_lunar.html">$ui/utils/lunar</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_lunar.html#.getFestivals">getFestivals</a></li></ul></li><li><a href="module-$ui_utils_messager.html">$ui/utils/messager</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_messager.html#bridgeHandler">bridgeHandler</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#buildBridge">buildBridge</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#destroy">destroy</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#off">off</a></li><li data-type='method'><a href="module-$ui_utils_messager.html#pass">pass</a></li></ul></li><li><a href="module-$ui_utils_mock.html">$ui/utils/mock</a></li><li><a href="module-$ui_utils_money.html">$ui/utils/money</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_money.html#.format">format</a></li><li data-type='method'><a href="module-$ui_utils_money.html#.reverse">reverse</a></li></ul></li><li><a href="module-$ui_utils_queue.html">$ui/utils/queue</a></li><li><a href="module-$ui_utils_regex.html">$ui/utils/regex</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_regex.html#.isEmail">isEmail</a></li><li data-type='method'><a href="module-$ui_utils_regex.html#.isId">isId</a></li><li data-type='method'><a href="module-$ui_utils_regex.html#.isMobilePhone">isMobilePhone</a></li><li data-type='method'><a href="module-$ui_utils_regex.html#.isUrl">isUrl</a></li></ul></li><li><a href="module-$ui_utils_responsive.html">$ui/utils/responsive</a></li><li><a href="module-$ui_utils_skin.html">$ui/utils/skin</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_skin.html#.change">change</a></li><li data-type='method'><a href="module-$ui_utils_skin.html#.get">get</a></li></ul></li><li><a href="module-$ui_utils_socket.html">$ui/utils/socket</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_socket.html#close">close</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#connect">connect</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#destroy">destroy</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#getState">getState</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#reconnect">reconnect</a></li><li data-type='method'><a href="module-$ui_utils_socket.html#send">send</a></li></ul></li><li><a href="module-$ui_utils_storage.html">$ui/utils/storage</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_storage.html#.clear">clear</a></li><li data-type='method'><a href="module-$ui_utils_storage.html#.get">get</a></li><li data-type='method'><a href="module-$ui_utils_storage.html#.remove">remove</a></li><li data-type='method'><a href="module-$ui_utils_storage.html#.save">save</a></li></ul></li><li><a href="module-$ui_utils_tree.html">$ui/utils/tree</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_tree.html#.create">create</a></li><li data-type='method'><a href="module-$ui_utils_tree.html#.find">find</a></li><li data-type='method'><a href="module-$ui_utils_tree.html#.findPath">findPath</a></li></ul></li><li></li><li><a href="module-$ui_utils_tween.html">$ui/utils/tween</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInBack">easeInBack</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInBounce">easeInBounce</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInCirc">easeInCirc</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInCubic">easeInCubic</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInElastic">easeInElastic</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInExpo">easeInExpo</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInOutBack">easeInOutBack</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInOutBounce">easeInOutBounce</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInOutCubic">easeInOutCubic</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInOutQuad">easeInOutQuad</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInOutQuart">easeInOutQuart</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInOutQuint">easeInOutQuint</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInOutSine">easeInOutSine</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInQuad">easeInQuad</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInQuart">easeInQuart</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInQuint">easeInQuint</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeInSine">easeInSine</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutBack">easeOutBack</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutBounce">easeOutBounce</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutCirc">easeOutCirc</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutCubic">easeOutCubic</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutElastic">easeOutElastic</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutExpo">easeOutExpo</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutQuad">easeOutQuad</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutQuart">easeOutQuart</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutQuint">easeOutQuint</a></li><li data-type='method'><a href="module-$ui_utils_tween.html#.easeOutSine">easeOutSine</a></li></ul></li><li><a href="module-$ui_utils_url.html">$ui/utils/url</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_url.html#.appendQuery">appendQuery</a></li><li data-type='method'><a href="module-$ui_utils_url.html#.getHost">getHost</a></li><li data-type='method'><a href="module-$ui_utils_url.html#.getParams">getParams</a></li><li data-type='method'><a href="module-$ui_utils_url.html#.parse">parse</a></li><li data-type='method'><a href="module-$ui_utils_url.html#.stringify">stringify</a></li></ul></li><li><a href="module-$ui_utils_util.html">$ui/utils/util</a><ul class='methods'><li data-type='method'><a href="module-$ui_utils_util.html#.cancelAnimationFrame">cancelAnimationFrame</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.cloneDeep">cloneDeep</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.debounce">debounce</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.get">get</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.grouping">grouping</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.guid">guid</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.isEqual">isEqual</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.pager">pager</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.requestAnimationFrame">requestAnimationFrame</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.set">set</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.throttle">throttle</a></li><li data-type='method'><a href="module-$ui_utils_util.html#.uid">uid</a></li></ul></li></ul><h3>Events</h3><ul><li><a href="module-$ui_utils_socket.html#~event:close">close</a></li><li><a href="module-$ui_utils_socket.html#~event:error">error</a></li><li><a href="module-$ui_utils_socket.html#~event:message">message</a></li><li><a href="module-$ui_utils_socket.html#~event:open">open</a></li><li><a href="module-utils_queue-Queue.html#event:complete">complete</a></li><li><a href="module-utils_queue-Queue.html#event:error">error</a></li><li><a href="module-utils_queue-Queue.html#event:success">success</a></li></ul><h3>Global</h3><ul><li><a href="global.html#isFlexSupported">isFlexSupported</a></li><li><a href="global.html#isStyleSupport">isStyleSupport</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">$ui/utils/bridge</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description"><p>跨窗口消息传递</p></div>
+            
+
+            
+                
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bridge.js.html">bridge.js</a>, <a href="bridge.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".fire"><span class="type-signature">(static) </span>fire<span class="signature">(options)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bridge.js.html">bridge.js</a>, <a href="bridge.js.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>向目标发送信息</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>参数对象</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bridge</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>目标的桥页面url地址</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>channel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>消息频道名称</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>消息内容</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>origin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>自身的桥地址，目标可以通过桥联系到自己</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".on"><span class="type-signature">(static) </span>on<span class="signature">(channel, handler, opts)</span><span class="type-signature"> &rarr; {Messager}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bridge.js.html">bridge.js</a>, <a href="bridge.js.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>接收目标发送过来的信息</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>channel</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>消息频道名称</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>handler</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>消息处理函数</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>opts</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Messager参数</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Messager</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".once"><span class="type-signature">(static) </span>once<span class="signature">(channel, handler)</span><span class="type-signature"> &rarr; {Messager}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bridge.js.html">bridge.js</a>, <a href="bridge.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>接收目标发送过来的信息, 只接收一次</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>channel</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>消息频道名称</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>handler</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>消息处理函数</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Messager</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".provider"><span class="type-signature">(static) </span>provider<span class="signature">(name, origin, handler)</span><span class="type-signature"> &rarr; {Messager}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bridge.js.html">bridge.js</a>, <a href="bridge.js.html#line121">line 121</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>创建服务提供者</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// 创建一个服务提供者
+ const messager = provider({
+        name: 'spService',
+        origin: 'http://localhost:8000/assets/bridge/index.html',
+        handler: function (data, callback) {
+          const response = '响应内容'
+          callback(response)
+        }
+      })
+ // 销毁
+ messager.destroy()</code></pre>
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>服务名称</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>origin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>自己的桥页面地址</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>handler</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>服务消息句柄函数，当服务被调用时触发，参数：data（调用服务传过来的数据），callback响应函数，通过回调响应给调用者</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Messager</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".service"><span class="type-signature">(static) </span>service<span class="signature">(name, bridge, data, origin, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bridge.js.html">bridge.js</a>, <a href="bridge.js.html#line80">line 80</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>调用消息服务</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// 请求服务
+ service({
+        name: 'spService',
+        bridge: 'http://localhost:8001/app1/assets/bridge/index.html',
+        origin: 'http://localhost:8000/assets/bridge/index.html',
+        data: {
+          id: '123'
+        },
+        callback(res) {
+          console.log('服务响应信息', res)
+        }
+      })</code></pre>
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>服务名称</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bridge</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>服务提供方的桥页面地址</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>发送的数据</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>origin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>自己的桥页面地址</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>回调函数，服务提供方响应的数据通过回调返回</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Sep 24 2020 11:07:46 GMT+0800 (China Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4e5f73318b5cb0c389e3d9a05f831cc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

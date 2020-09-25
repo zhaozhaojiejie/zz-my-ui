@@ -1,6 +1,6 @@
 # Crud 增删改查组件
 
-支持通用单表增删改查功能。文档 <api-link href="components/my-crud">MyCrud</api-link> 
+支持通用单表增删改查功能。文档 <api-link href="components/sp-crud">spCrud</api-link> 
 
 ## 代码示例
 
@@ -10,7 +10,7 @@
 ```html
 <template>
   <div style="background: #eee; padding:10px;">
-    <my-crud :filter="{collapsible:true, labelWidth:'80px'}"
+    <sp-crud :filter="{collapsible:true, labelWidth:'80px'}"
              ref="crud"
              :columns="columns"
              :adapter="adapter"
@@ -27,32 +27,32 @@
       </template>
 
       <template v-slot:filter>
-        <my-input label="用户名" name="user"></my-input>
-        <my-select label="类型" name="type" collapsible></my-select>
-        <my-input label="标题" name="title" collapsible></my-input>
-        <my-range label="范围" mode="date" name="range" collapsible></my-range>
+        <sp-input label="用户名" name="user"></sp-input>
+        <sp-select label="类型" name="type" collapsible></sp-select>
+        <sp-input label="标题" name="title" collapsible></sp-input>
+        <sp-range label="范围" mode="date" name="range" collapsible></sp-range>
       </template>
 
       <template v-slot:form="{row}">
         <div>
-          <my-input label="用户名" name="name" :rules="{required:true}"></my-input>
-          <my-date-picker label="日期" name="date" :props="{valueFormat:'yyyy-MM-dd'}"></my-date-picker>
+          <sp-input label="用户名" name="name" :rules="{required:true}"></sp-input>
+          <sp-date-picker label="日期" name="date" :props="{valueFormat:'yyyy-MM-dd'}"></sp-date-picker>
         </div>
       </template>
-    </my-crud>
+    </sp-crud>
   </div>
 </template>
 
 <script>
 
   import user from '$docs/code/mixin/user'
-  import {MyCrud} from '$ui'
+  import {spCrud} from '$ui'
 
   export default {
     mixins: [user],
     data() {
       return {
-        adapter: MyCrud.adapter.call(this, 'user'),
+        adapter: spCrud.adapter.call(this, 'user'),
         tags: [
           {label: '选项1', value: 1},
           {label: '选项1', value: 2},

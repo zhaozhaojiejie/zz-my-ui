@@ -1,6 +1,6 @@
 # Watermark 水印组件
 
-在页面打上水印文本标识。 文档 <api-link href="components/my-watermark">MyWatermark</api-link>
+在页面打上水印文本标识。 文档 <api-link href="components/sp-watermark">spWatermark</api-link>
 
 ## 代码演示
 
@@ -9,9 +9,9 @@
 :::demo
 ```html
 <template>
-  <my-watermark text="水印文本">
+  <sp-watermark text="水印文本">
      <div style="height:400px;"></div>
-  </my-watermark>
+  </sp-watermark>
 </template>
 ```
 :::
@@ -21,9 +21,9 @@
 :::demo
 ```html
 <template>
-  <my-watermark :text="text" :width="200" :height="200">
+  <sp-watermark :text="text" :width="200" :height="200">
      <div style="height:400px;"></div>
-  </my-watermark>
+  </sp-watermark>
 </template>
 
 <script>

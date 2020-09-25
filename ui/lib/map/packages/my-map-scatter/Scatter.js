@@ -1,6 +1,6 @@
 /**
  * 散点图
- * @module $ui/map/my-map-scatter
+ * @module $ui/map/sp-map-scatter
  */
 import Point from 'ol/geom/Point'
 import {easeOut} from 'ol/easing'
@@ -19,7 +19,7 @@ const defaultRippleEffect = {
 
 
 export default {
-  name: 'MyMapScatter',
+  name: 'spMapScatter',
   mixins: [featureMixin],
   /**
    * 属性参数, 继承 [$ui/map/mixins/feature]{@link module:$ui/map/mixins/feature}

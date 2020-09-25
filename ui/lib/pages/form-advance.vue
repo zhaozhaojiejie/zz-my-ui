@@ -2,11 +2,11 @@
 title: 高级表单
 ---
 <template>
-  <my-wrapper class="advance-form" ref="wrapper" title="高级表单">
+  <sp-wrapper class="advance-form" ref="wrapper" title="高级表单">
     <template v-slot:extra>
       高级表单常见于一次性输入和提交大批量数据的场景。
     </template>
-    <my-form :footer="null"
+    <sp-form :footer="null"
              ref="form"
              size="small"
              :model="form"
@@ -14,72 +14,72 @@ title: 高级表单
              @submit="handleSubmit"
              @change="handleFormChange">
 
-      <my-panel theme="border-left" title="仓库管理" shadow="never" :border="false">
+      <sp-panel theme="border-left" title="仓库管理" shadow="never" :border="false">
         <el-row :gutter="24">
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field1" label="仓库名"></my-input>
+            <sp-input name="field1" label="仓库名"></sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field2" label="仓库域名">
+            <sp-input name="field2" label="仓库域名">
 
-            </my-input>
+            </sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-select name="field3" label="仓库管理员" :loader="loader"></my-select>
+            <sp-select name="field3" label="仓库管理员" :loader="loader"></sp-select>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field4" label="审批人" :loader="loader"></my-input>
+            <sp-input name="field4" label="审批人" :loader="loader"></sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field5" label="生效日期"></my-input>
+            <sp-input name="field5" label="生效日期"></sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field6" label="仓库类型"></my-input>
+            <sp-input name="field6" label="仓库类型"></sp-input>
           </el-col>
         </el-row>
-      </my-panel>
-      <my-panel theme="border-left" title="任务管理" shadow="never" :border="false">
+      </sp-panel>
+      <sp-panel theme="border-left" title="任务管理" shadow="never" :border="false">
         <el-row :gutter="24">
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field7" label="任务名"></my-input>
+            <sp-input name="field7" label="任务名"></sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field8" label="任务描述"></my-input>
+            <sp-input name="field8" label="任务描述"></sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-select name="field9" label="执行人" :loader="loader"></my-select>
+            <sp-select name="field9" label="执行人" :loader="loader"></sp-select>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field10" label="责任人" :loader="loader"></my-input>
+            <sp-input name="field10" label="责任人" :loader="loader"></sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field11" label="生效日期"></my-input>
+            <sp-input name="field11" label="生效日期"></sp-input>
           </el-col>
           <el-col :span="6" :xs="24" :sm="12" :md="8" :lg="6">
-            <my-input name="field12" label="任务类型"></my-input>
+            <sp-input name="field12" label="任务类型"></sp-input>
           </el-col>
         </el-row>
-      </my-panel>
-      <my-panel theme="border-left" title="成员管理" shadow="never" :border="false">
-        <my-table class="table-form" :columns="columns" :data="form.members">
+      </sp-panel>
+      <sp-panel theme="border-left" title="成员管理" shadow="never" :border="false">
+        <sp-table class="table-form" :columns="columns" :data="form.members">
           <template v-slot:name="{$index}">
-            <my-input :name="`members.${$index}.name`"
+            <sp-input :name="`members.${$index}.name`"
                       size="small"
                       :rules="{required:true}"
-                      class="table-input"></my-input>
+                      class="table-input"></sp-input>
           </template>
           <template v-slot:no="{$index}">
-            <my-input :name="`members.${$index}.no`"
+            <sp-input :name="`members.${$index}.no`"
                       :rules="{required:true}"
                       size="small"
-                      class="table-input"></my-input>
+                      class="table-input"></sp-input>
           </template>
           <template v-slot:dept="{$index}">
-            <my-select :name="`members.${$index}.dept`"
+            <sp-select :name="`members.${$index}.dept`"
                        size="small"
                        :rules="{required:true}"
                        class="table-input"
-                       :loader="loader"></my-select>
+                       :loader="loader"></sp-select>
           </template>
           <template v-slot:handle="{$index}">
             <el-button size="small" @click="removeMember($index)">删除</el-button>
@@ -87,17 +87,17 @@ title: 高级表单
           <template v-slot:append>
             <div class="add-btn" @click="addMember"><i class="el-icon-plus"></i>新增成员</div>
           </template>
-        </my-table>
-      </my-panel>
-    </my-form>
+        </sp-table>
+      </sp-panel>
+    </sp-form>
 
 
-    <my-container theme="info" border shadow class="form-footer">
+    <sp-container theme="info" border shadow class="form-footer">
       <el-button type="primary" @click="submit">提交</el-button>
-    </my-container>
+    </sp-container>
 
 
-  </my-wrapper>
+  </sp-wrapper>
 </template>
 
 <script>

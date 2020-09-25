@@ -7,9 +7,9 @@
 :::demo
 ```html
 <template>
-<my-form :model="model" @submit="handleSubmit">
-   <my-cron name="cron"></my-cron>
-</my-form>
+<sp-form :model="model" @submit="handleSubmit">
+   <sp-cron name="cron"></sp-cron>
+</sp-form>
 </template>
 
 <script>

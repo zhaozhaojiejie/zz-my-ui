@@ -1,31 +1,31 @@
 <template>
-  <MyMapPlacement class="my-map-pointer" v-bind="$attrs">
+  <spMapPlacement class="sp-map-pointer" v-bind="$attrs">
     <div
-      class="my-map-pointer__inner"
+      class="sp-map-pointer__inner"
       :class="{'is-lock':lock}">
       <span>[ {{coordinate.join(', ')}} ]</span>
       <i class="el-icon-document-copy" ref="btn" title="复制"></i>
       <i class="el-icon-refresh-left" v-if="lock" title="解锁" @click="unlock"></i>
     </div>
-  </MyMapPlacement>
+  </spMapPlacement>
 </template>
 
 <script>
   /**
    * 经纬度提取工具
-   * @module $ui/map/my-map-pointer
+   * @module $ui/map/sp-map-pointer
    */
-  import {MyMapPlacement} from '$ui/map'
+  import {spMapPlacement} from '$ui/map'
   import Clipboard from 'clipboard'
 
   export default {
-    name: 'MyMapPointer',
+    name: 'spMapPointer',
     inject: ['myMap'],
     components: {
-      MyMapPlacement
+      spMapPlacement
     },
     /**
-     * 参数属性， 继承 my-map-placement
+     * 参数属性， 继承 sp-map-placement
      * @member props
      * @property {number} [precision=6] 精度，保留几位小数
      */

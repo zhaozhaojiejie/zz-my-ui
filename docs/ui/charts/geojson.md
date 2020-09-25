@@ -12,7 +12,7 @@
     </el-breadcrumb>
 
     <el-alert :title="current" type="success" :closable="false" style="margin:20px 0;"></el-alert>
-    <my-chart-map height="600px" :map="map" :register="register" @click="handleClick"></my-chart-map>
+    <sp-chart-map height="600px" :map="map" :register="register" @click="handleClick"></sp-chart-map>
   </div>
 
 </template>
