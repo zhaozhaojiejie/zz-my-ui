@@ -16,6 +16,7 @@
 !ui/**/*
 /tests
 /docs
+web
 !web/docs
 /dist
 /sp.config.js

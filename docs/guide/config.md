@@ -85,10 +85,10 @@ Prefetch 链接将会消耗带宽。
 文档开发环境启动端口号。默认：3001
 
 ### docsBaseUrl
-文档部署目录。默认：'/sp/'
+文档部署目录。默认：'docweb'
 
 ### docsOutputDir
-文档编译输出目录。默认：web
+文档编译输出目录。默认：docweb
 
 ### autoRoutes
 自动生成路由配置。默认： true

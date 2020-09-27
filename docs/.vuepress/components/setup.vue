@@ -15,7 +15,6 @@
           <el-button round type="success" icon="el-icon-video-play" @click="go('/guide/')">快速上手</el-button>
           <el-button round icon="el-icon-s-promotion" @click="go('http://172.16.0.25/potato-chips/sp-ui.git',true)">源码仓库
           </el-button>
-          <sp-test></sp-test>
         </div>
       </slot>
     </h3>
