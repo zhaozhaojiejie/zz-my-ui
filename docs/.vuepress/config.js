@@ -15,7 +15,7 @@ module.exports = {
   },
   description: '',
   port: config.docsDevPort,
-  dest: utils.join(core.spRootPath, config.docsOutputDir, config.docsBaseUrl),
+  dest: utils.join(core.SpRootPath, config.docsOutputDir, config.docsBaseUrl),
   base: config.docsBaseUrl,
   head: [
     ['link', {

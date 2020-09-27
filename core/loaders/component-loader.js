@@ -38,10 +38,9 @@ function injectCode(code = null, elTags = [], spTags = [], theme) {
   const elUse = elTags.length
     ? `${elTags.map(t => '__vue__.use(__' + t + '__)').join(';\n')}`
     : '';
-  
-  const spCharts = spTags.filter(tag => tag.includes('spChart'))
-  const spMaps = spTags.filter(tag => tag.includes('spMap'))
-  const spGos = spTags.filter(tag => tag.includes('spGo'))
+  const spCharts = spTags.filter(tag => tag.includes('SpChart'))
+  const spMaps = spTags.filter(tag => tag.includes('SpMap'))
+  const spGos = spTags.filter(tag => tag.includes('SpGo'))
   const spComponents = spTags.filter(tag => !spCharts.includes(tag) && !spMaps.includes(tag) && !spGos.includes(tag))
   
   const spComponentsImport = spComponents.length

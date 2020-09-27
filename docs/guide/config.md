@@ -105,7 +105,7 @@ Prefetch 链接将会消耗带宽。
 ### transpileDependencies
 默认情况下 babel-loader 会忽略所有 node_modules 中的文件。如果你想要通过 Babel 显式转译一个依赖，可以在这个选项中列出来。
 
-默认：['@chipspc/pc']
+默认：['@xdh/my']
 
 ### productionSourceMap
 生成环境是否生成SourceMap, 默认不生成

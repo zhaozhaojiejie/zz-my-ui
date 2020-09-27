@@ -68,13 +68,13 @@
 <p><img src="/sp/img/map/7.jpg" alt="info"></p>
 <h2>安装</h2>
 <p>推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。</p>
-<pre class="prettyprint source lang-sh"><code>npm i @xdh/sp --save
+<pre class="prettyprint source lang-sh"><code>npm i @chipspc/pc --save
 </code></pre>
 <h2>快速上手</h2>
 <p>步骤：</p>
 <h4>1、安装组件库和相关插件</h4>
 <p>安装组件</p>
-<pre class="prettyprint source lang-sh"><code>npm i element-ui @xdh/sp --save
+<pre class="prettyprint source lang-sh"><code>npm i element-ui @chipspc/pc --save
 </code></pre>
 <p>安装项目依赖插件</p>
 <pre class="prettyprint source lang-sh"><code>npm i babel-plugin-component node-sass sass-loader --save-dev
@@ -86,16 +86,16 @@
     '@vue/cli-plugin-babel/preset'
   ],
   plugins: [
-    ...require('@xdh/sp/core/babel.plugins')
+    ...require('@chipspc/pc/core/babel.plugins')
   ]
 }
 </code></pre>
 <h4>3、配置 <code>vue.config.js</code></h4>
 <p>需要在<code>vue.config.js</code>加上别名，如：</p>
 <pre class="prettyprint source lang-js"><code>module.exports = {
-  transpileDependencies: ['@xdh/sp'],
+  transpileDependencies: ['@chipspc/pc'],
   chainWebpack(chain) {
-    chain.resolve.alias.set('$ui', '@xdh/sp/ui/lib')
+    chain.resolve.alias.set('$ui', '@chipspc/pc/ui/lib')
   }
 }
 </code></pre>
